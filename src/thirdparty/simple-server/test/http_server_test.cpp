@@ -45,6 +45,11 @@ void usleepp(Request &request, Response &response) {
     response.set_body(root);
 }
 
+void test(Request& req, Response& res) {
+	std::cout << "headline: " << std::endl;
+	std::cout << req.line.to_string() << std::endl;
+}
+
 int main(int argc, char **args) {
     if (argc < 2) {
         log_error("usage: ./http_server_test [port]");
@@ -57,6 +62,7 @@ int main(int argc, char **args) {
 	http_server.add_mapping("/usleep", usleepp);
 	http_server.add_mapping("/sayhello", sayhello);
 	http_server.add_mapping("/login", login);
+	http_server.add_mapping("/test", test);
 
 	int port = atoi(args[1]);
 	int backlog = 100000;
