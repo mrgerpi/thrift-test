@@ -7,7 +7,8 @@ var vm = new Vue({
     },
     methods: {
         "login": function () {
-            var baseurl = "http://120.79.247.113:8080/static";
+            var baseurl = "http://120.79.247.113:8080";
+			console.log("hello");
             axios.get(baseurl + "/user", {
                 params: {
                     email: this.email,

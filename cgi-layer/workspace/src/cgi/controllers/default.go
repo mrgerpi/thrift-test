@@ -3,6 +3,7 @@ package controllers
 import (
 	"fmt"
 	"github.com/astaxie/beego"
+	"github.com/astaxie/beego/logs"
 )
 
 type MainController struct {
@@ -19,6 +20,8 @@ type UserController struct {
 
 func (c *HelloController) Get() {
 	c.Ctx.WriteString("helloWorld")
+	log := logs.NewLogger(10000)
+	log.Debug("/hello is call")
 }
 func (c *UserController) Get() {
 	fmt.Println("hello User")
@@ -27,6 +30,8 @@ func (c *UserController) Get() {
 	beego.Informational("email: " + email)
 	beego.Informational("password: " + password)
 	c.Ctx.WriteString("user login")
+	log := logs.NewLogger(10000)
+	log.Debug("/user is call")
 }
 
 func (c *MainController) Get() {
