@@ -1,6 +1,7 @@
 package controllers
 
 import (
+	"fmt"
 	"github.com/astaxie/beego"
 )
 
@@ -18,13 +19,14 @@ type UserController struct {
 
 func (c *HelloController) Get() {
 	c.Ctx.WriteString("helloWorld")
-	/*
-		c.Data["name"] = "WeiYafeng"
-		c.TplName = "index.tpl"
-	*/
 }
 func (c *UserController) Get() {
-	c.Ctx.WriteString("user")
+	fmt.Println("hello User")
+	email := c.GetString("email")
+	password := c.GetString("password")
+	beego.Informational("email: " + email)
+	beego.Informational("password: " + password)
+	c.Ctx.WriteString("user login")
 }
 
 func (c *MainController) Get() {
