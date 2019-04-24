@@ -8,20 +8,20 @@ var vm = new Vue({
     methods: {
         "login": function () {
             var baseurl = "http://120.79.247.113:8080";
-			console.log("hello");
-            axios.get(baseurl + "/user", {
-                params: {
-                    email: this.email,
-                    password: this.password
-                }
-            })
+            axios.post(baseurl + "/user", "email=" + this.email + "&password" + this.password)
             .then(function(response) {
-                var res = JSON.stringify(response);
-                console.log("res: " + res);
-                console.log("response: " + JSON.parse(res));
+				if (response.status == 200) {
+					if (response.data != "ok") {
+						alert("error: " + response.data);
+					} else {
+						alert("login succ");
+					}
+				} else {
+					alert("please request again");
+				}
             })
             .catch(function(error) {
-                console.log("error: " + error)
+                alert("error: " + error)
             })
         }
     },

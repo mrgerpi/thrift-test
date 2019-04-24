@@ -9,6 +9,8 @@ Create Table `User`(
 	Primary Key(`userId`)
 ) Engine=InnoDB Default Charset=utf8;
 
+Insert Into `User` (userName, password) Values ("451733087@qq.com", "test");
+
 Create Table `ServiceMetaData` (
 	`serviceId` int not null auto_increment,
 	`serviceName` varchar(30) not null,
