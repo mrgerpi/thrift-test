@@ -40791,3 +40791,21 @@
 2019-04-24 11:19:57.187 INFO ./main/main.cpp(74): sub_pthread 140336710010624 created
 2019-04-24 11:19:57.187 DEBUG ./main/instance_mgr_terminal.cpp(8): thrift server start
 2019-04-24 11:19:57.187 INFO ./thrift_server/thrift_test_kernal/ThriftTestKernalServiceServer.cpp(53): star server t_cost: 0ms
+2019-04-24 16:24:53.989 INFO ./main/main.cpp(61): welcome to thrift-test! :) 
+2019-04-24 16:24:53.989 INFO ./main/main.cpp(74): sub_pthread 139915744073472 created
+2019-04-24 16:24:53.989 DEBUG ./main/instance_mgr_terminal.cpp(8): thrift server start
+2019-04-24 16:24:53.989 INFO ./thrift_server/thrift_test_kernal/ThriftTestKernalServiceServer.cpp(53): star server t_cost: 0ms
+2019-04-24 16:26:04.459 INFO ./main/main.cpp(61): welcome to thrift-test! :) 
+2019-04-24 16:26:04.459 INFO ./main/main.cpp(74): sub_pthread 140480548435712 created
+2019-04-24 16:26:04.459 DEBUG ./main/instance_mgr_terminal.cpp(8): thrift server start
+2019-04-24 16:26:04.460 INFO ./thrift_server/thrift_test_kernal/ThriftTestKernalServiceServer.cpp(53): star server t_cost: 1ms
+2019-04-24 16:30:34.615 INFO ./main/main.cpp(61): welcome to thrift-test! :) 
+2019-04-24 16:30:34.615 INFO ./main/main.cpp(74): sub_pthread 139775832491776 created
+2019-04-24 16:30:34.615 DEBUG ./main/instance_mgr_terminal.cpp(8): thrift server start
+2019-04-24 16:30:34.616 INFO ./thrift_server/thrift_test_kernal/ThriftTestKernalServiceServer.cpp(53): star server t_cost: 1ms
+2019-04-24 16:30:57.718 ERROR ./main/main.cpp(26): DumpTraceBack||line=0||trace_back=./thrift-test() [0x406548]
+2019-04-24 16:30:57.718 ERROR ./main/main.cpp(26): DumpTraceBack||line=1||trace_back=/lib64/libc.so.6(+0x35250) [0x7f2018db6250]
+2019-04-24 16:30:57.718 ERROR ./main/main.cpp(26): DumpTraceBack||line=2||trace_back=/lib64/libpthread.so.0(pthread_join+0xa5) [0x7f2019969ef5]
+2019-04-24 16:30:57.718 ERROR ./main/main.cpp(26): DumpTraceBack||line=3||trace_back=./thrift-test() [0x406184]
+2019-04-24 16:30:57.718 ERROR ./main/main.cpp(26): DumpTraceBack||line=4||trace_back=/lib64/libc.so.6(__libc_start_main+0xf5) [0x7f2018da2b35]
+2019-04-24 16:30:57.718 ERROR ./main/main.cpp(26): DumpTraceBack||line=5||trace_back=./thrift-test() [0x40646a]

@@ -8,6 +8,7 @@
 #include <thrift/server/TSimpleServer.h>
 #include <thrift/transport/TServerSocket.h>
 #include <thrift/transport/TBufferTransports.h>
+#include "simple_log.h"
 
 using namespace ::apache::thrift;
 using namespace ::apache::thrift::protocol;
@@ -20,21 +21,21 @@ using namespace  ::thrift_test_kernal;
 
 void ThriftTestKernalServiceHandler::GetServiceList(GetServiceListResponse& _return, const GetServiceListRequest& request) {
 	// Your implementation goes here
-	printf("GetServiceList\n");
+	log_info("GetServiceList");
 }
 
 void ThriftTestKernalServiceHandler::AddService(AddServiceResponse& _return, const AddServiceRequest& request) {
 	// Your implementation goes here
-	printf("AddService\n");
+	log_info("AddService");
 }
 
 void ThriftTestKernalServiceHandler::FillData(FillDataResponse& _return, const FillDataRequest& request) {
 	// Your implementation goes here
-	printf("FillData\n");
+	log_info("FillData");
 }
 
 void ThriftTestKernalServiceHandler::RequestTrigger(RequestTriggerReseponse& _return, const RequestTriggerRequest& request) {
 	// Your implementation goes here
-	printf("RequestTrigger\n");
+	log_info("RequestTrigger");
 }
 
