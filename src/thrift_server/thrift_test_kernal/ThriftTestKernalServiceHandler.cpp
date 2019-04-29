@@ -9,6 +9,8 @@
 #include <thrift/transport/TServerSocket.h>
 #include <thrift/transport/TBufferTransports.h>
 #include "simple_log.h"
+#include <string>
+#include <vector>
 
 using namespace ::apache::thrift;
 using namespace ::apache::thrift::protocol;
@@ -18,24 +20,35 @@ using namespace ::apache::thrift::server;
 using boost::shared_ptr;
 
 using namespace  ::thrift_test_kernal;
+using namespace  std;
 
 void ThriftTestKernalServiceHandler::GetServiceList(GetServiceListResponse& _return, const GetServiceListRequest& request) {
 	// Your implementation goes here
 	log_info("GetServiceList");
+	_return.__set_errorCode(0);
+	vector<string> res;
+	res.push_back("service1");
+	res.push_back("service2");
+	res.push_back("service3");
+	_return.__set_instanceList(res);
 }
 
 void ThriftTestKernalServiceHandler::AddService(AddServiceResponse& _return, const AddServiceRequest& request) {
 	// Your implementation goes here
 	log_info("AddService");
+	_return.__set_errorCode(0);
 }
 
 void ThriftTestKernalServiceHandler::FillData(FillDataResponse& _return, const FillDataRequest& request) {
 	// Your implementation goes here
 	log_info("FillData");
+	_return.__set_errorCode(0);
 }
 
-void ThriftTestKernalServiceHandler::RequestTrigger(RequestTriggerReseponse& _return, const RequestTriggerRequest& request) {
+void ThriftTestKernalServiceHandler::RequestTrigger(RequestTriggerResponse& _return, const RequestTriggerRequest& request) {
 	// Your implementation goes here
 	log_info("RequestTrigger");
+	_return.__set_errorCode(0);
+	_return.__set_reqponseJson("ok");
 }
 

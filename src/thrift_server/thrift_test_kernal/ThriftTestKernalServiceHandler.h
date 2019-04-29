@@ -27,6 +27,6 @@ class ThriftTestKernalServiceHandler : virtual public ThriftTestKernalServiceIf 
 
 		void FillData(FillDataResponse& _return, const FillDataRequest& request);
 
-		void RequestTrigger(RequestTriggerReseponse& _return, const RequestTriggerRequest& request);
+		void RequestTrigger(RequestTriggerResponse& _return, const RequestTriggerRequest& request);
 };
 

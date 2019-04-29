@@ -1,0 +1,350 @@
+
+2019-04-28 20:12:21.557 INFO ./main/main.cpp(137): welcome to thrift-test client ! :) 
+2019-04-28 20:12:21.561 INFO ./main/main.cpp(76): GetServiceList||reqJson=
+{	
+	"1":{
+		"i32":0
+	}
+}
+÷
+2019-04-28 20:14:39.266 INFO ./main/main.cpp(137): welcome to thrift-test client ! :) 
+2019-04-28 20:14:45.178 INFO ./main/main.cpp(137): welcome to thrift-test client ! :) 
+2019-04-28 20:14:51.522 INFO ./main/main.cpp(76): GetServiceList||reqJson=
+{	
+	"1":{
+		"i32":0
+	}
+}
+
+2019-04-28 20:15:20.509 INFO ./main/main.cpp(137): welcome to thrift-test client ! :) 
+2019-04-28 20:15:24.283 INFO ./main/main.cpp(76): GetServiceList||reqJson=
+{	
+	"1":{
+		"i32":0
+	}
+}
+
+2019-04-28 20:19:57.886 INFO ./main/main.cpp(137): welcome to thrift-test client ! :) 
+2019-04-28 20:19:57.890 INFO ./main/main.cpp(76): GetServiceList||reqJson=
+{"1":{"i32":0}}
+€
+2019-04-28 22:24:50.804 INFO ./main/main.cpp(137): welcome to thrift-test client ! :) 
+2019-04-28 22:24:50.807 INFO ./main/main.cpp(76): GetServiceList||reqJson=
+{"1":{"i32":0}}
+€
+2019-04-28 22:29:39.519 INFO ./main/main.cpp(137): welcome to thrift-test client ! :) 
+2019-04-28 22:29:39.522 INFO ./main/main.cpp(76): GetServiceList||reqJson=
+{"1":{"i32":0}}
+€
+2019-04-28 22:39:00.202 INFO ./main/main.cpp(137): welcome to thrift-test client ! :) 
+2019-04-28 22:39:00.205 INFO ./main/main.cpp(76): GetServiceList||reqJson=
+{"1":{"i32":0}}
+€
+2019-04-28 22:39:26.999 INFO ./main/main.cpp(137): welcome to thrift-test client ! :) 
+2019-04-28 22:39:27.003 INFO ./main/main.cpp(76): GetServiceList||reqJson=
+{"1":{"i32":0}}
+€
+2019-04-28 22:42:12.067 INFO ./main/main.cpp(137): welcome to thrift-test client ! :) 
+2019-04-28 22:42:12.071 INFO ./main/main.cpp(76): GetServiceList||reqJson=
+{"1":{"i32":0}}
+€
+2019-04-28 22:42:12.071 INFO ./main/thrift_test_client.cpp(149): GetServiceList, req write||reqJson={"1":{"i32":0}}
+€||req=GetServiceListRequest(type=0)||reqPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/req.json
+2019-04-28 22:51:14.695 INFO ./main/main.cpp(137): welcome to thrift-test client ! :) 
+2019-04-28 22:51:14.698 INFO ./main/main.cpp(76): GetServiceList||reqJson=
+{"1":{"i32":0}}
+€
+2019-04-28 22:51:14.699 INFO ./main/thrift_test_client.cpp(149): GetServiceList, req write||reqJson={"1":{"i32":0}}
+€||req=GetServiceListRequest(type=0)||reqPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/req.json
+2019-04-28 22:51:14.699 INFO ./main/thrift_test_client.cpp(165): GetServiceList, rsp write||rsp=GetServiceListResponse(errorCode=0, instanceList=[service1,service2])||rspPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/rsp.json
+2019-04-28 22:51:14.699 INFO ./main/main.cpp(79): GetServiceList||rspJson=
+
+2019-04-28 22:52:23.578 INFO ./main/main.cpp(137): welcome to thrift-test client ! :) 
+2019-04-28 22:52:23.582 INFO ./main/main.cpp(76): GetServiceList||reqJson=
+{"1":{"i32":0}}
+€
+2019-04-28 22:52:23.582 INFO ./main/thrift_test_client.cpp(149): GetServiceList, req write||reqJson={"1":{"i32":0}}
+€||req=GetServiceListRequest(type=0)||reqPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/req.json
+2019-04-28 22:52:23.582 INFO ./main/thrift_test_client.cpp(165): GetServiceList, rsp write||rsp=GetServiceListResponse(errorCode=0, instanceList=[service1,service2])||rspPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/rsp.json
+2019-04-28 22:52:23.582 INFO ./main/main.cpp(79): GetServiceList||rspJson=
+
+2019-04-28 23:03:14.820 INFO ./main/main.cpp(137): welcome to thrift-test client ! :) 
+2019-04-28 23:03:14.823 INFO ./main/main.cpp(76): GetServiceList||reqJson=
+{"1":{"i32":0}}
+2019-04-29 14:29:41.765 INFO ./main/main.cpp(137): welcome to thrift-test client ! :) 
+2019-04-29 14:29:41.768 INFO ./main/main.cpp(76): GetServiceList||reqJson=
+{"1":{"i32":0}}
+2019-04-29 14:29:41.769 INFO ./main/thrift_test_client.cpp(179): GetServiceList||reqJson={"1":{"i32":0}}||req=GetServiceListRequest(type=0)||reqPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/req.json
+2019-04-29 14:29:41.769 INFO ./main/thrift_test_client.cpp(198): GetServiceList, rsp write||rsp=GetServiceListResponse(errorCode=0, instanceList=[service1,service2])||rspPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/rsp.json
+2019-04-29 14:29:41.772 INFO ./main/thrift_test_client.cpp(204): GetServiceList||rspJson={"1":{"i32":0},"2":{"lst":["str",2,"service1","service2"]}}{"1":{"i32":0},"2":{"lst":["str",2,"service1","service2"]}}||rsp=GetServiceListResponse(errorCode=0, instanceList=[service1,service2])||rspPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/rsp.json
+2019-04-29 14:29:41.772 INFO ./main/main.cpp(79): GetServiceList||rspJson=
+{"1":{"i32":0},"2":{"lst":["str",2,"service1","service2"]}}{"1":{"i32":0},"2":{"lst":["str",2,"service1","service2"]}}
+2019-04-29 14:33:28.988 INFO ./main/main.cpp(137): welcome to thrift-test client ! :) 
+2019-04-29 14:33:28.992 INFO ./main/main.cpp(76): GetServiceList||reqJson=
+{"1":{"i32":0}}
+2019-04-29 14:33:28.992 INFO ./main/thrift_test_client.cpp(179): GetServiceList||reqJson={"1":{"i32":0}}||req=GetServiceListRequest(type=0)||reqPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/req.json
+2019-04-29 14:33:28.996 INFO ./main/thrift_test_client.cpp(203): GetServiceList||rspJson={"1":{"i32":0},"2":{"lst":["str",2,"service1","service2"]}}l||rsp=GetServiceListResponse(errorCode=0, instanceList=[service1,service2])||rspPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/rsp.json
+2019-04-29 14:33:28.996 INFO ./main/main.cpp(79): GetServiceList||rspJson=
+{"1":{"i32":0},"2":{"lst":["str",2,"service1","service2"]}}l
+2019-04-29 14:45:07.788 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 14:45:07.792 INFO ./main/thrift_test_client.cpp(135): GetServiceList||entry||reqJson={"1":{"i32":0}}
+2019-04-29 14:45:07.792 INFO ./main/thrift_test_client.cpp(181): GetServiceList||get req||reqPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/req.json||req=GetServiceListRequest(type=0)
+2019-04-29 14:45:07.792 INFO ./main/thrift_test_client.cpp(193): GetServiceList||rpc||rsp=GetServiceListResponse(errorCode=0, instanceList=[service1,service2])
+2019-04-29 14:45:07.795 INFO ./main/thrift_test_client.cpp(205): GetServiceList||exit||rspJson={"1":{"i32":0},"2":{"lst":["str",2,"service1","service2"]}}{"1":{"i32":0},"2":{"lst":["str",2,"service1","service2"]}}||rspPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/rsp.json
+2019-04-29 14:47:00.939 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 14:47:00.942 INFO ./main/thrift_test_client.cpp(135): GetServiceList||entry||reqJson={"1":{"i32":0}}
+2019-04-29 14:47:00.943 INFO ./main/thrift_test_client.cpp(181): GetServiceList||get req||reqPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/req.json||req=GetServiceListRequest(type=0)
+2019-04-29 14:47:00.943 INFO ./main/thrift_test_client.cpp(193): GetServiceList||rpc||rsp=GetServiceListResponse(errorCode=0, instanceList=[service1,service2])
+2019-04-29 14:47:00.946 INFO ./main/thrift_test_client.cpp(205): GetServiceList||exit||rspJson={"1":{"i32":0},"2":{"lst":["str",2,"service1","service2"]}}{"1":{"i32":0},"2":{"lst":["str",2,"service1","service2"]}}{"1":{"i32":0},"2":{"lst":["str",2,"service1","service2"]}}r||rspPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/rsp.json
+2019-04-29 14:53:17.420 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 14:53:17.423 INFO ./main/thrift_test_client.cpp(135): GetServiceList||entry||reqJson={"1":{"i32":0}}
+2019-04-29 14:53:17.424 INFO ./main/thrift_test_client.cpp(181): GetServiceList||get req||reqPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/req.json||req=GetServiceListRequest(type=0)
+2019-04-29 14:53:17.424 INFO ./main/thrift_test_client.cpp(193): GetServiceList||rpc||rsp=GetServiceListResponse(errorCode=0, instanceList=[service1,service2,service3])
+2019-04-29 14:53:17.427 INFO ./main/thrift_test_client.cpp(205): GetServiceList||exit||rspJson={"1":{"i32":0},"2":{"lst":["str",2,"service1","service2"]}}{"1":{"i32":0},"2":{"lst":["str",2,"service1","service2"]}}{"1":{"i32":0},"2":{"lst":["str",2,"service1","service2"]}}{"1":{"i32":0},"2":{"lst":["str",3,"service1","service2","service3"]}}s||rspPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/rsp.json
+2019-04-29 14:53:29.901 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 14:53:29.905 INFO ./main/thrift_test_client.cpp(135): GetServiceList||entry||reqJson={"1":{"i32":0}}
+2019-04-29 14:53:29.906 INFO ./main/thrift_test_client.cpp(181): GetServiceList||get req||reqPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/req.json||req=GetServiceListRequest(type=0)
+2019-04-29 14:53:29.906 INFO ./main/thrift_test_client.cpp(193): GetServiceList||rpc||rsp=GetServiceListResponse(errorCode=0, instanceList=[service1,service2,service3])
+2019-04-29 14:53:29.909 INFO ./main/thrift_test_client.cpp(205): GetServiceList||exit||rspJson={"1":{"i32":0},"2":{"lst":["str",2,"service1","service2"]}}{"1":{"i32":0},"2":{"lst":["str",2,"service1","service2"]}}{"1":{"i32":0},"2":{"lst":["str",2,"service1","service2"]}}{"1":{"i32":0},"2":{"lst":["str",3,"service1","service2","service3"]}}{"1":{"i32":0},"2":{"lst":["str",3,"service1","service2","service3"]}}||rspPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/rsp.json
+2019-04-29 15:05:22.687 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 15:05:22.691 INFO ./main/thrift_test_client.cpp(135): GetServiceList||entry||reqJson={"1":{"i32":0}}
+2019-04-29 15:05:22.691 INFO ./main/thrift_test_client.cpp(181): GetServiceList||get req||reqPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/req.json||req=GetServiceListRequest(type=0)
+2019-04-29 15:05:22.692 INFO ./main/thrift_test_client.cpp(193): GetServiceList||rpc||rsp=GetServiceListResponse(errorCode=0, instanceList=[service1,service2,service3])
+2019-04-29 15:05:22.695 INFO ./main/thrift_test_client.cpp(205): GetServiceList||exit||rspJson={"1":{"i32":0},"2":{"lst":["str",2,"service1","service2"]}}{"1":{"i32":0},"2":{"lst":["str",2,"service1","service2"]}}{"1":{"i32":0},"2":{"lst":["str",2,"service1","service2"]}}{"1":{"i32":0},"2":{"lst":["str",3,"service1","service2","service3"]}}{"1":{"i32":0},"2":{"lst":["str",3,"service1","service2","service3"]}}{"1":{"i32":0},"2":{"lst":["str",3,"service1","service2","service3"]}}||rspPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/rsp.json
+2019-04-29 15:07:49.220 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 15:07:49.224 INFO ./main/thrift_test_client.cpp(135): GetServiceList||entry||reqJson={"1":{"i32":0}}
+2019-04-29 15:07:49.224 INFO ./main/thrift_test_client.cpp(181): GetServiceList||get req||reqPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/req.json||req=GetServiceListRequest(type=0)
+2019-04-29 15:07:49.224 INFO ./main/thrift_test_client.cpp(193): GetServiceList||rpc||rsp=GetServiceListResponse(errorCode=0, instanceList=[service1,service2,service3])
+2019-04-29 15:07:49.228 INFO ./main/thrift_test_client.cpp(206): GetServiceList||exit||rspJson={"1":{"i32":0},"2":{"lst":["str",3,"service1","service2","service3"]}}||rspPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/rsp.json
+2019-04-29 15:07:57.356 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 15:07:57.360 INFO ./main/thrift_test_client.cpp(135): GetServiceList||entry||reqJson={"1":{"i32":0}}
+2019-04-29 15:07:57.360 INFO ./main/thrift_test_client.cpp(181): GetServiceList||get req||reqPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/req.json||req=GetServiceListRequest(type=0)
+2019-04-29 15:07:57.360 INFO ./main/thrift_test_client.cpp(193): GetServiceList||rpc||rsp=GetServiceListResponse(errorCode=0, instanceList=[service1,service2,service3])
+2019-04-29 15:07:57.364 INFO ./main/thrift_test_client.cpp(206): GetServiceList||exit||rspJson={"1":{"i32":0},"2":{"lst":["str",3,"service1","service2","service3"]}}||rspPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/rsp.json
+2019-04-29 15:31:21.034 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 15:31:21.038 INFO ./main/thrift_test_client.cpp(217): AddService||entry||reqJson=è
+2019-04-29 15:31:32.336 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 15:31:32.341 INFO ./main/thrift_test_client.cpp(217): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"testService"},"3":{"str":"v1.1.1"},"4":{"str":"./data/idl.thrift"}}
+2019-04-29 15:32:01.085 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 15:32:01.088 INFO ./main/thrift_test_client.cpp(217): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"testService"},"3":{"str":"v1.1.1"},"4":{"str":"./data/idl.thrift"}}{"1":{"i32":0},"2":{"str":"testService"},"3":{"str":"v1.1.1"},"4":{"str":"./data/idl.thrift"}}
+2019-04-29 15:32:32.477 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 15:32:32.480 INFO ./main/thrift_test_client.cpp(217): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"testService"},"3":{"str":"v1.1.1"},"4":{"str":"./data/idl.thrift"}}{"1":{"i32":0},"2":{"str":"testService"},"3":{"str":"v1.1.1"},"4":{"str":"./data/idl.thrift"}}{"1":{"i32":0},"2":{"str":"testService"},"3":{"str":"v1.1.1"},"4":{"str":"./data/idl.thrift"}}Ù
+2019-04-29 15:32:53.825 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 15:32:53.825 ERROR ./main/thrift_test_client.cpp(70): readAllFile open file failed, path:./input/AddService.json, error:No such file or directory
+2019-04-29 15:33:04.642 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 15:33:04.642 ERROR ./main/thrift_test_client.cpp(70): readAllFile open file failed, path:./input/AddService.json, error:No such file or directory
+2019-04-29 15:37:02.487 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 15:37:02.490 INFO ./main/thrift_test_client.cpp(217): AddService||entry||reqJson=è
+2019-04-29 15:37:09.674 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 15:37:09.677 INFO ./main/thrift_test_client.cpp(217): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"testService"},"3":{"str":"v1.1.1"},"4":{"str":"./data/idl.thrift"}}
+2019-04-29 15:37:18.465 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 15:37:18.469 INFO ./main/thrift_test_client.cpp(217): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"testService"},"3":{"str":"v1.1.1"},"4":{"str":"./data/idl.thrift"}}
+2019-04-29 16:01:39.008 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 16:01:39.011 INFO ./main/thrift_test_client.cpp(217): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"testService"},"3":{"str":"v1.1.1"},"4":{"str":"./data/idl.thrift"}}
+2019-04-29 16:02:15.231 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 16:02:15.235 INFO ./main/thrift_test_client.cpp(217): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"testService"},"3":{"str":"v1.1.1"},"4":{"str":"./data/idl.thrift"}}
+2019-04-29 16:02:15.235 ERROR ./main/thrift_test_client.cpp(99): writeAllFile open file failed, path=/home/Shit/thrift-test/kernel_client/data/AddService/req.json, error:No such file or directory
+2019-04-29 16:04:15.983 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 16:04:15.986 INFO ./main/thrift_test_client.cpp(217): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"testService"},"3":{"str":"v1.1.1"},"4":{"str":"./data/idl.thrift"}}
+2019-04-29 16:04:15.986 ERROR ./main/thrift_test_client.cpp(99): writeAllFile open file failed, path=/home/Shit/thrift-test/kernel_client/data/AddService/req.json, error:No such file or directory
+2019-04-29 16:05:32.658 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 16:05:32.662 INFO ./main/thrift_test_client.cpp(217): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"testService"},"3":{"str":"v1.1.1"},"4":{"str":"./data/idl.thrift"}}
+2019-04-29 16:05:32.662 INFO ./main/thrift_test_client.cpp(246): AddService||read req||req=AddServiceRequest(type=0, serviceName=testService, version=v1.1.1, idlAbsFileName=./data/idl.thrift)
+2019-04-29 16:05:32.662 ERROR ./main/thrift_test_client.cpp(252): AddServcie Exception||message=Called write on non-open socket
+2019-04-29 16:06:35.804 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 16:06:35.808 INFO ./main/thrift_test_client.cpp(137): GetServiceList||entry||reqJson={"1":{"i32":0}}
+2019-04-29 16:06:35.808 INFO ./main/thrift_test_client.cpp(185): GetServiceList||get req||reqPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/req.json||req=GetServiceListRequest(type=0)
+2019-04-29 16:06:35.808 INFO ./main/thrift_test_client.cpp(197): GetServiceList||rpc||rsp=GetServiceListResponse(errorCode=0, instanceList=[service1,service2,service3])
+2019-04-29 16:06:35.812 INFO ./main/thrift_test_client.cpp(210): GetServiceList||exit||rspJson={"1":{"i32":0},"2":{"lst":["str",3,"service1","service2","service3"]}}||rspPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/rsp.json
+2019-04-29 16:08:25.388 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 16:08:25.392 INFO ./main/thrift_test_client.cpp(217): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"testService"},"3":{"str":"v1.1.1"},"4":{"str":"./data/idl.thrift"}}
+2019-04-29 16:08:25.392 INFO ./main/thrift_test_client.cpp(246): AddService||read req||req=AddServiceRequest(type=0, serviceName=testService, version=v1.1.1, idlAbsFileName=./data/idl.thrift)
+2019-04-29 16:08:25.392 ERROR ./main/thrift_test_client.cpp(252): AddServcie Exception||message=Called write on non-open socket
+2019-04-29 16:09:28.434 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 16:09:28.438 INFO ./main/thrift_test_client.cpp(217): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"testService"},"3":{"str":"v1.1.1"},"4":{"str":"./data/idl.thrift"}}
+2019-04-29 16:09:28.438 INFO ./main/thrift_test_client.cpp(246): AddService||read req||req=AddServiceRequest(type=0, serviceName=testService, version=v1.1.1, idlAbsFileName=./data/idl.thrift)
+2019-04-29 16:09:28.438 ERROR ./main/thrift_test_client.cpp(252): AddServcie Exception||message=Called write on non-open socket
+2019-04-29 16:10:32.066 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 16:10:32.070 INFO ./main/thrift_test_client.cpp(137): GetServiceList||entry||reqJson={"1":{"i32":0}}
+2019-04-29 16:10:32.070 INFO ./main/thrift_test_client.cpp(185): GetServiceList||get req||reqPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/req.json||req=GetServiceListRequest(type=0)
+2019-04-29 16:10:32.071 INFO ./main/thrift_test_client.cpp(197): GetServiceList||rpc||rsp=GetServiceListResponse(errorCode=0, instanceList=[service1,service2,service3])
+2019-04-29 16:10:32.074 INFO ./main/thrift_test_client.cpp(210): GetServiceList||exit||rspJson={"1":{"i32":0},"2":{"lst":["str",3,"service1","service2","service3"]}}||rspPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/rsp.json
+2019-04-29 16:10:39.482 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 16:10:39.486 INFO ./main/thrift_test_client.cpp(217): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"testService"},"3":{"str":"v1.1.1"},"4":{"str":"./data/idl.thrift"}}
+2019-04-29 16:10:39.486 INFO ./main/thrift_test_client.cpp(246): AddService||read req||req=AddServiceRequest(type=0, serviceName=testService, version=v1.1.1, idlAbsFileName=./data/idl.thrift)
+2019-04-29 16:10:39.486 ERROR ./main/thrift_test_client.cpp(252): AddServcie Exception||message=Called write on non-open socket
+2019-04-29 16:11:30.626 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 16:11:30.630 INFO ./main/thrift_test_client.cpp(217): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"testService"},"3":{"str":"v1.1.1"},"4":{"str":"./data/idl.thrift"}}
+2019-04-29 16:11:30.630 INFO ./main/thrift_test_client.cpp(246): AddService||read req||req=AddServiceRequest(type=0, serviceName=testService, version=v1.1.1, idlAbsFileName=./data/idl.thrift)
+2019-04-29 16:11:30.630 ERROR ./main/thrift_test_client.cpp(252): AddServcie Exception||message=Called write on non-open socket
+2019-04-29 16:14:29.822 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 16:14:29.825 INFO ./main/thrift_test_client.cpp(217): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"testService"},"3":{"str":"v1.1.1"},"4":{"str":"./data/idl.thrift"}}
+2019-04-29 16:14:29.825 INFO ./main/thrift_test_client.cpp(246): AddService||read req||req=AddServiceRequest(type=0, serviceName=testService, version=v1.1.1, idlAbsFileName=./data/idl.thrift)
+2019-04-29 16:14:29.826 INFO ./main/thrift_test_client.cpp(257): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-04-29 16:14:29.831 INFO ./main/thrift_test_client.cpp(270): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-04-29 16:14:52.733 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 16:14:52.737 INFO ./main/thrift_test_client.cpp(137): GetServiceList||entry||reqJson={"1":{"i32":0}}
+2019-04-29 16:14:52.737 INFO ./main/thrift_test_client.cpp(185): GetServiceList||get req||reqPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/req.json||req=GetServiceListRequest(type=0)
+2019-04-29 16:14:52.738 INFO ./main/thrift_test_client.cpp(197): GetServiceList||rpc||rsp=GetServiceListResponse(errorCode=0, instanceList=[service1,service2,service3])
+2019-04-29 16:14:52.741 INFO ./main/thrift_test_client.cpp(210): GetServiceList||exit||rspJson={"1":{"i32":0},"2":{"lst":["str",3,"service1","service2","service3"]}}||rspPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/rsp.json
+2019-04-29 16:51:44.524 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 16:51:47.743 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 16:51:47.746 INFO ./main/thrift_test_client.cpp(137): GetServiceList||entry||reqJson={"1":{"i32":0}}
+2019-04-29 16:51:47.746 INFO ./main/thrift_test_client.cpp(154): GetServiceList||get req||reqPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/req.json||req=GetServiceListRequest(type=0)
+2019-04-29 16:51:47.747 INFO ./main/thrift_test_client.cpp(166): GetServiceList||rpc||rsp=GetServiceListResponse(errorCode=0, instanceList=[service1,service2,service3])
+2019-04-29 16:51:47.749 INFO ./main/thrift_test_client.cpp(179): GetServiceList||exit||rspJson={"1":{"i32":0},"2":{"lst":["str",3,"service1","service2","service3"]}}||rspPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/rsp.json
+2019-04-29 16:51:54.056 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 16:51:54.059 INFO ./main/thrift_test_client.cpp(186): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"testService"},"3":{"str":"v1.1.1"},"4":{"str":"./data/idl.thrift"}}
+2019-04-29 16:51:54.059 INFO ./main/thrift_test_client.cpp(215): AddService||read req||req=AddServiceRequest(type=0, serviceName=testService, version=v1.1.1, idlAbsFileName=./data/idl.thrift)
+2019-04-29 16:51:54.060 INFO ./main/thrift_test_client.cpp(226): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-04-29 16:51:54.062 INFO ./main/thrift_test_client.cpp(239): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-04-29 16:51:58.767 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 16:51:58.771 INFO ./main/thrift_test_client.cpp(245): FillData||entry||reqJson=è
+2019-04-29 16:51:58.771 ERROR ./main/main.cpp(27): DumpTraceBack||line=0||trace_back=./client() [0x405ad9]
+2019-04-29 16:51:58.771 ERROR ./main/main.cpp(27): DumpTraceBack||line=1||trace_back=/lib64/libc.so.6(+0x35250) [0x7f4516c5b250]
+2019-04-29 16:51:58.771 ERROR ./main/main.cpp(27): DumpTraceBack||line=2||trace_back=/lib64/libc.so.6(gsignal+0x37) [0x7f4516c5b1d7]
+2019-04-29 16:51:58.771 ERROR ./main/main.cpp(27): DumpTraceBack||line=3||trace_back=/lib64/libc.so.6(abort+0x148) [0x7f4516c5c8c8]
+2019-04-29 16:51:58.771 ERROR ./main/main.cpp(27): DumpTraceBack||line=4||trace_back=/lib64/libstdc++.so.6(_ZN9__gnu_cxx27__verbose_terminate_handlerEv+0x165) [0x7f451755f7d5]
+2019-04-29 16:51:58.771 ERROR ./main/main.cpp(27): DumpTraceBack||line=5||trace_back=/lib64/libstdc++.so.6(+0x5e746) [0x7f451755d746]
+2019-04-29 16:51:58.771 ERROR ./main/main.cpp(27): DumpTraceBack||line=6||trace_back=/lib64/libstdc++.so.6(+0x5e773) [0x7f451755d773]
+2019-04-29 16:51:58.771 ERROR ./main/main.cpp(27): DumpTraceBack||line=7||trace_back=/lib64/libstdc++.so.6(+0x5e993) [0x7f451755d993]
+2019-04-29 16:51:58.771 ERROR ./main/main.cpp(27): DumpTraceBack||line=8||trace_back=./client() [0x427025]
+2019-04-29 16:51:58.771 ERROR ./main/main.cpp(27): DumpTraceBack||line=9||trace_back=./client() [0x4276a8]
+2019-04-29 16:51:58.771 ERROR ./main/main.cpp(27): DumpTraceBack||line=10||trace_back=./client() [0x40a3ea]
+2019-04-29 16:51:58.771 ERROR ./main/main.cpp(27): DumpTraceBack||line=11||trace_back=./client() [0x41d2ef]
+2019-04-29 16:51:58.771 ERROR ./main/main.cpp(27): DumpTraceBack||line=12||trace_back=./client() [0x4087b5]
+2019-04-29 16:51:58.771 ERROR ./main/main.cpp(27): DumpTraceBack||line=13||trace_back=./client() [0x406224]
+2019-04-29 16:51:58.771 ERROR ./main/main.cpp(27): DumpTraceBack||line=14||trace_back=./client() [0x4067bb]
+2019-04-29 16:51:58.771 ERROR ./main/main.cpp(27): DumpTraceBack||line=15||trace_back=/lib64/libc.so.6(__libc_start_main+0xf5) [0x7f4516c47b35]
+2019-04-29 16:51:58.771 ERROR ./main/main.cpp(27): DumpTraceBack||line=16||trace_back=./client() [0x4059e9]
+2019-04-29 16:52:59.918 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 16:52:59.921 INFO ./main/thrift_test_client.cpp(186): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"testService"},"3":{"str":"v1.1.1"},"4":{"str":"./data/idl.thrift"}}
+2019-04-29 16:53:15.901 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 16:53:15.905 INFO ./main/thrift_test_client.cpp(245): FillData||entry||reqJson=è
+2019-04-29 16:53:27.971 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 16:53:27.975 INFO ./main/thrift_test_client.cpp(304): RequestTrigger||entry||reqJson=è
+2019-04-29 16:54:09.426 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 16:54:09.430 INFO ./main/thrift_test_client.cpp(137): GetServiceList||entry||reqJson={"1":{"i32":0}}
+2019-04-29 16:54:09.430 INFO ./main/thrift_test_client.cpp(154): GetServiceList||get req||reqPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/req.json||req=GetServiceListRequest(type=0)
+2019-04-29 16:54:09.430 INFO ./main/thrift_test_client.cpp(166): GetServiceList||rpc||rsp=GetServiceListResponse(errorCode=0, instanceList=[service1,service2,service3])
+2019-04-29 16:54:09.433 INFO ./main/thrift_test_client.cpp(179): GetServiceList||exit||rspJson={"1":{"i32":0},"2":{"lst":["str",3,"service1","service2","service3"]}}||rspPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/rsp.json
+2019-04-29 16:54:17.130 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 16:54:17.133 INFO ./main/thrift_test_client.cpp(186): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"testService"},"3":{"str":"v1.1.1"},"4":{"str":"./data/idl.thrift"}}
+2019-04-29 16:54:17.133 INFO ./main/thrift_test_client.cpp(215): AddService||read req||req=AddServiceRequest(type=0, serviceName=testService, version=v1.1.1, idlAbsFileName=./data/idl.thrift)
+2019-04-29 16:54:17.134 INFO ./main/thrift_test_client.cpp(226): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-04-29 16:54:17.136 INFO ./main/thrift_test_client.cpp(239): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-04-29 16:54:26.399 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 16:54:26.402 INFO ./main/thrift_test_client.cpp(245): FillData||entry||reqJson={"1":{"i32":0},"2":{"str":"testService"},"3":{"str":"testMethod"},"4":{"str":"{\"data\":0}"}}
+2019-04-29 16:54:26.402 INFO ./main/thrift_test_client.cpp(274): FillData||read req||req=FillDataRequest(type=0, serviceName=testService, methodName=testMethod, data={"data":0})
+2019-04-29 16:54:26.402 INFO ./main/thrift_test_client.cpp(285): FillData||rpc||rsp=FillDataResponse(errorCode=0)
+2019-04-29 16:54:26.405 INFO ./main/thrift_test_client.cpp(298): FillData||write rsp||rspJson={"1":{"i32":0}}
+2019-04-29 16:54:33.605 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 16:54:33.608 INFO ./main/thrift_test_client.cpp(304): RequestTrigger||entry||reqJson={"1":{"str":"testService"},"2":{"str":"testMethod"}}
+2019-04-29 16:54:33.608 INFO ./main/thrift_test_client.cpp(331): RequestTrigger||read req||req=RequestTriggerRequest(serviceName=testService, methodName=testMethod)
+2019-04-29 16:54:33.608 INFO ./main/thrift_test_client.cpp(342): RequestTrigger||rpc||rsp=RequestTriggerResponse(errorCode=0, reqponseJson=ok)
+2019-04-29 16:54:33.611 INFO ./main/thrift_test_client.cpp(355): RequestTrigger||write rsp||rspJson={"1":{"i32":0},"2":{"str":"ok"}}P
+2019-04-29 16:54:42.591 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 16:54:42.594 INFO ./main/thrift_test_client.cpp(304): RequestTrigger||entry||reqJson={"1":{"str":"testService"},"2":{"str":"testMethod"}}
+2019-04-29 16:54:42.594 INFO ./main/thrift_test_client.cpp(331): RequestTrigger||read req||req=RequestTriggerRequest(serviceName=testService, methodName=testMethod)
+2019-04-29 16:54:42.594 INFO ./main/thrift_test_client.cpp(342): RequestTrigger||rpc||rsp=RequestTriggerResponse(errorCode=0, reqponseJson=ok)
+2019-04-29 16:54:42.597 INFO ./main/thrift_test_client.cpp(355): RequestTrigger||write rsp||rspJson={"1":{"i32":0},"2":{"str":"ok"}}P
+2019-04-29 16:55:58.194 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 16:55:58.197 INFO ./main/thrift_test_client.cpp(304): RequestTrigger||entry||reqJson={"1":{"str":"testService"},"2":{"str":"testMethod"}}
+2019-04-29 16:55:58.197 INFO ./main/thrift_test_client.cpp(331): RequestTrigger||read req||req=RequestTriggerRequest(serviceName=testService, methodName=testMethod)
+2019-04-29 16:55:58.198 INFO ./main/thrift_test_client.cpp(342): RequestTrigger||rpc||rsp=RequestTriggerResponse(errorCode=0, reqponseJson=ok)
+2019-04-29 16:55:58.200 INFO ./main/thrift_test_client.cpp(355): RequestTrigger||write rsp||rspJson={"1":{"i32":0},"2":{"str":"ok"}}P
+2019-04-29 16:56:05.055 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 16:56:05.058 INFO ./main/thrift_test_client.cpp(245): FillData||entry||reqJson={"1":{"i32":0},"2":{"str":"testService"},"3":{"str":"testMethod"},"4":{"str":"{\"data\":0}"}}
+2019-04-29 16:56:05.058 INFO ./main/thrift_test_client.cpp(274): FillData||read req||req=FillDataRequest(type=0, serviceName=testService, methodName=testMethod, data={"data":0})
+2019-04-29 16:56:05.058 INFO ./main/thrift_test_client.cpp(285): FillData||rpc||rsp=FillDataResponse(errorCode=0)
+2019-04-29 16:56:05.061 INFO ./main/thrift_test_client.cpp(298): FillData||write rsp||rspJson={"1":{"i32":0}}
+2019-04-29 16:56:33.744 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 16:56:33.748 INFO ./main/thrift_test_client.cpp(304): RequestTrigger||entry||reqJson={"1":{"str":"testService"},"2":{"str":"testMethod"}}
+2019-04-29 16:56:33.748 INFO ./main/thrift_test_client.cpp(331): RequestTrigger||read req||req=RequestTriggerRequest(serviceName=testService, methodName=testMethod)
+2019-04-29 16:56:33.748 INFO ./main/thrift_test_client.cpp(342): RequestTrigger||rpc||rsp=RequestTriggerResponse(errorCode=0, reqponseJson=ok)
+2019-04-29 16:56:33.751 INFO ./main/thrift_test_client.cpp(355): RequestTrigger||write rsp||rspJson={"1":{"i32":0},"2":{"str":"ok"}}P
+2019-04-29 16:58:14.054 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 16:58:14.057 INFO ./main/thrift_test_client.cpp(304): RequestTrigger||entry||reqJson={"1":{"str":"testService"},"2":{"str":"testMethod"}}
+2019-04-29 16:58:14.057 INFO ./main/thrift_test_client.cpp(331): RequestTrigger||read req||req=RequestTriggerRequest(serviceName=testService, methodName=testMethod)
+2019-04-29 16:58:14.057 INFO ./main/thrift_test_client.cpp(342): RequestTrigger||rpc||rsp=RequestTriggerResponse(errorCode=0, reqponseJson=ok)
+2019-04-29 16:58:14.060 INFO ./main/thrift_test_client.cpp(355): RequestTrigger||write rsp||rspJson={"1":{"i32":0},"2":{"str":"ok"}}P
+2019-04-29 17:00:35.885 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 17:00:35.888 INFO ./main/thrift_test_client.cpp(137): GetServiceList||entry||reqJson={"1":{"i32":0}}
+2019-04-29 17:00:35.888 INFO ./main/thrift_test_client.cpp(154): GetServiceList||get req||reqPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/req.json||req=GetServiceListRequest(type=0)
+2019-04-29 17:00:35.889 INFO ./main/thrift_test_client.cpp(166): GetServiceList||rpc||rsp=GetServiceListResponse(errorCode=0, instanceList=[service1,service2,service3])
+2019-04-29 17:00:35.892 INFO ./main/thrift_test_client.cpp(179): GetServiceList||exit||rspJson={"1":{"i32":0},"2":{"lst":["str",3,"service1","service2","service3"]}}||rspPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/rsp.json
+2019-04-29 17:00:35.893 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 17:00:35.896 INFO ./main/thrift_test_client.cpp(186): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"testService"},"3":{"str":"v1.1.1"},"4":{"str":"./data/idl.thrift"}}
+2019-04-29 17:00:35.896 INFO ./main/thrift_test_client.cpp(215): AddService||read req||req=AddServiceRequest(type=0, serviceName=testService, version=v1.1.1, idlAbsFileName=./data/idl.thrift)
+2019-04-29 17:00:35.896 INFO ./main/thrift_test_client.cpp(226): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-04-29 17:00:35.899 INFO ./main/thrift_test_client.cpp(239): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-04-29 17:00:35.901 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 17:00:35.903 INFO ./main/thrift_test_client.cpp(245): FillData||entry||reqJson={"1":{"i32":0},"2":{"str":"testService"},"3":{"str":"testMethod"},"4":{"str":"{\"data\":0}"}}
+2019-04-29 17:00:35.903 INFO ./main/thrift_test_client.cpp(274): FillData||read req||req=FillDataRequest(type=0, serviceName=testService, methodName=testMethod, data={"data":0})
+2019-04-29 17:00:35.904 INFO ./main/thrift_test_client.cpp(285): FillData||rpc||rsp=FillDataResponse(errorCode=0)
+2019-04-29 17:00:35.906 INFO ./main/thrift_test_client.cpp(298): FillData||write rsp||rspJson={"1":{"i32":0}}
+2019-04-29 17:00:35.908 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 17:00:35.911 INFO ./main/thrift_test_client.cpp(304): RequestTrigger||entry||reqJson={"1":{"str":"testService"},"2":{"str":"testMethod"}}
+2019-04-29 17:00:35.911 INFO ./main/thrift_test_client.cpp(331): RequestTrigger||read req||req=RequestTriggerRequest(serviceName=testService, methodName=testMethod)
+2019-04-29 17:00:35.911 INFO ./main/thrift_test_client.cpp(342): RequestTrigger||rpc||rsp=RequestTriggerResponse(errorCode=0, reqponseJson=ok)
+2019-04-29 17:00:35.914 INFO ./main/thrift_test_client.cpp(355): RequestTrigger||write rsp||rspJson={"1":{"i32":0},"2":{"str":"ok"}}P
+2019-04-29 17:00:43.267 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 17:00:43.270 INFO ./main/thrift_test_client.cpp(137): GetServiceList||entry||reqJson={"1":{"i32":0}}
+2019-04-29 17:00:43.270 INFO ./main/thrift_test_client.cpp(154): GetServiceList||get req||reqPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/req.json||req=GetServiceListRequest(type=0)
+2019-04-29 17:00:43.271 INFO ./main/thrift_test_client.cpp(166): GetServiceList||rpc||rsp=GetServiceListResponse(errorCode=0, instanceList=[service1,service2,service3])
+2019-04-29 17:00:43.273 INFO ./main/thrift_test_client.cpp(179): GetServiceList||exit||rspJson={"1":{"i32":0},"2":{"lst":["str",3,"service1","service2","service3"]}}||rspPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/rsp.json
+2019-04-29 17:00:43.275 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 17:00:43.278 INFO ./main/thrift_test_client.cpp(186): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"testService"},"3":{"str":"v1.1.1"},"4":{"str":"./data/idl.thrift"}}
+2019-04-29 17:00:43.278 INFO ./main/thrift_test_client.cpp(215): AddService||read req||req=AddServiceRequest(type=0, serviceName=testService, version=v1.1.1, idlAbsFileName=./data/idl.thrift)
+2019-04-29 17:00:43.278 INFO ./main/thrift_test_client.cpp(226): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-04-29 17:00:43.281 INFO ./main/thrift_test_client.cpp(239): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-04-29 17:00:43.282 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 17:00:43.285 INFO ./main/thrift_test_client.cpp(245): FillData||entry||reqJson={"1":{"i32":0},"2":{"str":"testService"},"3":{"str":"testMethod"},"4":{"str":"{\"data\":0}"}}
+2019-04-29 17:00:43.285 INFO ./main/thrift_test_client.cpp(274): FillData||read req||req=FillDataRequest(type=0, serviceName=testService, methodName=testMethod, data={"data":0})
+2019-04-29 17:00:43.285 INFO ./main/thrift_test_client.cpp(285): FillData||rpc||rsp=FillDataResponse(errorCode=0)
+2019-04-29 17:00:43.288 INFO ./main/thrift_test_client.cpp(298): FillData||write rsp||rspJson={"1":{"i32":0}}
+2019-04-29 17:00:43.290 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 17:00:43.292 INFO ./main/thrift_test_client.cpp(304): RequestTrigger||entry||reqJson={"1":{"str":"testService"},"2":{"str":"testMethod"}}
+2019-04-29 17:00:43.292 INFO ./main/thrift_test_client.cpp(331): RequestTrigger||read req||req=RequestTriggerRequest(serviceName=testService, methodName=testMethod)
+2019-04-29 17:00:43.293 INFO ./main/thrift_test_client.cpp(342): RequestTrigger||rpc||rsp=RequestTriggerResponse(errorCode=0, reqponseJson=ok)
+2019-04-29 17:00:43.295 INFO ./main/thrift_test_client.cpp(355): RequestTrigger||write rsp||rspJson={"1":{"i32":0},"2":{"str":"ok"}}P
+2019-04-29 17:00:47.613 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 17:00:47.616 INFO ./main/thrift_test_client.cpp(137): GetServiceList||entry||reqJson={"1":{"i32":0}}
+2019-04-29 17:00:47.616 INFO ./main/thrift_test_client.cpp(154): GetServiceList||get req||reqPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/req.json||req=GetServiceListRequest(type=0)
+2019-04-29 17:00:47.617 INFO ./main/thrift_test_client.cpp(166): GetServiceList||rpc||rsp=GetServiceListResponse(errorCode=0, instanceList=[service1,service2,service3])
+2019-04-29 17:00:47.620 INFO ./main/thrift_test_client.cpp(179): GetServiceList||exit||rspJson={"1":{"i32":0},"2":{"lst":["str",3,"service1","service2","service3"]}}||rspPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/rsp.json
+2019-04-29 17:01:17.615 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 17:01:17.619 INFO ./main/thrift_test_client.cpp(137): GetServiceList||entry||reqJson={"1":{"i32":0}}
+2019-04-29 17:01:17.619 INFO ./main/thrift_test_client.cpp(154): GetServiceList||get req||reqPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/req.json||req=GetServiceListRequest(type=0)
+2019-04-29 17:01:17.620 INFO ./main/thrift_test_client.cpp(166): GetServiceList||rpc||rsp=GetServiceListResponse(errorCode=0, instanceList=[service1,service2,service3])
+2019-04-29 17:01:17.623 INFO ./main/thrift_test_client.cpp(179): GetServiceList||exit||rspJson={"1":{"i32":0},"2":{"lst":["str",3,"service1","service2","service3"]}}||rspPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/rsp.json
+2019-04-29 17:01:40.112 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 17:01:40.115 INFO ./main/thrift_test_client.cpp(137): GetServiceList||entry||reqJson={"1":{"i32":0}}
+2019-04-29 17:01:40.115 INFO ./main/thrift_test_client.cpp(154): GetServiceList||get req||reqPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/req.json||req=GetServiceListRequest(type=0)
+2019-04-29 17:01:40.116 INFO ./main/thrift_test_client.cpp(166): GetServiceList||rpc||rsp=GetServiceListResponse(errorCode=0, instanceList=[service1,service2,service3])
+2019-04-29 17:01:40.118 INFO ./main/thrift_test_client.cpp(179): GetServiceList||exit||rspJson={"1":{"i32":0},"2":{"lst":["str",3,"service1","service2","service3"]}}||rspPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/rsp.json
+2019-04-29 17:01:40.120 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 17:01:40.123 INFO ./main/thrift_test_client.cpp(186): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"testService"},"3":{"str":"v1.1.1"},"4":{"str":"./data/idl.thrift"}}
+2019-04-29 17:01:40.123 INFO ./main/thrift_test_client.cpp(215): AddService||read req||req=AddServiceRequest(type=0, serviceName=testService, version=v1.1.1, idlAbsFileName=./data/idl.thrift)
+2019-04-29 17:01:40.123 INFO ./main/thrift_test_client.cpp(226): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-04-29 17:01:40.126 INFO ./main/thrift_test_client.cpp(239): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-04-29 17:01:40.127 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 17:01:40.130 INFO ./main/thrift_test_client.cpp(245): FillData||entry||reqJson={"1":{"i32":0},"2":{"str":"testService"},"3":{"str":"testMethod"},"4":{"str":"{\"data\":0}"}}
+2019-04-29 17:01:40.130 INFO ./main/thrift_test_client.cpp(274): FillData||read req||req=FillDataRequest(type=0, serviceName=testService, methodName=testMethod, data={"data":0})
+2019-04-29 17:01:40.131 INFO ./main/thrift_test_client.cpp(285): FillData||rpc||rsp=FillDataResponse(errorCode=0)
+2019-04-29 17:01:40.133 INFO ./main/thrift_test_client.cpp(298): FillData||write rsp||rspJson={"1":{"i32":0}}
+2019-04-29 17:01:40.135 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 17:01:40.138 INFO ./main/thrift_test_client.cpp(304): RequestTrigger||entry||reqJson={"1":{"str":"testService"},"2":{"str":"testMethod"}}
+2019-04-29 17:01:40.138 INFO ./main/thrift_test_client.cpp(331): RequestTrigger||read req||req=RequestTriggerRequest(serviceName=testService, methodName=testMethod)
+2019-04-29 17:01:40.138 INFO ./main/thrift_test_client.cpp(342): RequestTrigger||rpc||rsp=RequestTriggerResponse(errorCode=0, reqponseJson=ok)
+2019-04-29 17:01:40.141 INFO ./main/thrift_test_client.cpp(355): RequestTrigger||write rsp||rspJson={"1":{"i32":0},"2":{"str":"ok"}}P
+2019-04-29 17:01:42.520 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 17:01:42.523 INFO ./main/thrift_test_client.cpp(137): GetServiceList||entry||reqJson={"1":{"i32":0}}
+2019-04-29 17:01:42.523 INFO ./main/thrift_test_client.cpp(154): GetServiceList||get req||reqPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/req.json||req=GetServiceListRequest(type=0)
+2019-04-29 17:01:42.524 INFO ./main/thrift_test_client.cpp(166): GetServiceList||rpc||rsp=GetServiceListResponse(errorCode=0, instanceList=[service1,service2,service3])
+2019-04-29 17:01:42.526 INFO ./main/thrift_test_client.cpp(179): GetServiceList||exit||rspJson={"1":{"i32":0},"2":{"lst":["str",3,"service1","service2","service3"]}}||rspPath=/home/Shit/thrift-test/kernel_client/data/GetServiceList/rsp.json
+2019-04-29 17:02:13.980 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-04-29 17:02:13.983 INFO ./main/thrift_test_client.cpp(304): RequestTrigger||entry||reqJson={"1":{"str":"testService"},"2":{"str":"testMethod"}}
+2019-04-29 17:02:13.983 INFO ./main/thrift_test_client.cpp(331): RequestTrigger||read req||req=RequestTriggerRequest(serviceName=testService, methodName=testMethod)
+2019-04-29 17:02:13.983 INFO ./main/thrift_test_client.cpp(342): RequestTrigger||rpc||rsp=RequestTriggerResponse(errorCode=0, reqponseJson=ok)
+2019-04-29 17:02:13.986 INFO ./main/thrift_test_client.cpp(355): RequestTrigger||write rsp||rspJson={"1":{"i32":0},"2":{"str":"ok"}}P

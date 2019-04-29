@@ -1,0 +1,5 @@
+
+2019-04-28 12:02:09.074 INFO ./main/main.cpp(61): welcome to thrift-test! :) 
+2019-04-28 12:02:09.074 INFO ./main/main.cpp(74): sub_pthread 139872001988352 created
+2019-04-28 12:02:09.078 DEBUG ./main/instance_mgr_terminal.cpp(8): thrift server start
+2019-04-28 12:02:09.087 INFO ./thrift_server/thrift_test_kernal/ThriftTestKernalServiceServer.cpp(53): star server t_cost: 8ms

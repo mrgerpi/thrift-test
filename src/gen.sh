@@ -13,5 +13,5 @@ if ! test -r $filename; then
 fi
 
 echo "thrift compile $filename ..."
-mkdir -p thrift-gen/$1
-/home/Shit/thrift-test/src/thirdparty/thrift/bin/thrift -r -gen cpp -out thrift-gen/$1	$filename
+mkdir -p thrift_gen/$1
+/home/Shit/thrift-test/src/thirdparty/thrift/bin/thrift -r -gen cpp -out thrift_gen/$1	$filename

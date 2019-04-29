@@ -51,5 +51,5 @@ service ThriftTestKernalService {
 	GetServiceListResponse GetServiceList (1: GetServiceListRequest request);
 	AddServiceResponse AddService (1:AddServiceRequest request);
 	FillDataResponse FillData (1:FillDataRequest request);
-	RequestTriggerResponse RequestTrigger (1:RequestTriggerRequest request);
+	RequestTriggerReseponse RequestTrigger (1:RequestTriggerRequest request);
 }
