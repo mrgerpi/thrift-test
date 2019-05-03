@@ -1,0 +1,66 @@
+Compiling ./main/ServiceManager.cpp ...
+In file included from ./main/ServiceManager.cpp:1:0:
+./main/ServiceManager.h:13:17: 错误：‘thrift_test_kernel’不是一个命名空间名
+ using namespace thrift_test_kernel;
+                 ^
+./main/ServiceManager.h:13:35: 错误：expected namespace-name before ‘;’ token
+ using namespace thrift_test_kernel;
+                                   ^
+./main/ServiceManager.h:23:22: 错误：‘AddServiceRequest’未声明
+  string serviceIdGen(AddServiceRequest& req);
+                      ^
+./main/ServiceManager.h:24:19: 错误：‘AddServiceRequest’未声明
+  string srcDirGen(AddServiceRequest& req);
+                   ^
+./main/ServiceManager.h:36:17: 错误：‘AddServiceRequest’未声明
+  int addService(AddServiceRequest& req);
+                 ^
+./main/ServiceManager.h:38:21: 错误：‘ServiceType’未声明
+  int getServiceList(ServiceType type, vector<string>& list);
+                     ^
+./main/ServiceManager.cpp:10:17: 错误：‘thrift_test_kernel’不是一个命名空间名
+ using namespace thrift_test_kernel;
+                 ^
+./main/ServiceManager.cpp:10:35: 错误：expected namespace-name before ‘;’ token
+ using namespace thrift_test_kernel;
+                                   ^
+./main/ServiceManager.cpp:26:43: 错误：‘AddServiceRequest’不是一个类型名
+ string ServiceManager::serviceIdGen(const AddServiceRequest& req) 
+                                           ^
+./main/ServiceManager.cpp:26:62: 错误：ISO C++ 不允许声明无类型的‘req’ [-fpermissive]
+ string ServiceManager::serviceIdGen(const AddServiceRequest& req) 
+                                                              ^
+./main/ServiceManager.cpp:26:8: 错误：‘std::string ServiceManager::serviceIdGen(const int&)’的原型不匹配类‘ServiceManager’中的任何一个
+ string ServiceManager::serviceIdGen(const AddServiceRequest& req) 
+        ^
+In file included from ./main/ServiceManager.cpp:1:0:
+./main/ServiceManager.h:23:9: 错误：备选为：std::string ServiceManager::serviceIdGen(int&)
+  string serviceIdGen(AddServiceRequest& req);
+         ^
+./main/ServiceManager.cpp:32:40: 错误：‘AddServiceRequest’不是一个类型名
+ string ServiceManager::srcDirGen(const AddServiceRequest& req) 
+                                        ^
+./main/ServiceManager.cpp:32:59: 错误：ISO C++ 不允许声明无类型的‘req’ [-fpermissive]
+ string ServiceManager::srcDirGen(const AddServiceRequest& req) 
+                                                           ^
+./main/ServiceManager.cpp:32:8: 错误：‘std::string ServiceManager::srcDirGen(const int&)’的原型不匹配类‘ServiceManager’中的任何一个
+ string ServiceManager::srcDirGen(const AddServiceRequest& req) 
+        ^
+In file included from ./main/ServiceManager.cpp:1:0:
+./main/ServiceManager.h:24:9: 错误：备选为：std::string ServiceManager::srcDirGen(int&)
+  string srcDirGen(AddServiceRequest& req);
+         ^
+./main/ServiceManager.cpp:38:38: 错误：‘AddServiceRequest’不是一个类型名
+ int ServiceManager::addService(const AddServiceRequest& req) 
+                                      ^
+./main/ServiceManager.cpp:38:57: 错误：ISO C++ 不允许声明无类型的‘req’ [-fpermissive]
+ int ServiceManager::addService(const AddServiceRequest& req) 
+                                                         ^
+./main/ServiceManager.cpp:38:5: 错误：‘int ServiceManager::addService(const int&)’的原型不匹配类‘ServiceManager’中的任何一个
+ int ServiceManager::addService(const AddServiceRequest& req) 
+     ^
+In file included from ./main/ServiceManager.cpp:1:0:
+./main/ServiceManager.h:36:6: 错误：备选为：int ServiceManager::addService(int&)
+  int addService(AddServiceRequest& req);
+      ^
+make: *** [ServiceManager.o] 错误 1

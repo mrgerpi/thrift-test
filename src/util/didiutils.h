@@ -48,6 +48,10 @@ public:
 	static string local_ip();
 	static void SplitString(const string& s, vector<std::string>& v, const string& c);
 
+	static int readFile(const string& path, string& content);
+
+	static std::string pwd();
+
 private:
     // this class is a helper class which cannot be instantiated
     DidiUtils();

@@ -1,7 +1,6 @@
 #include "simple_log.h"
 #include "thrift_test_client.h"
-#include "ThriftTestKernalService.h"
-#include "thrift_test_kernal_types.h"
+#include "ThriftTestKernelService.h"
 
 #include <thrift/transport/TSocket.h>
 #include <thrift/transport/TSimpleFileTransport.h>
@@ -22,7 +21,7 @@
 #define Gen_Input_Switch 0
 
 using namespace std;
-using namespace thrift_test_kernal;
+using namespace thrift_test_kernel;
 using namespace apache::thrift::transport;
 using namespace apache::thrift::protocol;
 using namespace apache::thrift;
@@ -37,7 +36,7 @@ ThriftTestClient::ThriftTestClient(int port, string ip)
 	socket->setRecvTimeout(300);
 	socket->setSendTimeout(300);
 
-	clientPtr = boost::make_shared<ThriftTestKernalServiceClient>(protocol);
+	clientPtr = boost::make_shared<ThriftTestKernelServiceClient>(protocol);
 	transport = clientPtr->getInputProtocol()->getTransport();
 }
 
@@ -56,7 +55,7 @@ int sizeOfFile(string path)
 	}
 
 	if (pclose(fp) == -1 && errno != ECHILD) {
-		log_error("writeAllFile close file failed, error:%s", strerror(errno));
+		log_error("close file failed, error:%s", strerror(errno));
 		return -1;
 	}
 	
@@ -194,6 +193,9 @@ int ThriftTestClient::AddService(const string& reqJson, string& rspJson)
 		req.__set_type(ServiceType::Client);
 		req.__set_serviceName("testService");
 		req.__set_version("v1.1.1");
+		req.__set_port(1234);
+		req.__set_transport("TFileTransport");
+		req.__set_protocol("TJSONProtocol");
 		req.__set_idlAbsFileName("./data/idl.thrift");
 
 		string path = "/home/Shit/thrift-test/kernel_client/input/AddService.json";

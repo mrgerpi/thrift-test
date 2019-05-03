@@ -9,10 +9,10 @@ else
 fi
 
 if [ -z $1 ]; then
-	./client 1
-	./client 2
-	./client 3
-	./client 4
+	./client 1		#GetServiceList
+	./client 2		#AddService
+	./client 3		#FillData
+	./client 4		#RequestTrigger
 else
 	./client $1
 fi

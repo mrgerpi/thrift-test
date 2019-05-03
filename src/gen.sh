@@ -13,5 +13,8 @@ if ! test -r $filename; then
 fi
 
 echo "thrift compile $filename ..."
+rm -rf thrift_gen/$1
 mkdir -p thrift_gen/$1
 /home/Shit/thrift-test/src/thirdparty/thrift/bin/thrift -r -gen cpp -out thrift_gen/$1	$filename
+rm -rf ../kernel_client/thrift_gen/$1
+cp -r thrift_gen/$1 ../kernel_client/thrift_gen/

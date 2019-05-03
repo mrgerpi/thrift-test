@@ -1,4 +1,4 @@
-namespace cpp thrift_test_kernal
+namespace cpp thrift_test_kernel
 
 const i32 MAX = 3;
 
@@ -11,7 +11,7 @@ struct GetServiceListRequest {
 }
 
 struct GetServiceListResponse {
-	1: required i32 errorCode;					//0: succ, 1: kernal internal error
+	1: required i32 errorCode;					//0: succ, 1: kernel internal error
 	2: required list<string> instanceList;
 }
 
@@ -26,7 +26,7 @@ struct AddServiceRequest {
 }
 
 struct AddServiceResponse  {
-	1: required i32 errorCode;					//0: succ, 1: kernal internal error
+	1: required i32 errorCode;					//0: succ, 1: kernel internal error
 }
 
 struct FillDataRequest {
@@ -37,7 +37,7 @@ struct FillDataRequest {
 }
 
 struct FillDataResponse {
-	1: required i32 errorCode;					//0: succ, 1: kernal internal error
+	1: required i32 errorCode;					//0: succ, 1: kernel internal error
 }
 
 struct RequestTriggerRequest {
@@ -46,11 +46,11 @@ struct RequestTriggerRequest {
 }
 
 struct RequestTriggerResponse {
-	1: required i32 errorCode;					//0: succ, 1: kernal internal error
+	1: required i32 errorCode;					//0: succ, 1: kernel internal error
 	2: required string reqponseJson;
 }
 
-service ThriftTestKernalService {
+service ThriftTestKernelService {
 	GetServiceListResponse GetServiceList (1: GetServiceListRequest request);
 	AddServiceResponse AddService (1:AddServiceRequest request);
 	FillDataResponse FillData (1:FillDataRequest request);

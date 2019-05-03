@@ -6,7 +6,7 @@
 #include <pthread.h>
 
 #include "simple_log.h"
-#include "instance_mgr_terminal.h"
+#include "ThriftTestKernelServiceServer.h"
 
 using namespace std;
 
@@ -15,44 +15,49 @@ const static string log_conf_filename = "simple.conf";
 
 void DumpTraceback(int Signal)
 {
-    const int len = 200;
-    void* buffer[len];
-    int nptrs = ::backtrace(buffer, len);		//
-    char** strings = ::backtrace_symbols(buffer, nptrs);
-    if (strings)
-    {
-      for (int i = 0; i < nptrs; ++i)
-      {
-		log_error("DumpTraceBack||line=%d||trace_back=%s", i, strings[i]);
-      }
-      free(strings);
-    }
-    exit(1);
+	const int len = 200;
+	void* buffer[len];
+	int nptrs = ::backtrace(buffer, len);		//
+	char** strings = ::backtrace_symbols(buffer, nptrs);
+	if (strings)
+	{
+		for (int i = 0; i < nptrs; ++i)
+		{
+			log_error("DumpTraceBack||line=%d||trace_back=%s", i, strings[i]);
+		}
+		free(strings);
+	}
+	exit(1);
 }
 
 int sig_actions() 
 {
 	/*
 	// Delay exit
-    signal(SIGTERM, DelayExit);
+	signal(SIGTERM, DelayExit);
 	*/
-    // Ignore signal
-    signal(SIGTERM, SIG_IGN);
+	// Ignore signal
+	signal(SIGTERM, SIG_IGN);
 	signal(SIGINT, SIG_IGN);
-    signal(SIGHUP, SIG_IGN);
-    signal(SIGQUIT, SIG_IGN);
-    signal(SIGPIPE, SIG_IGN);
-    signal(SIGTTOU, SIG_IGN);
-    signal(SIGTTIN, SIG_IGN);
-    signal(SIGCHLD, SIG_IGN);
+	signal(SIGHUP, SIG_IGN);
+	signal(SIGQUIT, SIG_IGN);
+	signal(SIGPIPE, SIG_IGN);
+	signal(SIGTTOU, SIG_IGN);
+	signal(SIGTTIN, SIG_IGN);
+	signal(SIGCHLD, SIG_IGN);
 
-    // Dump traceback when crash.
-    // Core signal's default action is to terminate the process and dump core.
-    signal(SIGBUS, DumpTraceback);  // 10 Core  Bus error (bad memory access)
-    signal(SIGSEGV, DumpTraceback); // 11 Core  Invalid memory reference
-    signal(SIGABRT, DumpTraceback); // 6  Core  Abort signal from abort(3)
-    signal(SIGILL, DumpTraceback);  // 4  Core  Illegal Instruction
-    signal(SIGFPE, DumpTraceback);  // 8  Core  Floating point exception
+	// Dump traceback when crash.
+	// Core signal's default action is to terminate the process and dump core.
+	signal(SIGBUS, DumpTraceback);  // 10 Core  Bus error (bad memory access)
+	signal(SIGSEGV, DumpTraceback); // 11 Core  Invalid memory reference
+	signal(SIGABRT, DumpTraceback); // 6  Core  Abort signal from abort(3)
+	signal(SIGILL, DumpTraceback);  // 4  Core  Illegal Instruction
+	signal(SIGFPE, DumpTraceback);  // 8  Core  Floating point exception
+}
+
+void* start_thrift_server(void* args) {
+	log_debug("thrift server start");
+	ThriftTestKernelServiceServer::instance()->startServer();
 }
 
 int main() 
@@ -78,7 +83,7 @@ int main()
 		err = pthread_join(*it, NULL);
 		if (err != 0) {
 			log_error("sub_pthread join error:%s", strerror(err));	
-				continue;
+			continue;
 		}
 		log_info("sub_pthread %ld exit", *it);
 	}

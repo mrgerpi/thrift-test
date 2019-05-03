@@ -54,3 +54,291 @@
 2019-04-29 17:01:40.138 INFO ./thrift_server/thrift_test_kernal/ThriftTestKernalServiceHandler.cpp(50): RequestTrigger
 2019-04-29 17:01:42.524 INFO ./thrift_server/thrift_test_kernal/ThriftTestKernalServiceHandler.cpp(27): GetServiceList
 2019-04-29 17:02:13.983 INFO ./thrift_server/thrift_test_kernal/ThriftTestKernalServiceHandler.cpp(50): RequestTrigger
+2019-04-30 13:27:22.060 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-04-30 13:27:22.060 INFO ./main/main.cpp(79): sub_pthread 140585521080064 created
+2019-04-30 13:27:22.067 DEBUG ./main/main.cpp(59): thrift server start
+2019-04-30 13:27:22.078 INFO ./thrift_server/thrift_test_kernal/ThriftTestKernalServiceServer.cpp(53): star server t_cost: 11ms
+2019-04-30 13:27:58.997 INFO ./thrift_server/thrift_test_kernal/ThriftTestKernalServiceHandler.cpp(27): GetServiceList
+2019-04-30 13:27:59.005 INFO ./thrift_server/thrift_test_kernal/ThriftTestKernalServiceHandler.cpp(38): AddService
+2019-04-30 13:27:59.015 INFO ./thrift_server/thrift_test_kernal/ThriftTestKernalServiceHandler.cpp(44): FillData
+2019-04-30 13:27:59.022 INFO ./thrift_server/thrift_test_kernal/ThriftTestKernalServiceHandler.cpp(50): RequestTrigger
+2019-04-30 13:46:34.447 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-04-30 13:46:34.447 INFO ./main/main.cpp(79): sub_pthread 139677963749120 created
+2019-04-30 13:46:34.456 DEBUG ./main/main.cpp(59): thrift server start
+2019-04-30 13:46:34.462 INFO ./thrift_server/thrift_test_kernal/ThriftTestKernalServiceServer.cpp(53): star server t_cost: 6ms
+2019-04-30 13:46:38.111 INFO ./thrift_server/thrift_test_kernal/ThriftTestKernalServiceHandler.cpp(27): GetServiceList
+2019-04-30 13:46:38.124 INFO ./thrift_server/thrift_test_kernal/ThriftTestKernalServiceHandler.cpp(44): FillData
+2019-04-30 13:46:38.131 INFO ./thrift_server/thrift_test_kernal/ThriftTestKernalServiceHandler.cpp(50): RequestTrigger
+2019-04-30 13:48:57.653 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-04-30 13:48:57.653 INFO ./main/main.cpp(79): sub_pthread 140101564032768 created
+2019-04-30 13:48:57.662 DEBUG ./main/main.cpp(59): thrift server start
+2019-04-30 13:48:57.668 INFO ./thrift_server/thrift_test_kernal/ThriftTestKernalServiceServer.cpp(53): star server t_cost: 6ms
+2019-04-30 13:49:02.149 INFO ./thrift_server/thrift_test_kernal/ThriftTestKernalServiceHandler.cpp(27): GetServiceList
+2019-04-30 13:49:02.162 INFO ./thrift_server/thrift_test_kernal/ThriftTestKernalServiceHandler.cpp(44): FillData
+2019-04-30 13:49:02.170 INFO ./thrift_server/thrift_test_kernal/ThriftTestKernalServiceHandler.cpp(50): RequestTrigger
+2019-04-30 13:53:57.445 INFO ./thrift_server/thrift_test_kernal/ThriftTestKernalServiceHandler.cpp(38): AddService
+2019-04-30 23:10:30.899 INFO ./thrift_server/thrift_test_kernal/ThriftTestKernalServiceHandler.cpp(27): GetServiceList
+2019-04-30 23:10:30.906 INFO ./thrift_server/thrift_test_kernal/ThriftTestKernalServiceHandler.cpp(38): AddService
+2019-04-30 23:10:30.913 INFO ./thrift_server/thrift_test_kernal/ThriftTestKernalServiceHandler.cpp(44): FillData
+2019-04-30 23:10:30.920 INFO ./thrift_server/thrift_test_kernal/ThriftTestKernalServiceHandler.cpp(50): RequestTrigger
+2019-05-01 15:33:26.355 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-01 15:33:26.355 INFO ./main/main.cpp(79): sub_pthread 139932264896256 created
+2019-05-01 15:33:26.355 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-01 15:33:26.356 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 1ms
+2019-05-01 15:36:49.143 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=testService, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=./data/idl.thrift)
+2019-05-01 15:36:49.143 ERROR ./util/didiutils.cpp(284): readFile open file failed, path:./data/idl.thrift, error:No such file or directory
+2019-05-01 15:36:49.143 ERROR ./main/ServiceManager.cpp(49): ServiceManager::addService||rea idl file failed||path=./data/idl.thrift
+2019-05-01 15:36:49.143 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=1)
+2019-05-01 15:37:46.793 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=testService, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=./data/idl.thrift)
+2019-05-01 15:37:46.793 ERROR ./util/didiutils.cpp(284): readFile open file failed, path:./data/idl.thrift, error:No such file or directory
+2019-05-01 15:37:46.793 ERROR ./main/ServiceManager.cpp(49): ServiceManager::addService||rea idl file failed||path=./data/idl.thrift
+2019-05-01 15:37:46.793 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=1)
+2019-05-01 15:43:17.093 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=testService, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/hotspot_api.thrift)
+2019-05-01 15:43:17.097 INFO ./main/ServiceSrcGenerator.cpp(62): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/hotspot_api.thrift /home/Shit/thrift-test/src/thrift_gen/testService
+2019-05-01 15:46:40.713 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-01 15:46:40.713 INFO ./main/main.cpp(79): sub_pthread 139967869208320 created
+2019-05-01 15:46:40.722 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-01 15:46:40.726 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 4ms
+2019-05-01 15:47:00.067 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=testService, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/hotspot_api.thrift)
+2019-05-01 15:47:00.071 INFO ./main/ServiceSrcGenerator.cpp(61): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/hotspot_api.thrift /home/Shit/thrift-test/src/thrift_gen/testService
+2019-05-01 15:47:00.074 ERROR ./main/ServiceSrcGenerator.cpp(49): ServiceSrcGenerator::executeShell||pclose fail||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/hotspot_api.thrift /home/Shit/thrift-test/src/thrift_gen/testService 2>&1
+2019-05-01 15:47:00.074 ERROR ./main/ServiceSrcGenerator.cpp(66): ServiceSrcGenerator::serviceSrcGen||service gen script exe fail				||result=sh: /home/Shit/thrift-test/src/serviceGen.sh: 权限不够
+||ret=1
+2019-05-01 15:47:00.074 ERROR ./main/ServiceManager.cpp(60): ServiceManager::addService||service src gen failed||					serviceId=testService_v1.1.1_1234_TFileTransport_TJSONProtocol||idl=namespace cpp hotspot.service
+namespace py hotspot.service
+namespace php hotspot.service
+namespace go hotspot.serviece
+
+struct Trace {
+  1: required string logId;  //  128bit 16进制打印 协议中是32长度string  0ade0f25579eaafe561903a2252f1102
+  2: required string caller;   //  api-web.gs.didi
+  3: optional string spanId;  // 64bit 16进制打印 协议中是16长度string 6a3ebbc2708d64c0
+  4: optional string srcMethod; //调用方方法
+  5: optional i64 hintCode;   // 64bit 0为无hint流量（缺省默认为0）。非0为hint流量，其中hintCode & 0x01 != 0的时候为压测流量。
+  6: optional string hintContent;   // 序列化结构体（json）
+}
+
+struct HotspotRequest {
+    1:required string product_id;
+    2:required string acc_key;
+    3:required string app_version;
+    4:required string sdk_type;
+    5:required string client_type;
+    6:required string phone;
+    7:required string pid;
+    8:required double cur_lng;
+    9:required double cur_lat;
+    10:optional string start_uid;
+    11:required double start_lng;
+    12:required double start_lat;
+    13:required string start_type; 
+    14:required string start_name;
+    15:required string start_address;
+    16:optional string dest_uid;
+    17:required double dest_lng;
+    18:required double dest_lat;
+    19:optional string dest_type;
+    20:required string dest_name;
+    21:required string dest_address;
+    22:required i32 cur_step;
+    23:optional string traceid;
+    24:optional string spanid;
+    25:optional string extends_info; //地图定义的请求扩展信息(duse透传地图)
+    26:optional i32 city_id; //城市id
+    27:optional string lang; //语言环境
+    28:optional i32 seat_num_needed; //所需座位数，默认是1 
+    29:optional map<string,string> extMap; //其它信息都放在extMap中(二鹏也可以将其他信息都通过这个ma
+2019-05-01 15:47:00.074 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=1)
+2019-05-01 15:54:10.909 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-01 15:54:10.909 INFO ./main/main.cpp(79): sub_pthread 139771613406976 created
+2019-05-01 15:54:10.918 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-01 15:54:10.924 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 6ms
+2019-05-01 15:54:16.494 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=testService, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/hotspot_api.thrift)
+2019-05-01 15:54:16.498 INFO ./main/ServiceSrcGenerator.cpp(62): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/hotspot_api.thrift /home/Shit/thrift-test/src/thrift_gen/testService
+2019-05-01 15:54:16.500 ERROR ./main/ServiceSrcGenerator.cpp(50): ServiceSrcGenerator::executeShell||pclose fail||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/hotspot_api.thrift /home/Shit/thrift-test/src/thrift_gen/testService 2>&1||err=No child processes
+2019-05-01 15:54:16.500 ERROR ./main/ServiceSrcGenerator.cpp(66): ServiceSrcGenerator::serviceSrcGen||service gen script exe fail||result=sh: /home/Shit/thrift-test/src/serviceGen.sh: 权限不够
+||ret=1
+2019-05-01 15:54:16.500 ERROR ./main/ServiceManager.cpp(60): ServiceManager::addService||service src gen failed||					serviceId=testService_v1.1.1_1234_TFileTransport_TJSONProtocol||idl=namespace cpp hotspot.service
+namespace py hotspot.service
+namespace php hotspot.service
+namespace go hotspot.serviece
+
+struct Trace {
+  1: required string logId;  //  128bit 16进制打印 协议中是32长度string  0ade0f25579eaafe561903a2252f1102
+  2: required string caller;   //  api-web.gs.didi
+  3: optional string spanId;  // 64bit 16进制打印 协议中是16长度string 6a3ebbc2708d64c0
+  4: optional string srcMethod; //调用方方法
+  5: optional i64 hintCode;   // 64bit 0为无hint流量（缺省默认为0）。非0为hint流量，其中hintCode & 0x01 != 0的时候为压测流量。
+  6: optional string hintContent;   // 序列化结构体（json）
+}
+
+struct HotspotRequest {
+    1:required string product_id;
+    2:required string acc_key;
+    3:required string app_version;
+    4:required string sdk_type;
+    5:required string client_type;
+    6:required string phone;
+    7:required string pid;
+    8:required double cur_lng;
+    9:required double cur_lat;
+    10:optional string start_uid;
+    11:required double start_lng;
+    12:required double start_lat;
+    13:required string start_type; 
+    14:required string start_name;
+    15:required string start_address;
+    16:optional string dest_uid;
+    17:required double dest_lng;
+    18:required double dest_lat;
+    19:optional string dest_type;
+    20:required string dest_name;
+    21:required string dest_address;
+    22:required i32 cur_step;
+    23:optional string traceid;
+    24:optional string spanid;
+    25:optional string extends_info; //地图定义的请求扩展信息(duse透传地图)
+    26:optional i32 city_id; //城市id
+    27:optional string lang; //语言环境
+    28:optional i32 seat_num_needed; //所需座位数，默认是1 
+    29:optional map<string,string> extMap; //其它信息都放在extMap中(二鹏也可以将其他信息都通过这个ma
+2019-05-01 15:54:16.500 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=1)
+2019-05-01 15:58:22.625 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-01 15:58:22.625 INFO ./main/main.cpp(79): sub_pthread 140627803309824 created
+2019-05-01 15:58:22.630 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-01 15:58:22.638 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 8ms
+2019-05-01 15:58:28.783 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=testService, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/hotspot_api.thrift)
+2019-05-01 15:58:28.787 INFO ./main/ServiceSrcGenerator.cpp(62): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/hotspot_api.thrift /home/Shit/thrift-test/src/thrift_gen/testService
+2019-05-01 15:58:28.790 ERROR ./main/ServiceSrcGenerator.cpp(50): ServiceSrcGenerator::executeShell||pclose fail||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/hotspot_api.thrift /home/Shit/thrift-test/src/thrift_gen/testService 2>&1||err=No child processes
+2019-05-01 15:58:28.790 ERROR ./main/ServiceSrcGenerator.cpp(66): ServiceSrcGenerator::serviceSrcGen||service gen script exe fail||result=/home/Shit/thrift-test/src/idl/hotspot_api.thrift
+/home/Shit/thrift-test/src/thrift_gen/testService
+||ret=1
+2019-05-01 15:58:28.790 ERROR ./main/ServiceManager.cpp(59): ServiceManager::addService||service src gen failed||serviceId=testService_v1.1.1_1234_TFileTransport_TJSONProtocol||ret=1
+2019-05-01 15:58:28.790 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=1)
+2019-05-01 16:04:27.094 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-01 16:04:27.094 INFO ./main/main.cpp(79): sub_pthread 140502014023424 created
+2019-05-01 16:04:27.099 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-01 16:04:27.104 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 5ms
+2019-05-01 16:04:35.486 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=hotspot_api, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/hotspot_api.thrift)
+2019-05-01 16:04:35.490 INFO ./main/ServiceSrcGenerator.cpp(62): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/hotspot_api.thrift /home/Shit/thrift-test/src/thrift_gen/hotspot_api
+2019-05-01 16:04:35.493 ERROR ./main/ServiceSrcGenerator.cpp(50): ServiceSrcGenerator::executeShell||pclose fail||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/hotspot_api.thrift /home/Shit/thrift-test/src/thrift_gen/hotspot_api 2>&1||err=No child processes
+2019-05-01 16:04:35.493 ERROR ./main/ServiceSrcGenerator.cpp(66): ServiceSrcGenerator::serviceSrcGen||service gen script exe fail||result=/home/Shit/thrift-test/src/idl/hotspot_api.thrift
+/home/Shit/thrift-test/src/thrift_gen/hotspot_api
+||ret=1
+2019-05-01 16:04:35.493 ERROR ./main/ServiceManager.cpp(59): ServiceManager::addService||service src gen failed||serviceId=hotspot_api_v1.1.1_1234_TFileTransport_TJSONProtocol||ret=1
+2019-05-01 16:04:35.493 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=1)
+2019-05-01 16:06:55.285 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-01 16:06:55.285 INFO ./main/main.cpp(79): sub_pthread 140346832684800 created
+2019-05-01 16:06:55.285 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-01 16:06:55.294 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 9ms
+2019-05-01 16:07:01.439 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=hotspot_api, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/hotspot_api.thrift)
+2019-05-01 16:07:01.443 INFO ./main/ServiceSrcGenerator.cpp(62): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/hotspot_api.thrift /home/Shit/thrift-test/src/thrift_gen/hotspot_api
+2019-05-01 16:07:01.446 ERROR ./main/ServiceSrcGenerator.cpp(50): ServiceSrcGenerator::executeShell||pclose fail||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/hotspot_api.thrift /home/Shit/thrift-test/src/thrift_gen/hotspot_api 2>&1||err=No child processes
+2019-05-01 16:07:01.446 ERROR ./main/ServiceSrcGenerator.cpp(66): ServiceSrcGenerator::serviceSrcGen||service gen script exe fail||result=/home/Shit/thrift-test/src/idl/hotspot_api.thrift
+/home/Shit/thrift-test/src/thrift_gen/hotspot_api
+||ret=1
+2019-05-01 16:07:01.446 ERROR ./main/ServiceManager.cpp(59): ServiceManager::addService||service src gen failed||serviceId=hotspot_api_v1.1.1_1234_TFileTransport_TJSONProtocol||ret=1
+2019-05-01 16:07:01.446 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=1)
+2019-05-01 16:14:20.125 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-01 16:14:20.125 INFO ./main/main.cpp(79): sub_pthread 139828463535872 created
+2019-05-01 16:14:20.134 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-01 16:14:20.140 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 6ms
+2019-05-01 16:14:30.427 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=hotspot_api, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/hotspot_api.thrift)
+2019-05-01 16:14:30.430 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/hotspot_api.thrift /home/Shit/thrift-test/src/thrift_gen/hotspot_api
+2019-05-01 16:14:30.433 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=/home/Shit/thrift-test/src/idl/hotspot_api.thrift
+/home/Shit/thrift-test/src/thrift_gen/hotspot_api
+
+2019-05-01 16:14:30.433 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-01 16:15:00.902 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=hotspot_api, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/hotspot_api.thrift)
+2019-05-01 16:15:00.906 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/hotspot_api.thrift /home/Shit/thrift-test/src/thrift_gen/hotspot_api
+2019-05-01 16:15:00.909 ERROR ./main/ServiceSrcGenerator.cpp(67): ServiceSrcGenerator::serviceSrcGen||service gen script exe fail||result=/home/Shit/thrift-test/src/idl/hotspot_api.thrift
+/home/Shit/thrift-test/src/thrift_gen/hotspot_api
+||ret=128
+2019-05-01 16:15:00.909 ERROR ./main/ServiceManager.cpp(59): ServiceManager::addService||service src gen failed||serviceId=hotspot_api_v1.1.1_1234_TFileTransport_TJSONProtocol||ret=128
+2019-05-01 16:15:00.909 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=128)
+2019-05-01 16:27:52.784 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=hotspot_api, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/hotspot_api.thrift)
+2019-05-01 16:27:52.788 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/hotspot_api.thrift /home/Shit/thrift-test/src/thrift_gen/hotspot_api
+2019-05-01 16:27:52.791 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=/home/Shit/thrift-test/src/idl/hotspot_api.thrift
+/home/Shit/thrift-test/src/thrift_gen/hotspot_api}
+
+2019-05-01 16:27:52.791 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-01 16:30:29.287 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=hotspot_api, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/hotspot_api.thrift)
+2019-05-01 16:30:29.291 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/hotspot_api.thrift /home/Shit/thrift-test/src/thrift_gen/hotspot_api
+2019-05-01 16:30:29.295 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=/home/Shit/thrift-test/srcthirdparty/thrift/bin/thrift
+
+2019-05-01 16:30:29.295 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-01 16:31:04.783 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=hotspot_api, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/hotspot_api.thrift)
+2019-05-01 16:31:04.787 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/hotspot_api.thrift /home/Shit/thrift-test/src/thrift_gen/hotspot_api
+2019-05-01 16:31:04.790 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=/home/Shit/thrift-test/src/thirdparty/thrift/bin/thrift
+
+2019-05-01 16:31:04.790 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-01 16:32:52.954 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(43): GetServiceList
+2019-05-01 16:32:52.962 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=hotspot_api, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/hotspot_api.thrift)
+2019-05-01 16:32:52.966 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/hotspot_api.thrift /home/Shit/thrift-test/src/thrift_gen/hotspot_api
+2019-05-01 16:32:52.969 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=
+/home/Shit/thrift-test/src/thrift_gen/hotspot_api
+/home/Shit/thrift-test/src/idl/hotspot_api.thrift
+
+2019-05-01 16:32:52.969 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-01 16:32:52.977 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): FillData
+2019-05-01 16:32:52.984 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(69): RequestTrigger
+2019-05-01 16:33:04.844 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=hotspot_api, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/hotspot_api.thrift)
+2019-05-01 16:33:04.848 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/hotspot_api.thrift /home/Shit/thrift-test/src/thrift_gen/hotspot_api
+2019-05-01 16:33:04.851 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=
+/home/Shit/thrift-test/src/thrift_gen/hotspot_api
+/home/Shit/thrift-test/src/idl/hotspot_api.thrift
+
+2019-05-01 16:33:04.851 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-01 16:43:56.789 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=hotspot_api, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/hotspot_api.thrift)
+2019-05-01 16:43:56.793 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/hotspot_api.thrift /home/Shit/thrift-test/src/thrift_gen/hotspot_api
+2019-05-01 16:43:56.807 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=/home/Shit/thrift-test/src/thirdparty/thrift/bin/thrift
+/home/Shit/thrift-test/src/thrift_gen/hotspot_api
+/home/Shit/thrift-test/src/idl/hotspot_api.thrift
+
+2019-05-01 16:43:56.807 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-01 16:44:52.072 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=hotspot_api, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/hotspot_api.thrift)
+2019-05-01 16:44:52.076 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/hotspot_api.thrift /home/Shit/thrift-test/src/thrift_gen/hotspot_api
+2019-05-01 16:44:52.092 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=/home/Shit/thrift-test/src/thirdparty/thrift/bin/thrift
+/home/Shit/thrift-test/src/thrift_gen/hotspot_api
+/home/Shit/thrift-test/src/idl/hotspot_api.thrift
+
+2019-05-01 16:44:52.092 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-01 16:57:32.001 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-01 16:57:32.004 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift /home/Shit/thrift-test/src/thrift_gen/calculate
+2019-05-01 16:57:32.011 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=/home/Shit/thrift-test/src/thirdparty/thrift/bin/thrift
+/home/Shit/thrift-test/src/thrift_gen/calculate
+/home/Shit/thrift-test/src/idl/calculate.thrift
+[ERROR:/home/Shit/thrift-test/src/idl/calculate.thrift:1] (last token was ';')
+syntax error
+[FAILURE:/home/Shit/thrift-test/src/idl/calculate.thrift:1] Parser error during include pass.
+
+2019-05-01 16:57:32.011 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-01 16:58:44.595 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(43): GetServiceList
+2019-05-01 16:58:44.602 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-01 16:58:44.606 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift /home/Shit/thrift-test/src/thrift_gen/calculate
+2019-05-01 16:58:44.612 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=[ERROR:/home/Shit/thrift-test/src/idl/calculate.thrift:1] (last token was ';')
+syntax error
+[FAILURE:/home/Shit/thrift-test/src/idl/calculate.thrift:1] Parser error during include pass.
+
+2019-05-01 16:58:44.612 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-01 16:58:44.620 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): FillData
+2019-05-01 16:58:44.627 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(69): RequestTrigger
+2019-05-01 16:58:52.103 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-01 16:58:52.106 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift /home/Shit/thrift-test/src/thrift_gen/calculate
+2019-05-01 16:58:52.113 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=[ERROR:/home/Shit/thrift-test/src/idl/calculate.thrift:1] (last token was ';')
+syntax error
+[FAILURE:/home/Shit/thrift-test/src/idl/calculate.thrift:1] Parser error during include pass.
+
+2019-05-01 16:58:52.113 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-01 17:01:10.606 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-01 17:01:10.610 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift /home/Shit/thrift-test/src/thrift_gen/calculate
+2019-05-01 17:01:10.616 ERROR ./main/ServiceSrcGenerator.cpp(67): ServiceSrcGenerator::serviceSrcGen||service gen script exe fail||result=[ERROR:/home/Shit/thrift-test/src/idl/calculate.thrift:1] (last token was ';')
+syntax error
+[FAILURE:/home/Shit/thrift-test/src/idl/calculate.thrift:1] Parser error during include pass.
+||ret=1
+2019-05-01 17:01:10.616 ERROR ./main/ServiceManager.cpp(59): ServiceManager::addService||service src gen failed||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol||ret=1
+2019-05-01 17:01:10.616 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=1)
+2019-05-01 17:04:59.266 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-01 17:04:59.269 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift /home/Shit/thrift-test/src/thrift_gen/calculate
+2019-05-01 17:04:59.277 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=
+2019-05-01 17:04:59.277 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)

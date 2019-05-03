@@ -4,18 +4,18 @@
 #include <boost/shared_ptr.hpp>
 #include <string>
 
-#include "ThriftTestKernalService.h"
+#include "ThriftTestKernelService.h"
 
 #define REQ 1
 #define RSP 2
 
 using namespace std;
-using namespace thrift_test_kernal;
+using namespace thrift_test_kernel;
 using namespace apache::thrift::protocol;
 
 class ThriftTestClient {
 private:
-	boost::shared_ptr<ThriftTestKernalServiceClient> clientPtr;
+	boost::shared_ptr<ThriftTestKernelServiceClient> clientPtr;
 	boost::shared_ptr<TTransport> transport;
 	TProtocol* getJsonProtocol(string path);
 public:

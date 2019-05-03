@@ -10,7 +10,9 @@
 #include <arpa/inet.h>
 #include<stdio.h>
 #include <sys/ioctl.h>
+#include <unistd.h>
 #include "didiutils.h"
+#include "simple_log.h"
 
 static const int GENERIC_DIGITS = 32;
 
@@ -251,6 +253,65 @@ long DidiUtils::get_district_id(long a) {
     //中间14位
     long midpart = (a >> 32) & 0x3fff;
     return midpart;
+}
+
+int sizeOfFile(string path) 
+{
+	string cmd = "cat " + path + " | wc -c";
+	FILE* fp = popen(cmd.c_str(), "r");
+	if (fp == NULL) {
+		log_error("popen file failed, cmd:%s, error:%s", cmd.c_str(), strerror(errno));
+		return -1;
+	}
+	char numStr[10];
+	if (fgets(numStr, 10, fp) == NULL) {
+		log_error("popen read file failed, path:%s, error:%s", path.c_str(), strerror(errno));
+		return -1;
+	}
+
+	if (pclose(fp) == -1 && errno != ECHILD) {
+		log_error("close file failed, error:%s", strerror(errno));
+		return -1;
+	}
+	
+	return atoi(numStr);
+}
+
+int DidiUtils::readFile(const string& path, string& content)
+{
+	FILE* fp = fopen(path.c_str(), "r+");
+	if (fp == NULL) {
+		log_error("readFile open file failed, path:%s, error:%s", path.c_str(), strerror(errno));
+		return 1;
+	}
+
+	int fileSize = sizeOfFile(path);
+	if (fileSize == -1) 
+		return 1;
+	char* s = (char*)malloc(fileSize + 1);
+
+	int i, ch;
+	for(i = 0;(ch = fgetc(fp)) != EOF;i++) {
+		s[i] = ch;
+	}
+
+	content.assign(s, fileSize + 1);
+	free(s);
+
+	if (fclose(fp) != 0) {
+		log_error("writeFile close file failed, error:%s", strerror(errno));
+		return 1;
+	}
+
+	return 0;
+}
+
+std::string DidiUtils::pwd() 
+{
+	char buff[256];
+	getcwd(buff, sizeof(buff));
+	string p(buff);
+	return p;
 }
 
 int main_test(){
