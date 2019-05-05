@@ -190,8 +190,8 @@ typedef struct _ThriftTestKernelService_AddService_args__isset {
 class ThriftTestKernelService_AddService_args {
  public:
 
-  static const char* ascii_fingerprint; // = "EA0ED3736234CDFD46B33FEC397F6102";
-  static const uint8_t binary_fingerprint[16]; // = {0xEA,0x0E,0xD3,0x73,0x62,0x34,0xCD,0xFD,0x46,0xB3,0x3F,0xEC,0x39,0x7F,0x61,0x02};
+  static const char* ascii_fingerprint; // = "EA0C34FFD73390F558F8C20F5527419C";
+  static const uint8_t binary_fingerprint[16]; // = {0xEA,0x0C,0x34,0xFF,0xD7,0x33,0x90,0xF5,0x58,0xF8,0xC2,0x0F,0x55,0x27,0x41,0x9C};
 
   ThriftTestKernelService_AddService_args(const ThriftTestKernelService_AddService_args&);
   ThriftTestKernelService_AddService_args& operator=(const ThriftTestKernelService_AddService_args&);
@@ -227,8 +227,8 @@ class ThriftTestKernelService_AddService_args {
 class ThriftTestKernelService_AddService_pargs {
  public:
 
-  static const char* ascii_fingerprint; // = "EA0ED3736234CDFD46B33FEC397F6102";
-  static const uint8_t binary_fingerprint[16]; // = {0xEA,0x0E,0xD3,0x73,0x62,0x34,0xCD,0xFD,0x46,0xB3,0x3F,0xEC,0x39,0x7F,0x61,0x02};
+  static const char* ascii_fingerprint; // = "EA0C34FFD73390F558F8C20F5527419C";
+  static const uint8_t binary_fingerprint[16]; // = {0xEA,0x0C,0x34,0xFF,0xD7,0x33,0x90,0xF5,0x58,0xF8,0xC2,0x0F,0x55,0x27,0x41,0x9C};
 
 
   virtual ~ThriftTestKernelService_AddService_pargs() throw();

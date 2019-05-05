@@ -7,7 +7,7 @@ enum OPType{
 	DIV = 3;
 }
 
-struct CalcilateRequest {
+struct CalculateRequest {
 	1: required i32 left;
 	2: required i32 right;
 	3: required OPType op;
@@ -20,5 +20,5 @@ struct CalculateResponse {
 }
 
 service CalculatorService {
-	CalculateResponse Calculate(1:CalcilateRequest req);
+	CalculateResponse Calculate(1:CalculateRequest req);
 }

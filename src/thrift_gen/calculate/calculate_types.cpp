@@ -28,26 +28,26 @@ const char* _kOPTypeNames[] = {
 const std::map<int, const char*> _OPType_VALUES_TO_NAMES(::apache::thrift::TEnumIterator(4, _kOPTypeValues, _kOPTypeNames), ::apache::thrift::TEnumIterator(-1, NULL, NULL));
 
 
-CalcilateRequest::~CalcilateRequest() throw() {
+CalculateRequest::~CalculateRequest() throw() {
 }
 
 
-void CalcilateRequest::__set_left(const int32_t val) {
+void CalculateRequest::__set_left(const int32_t val) {
   this->left = val;
 }
 
-void CalcilateRequest::__set_right(const int32_t val) {
+void CalculateRequest::__set_right(const int32_t val) {
   this->right = val;
 }
 
-void CalcilateRequest::__set_op(const OPType::type val) {
+void CalculateRequest::__set_op(const OPType::type val) {
   this->op = val;
 }
 
-const char* CalcilateRequest::ascii_fingerprint = "3C6B5910B2C7A8886AEC90D855401773";
-const uint8_t CalcilateRequest::binary_fingerprint[16] = {0x3C,0x6B,0x59,0x10,0xB2,0xC7,0xA8,0x88,0x6A,0xEC,0x90,0xD8,0x55,0x40,0x17,0x73};
+const char* CalculateRequest::ascii_fingerprint = "3C6B5910B2C7A8886AEC90D855401773";
+const uint8_t CalculateRequest::binary_fingerprint[16] = {0x3C,0x6B,0x59,0x10,0xB2,0xC7,0xA8,0x88,0x6A,0xEC,0x90,0xD8,0x55,0x40,0x17,0x73};
 
-uint32_t CalcilateRequest::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t CalculateRequest::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   uint32_t xfer = 0;
   std::string fname;
@@ -114,10 +114,10 @@ uint32_t CalcilateRequest::read(::apache::thrift::protocol::TProtocol* iprot) {
   return xfer;
 }
 
-uint32_t CalcilateRequest::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t CalculateRequest::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
   oprot->incrementRecursionDepth();
-  xfer += oprot->writeStructBegin("CalcilateRequest");
+  xfer += oprot->writeStructBegin("CalculateRequest");
 
   xfer += oprot->writeFieldBegin("left", ::apache::thrift::protocol::T_I32, 1);
   xfer += oprot->writeI32(this->left);
@@ -137,27 +137,27 @@ uint32_t CalcilateRequest::write(::apache::thrift::protocol::TProtocol* oprot) c
   return xfer;
 }
 
-void swap(CalcilateRequest &a, CalcilateRequest &b) {
+void swap(CalculateRequest &a, CalculateRequest &b) {
   using ::std::swap;
   swap(a.left, b.left);
   swap(a.right, b.right);
   swap(a.op, b.op);
 }
 
-CalcilateRequest::CalcilateRequest(const CalcilateRequest& other1) {
+CalculateRequest::CalculateRequest(const CalculateRequest& other1) {
   left = other1.left;
   right = other1.right;
   op = other1.op;
 }
-CalcilateRequest& CalcilateRequest::operator=(const CalcilateRequest& other2) {
+CalculateRequest& CalculateRequest::operator=(const CalculateRequest& other2) {
   left = other2.left;
   right = other2.right;
   op = other2.op;
   return *this;
 }
-std::ostream& operator<<(std::ostream& out, const CalcilateRequest& obj) {
+std::ostream& operator<<(std::ostream& out, const CalculateRequest& obj) {
   using apache::thrift::to_string;
-  out << "CalcilateRequest(";
+  out << "CalculateRequest(";
   out << "left=" << to_string(obj.left);
   out << ", " << "right=" << to_string(obj.right);
   out << ", " << "op=" << to_string(obj.op);

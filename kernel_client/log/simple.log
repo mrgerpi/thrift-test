@@ -648,3 +648,564 @@
 2019-05-01 17:04:59.265 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
 2019-05-01 17:04:59.278 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
 2019-05-01 17:04:59.280 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-03 11:09:24.891 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-03 11:09:24.894 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"}}
+
+2019-05-03 11:09:24.895 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 11:09:24.905 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 11:09:24.908 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-03 11:11:23.346 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-03 11:11:23.350 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"}}
+
+2019-05-03 11:11:23.350 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 11:11:23.361 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 11:11:23.363 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-03 11:14:38.282 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-03 11:14:38.285 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"}}
+
+2019-05-03 11:14:38.285 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 11:14:38.295 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 11:14:38.298 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-03 11:19:19.725 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-03 11:19:19.728 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"}}
+
+2019-05-03 11:19:19.728 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 11:19:19.740 ERROR ./main/thrift_test_client.cpp(223): AddServcie Exception||message=No more data to read.
+2019-05-03 11:29:15.367 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-03 11:29:15.370 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"}}
+
+2019-05-03 11:29:15.370 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 11:29:15.382 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 11:29:15.384 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-03 11:45:09.871 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-03 11:45:09.875 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"}}
+
+2019-05-03 11:45:09.875 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 11:45:09.890 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 11:45:09.893 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-03 11:53:59.741 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-03 11:53:59.744 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"}}
+
+2019-05-03 11:53:59.744 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 11:53:59.761 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 11:53:59.764 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-03 11:55:37.554 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-03 11:55:37.557 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"}}
+
+2019-05-03 11:55:37.558 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 11:55:37.575 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 11:55:37.578 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-03 11:59:16.047 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-03 11:59:16.050 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"}}
+
+2019-05-03 11:59:16.050 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 11:59:16.065 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 11:59:16.068 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-03 11:59:42.980 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-03 11:59:42.983 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"}}
+
+2019-05-03 11:59:42.983 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 11:59:42.999 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 11:59:43.002 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-03 12:04:24.968 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-03 12:04:24.972 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"}}
+
+2019-05-03 12:04:24.972 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 12:04:24.990 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 12:04:24.993 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-03 12:05:35.038 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-03 12:05:35.041 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"}}
+
+2019-05-03 12:05:35.041 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 12:05:35.059 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 12:05:35.062 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-03 12:06:27.454 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-03 12:06:27.457 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"}}
+
+2019-05-03 12:06:27.457 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 12:06:27.475 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 12:06:27.478 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-03 12:23:14.223 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-03 12:23:14.227 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"}}
+
+2019-05-03 12:23:14.227 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 12:23:14.245 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 12:23:14.248 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-03 12:23:52.434 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-03 12:23:52.437 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"}}
+
+2019-05-03 12:23:52.438 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 12:23:52.459 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 12:23:52.462 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-03 12:25:31.892 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-03 12:25:31.895 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"}}
+
+2019-05-03 12:25:31.896 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 12:25:31.917 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 12:25:31.920 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-03 12:26:29.366 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-03 12:26:29.369 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"}}
+
+2019-05-03 12:26:29.369 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 12:26:29.391 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=1)
+2019-05-03 12:26:29.394 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":1}}
+2019-05-03 12:26:53.230 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-03 12:26:53.233 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"}}
+
+2019-05-03 12:26:53.233 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 12:26:53.255 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 12:26:53.258 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-03 12:27:16.661 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-03 12:27:16.665 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"}}
+
+2019-05-03 12:27:16.665 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 12:27:16.686 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 12:27:16.689 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-03 12:31:21.054 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-03 12:31:21.057 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"}}
+
+2019-05-03 12:31:21.057 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 12:31:21.079 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 12:31:21.082 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-03 12:31:46.036 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-03 12:31:46.039 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"}}
+
+2019-05-03 12:31:46.039 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 12:31:46.062 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 12:31:46.065 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-03 12:33:06.793 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-03 12:33:06.796 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"}}
+
+2019-05-03 12:33:06.796 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 12:33:06.818 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 12:33:06.821 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-03 12:33:17.995 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-03 12:33:17.998 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"}}
+
+2019-05-03 12:33:17.999 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 12:33:18.020 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 12:33:18.023 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-03 13:16:09.242 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-03 13:16:09.245 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"}}
+
+2019-05-03 13:16:09.245 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 13:16:09.268 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 13:16:09.271 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-03 13:29:50.553 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-03 13:29:50.556 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"}}
+
+2019-05-03 13:29:50.557 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 13:29:50.578 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 13:29:50.581 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-03 13:32:12.385 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-03 13:32:12.388 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"}}
+
+2019-05-03 13:32:12.388 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 13:32:12.409 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 13:32:12.412 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-03 13:32:45.919 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-03 13:32:45.922 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"}}
+
+2019-05-03 13:32:45.922 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 13:32:45.948 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=1)
+2019-05-03 13:32:45.951 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":1}}
+2019-05-03 17:28:16.056 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-03 17:28:16.059 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"}}
+
+2019-05-03 17:28:16.059 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 17:28:16.094 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 17:28:16.097 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-03 18:06:59.878 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-03 18:06:59.882 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"}}
+
+2019-05-03 18:06:59.882 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 18:06:59.926 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 18:06:59.929 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-04 16:31:55.002 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-04 16:31:55.005 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"}}
+
+2019-05-04 16:31:55.005 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=<null>)
+2019-05-04 16:31:55.006 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=2)
+2019-05-04 16:31:55.009 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":2}}
+2019-05-04 16:35:38.095 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-04 16:35:38.099 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-04 16:35:38.099 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-04 16:35:38.106 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-04 16:35:38.109 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-04 16:36:49.374 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-04 16:36:49.378 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-04 16:36:49.378 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-04 16:36:49.390 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-04 16:36:49.393 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-04 16:38:02.520 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-04 16:38:02.524 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-04 16:38:02.524 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-04 16:38:02.551 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-04 16:38:02.555 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-04 16:42:15.846 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-04 16:42:15.850 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-04 16:42:15.850 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-04 16:42:15.850 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-04 16:42:15.854 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-04 16:43:08.735 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-04 16:43:08.738 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-04 16:43:08.738 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-04 16:43:08.772 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=1)
+2019-05-04 16:43:08.776 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":1}}
+2019-05-04 16:43:52.512 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-04 16:43:52.515 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-04 16:43:52.516 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-04 16:43:52.540 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-04 16:43:52.544 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-04 16:44:14.642 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-04 16:44:14.646 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-04 16:44:14.646 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-04 16:44:14.647 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-04 16:44:14.650 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-04 16:44:39.569 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-04 16:44:39.573 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-04 16:44:39.573 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-04 16:44:39.609 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-04 16:44:39.613 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-04 16:55:56.631 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-04 16:55:56.635 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-04 16:55:56.635 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-04 16:55:56.636 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-04 16:55:56.639 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-04 16:56:11.876 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-04 16:56:11.880 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-04 16:56:11.880 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-04 16:56:11.913 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-04 16:56:11.917 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-04 16:57:49.434 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-04 16:57:49.437 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-04 16:57:49.438 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-04 16:57:49.473 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-04 16:57:49.476 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-04 16:59:12.454 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-04 16:59:12.458 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-04 16:59:12.458 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-04 16:59:12.462 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-04 16:59:12.465 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-04 21:31:29.321 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-04 21:31:29.324 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-04 21:31:29.325 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-04 21:31:29.379 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-04 21:31:29.382 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-04 21:32:15.650 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-04 21:32:15.654 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-04 21:32:15.654 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-04 21:32:15.682 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-04 21:32:15.685 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-05 10:43:02.570 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 10:43:02.574 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 10:43:02.574 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 10:43:02.613 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 10:43:02.616 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-05 10:44:03.513 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 10:44:03.517 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 10:44:03.517 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 10:44:03.556 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 10:44:03.560 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-05 10:45:09.070 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 10:45:09.073 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 10:45:09.074 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 10:45:09.113 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 10:45:09.117 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-05 14:54:55.843 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 14:54:55.847 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 14:54:55.847 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 14:54:55.851 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 14:54:55.854 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-05 14:56:00.026 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 14:56:00.030 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 14:56:00.030 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 14:56:00.036 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 14:56:00.039 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-05 14:57:45.547 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 14:57:45.551 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 14:57:45.551 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 14:57:45.581 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 14:57:45.584 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-05 15:29:19.721 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 15:29:19.725 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 15:29:19.725 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 15:29:19.726 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 15:29:19.730 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-05 15:30:34.098 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 15:30:34.102 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 15:30:34.102 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 15:30:34.136 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 15:30:34.140 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-05 15:32:21.138 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 15:32:24.101 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 15:32:24.104 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 15:32:24.105 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 15:32:24.135 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 15:32:24.138 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-05 15:50:43.266 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 15:50:43.270 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 15:50:43.270 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 15:50:43.327 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 15:50:43.331 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-05 15:50:55.348 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 15:50:55.351 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 15:50:55.351 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 15:50:55.355 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 15:50:55.358 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-05 15:51:58.853 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 15:51:58.857 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 15:51:58.857 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 15:51:58.900 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 15:51:58.903 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-05 15:52:24.021 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 15:52:24.025 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 15:52:24.025 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 15:52:24.054 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 15:52:24.057 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-05 15:56:48.903 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 15:56:48.906 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 15:56:48.907 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 15:56:48.947 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 15:56:48.950 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-05 16:01:56.858 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 16:01:56.862 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 16:01:56.862 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 16:01:56.902 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 16:01:56.905 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-05 16:20:10.062 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 16:20:10.066 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 16:20:10.066 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 16:20:10.096 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 16:20:10.099 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-05 17:17:12.988 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 17:17:12.992 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 17:17:12.992 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 17:17:13.037 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 17:17:13.040 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-05 17:19:28.613 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 17:19:28.617 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 17:19:28.618 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 17:19:28.665 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 17:19:28.669 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-05 17:22:06.311 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 17:22:06.314 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 17:22:06.314 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 17:22:06.615 ERROR ./main/thrift_test_client.cpp(223): AddServcie Exception||message=THRIFT_EAGAIN (timed out)
+2019-05-05 17:23:00.996 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 17:23:00.999 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 17:23:01.000 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 17:23:02.807 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 17:23:02.811 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-05 17:40:40.010 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 17:40:40.014 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 17:40:40.015 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 17:40:43.022 ERROR ./main/thrift_test_client.cpp(223): AddServcie Exception||message=THRIFT_EAGAIN (timed out)
+2019-05-05 17:41:31.111 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 17:41:31.115 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 17:41:31.115 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 17:41:35.396 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 17:41:35.400 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-05 17:43:50.955 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 17:43:50.959 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 17:43:50.959 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 17:43:50.960 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 17:43:50.963 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-05 17:45:27.583 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 17:45:27.587 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 17:45:27.587 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 17:45:31.924 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 17:45:31.928 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-05 17:45:43.149 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 17:45:43.153 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 17:45:43.153 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 17:45:43.153 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 17:45:43.157 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-05 17:46:00.225 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 17:46:00.228 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 17:46:00.229 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 17:46:01.933 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 17:46:01.937 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-05 17:47:32.095 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 17:47:32.099 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 17:47:32.099 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 17:47:36.246 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 17:47:36.250 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-05 17:49:37.408 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 17:49:37.412 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 17:49:37.413 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 17:49:39.238 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 17:49:39.242 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-05 20:13:35.507 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 20:13:35.511 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 20:13:35.511 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 20:13:39.900 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=1)
+2019-05-05 20:13:39.904 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":1}}
+2019-05-05 20:35:19.511 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 20:35:19.514 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 20:35:19.515 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 20:35:23.825 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=1)
+2019-05-05 20:35:23.828 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":1}}
+2019-05-05 20:36:45.355 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 20:36:45.359 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 20:36:45.359 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 20:36:49.867 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=1)
+2019-05-05 20:36:49.871 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":1}}
+2019-05-05 20:41:21.218 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 20:41:21.222 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 20:41:21.223 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 20:41:25.453 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=1)
+2019-05-05 20:41:25.456 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":1}}
+2019-05-05 20:43:00.912 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 20:43:00.916 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 20:43:00.916 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 20:43:05.216 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=1)
+2019-05-05 20:43:05.220 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":1}}
+2019-05-05 20:47:06.053 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 20:47:06.057 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 20:47:06.057 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 20:47:10.396 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=1)
+2019-05-05 20:47:10.400 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":1}}
+2019-05-05 20:50:31.242 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 20:50:31.246 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 20:50:31.246 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 20:50:35.588 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=1)
+2019-05-05 20:50:35.592 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":1}}
+2019-05-05 20:52:19.886 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 20:52:19.889 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 20:52:19.890 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 20:52:24.237 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=1)
+2019-05-05 20:52:24.241 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":1}}
+2019-05-05 20:58:07.523 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 20:58:07.527 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 20:58:07.527 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 20:58:12.173 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=1)
+2019-05-05 20:58:12.177 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":1}}
+2019-05-05 21:04:42.109 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 21:04:42.113 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 21:04:42.113 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 21:04:46.586 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=1)
+2019-05-05 21:04:46.590 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":1}}
+2019-05-05 21:11:17.995 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 21:11:18.000 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 21:11:18.000 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 21:11:22.513 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 21:11:22.516 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-05 21:34:58.551 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 21:34:58.555 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 21:34:58.555 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 21:34:58.566 ERROR ./main/thrift_test_client.cpp(223): AddServcie Exception||message=No more data to read.
+2019-05-05 21:36:54.008 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 21:36:54.011 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 21:36:54.012 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 21:36:58.557 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=1)
+2019-05-05 21:36:58.560 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":1}}
+2019-05-05 21:37:56.565 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 21:37:56.568 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 21:37:56.569 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 21:38:00.858 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=1)
+2019-05-05 21:38:00.862 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":1}}
+2019-05-05 21:39:47.741 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 21:39:47.744 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":1},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 21:39:47.745 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 21:39:52.107 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 21:39:52.111 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-05 21:41:23.830 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 21:41:23.834 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 21:41:23.834 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 21:41:25.528 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=1)
+2019-05-05 21:41:25.532 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":1}}
+2019-05-05 23:29:34.900 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 23:29:34.904 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 23:29:34.904 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 23:29:39.097 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=1)
+2019-05-05 23:29:39.101 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":1}}
+2019-05-05 23:35:01.749 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 23:35:01.753 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 23:35:01.753 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 23:35:05.933 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=1)
+2019-05-05 23:35:05.936 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":1}}
+2019-05-05 23:39:20.862 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 23:39:20.866 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 23:39:20.866 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 23:39:20.866 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 23:39:20.870 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}
+2019-05-05 23:39:47.015 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 23:39:47.018 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 23:39:47.019 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 23:39:51.181 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=1)
+2019-05-05 23:39:51.185 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":1}}
+2019-05-05 23:45:52.637 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 23:45:52.640 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 23:45:52.641 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 23:45:56.789 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=1)
+2019-05-05 23:45:56.793 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":1}}
+2019-05-05 23:50:51.708 INFO ./main/main.cpp(135): welcome to thrift-test client ! :) 
+2019-05-05 23:50:51.711 INFO ./main/thrift_test_client.cpp(185): AddService||entry||reqJson={"1":{"i32":0},"2":{"str":"calculate"},"3":{"str":"v1.1.1"},"4":{"i32":1234},"5":{"str":"TFileTransport"},"6":{"str":"TJSONProtocol"},"7":{"str":"/home/Shit/thrift-test/src/idl/calculate.thrift"},"8":{"str":"127.0.0.1"}}
+
+2019-05-05 23:50:51.712 INFO ./main/thrift_test_client.cpp(217): AddService||read req||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 23:50:55.915 INFO ./main/thrift_test_client.cpp(228): AddService||rpc||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 23:50:55.919 INFO ./main/thrift_test_client.cpp(241): AddService||write rsp||rspJson={"1":{"i32":0}}

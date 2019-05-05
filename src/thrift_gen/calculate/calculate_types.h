@@ -30,23 +30,23 @@ struct OPType {
 
 extern const std::map<int, const char*> _OPType_VALUES_TO_NAMES;
 
-class CalcilateRequest;
+class CalculateRequest;
 
 class CalculateResponse;
 
 
-class CalcilateRequest {
+class CalculateRequest {
  public:
 
   static const char* ascii_fingerprint; // = "3C6B5910B2C7A8886AEC90D855401773";
   static const uint8_t binary_fingerprint[16]; // = {0x3C,0x6B,0x59,0x10,0xB2,0xC7,0xA8,0x88,0x6A,0xEC,0x90,0xD8,0x55,0x40,0x17,0x73};
 
-  CalcilateRequest(const CalcilateRequest&);
-  CalcilateRequest& operator=(const CalcilateRequest&);
-  CalcilateRequest() : left(0), right(0), op((OPType::type)0) {
+  CalculateRequest(const CalculateRequest&);
+  CalculateRequest& operator=(const CalculateRequest&);
+  CalculateRequest() : left(0), right(0), op((OPType::type)0) {
   }
 
-  virtual ~CalcilateRequest() throw();
+  virtual ~CalculateRequest() throw();
   int32_t left;
   int32_t right;
   OPType::type op;
@@ -57,7 +57,7 @@ class CalcilateRequest {
 
   void __set_op(const OPType::type val);
 
-  bool operator == (const CalcilateRequest & rhs) const
+  bool operator == (const CalculateRequest & rhs) const
   {
     if (!(left == rhs.left))
       return false;
@@ -67,19 +67,19 @@ class CalcilateRequest {
       return false;
     return true;
   }
-  bool operator != (const CalcilateRequest &rhs) const {
+  bool operator != (const CalculateRequest &rhs) const {
     return !(*this == rhs);
   }
 
-  bool operator < (const CalcilateRequest & ) const;
+  bool operator < (const CalculateRequest & ) const;
 
   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
 
-  friend std::ostream& operator<<(std::ostream& out, const CalcilateRequest& obj);
+  friend std::ostream& operator<<(std::ostream& out, const CalculateRequest& obj);
 };
 
-void swap(CalcilateRequest &a, CalcilateRequest &b);
+void swap(CalculateRequest &a, CalculateRequest &b);
 
 
 class CalculateResponse {

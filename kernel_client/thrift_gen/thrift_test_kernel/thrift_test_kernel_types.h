@@ -123,16 +123,20 @@ class GetServiceListResponse {
 
 void swap(GetServiceListResponse &a, GetServiceListResponse &b);
 
+typedef struct _AddServiceRequest__isset {
+  _AddServiceRequest__isset() : ip(false) {}
+  bool ip :1;
+} _AddServiceRequest__isset;
 
 class AddServiceRequest {
  public:
 
-  static const char* ascii_fingerprint; // = "C7B19B4887A1DA53530BDA51A92751BF";
-  static const uint8_t binary_fingerprint[16]; // = {0xC7,0xB1,0x9B,0x48,0x87,0xA1,0xDA,0x53,0x53,0x0B,0xDA,0x51,0xA9,0x27,0x51,0xBF};
+  static const char* ascii_fingerprint; // = "08F0BE4E3409411EB14347962054F871";
+  static const uint8_t binary_fingerprint[16]; // = {0x08,0xF0,0xBE,0x4E,0x34,0x09,0x41,0x1E,0xB1,0x43,0x47,0x96,0x20,0x54,0xF8,0x71};
 
   AddServiceRequest(const AddServiceRequest&);
   AddServiceRequest& operator=(const AddServiceRequest&);
-  AddServiceRequest() : type((ServiceType::type)0), serviceName(), version(), port(0), transport(), protocol(), idlAbsFileName() {
+  AddServiceRequest() : type((ServiceType::type)0), serviceName(), version(), port(0), transport(), protocol(), idlAbsFileName(), ip() {
   }
 
   virtual ~AddServiceRequest() throw();
@@ -143,6 +147,9 @@ class AddServiceRequest {
   std::string transport;
   std::string protocol;
   std::string idlAbsFileName;
+  std::string ip;
+
+  _AddServiceRequest__isset __isset;
 
   void __set_type(const ServiceType::type val);
 
@@ -157,6 +164,8 @@ class AddServiceRequest {
   void __set_protocol(const std::string& val);
 
   void __set_idlAbsFileName(const std::string& val);
+
+  void __set_ip(const std::string& val);
 
   bool operator == (const AddServiceRequest & rhs) const
   {
@@ -173,6 +182,10 @@ class AddServiceRequest {
     if (!(protocol == rhs.protocol))
       return false;
     if (!(idlAbsFileName == rhs.idlAbsFileName))
+      return false;
+    if (__isset.ip != rhs.__isset.ip)
+      return false;
+    else if (__isset.ip && !(ip == rhs.ip))
       return false;
     return true;
   }

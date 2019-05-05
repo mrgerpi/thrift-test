@@ -22,7 +22,7 @@ class CalculatorServiceHandler : virtual public CalculatorServiceIf {
     // Your initialization goes here
   }
 
-  void Calculate(CalculateResponse& _return, const CalcilateRequest& req) {
+  void Calculate(CalculateResponse& _return, const CalculateRequest& req) {
     // Your implementation goes here
     printf("Calculate\n");
   }

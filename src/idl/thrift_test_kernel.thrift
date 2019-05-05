@@ -23,6 +23,7 @@ struct AddServiceRequest {
 	5: required string transport;
 	6: required string protocol;
 	7: required string idlAbsFileName;
+	8: optional string ip;
 }
 
 struct AddServiceResponse  {

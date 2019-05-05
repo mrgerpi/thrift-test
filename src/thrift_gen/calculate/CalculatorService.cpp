@@ -194,13 +194,13 @@ uint32_t CalculatorService_Calculate_presult::read(::apache::thrift::protocol::T
   return xfer;
 }
 
-void CalculatorServiceClient::Calculate(CalculateResponse& _return, const CalcilateRequest& req)
+void CalculatorServiceClient::Calculate(CalculateResponse& _return, const CalculateRequest& req)
 {
   send_Calculate(req);
   recv_Calculate(_return);
 }
 
-void CalculatorServiceClient::send_Calculate(const CalcilateRequest& req)
+void CalculatorServiceClient::send_Calculate(const CalculateRequest& req)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("Calculate", ::apache::thrift::protocol::T_CALL, cseqid);

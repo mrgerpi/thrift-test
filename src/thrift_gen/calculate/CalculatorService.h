@@ -15,7 +15,7 @@ namespace calculator {
 class CalculatorServiceIf {
  public:
   virtual ~CalculatorServiceIf() {}
-  virtual void Calculate(CalculateResponse& _return, const CalcilateRequest& req) = 0;
+  virtual void Calculate(CalculateResponse& _return, const CalculateRequest& req) = 0;
 };
 
 class CalculatorServiceIfFactory {
@@ -45,7 +45,7 @@ class CalculatorServiceIfSingletonFactory : virtual public CalculatorServiceIfFa
 class CalculatorServiceNull : virtual public CalculatorServiceIf {
  public:
   virtual ~CalculatorServiceNull() {}
-  void Calculate(CalculateResponse& /* _return */, const CalcilateRequest& /* req */) {
+  void Calculate(CalculateResponse& /* _return */, const CalculateRequest& /* req */) {
     return;
   }
 };
@@ -67,11 +67,11 @@ class CalculatorService_Calculate_args {
   }
 
   virtual ~CalculatorService_Calculate_args() throw();
-  CalcilateRequest req;
+  CalculateRequest req;
 
   _CalculatorService_Calculate_args__isset __isset;
 
-  void __set_req(const CalcilateRequest& val);
+  void __set_req(const CalculateRequest& val);
 
   bool operator == (const CalculatorService_Calculate_args & rhs) const
   {
@@ -100,7 +100,7 @@ class CalculatorService_Calculate_pargs {
 
 
   virtual ~CalculatorService_Calculate_pargs() throw();
-  const CalcilateRequest* req;
+  const CalculateRequest* req;
 
   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
 
@@ -195,8 +195,8 @@ class CalculatorServiceClient : virtual public CalculatorServiceIf {
   boost::shared_ptr< ::apache::thrift::protocol::TProtocol> getOutputProtocol() {
     return poprot_;
   }
-  void Calculate(CalculateResponse& _return, const CalcilateRequest& req);
-  void send_Calculate(const CalcilateRequest& req);
+  void Calculate(CalculateResponse& _return, const CalculateRequest& req);
+  void send_Calculate(const CalculateRequest& req);
   void recv_Calculate(CalculateResponse& _return);
  protected:
   boost::shared_ptr< ::apache::thrift::protocol::TProtocol> piprot_;
@@ -246,7 +246,7 @@ class CalculatorServiceMultiface : virtual public CalculatorServiceIf {
     ifaces_.push_back(iface);
   }
  public:
-  void Calculate(CalculateResponse& _return, const CalcilateRequest& req) {
+  void Calculate(CalculateResponse& _return, const CalculateRequest& req) {
     size_t sz = ifaces_.size();
     size_t i = 0;
     for (; i < (sz - 1); ++i) {

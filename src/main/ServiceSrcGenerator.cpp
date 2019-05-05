@@ -6,6 +6,7 @@
 #include <string.h>
 #include <sstream>
 #include <errno.h>
+#include <vector>
 
 using namespace std;
 
@@ -54,21 +55,59 @@ int ServiceSrcGenerator::executeShell(string cmd, string& result)
 	return ret;
 }
 
-int ServiceSrcGenerator::serviceSrcGen(string serviceId, 
-		string idlPath, string srcDir) 
+int ServiceSrcGenerator::originalSrcGen(string serviceId, string idlPath) 
 {
-	string genScriptPaht = DidiUtils::pwd() + "/serviceGen.sh";
-	string cmd = genScriptPaht + " " + idlPath + " " + srcDir;	
-	log_info("ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=%s",
+	vector<string> paras;
+	DidiUtils::split_str(serviceId, paras, "_");	
+	string cmd = DidiUtils::pwd() + "/script/originalSrcGen.sh " + idlPath + " " + paras[0];	
+	log_info("ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=%s",
 			cmd.c_str());
+
 	string result;
 	int ret = executeShell(cmd, result);
 	if (ret != 0) {
-		log_error("ServiceSrcGenerator::serviceSrcGen||service gen script exe fail||result=%s||ret=%d", result.c_str(), ret);
+		log_error("ServiceSrcGenerator::originalSrcGen||orginal src gen script exe fail||result=%s||ret=%d", result.c_str(), ret);
 		return ret;
 	} else {
-		log_info("ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=%s", result.c_str());
+		log_info("ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=%s", result.c_str());
 		return 0;
 	}
 }
 
+int ServiceSrcGenerator::clientSrcGen(string serviceId, string idlPath, string& method)
+{
+	vector<string> paras;
+	DidiUtils::split_str(serviceId, paras, "_");	
+	string cmd = DidiUtils::pwd() + "/script/clientSrcGen.sh " + idlPath 
+		+ " " + paras[0] + " " + paras[2];
+	log_info("ServiceSrcGenerator::clientSrcGen||start client src gen script||cmd=%s",
+			cmd.c_str());
+
+	int ret = ServiceSrcGenerator::executeShell(cmd, method);
+	if (ret != 0) {
+		log_error("ServiceSrcGenerator::clientSrcGen||client src gen script exe fail||result=%s||ret=%d", method.c_str(), ret);
+		return ret;
+	} else {
+		log_info("ServiceSrcGenerator::clientSrcGen||client src gen script exe succ||result=%s", method.c_str());
+		return 0;
+	}
+}
+
+int ServiceSrcGenerator::serverSrcGen(string serviceId, string idlPath) 
+{
+	vector<string> paras;
+	DidiUtils::split_str(serviceId, paras, "_");	
+	string cmd = DidiUtils::pwd() + "/script/serverSrcGen.sh " + idlPath + " " + paras[0];
+	log_info("ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=%s",
+			cmd.c_str());
+
+	string result;
+	int ret = ServiceSrcGenerator::executeShell(cmd, result);
+	if (ret != 0) {
+		log_error("ServiceSrcGenerator::serverSrcGen||server src gen script exe fail||result=%s||ret=%d", result.c_str(), ret);
+		return ret;
+	} else {
+		log_info("ServiceSrcGenerator::serverSrcGen||server src gen script exe succ||result=%s", result.c_str());
+		return 0;
+	}
+}

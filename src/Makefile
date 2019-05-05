@@ -10,9 +10,9 @@ INCLUDE = -I ./	\
 
 LIB = ./thirdparty/simple-log/lib/libsimplelog.a	\
 	  -L./thirdparty/config/lib -lconfig++		\
-	  -L./thirdparty/thrift/lib -lthriftnb -lthrift         \
+	  -L./thirdparty/thrift/lib/so -lthriftnb-0.9.2 -lthrift-0.9.2         \
 	  -L./thirdparty/libevent/lib -levent		\
-	  -lpthread 
+	  -lpthread -ldl -rdynamic
 
 FLAGS = -O2  -g -lrt -std=c++11
 
@@ -27,7 +27,7 @@ VPATH = ./	\
 
 cpu_num = $(shell echo $$(nproc))
 
-main_obj = main.o ServiceManager.o ServiceSrcGenerator.o
+main_obj = main.o ServiceManager.o ServiceSrcGenerator.o  ServiceLoader.o
 util_obj = didiutils.o
 
 thrift_test_kernel_gen_obj = thrift_test_kernel_constants.o ThriftTestKernelService.o thrift_test_kernel_types.o #ThriftTestKernelService_server.skeleton.o 

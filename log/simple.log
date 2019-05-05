@@ -342,3 +342,1276 @@ syntax error
 2019-05-01 17:04:59.269 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift /home/Shit/thrift-test/src/thrift_gen/calculate
 2019-05-01 17:04:59.277 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=
 2019-05-01 17:04:59.277 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 11:09:11.341 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-03 11:09:11.341 INFO ./main/main.cpp(79): sub_pthread 140699643684608 created
+2019-05-03 11:09:11.350 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-03 11:09:11.356 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 6ms
+2019-05-03 11:09:24.895 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 11:09:24.895 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift /home/Shit/thrift-test/src/thrift_gen/calculate
+2019-05-03 11:09:24.903 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=
+2019-05-03 11:09:24.905 INFO ./main/ServiceManager.cpp(86): ServiceManager::addService||interface service name=sh: idlParser.sh: 未找到命令
+
+2019-05-03 11:09:24.905 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 11:11:23.350 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 11:11:23.350 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift /home/Shit/thrift-test/src/thrift_gen/calculate
+2019-05-03 11:11:23.358 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=
+2019-05-03 11:11:23.360 INFO ./main/ServiceManager.cpp(86): ServiceManager::addService||interface service name=sh: idlParser.sh: 未找到命令
+
+2019-05-03 11:11:23.360 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 11:14:31.062 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-03 11:14:31.062 INFO ./main/main.cpp(79): sub_pthread 139661076219648 created
+2019-05-03 11:14:31.070 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-03 11:14:31.076 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 6ms
+2019-05-03 11:14:38.285 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 11:14:38.285 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift /home/Shit/thrift-test/src/thrift_gen/calculate
+2019-05-03 11:14:38.293 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=
+2019-05-03 11:14:38.295 INFO ./main/ServiceManager.cpp(86): ServiceManager::addService||interface service name=sh: idlParser.sh: 未找到命令
+
+2019-05-03 11:14:38.295 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 11:19:13.145 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-03 11:19:13.145 INFO ./main/main.cpp(79): sub_pthread 139693903714048 created
+2019-05-03 11:19:13.154 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-03 11:19:13.160 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 6ms
+2019-05-03 11:19:19.729 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 11:19:19.729 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift /home/Shit/thrift-test/src/thrift_gen/calculate
+2019-05-03 11:19:19.736 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=
+2019-05-03 11:19:19.736 INFO ./main/ServiceManager.cpp(43): ServiceManager::getInterfaceServiceName||cmd=/home/Shit/thrift-test/src/idlParser.sh /home/Shit/thrift-test/src/idl/calculate.thrift
+2019-05-03 11:19:19.739 INFO ./main/ServiceManager.cpp(47): ServiceManager::getInterfaceServiceName||result=sh: idlParser.sh: 未找到命令
+
+2019-05-03 11:19:19.739 INFO ./main/ServiceManager.cpp(86): ServiceManager::addService||interface service name=�v>
+2019-05-03 11:19:19.739 ERROR ./main/main.cpp(26): DumpTraceBack||line=0||trace_back=./thrift-test() [0x4069f8]
+2019-05-03 11:19:19.739 ERROR ./main/main.cpp(26): DumpTraceBack||line=1||trace_back=/lib64/libc.so.6(+0x35250) [0x7f0d05857250]
+2019-05-03 11:19:19.739 ERROR ./main/main.cpp(26): DumpTraceBack||line=2||trace_back=/lib64/libc.so.6(gsignal+0x37) [0x7f0d058571d7]
+2019-05-03 11:19:19.739 ERROR ./main/main.cpp(26): DumpTraceBack||line=3||trace_back=/lib64/libc.so.6(abort+0x148) [0x7f0d058588c8]
+2019-05-03 11:19:19.739 ERROR ./main/main.cpp(26): DumpTraceBack||line=4||trace_back=/lib64/libc.so.6(+0x74f07) [0x7f0d05896f07]
+2019-05-03 11:19:19.739 ERROR ./main/main.cpp(26): DumpTraceBack||line=5||trace_back=/lib64/libc.so.6(+0x7c503) [0x7f0d0589e503]
+2019-05-03 11:19:19.739 ERROR ./main/main.cpp(26): DumpTraceBack||line=6||trace_back=./thrift-test() [0x407b6b]
+2019-05-03 11:19:19.739 ERROR ./main/main.cpp(26): DumpTraceBack||line=7||trace_back=./thrift-test() [0x41bf4b]
+2019-05-03 11:19:19.739 ERROR ./main/main.cpp(26): DumpTraceBack||line=8||trace_back=./thrift-test() [0x40b449]
+2019-05-03 11:19:19.739 ERROR ./main/main.cpp(26): DumpTraceBack||line=9||trace_back=./thrift-test() [0x409f5b]
+2019-05-03 11:19:19.739 ERROR ./main/main.cpp(26): DumpTraceBack||line=10||trace_back=./thrift-test() [0x40fff6]
+2019-05-03 11:19:19.739 ERROR ./main/main.cpp(26): DumpTraceBack||line=11||trace_back=./thrift-test() [0x425dcc]
+2019-05-03 11:19:19.739 ERROR ./main/main.cpp(26): DumpTraceBack||line=12||trace_back=./thrift-test() [0x42992f]
+2019-05-03 11:19:19.739 ERROR ./main/main.cpp(26): DumpTraceBack||line=13||trace_back=./thrift-test() [0x42b036]
+2019-05-03 11:19:19.739 ERROR ./main/main.cpp(26): DumpTraceBack||line=14||trace_back=./thrift-test() [0x4333c2]
+2019-05-03 11:19:19.739 ERROR ./main/main.cpp(26): DumpTraceBack||line=15||trace_back=/lib64/libpthread.so.0(+0x7dc5) [0x7f0d06409dc5]
+2019-05-03 11:19:19.739 ERROR ./main/main.cpp(26): DumpTraceBack||line=16||trace_back=/lib64/libc.so.6(clone+0x6d) [0x7f0d0591976d]
+2019-05-03 11:26:31.737 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-03 11:26:31.737 INFO ./main/main.cpp(79): sub_pthread 140174916695808 created
+2019-05-03 11:26:31.745 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-03 11:26:31.751 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 6ms
+2019-05-03 11:29:15.371 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 11:29:15.371 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift /home/Shit/thrift-test/src/thrift_gen/calculate
+2019-05-03 11:29:15.379 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=
+2019-05-03 11:29:15.379 INFO ./main/ServiceManager.cpp(43): ServiceManager::getInterfaceServiceName||cmd=/home/Shit/thrift-test/src/idlParser.sh /home/Shit/thrift-test/src/idl/calculate.thrift
+2019-05-03 11:29:15.381 INFO ./main/ServiceManager.cpp(47): ServiceManager::getInterfaceServiceName||result=/home/Shit/thrift-test/src/idl/calculate.thrift
+
+2019-05-03 11:29:15.382 INFO ./main/ServiceManager.cpp(87): ServiceManager::addService||interface service name=/home/Shit/thrift-test/src/idl/calculate.thrift
+
+2019-05-03 11:29:15.382 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 11:45:09.875 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 11:45:09.875 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift /home/Shit/thrift-test/src/thrift_gen/calculate
+2019-05-03 11:45:09.883 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=
+2019-05-03 11:45:09.883 INFO ./main/ServiceManager.cpp(43): ServiceManager::getInterfaceServiceName||cmd=/home/Shit/thrift-test/src/idlParser.sh /home/Shit/thrift-test/src/idl/calculate.thrift
+2019-05-03 11:45:09.890 INFO ./main/ServiceManager.cpp(47): ServiceManager::getInterfaceServiceName||result=CalculatorService
+
+2019-05-03 11:45:09.890 INFO ./main/ServiceManager.cpp(87): ServiceManager::addService||interface service name=CalculatorService
+
+2019-05-03 11:45:09.890 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 11:53:59.745 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 11:53:59.745 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift /home/Shit/thrift-test/src/thrift_gen/calculate
+2019-05-03 11:53:59.753 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=
+2019-05-03 11:53:59.753 INFO ./main/ServiceManager.cpp(43): ServiceManager::getInterfaceServiceName||cmd=/home/Shit/thrift-test/src/idlParser.sh /home/Shit/thrift-test/src/idl/calculate.thrift
+2019-05-03 11:53:59.761 INFO ./main/ServiceManager.cpp(47): ServiceManager::getInterfaceServiceName||result=CalculatorService
+
+
+2019-05-03 11:53:59.761 INFO ./main/ServiceManager.cpp(87): ServiceManager::addService||interface service name=CalculatorService
+
+
+2019-05-03 11:53:59.761 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 11:55:28.280 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-03 11:55:28.280 INFO ./main/main.cpp(79): sub_pthread 140643201537792 created
+2019-05-03 11:55:28.290 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-03 11:55:28.296 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 6ms
+2019-05-03 11:55:37.558 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 11:55:37.558 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift /home/Shit/thrift-test/src/thrift_gen/calculate
+2019-05-03 11:55:37.568 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=
+2019-05-03 11:55:37.568 INFO ./main/ServiceManager.cpp(43): ServiceManager::getInterfaceServiceName||cmd=/home/Shit/thrift-test/src/idlParser.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-03 11:55:37.575 INFO ./main/ServiceManager.cpp(47): ServiceManager::getInterfaceServiceName||result=CalculatorService
+calculate
+
+2019-05-03 11:55:37.575 INFO ./main/ServiceManager.cpp(89): ServiceManager::addService||interface service name=CalculatorService
+calculate
+
+2019-05-03 11:55:37.575 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 11:59:16.050 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 11:59:16.050 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift /home/Shit/thrift-test/src/thrift_gen/calculate
+2019-05-03 11:59:16.058 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=
+2019-05-03 11:59:16.058 INFO ./main/ServiceManager.cpp(43): ServiceManager::getInterfaceServiceName||cmd=/home/Shit/thrift-test/src/idlParser.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-03 11:59:16.065 INFO ./main/ServiceManager.cpp(47): ServiceManager::getInterfaceServiceName||result=/home/Shit/thrift-test/srcthrift_gen/calculate/CalculatorService_server.skeleton.cpp
+
+2019-05-03 11:59:16.065 INFO ./main/ServiceManager.cpp(89): ServiceManager::addService||interface service name=/home/Shit/thrift-test/srcthrift_gen/calculate/CalculatorService_server.skeleton.cpp
+
+2019-05-03 11:59:16.065 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 11:59:42.983 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 11:59:42.983 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift /home/Shit/thrift-test/src/thrift_gen/calculate
+2019-05-03 11:59:42.992 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=
+2019-05-03 11:59:42.992 INFO ./main/ServiceManager.cpp(43): ServiceManager::getInterfaceServiceName||cmd=/home/Shit/thrift-test/src/idlParser.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-03 11:59:42.999 INFO ./main/ServiceManager.cpp(47): ServiceManager::getInterfaceServiceName||result=/home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService_server.skeleton.cpp
+
+2019-05-03 11:59:42.999 INFO ./main/ServiceManager.cpp(89): ServiceManager::addService||interface service name=/home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService_server.skeleton.cpp
+
+2019-05-03 11:59:42.999 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 12:04:24.972 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 12:04:24.972 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift /home/Shit/thrift-test/src/thrift_gen/calculate
+2019-05-03 12:04:24.980 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=
+2019-05-03 12:04:24.980 INFO ./main/ServiceManager.cpp(43): ServiceManager::getInterfaceServiceName||cmd=/home/Shit/thrift-test/src/idlParser.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-03 12:04:24.990 INFO ./main/ServiceManager.cpp(47): ServiceManager::getInterfaceServiceName||result=cp: 无法获取"skeleton_file" 的文件状态(stat): 没有那个文件或目录
+/home/Shit/thrift-test/src/thrift_server/calculate/CalculatorServiceHandler.h
+
+2019-05-03 12:04:24.990 INFO ./main/ServiceManager.cpp(89): ServiceManager::addService||interface service name=cp: 无法获取"skeleton_file" 的文件状态(stat): 没有那个文件或目录
+/home/Shit/thrift-test/src/thrift_server/calculate/CalculatorServiceHandler.h
+
+2019-05-03 12:04:24.990 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 12:05:35.041 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 12:05:35.042 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift /home/Shit/thrift-test/src/thrift_gen/calculate
+2019-05-03 12:05:35.049 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=
+2019-05-03 12:05:35.049 INFO ./main/ServiceManager.cpp(43): ServiceManager::getInterfaceServiceName||cmd=/home/Shit/thrift-test/src/idlParser.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-03 12:05:35.059 INFO ./main/ServiceManager.cpp(47): ServiceManager::getInterfaceServiceName||result=/home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService_server.skeleton.cpp
+cp: 无法获取"skeleton_file" 的文件状态(stat): 没有那个文件或目录
+/home/Shit/thrift-test/src/thrift_server/calculate/CalculatorServiceHandler.h
+
+2019-05-03 12:05:35.059 INFO ./main/ServiceManager.cpp(89): ServiceManager::addService||interface service name=/home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService_server.skeleton.cpp
+cp: 无法获取"skeleton_file" 的文件状态(stat): 没有那个文件或目录
+/home/Shit/thrift-test/src/thrift_server/calculate/CalculatorServiceHandler.h
+
+2019-05-03 12:05:35.059 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 12:06:27.458 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 12:06:27.458 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift /home/Shit/thrift-test/src/thrift_gen/calculate
+2019-05-03 12:06:27.466 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=
+2019-05-03 12:06:27.466 INFO ./main/ServiceManager.cpp(43): ServiceManager::getInterfaceServiceName||cmd=/home/Shit/thrift-test/src/idlParser.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-03 12:06:27.475 INFO ./main/ServiceManager.cpp(47): ServiceManager::getInterfaceServiceName||result=/home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService_server.skeleton.cpp
+/home/Shit/thrift-test/src/thrift_server/calculate/CalculatorServiceHandler.h
+
+2019-05-03 12:06:27.475 INFO ./main/ServiceManager.cpp(89): ServiceManager::addService||interface service name=/home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService_server.skeleton.cpp
+/home/Shit/thrift-test/src/thrift_server/calculate/CalculatorServiceHandler.h
+
+2019-05-03 12:06:27.475 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 12:23:14.227 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 12:23:14.227 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift /home/Shit/thrift-test/src/thrift_gen/calculate
+2019-05-03 12:23:14.235 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=
+2019-05-03 12:23:14.235 INFO ./main/ServiceManager.cpp(43): ServiceManager::getInterfaceServiceName||cmd=/home/Shit/thrift-test/src/idlParser.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-03 12:23:14.245 INFO ./main/ServiceManager.cpp(47): ServiceManager::getInterfaceServiceName||result=/home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService_server.skeleton.cpp
+/home/Shit/thrift-test/src/idlParser.sh:行14: 寻找匹配的 ``' 是遇到了未预期的文件结束符
+/home/Shit/thrift-test/src/idlParser.sh:行20: 语法错误: 未预期的文件结尾
+
+2019-05-03 12:23:14.245 INFO ./main/ServiceManager.cpp(89): ServiceManager::addService||interface service name=/home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService_server.skeleton.cpp
+/home/Shit/thrift-test/src/idlParser.sh:行14: 寻找匹配的 ``' 是遇到了未预期的文件结束符
+/home/Shit/thrift-test/src/idlParser.sh:行20: 语法错误: 未预期的文件结尾
+
+2019-05-03 12:23:14.245 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 12:23:52.438 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 12:23:52.438 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift /home/Shit/thrift-test/src/thrift_gen/calculate
+2019-05-03 12:23:52.446 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=
+2019-05-03 12:23:52.446 INFO ./main/ServiceManager.cpp(43): ServiceManager::getInterfaceServiceName||cmd=/home/Shit/thrift-test/src/idlParser.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-03 12:23:52.459 INFO ./main/ServiceManager.cpp(47): ServiceManager::getInterfaceServiceName||result=/home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService_server.skeleton.cpp
+sed：-e 表达式 #1，字符 3：未知的命令：“m”
+/home/Shit/thrift-test/src/thrift_server/calculate/CalculatorServiceHandler.h
+
+2019-05-03 12:23:52.459 INFO ./main/ServiceManager.cpp(89): ServiceManager::addService||interface service name=/home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService_server.skeleton.cpp
+sed：-e 表达式 #1，字符 3：未知的命令：“m”
+/home/Shit/thrift-test/src/thrift_server/calculate/CalculatorServiceHandler.h
+
+2019-05-03 12:23:52.459 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 12:25:31.896 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 12:25:31.896 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift /home/Shit/thrift-test/src/thrift_gen/calculate
+2019-05-03 12:25:31.904 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=
+2019-05-03 12:25:31.904 INFO ./main/ServiceManager.cpp(43): ServiceManager::getInterfaceServiceName||cmd=/home/Shit/thrift-test/src/idlParser.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-03 12:25:31.917 INFO ./main/ServiceManager.cpp(47): ServiceManager::getInterfaceServiceName||result=/home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService_server.skeleton.cpp
+sed：-e 表达式 #1，字符 3：未知的命令：“m”
+/home/Shit/thrift-test/src/thrift_server/calculate/CalculatorServiceHandler.h
+
+2019-05-03 12:25:31.917 INFO ./main/ServiceManager.cpp(89): ServiceManager::addService||interface service name=/home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService_server.skeleton.cpp
+sed：-e 表达式 #1，字符 3：未知的命令：“m”
+/home/Shit/thrift-test/src/thrift_server/calculate/CalculatorServiceHandler.h
+
+2019-05-03 12:25:31.917 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 12:26:29.370 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 12:26:29.370 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift /home/Shit/thrift-test/src/thrift_gen/calculate
+2019-05-03 12:26:29.378 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=
+2019-05-03 12:26:29.378 INFO ./main/ServiceManager.cpp(43): ServiceManager::getInterfaceServiceName||cmd=/home/Shit/thrift-test/src/idlParser.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-03 12:26:29.391 INFO ./main/ServiceManager.cpp(47): ServiceManager::getInterfaceServiceName||result=
+2019-05-03 12:26:29.391 INFO ./main/ServiceManager.cpp(86): ServiceManager::addService||get interface service name failed
+2019-05-03 12:26:29.391 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=1)
+2019-05-03 12:26:53.234 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 12:26:53.234 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift /home/Shit/thrift-test/src/thrift_gen/calculate
+2019-05-03 12:26:53.241 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=
+2019-05-03 12:26:53.241 INFO ./main/ServiceManager.cpp(43): ServiceManager::getInterfaceServiceName||cmd=/home/Shit/thrift-test/src/idlParser.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-03 12:26:53.255 INFO ./main/ServiceManager.cpp(47): ServiceManager::getInterfaceServiceName||result=/home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService_server.skeleton.cpp
+sed：-e 表达式 #1，字符 4：意外的“,”
+/home/Shit/thrift-test/src/thrift_server/calculate/CalculatorServiceHandler.h
+
+2019-05-03 12:26:53.255 INFO ./main/ServiceManager.cpp(89): ServiceManager::addService||interface service name=/home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService_server.skeleton.cpp
+sed：-e 表达式 #1，字符 4：意外的“,”
+/home/Shit/thrift-test/src/thrift_server/calculate/CalculatorServiceHandler.h
+
+2019-05-03 12:26:53.255 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 12:27:16.665 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 12:27:16.665 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift /home/Shit/thrift-test/src/thrift_gen/calculate
+2019-05-03 12:27:16.673 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=
+2019-05-03 12:27:16.673 INFO ./main/ServiceManager.cpp(43): ServiceManager::getInterfaceServiceName||cmd=/home/Shit/thrift-test/src/idlParser.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-03 12:27:16.686 INFO ./main/ServiceManager.cpp(47): ServiceManager::getInterfaceServiceName||result=/home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService_server.skeleton.cpp
+sed：-e 表达式 #1，字符 3：意外的“,”
+/home/Shit/thrift-test/src/thrift_server/calculate/CalculatorServiceHandler.h
+
+2019-05-03 12:27:16.686 INFO ./main/ServiceManager.cpp(89): ServiceManager::addService||interface service name=/home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService_server.skeleton.cpp
+sed：-e 表达式 #1，字符 3：意外的“,”
+/home/Shit/thrift-test/src/thrift_server/calculate/CalculatorServiceHandler.h
+
+2019-05-03 12:27:16.686 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 12:31:21.057 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 12:31:21.057 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift /home/Shit/thrift-test/src/thrift_gen/calculate
+2019-05-03 12:31:21.065 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=
+2019-05-03 12:31:21.065 INFO ./main/ServiceManager.cpp(43): ServiceManager::getInterfaceServiceName||cmd=/home/Shit/thrift-test/src/idlParser.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-03 12:31:21.078 INFO ./main/ServiceManager.cpp(47): ServiceManager::getInterfaceServiceName||result=/home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService_server.skeleton.cpp
+sed：-e 表达式 #1，字符 3：未知的命令：“m”
+/home/Shit/thrift-test/src/thrift_server/calculate/CalculatorServiceHandler.h
+
+2019-05-03 12:31:21.078 INFO ./main/ServiceManager.cpp(89): ServiceManager::addService||interface service name=/home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService_server.skeleton.cpp
+sed：-e 表达式 #1，字符 3：未知的命令：“m”
+/home/Shit/thrift-test/src/thrift_server/calculate/CalculatorServiceHandler.h
+
+2019-05-03 12:31:21.078 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 12:31:46.040 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 12:31:46.040 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift /home/Shit/thrift-test/src/thrift_gen/calculate
+2019-05-03 12:31:46.048 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=
+2019-05-03 12:31:46.048 INFO ./main/ServiceManager.cpp(43): ServiceManager::getInterfaceServiceName||cmd=/home/Shit/thrift-test/src/idlParser.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-03 12:31:46.061 INFO ./main/ServiceManager.cpp(47): ServiceManager::getInterfaceServiceName||result=/home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService_server.skeleton.cpp
+sed：-e 表达式 #1，字符 3：未知的命令：“m”
+/home/Shit/thrift-test/src/thrift_server/calculate/CalculatorServiceHandler.h
+
+2019-05-03 12:31:46.061 INFO ./main/ServiceManager.cpp(89): ServiceManager::addService||interface service name=/home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService_server.skeleton.cpp
+sed：-e 表达式 #1，字符 3：未知的命令：“m”
+/home/Shit/thrift-test/src/thrift_server/calculate/CalculatorServiceHandler.h
+
+2019-05-03 12:31:46.061 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 12:33:06.797 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 12:33:06.797 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift /home/Shit/thrift-test/src/thrift_gen/calculate
+2019-05-03 12:33:06.805 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=
+2019-05-03 12:33:06.805 INFO ./main/ServiceManager.cpp(43): ServiceManager::getInterfaceServiceName||cmd=/home/Shit/thrift-test/src/idlParser.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-03 12:33:06.818 INFO ./main/ServiceManager.cpp(47): ServiceManager::getInterfaceServiceName||result=/home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService_server.skeleton.cpp
+/home/Shit/thrift-test/src/thrift_server/calculate/CalculatorServiceHandler.h
+
+2019-05-03 12:33:06.818 INFO ./main/ServiceManager.cpp(89): ServiceManager::addService||interface service name=/home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService_server.skeleton.cpp
+/home/Shit/thrift-test/src/thrift_server/calculate/CalculatorServiceHandler.h
+
+2019-05-03 12:33:06.818 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 12:33:17.999 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 12:33:17.999 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift /home/Shit/thrift-test/src/thrift_gen/calculate
+2019-05-03 12:33:18.007 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=
+2019-05-03 12:33:18.007 INFO ./main/ServiceManager.cpp(43): ServiceManager::getInterfaceServiceName||cmd=/home/Shit/thrift-test/src/idlParser.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-03 12:33:18.020 INFO ./main/ServiceManager.cpp(47): ServiceManager::getInterfaceServiceName||result=/home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService_server.skeleton.cpp
+/home/Shit/thrift-test/src/thrift_server/calculate/CalculatorServiceHandler.h
+
+2019-05-03 12:33:18.020 INFO ./main/ServiceManager.cpp(89): ServiceManager::addService||interface service name=/home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService_server.skeleton.cpp
+/home/Shit/thrift-test/src/thrift_server/calculate/CalculatorServiceHandler.h
+
+2019-05-03 12:33:18.020 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 13:16:09.246 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 13:16:09.246 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift /home/Shit/thrift-test/src/thrift_gen/calculate
+2019-05-03 13:16:09.254 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=
+2019-05-03 13:16:09.254 INFO ./main/ServiceManager.cpp(43): ServiceManager::getInterfaceServiceName||cmd=/home/Shit/thrift-test/src/idlParser.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-03 13:16:09.268 INFO ./main/ServiceManager.cpp(47): ServiceManager::getInterfaceServiceName||result=/home/Shit/thrift-test/src/thrift_server/calculate/CalculatorServiceHandler.h
+
+2019-05-03 13:16:09.268 INFO ./main/ServiceManager.cpp(89): ServiceManager::addService||interface service name=/home/Shit/thrift-test/src/thrift_server/calculate/CalculatorServiceHandler.h
+
+2019-05-03 13:16:09.268 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 13:29:50.557 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 13:29:50.557 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift /home/Shit/thrift-test/src/thrift_gen/calculate
+2019-05-03 13:29:50.565 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=
+2019-05-03 13:29:50.565 INFO ./main/ServiceManager.cpp(43): ServiceManager::getInterfaceServiceName||cmd=/home/Shit/thrift-test/src/idlParser.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-03 13:29:50.578 INFO ./main/ServiceManager.cpp(47): ServiceManager::getInterfaceServiceName||result=/home/Shit/thrift-test/src/idlParser.sh:行17: 寻找匹配的 `"' 是遇到了未预期的文件结束符
+/home/Shit/thrift-test/src/idlParser.sh:行22: 语法错误: 未预期的文件结尾
+
+2019-05-03 13:29:50.578 INFO ./main/ServiceManager.cpp(89): ServiceManager::addService||interface service name=/home/Shit/thrift-test/src/idlParser.sh:行17: 寻找匹配的 `"' 是遇到了未预期的文件结束符
+/home/Shit/thrift-test/src/idlParser.sh:行22: 语法错误: 未预期的文件结尾
+
+2019-05-03 13:29:50.578 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 13:32:12.388 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 13:32:12.388 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift /home/Shit/thrift-test/src/thrift_gen/calculate
+2019-05-03 13:32:12.396 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=
+2019-05-03 13:32:12.396 INFO ./main/ServiceManager.cpp(43): ServiceManager::getInterfaceServiceName||cmd=/home/Shit/thrift-test/src/idlParser.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-03 13:32:12.409 INFO ./main/ServiceManager.cpp(47): ServiceManager::getInterfaceServiceName||result=/home/Shit/thrift-test/src/idlParser.sh:行17: 寻找匹配的 `"' 是遇到了未预期的文件结束符
+/home/Shit/thrift-test/src/idlParser.sh:行22: 语法错误: 未预期的文件结尾
+
+2019-05-03 13:32:12.409 INFO ./main/ServiceManager.cpp(89): ServiceManager::addService||interface service name=/home/Shit/thrift-test/src/idlParser.sh:行17: 寻找匹配的 `"' 是遇到了未预期的文件结束符
+/home/Shit/thrift-test/src/idlParser.sh:行22: 语法错误: 未预期的文件结尾
+
+2019-05-03 13:32:12.409 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 13:32:45.922 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 13:32:45.922 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift /home/Shit/thrift-test/src/thrift_gen/calculate
+2019-05-03 13:32:45.930 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=
+2019-05-03 13:32:45.930 INFO ./main/ServiceManager.cpp(43): ServiceManager::getInterfaceServiceName||cmd=/home/Shit/thrift-test/src/idlParser.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-03 13:32:45.948 INFO ./main/ServiceManager.cpp(47): ServiceManager::getInterfaceServiceName||result=
+2019-05-03 13:32:45.948 INFO ./main/ServiceManager.cpp(86): ServiceManager::addService||get interface service name failed
+2019-05-03 13:32:45.948 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=1)
+2019-05-03 17:27:52.781 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-03 17:27:52.781 INFO ./main/main.cpp(79): sub_pthread 139857268508416 created
+2019-05-03 17:27:52.785 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-03 17:27:52.791 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 6ms
+2019-05-03 17:28:16.060 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 17:28:16.060 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift /home/Shit/thrift-test/src/thrift_gen/calculate
+2019-05-03 17:28:16.068 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=
+2019-05-03 17:28:16.068 INFO ./main/ServiceManager.cpp(43): ServiceManager::getInterfaceServiceName||cmd=/home/Shit/thrift-test/src/idlParser.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-03 17:28:16.094 INFO ./main/ServiceManager.cpp(47): ServiceManager::getInterfaceServiceName||result=CalculatorServiceProcessor
+
+2019-05-03 17:28:16.094 INFO ./main/ServiceManager.cpp(89): ServiceManager::addService||interface service name=CalculatorServiceProcessor
+
+2019-05-03 17:28:16.094 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-03 18:06:59.882 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift)
+2019-05-03 18:06:59.882 INFO ./main/ServiceSrcGenerator.cpp(63): ServiceSrcGenerator::serviceSrcGen||start service gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift /home/Shit/thrift-test/src/thrift_gen/calculate
+2019-05-03 18:06:59.890 INFO ./main/ServiceSrcGenerator.cpp(70): ServiceSrcGenerator::serviceSrcGen||service gen script succ||result=
+2019-05-03 18:06:59.890 INFO ./main/ServiceManager.cpp(43): ServiceManager::getInterfaceServiceName||cmd=/home/Shit/thrift-test/src/idlParser.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-03 18:06:59.926 INFO ./main/ServiceManager.cpp(47): ServiceManager::getInterfaceServiceName||result=CalculatorServiceProcessor
+
+2019-05-03 18:06:59.926 INFO ./main/ServiceManager.cpp(89): ServiceManager::addService||interface service name=CalculatorServiceProcessor
+
+2019-05-03 18:06:59.926 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(58): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-04 16:30:11.513 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-04 16:30:11.513 INFO ./main/main.cpp(79): sub_pthread 140492439377664 created
+2019-05-04 16:30:11.522 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-04 16:30:11.532 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 10ms
+2019-05-04 16:31:16.210 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-04 16:31:16.210 INFO ./main/main.cpp(79): sub_pthread 140083525916416 created
+2019-05-04 16:31:16.211 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-04 16:31:16.212 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 1ms
+2019-05-04 16:31:55.006 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=<null>)
+2019-05-04 16:31:55.006 ERROR ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(57): ThriftTestKernelServiceHandler::AddService||req.type=Client||req.__isset.ip == false
+2019-05-04 16:35:38.099 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-04 16:35:38.099 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/serviceGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-04 16:35:38.103 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=sh: /home/Shit/thrift-test/src/serviceGen.sh: 没有那个文件或目录
+
+2019-05-04 16:35:38.103 INFO ./main/ServiceSrcGenerator.cpp(83): ServiceSrcGenerator::clientSrcGen||start client src gen script||cmd=/home/Shit/thrift-test/src/clientSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-04 16:35:38.105 INFO ./main/ServiceSrcGenerator.cpp(91): ServiceSrcGenerator::clientSrcGen||client src gen script exe succ||result=client sript is clalled
+
+2019-05-04 16:35:38.105 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-04 16:36:43.480 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-04 16:36:43.480 INFO ./main/main.cpp(79): sub_pthread 140587416954624 created
+2019-05-04 16:36:43.488 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-04 16:36:43.497 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 9ms
+2019-05-04 16:36:49.379 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-04 16:36:49.379 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-04 16:36:49.387 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-04 16:36:49.387 INFO ./main/ServiceSrcGenerator.cpp(83): ServiceSrcGenerator::clientSrcGen||start client src gen script||cmd=/home/Shit/thrift-test/src/clientSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-04 16:36:49.390 INFO ./main/ServiceSrcGenerator.cpp(91): ServiceSrcGenerator::clientSrcGen||client src gen script exe succ||result=client sript is clalled
+
+2019-05-04 16:36:49.390 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-04 16:38:02.524 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-04 16:38:02.524 INFO ./main/ServiceManager.cpp(54): ServiceManager::addService||origin src exists||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol
+2019-05-04 16:38:02.524 INFO ./main/ServiceSrcGenerator.cpp(102): ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=/home/Shit/thrift-test/src/serverSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-04 16:38:02.551 INFO ./main/ServiceSrcGenerator.cpp(110): ServiceSrcGenerator::serverSrcGen||server src gen script exe succ||result=sed：-e 表达式 #1，字符 3：意外的“,”
+CalculatorServiceProcessor
+
+2019-05-04 16:38:02.551 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-04 16:42:15.850 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-04 16:42:15.850 INFO ./main/ServiceManager.cpp(54): ServiceManager::addService||origin src exists||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol
+2019-05-04 16:42:15.850 INFO ./main/ServiceManager.cpp(89): ServiceManager::addService||server src exists||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol
+2019-05-04 16:42:15.850 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-04 16:43:02.732 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-04 16:43:02.732 INFO ./main/main.cpp(79): sub_pthread 140211890132736 created
+2019-05-04 16:43:02.732 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-04 16:43:02.739 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 7ms
+2019-05-04 16:43:08.739 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-04 16:43:08.739 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-04 16:43:08.747 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-04 16:43:08.748 INFO ./main/ServiceSrcGenerator.cpp(102): ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=/home/Shit/thrift-test/src/serverSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-04 16:43:08.772 ERROR ./main/ServiceSrcGenerator.cpp(107): ServiceSrcGenerator::serverSrcGen||server src gen script exe fail||result=sed：-e 表达式 #1，字符 3：意外的“,”
+CalculatorServiceProcessor
+rm: 无法删除"start_server": 没有那个文件或目录
+||ret=1
+2019-05-04 16:43:08.772 ERROR ./main/ServiceManager.cpp(81): ServiceManager::addService||server src gen failed||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol||ret=1
+2019-05-04 16:43:08.772 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=1)
+2019-05-04 16:43:52.516 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-04 16:43:52.516 INFO ./main/ServiceManager.cpp(54): ServiceManager::addService||origin src exists||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol
+2019-05-04 16:43:52.516 INFO ./main/ServiceSrcGenerator.cpp(102): ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=/home/Shit/thrift-test/src/serverSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-04 16:43:52.540 INFO ./main/ServiceSrcGenerator.cpp(110): ServiceSrcGenerator::serverSrcGen||server src gen script exe succ||result=sed：-e 表达式 #1，字符 3：意外的“,”
+CalculatorServiceProcessor
+
+2019-05-04 16:43:52.540 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-04 16:44:14.646 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-04 16:44:14.647 INFO ./main/ServiceManager.cpp(54): ServiceManager::addService||origin src exists||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol
+2019-05-04 16:44:14.647 INFO ./main/ServiceManager.cpp(89): ServiceManager::addService||server src exists||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol
+2019-05-04 16:44:14.647 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-04 16:44:34.881 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-04 16:44:34.881 INFO ./main/main.cpp(79): sub_pthread 139963422115584 created
+2019-05-04 16:44:34.885 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-04 16:44:34.890 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 5ms
+2019-05-04 16:44:39.573 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-04 16:44:39.573 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-04 16:44:39.583 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-04 16:44:39.583 INFO ./main/ServiceSrcGenerator.cpp(102): ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=/home/Shit/thrift-test/src/serverSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-04 16:44:39.609 INFO ./main/ServiceSrcGenerator.cpp(110): ServiceSrcGenerator::serverSrcGen||server src gen script exe succ||result=sed：-e 表达式 #1，字符 3：意外的“,”
+CalculatorServiceProcessor
+
+2019-05-04 16:44:39.609 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-04 16:55:56.636 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-04 16:55:56.636 INFO ./main/ServiceManager.cpp(54): ServiceManager::addService||origin src exists||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol
+2019-05-04 16:55:56.636 INFO ./main/ServiceManager.cpp(89): ServiceManager::addService||server src exists||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol
+2019-05-04 16:55:56.636 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-04 16:56:06.707 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-04 16:56:06.707 INFO ./main/main.cpp(79): sub_pthread 140653135546112 created
+2019-05-04 16:56:06.715 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-04 16:56:06.720 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 5ms
+2019-05-04 16:56:11.880 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-04 16:56:11.880 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-04 16:56:11.889 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-04 16:56:11.889 INFO ./main/ServiceSrcGenerator.cpp(102): ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=/home/Shit/thrift-test/src/serverSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-04 16:56:11.913 INFO ./main/ServiceSrcGenerator.cpp(110): ServiceSrcGenerator::serverSrcGen||server src gen script exe succ||result=CalculatorServiceProcessor
+
+2019-05-04 16:56:11.913 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-04 16:57:40.367 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-04 16:57:40.367 INFO ./main/main.cpp(79): sub_pthread 140336379504384 created
+2019-05-04 16:57:40.372 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-04 16:57:40.377 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 5ms
+2019-05-04 16:57:49.438 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-04 16:57:49.438 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-04 16:57:49.447 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-04 16:57:49.447 INFO ./main/ServiceSrcGenerator.cpp(102): ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=/home/Shit/thrift-test/src/serverSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-04 16:57:49.473 INFO ./main/ServiceSrcGenerator.cpp(110): ServiceSrcGenerator::serverSrcGen||server src gen script exe succ||result=CalculatorServiceProcessor
+
+2019-05-04 16:57:49.473 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-04 16:59:12.458 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-04 16:59:12.458 INFO ./main/ServiceManager.cpp(54): ServiceManager::addService||origin src exists||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol
+2019-05-04 16:59:12.458 INFO ./main/ServiceSrcGenerator.cpp(83): ServiceSrcGenerator::clientSrcGen||start client src gen script||cmd=/home/Shit/thrift-test/src/clientSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-04 16:59:12.462 INFO ./main/ServiceSrcGenerator.cpp(91): ServiceSrcGenerator::clientSrcGen||client src gen script exe succ||result=client sript is clalled
+
+2019-05-04 16:59:12.462 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-04 21:29:52.156 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-04 21:29:52.156 INFO ./main/main.cpp(79): sub_pthread 139841782257408 created
+2019-05-04 21:29:52.165 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-04 21:29:52.171 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 6ms
+2019-05-04 21:31:29.325 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-04 21:31:29.325 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-04 21:31:29.334 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-04 21:31:29.334 INFO ./main/ServiceSrcGenerator.cpp(84): ServiceSrcGenerator::clientSrcGen||start client src gen script||cmd=/home/Shit/thrift-test/src/clientSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 1234
+2019-05-04 21:31:29.379 INFO ./main/ServiceSrcGenerator.cpp(92): ServiceSrcGenerator::clientSrcGen||client src gen script exe succ||result=
+2019-05-04 21:31:29.379 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-04 21:32:06.269 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-04 21:32:06.269 INFO ./main/main.cpp(79): sub_pthread 140199590823680 created
+2019-05-04 21:32:06.276 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-04 21:32:06.282 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 6ms
+2019-05-04 21:32:15.654 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-04 21:32:15.655 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-04 21:32:15.664 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-04 21:32:15.664 INFO ./main/ServiceSrcGenerator.cpp(84): ServiceSrcGenerator::clientSrcGen||start client src gen script||cmd=/home/Shit/thrift-test/src/clientSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 1234
+2019-05-04 21:32:15.681 INFO ./main/ServiceSrcGenerator.cpp(92): ServiceSrcGenerator::clientSrcGen||client src gen script exe succ||result=rm: 无法删除"/home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorServiceClient.cpp": 没有那个文件或目录
+touch: 无法创建"/home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorServiceClient.cpp": 没有那个文件或目录
+/home/Shit/thrift-test/src/clientSrcGen.sh:行15: /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorServiceClient.cpp: 没有那个文件或目录
+cat: /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService_server.skeleton.cpp: 没有那个文件或目录
+
+2019-05-04 21:32:15.682 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 10:42:46.564 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 10:42:46.564 INFO ./main/main.cpp(79): sub_pthread 140397535414016 created
+2019-05-05 10:42:46.569 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 10:42:46.575 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 6ms
+2019-05-05 10:43:02.574 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 10:43:02.574 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 10:43:02.583 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-05 10:43:02.583 INFO ./main/ServiceSrcGenerator.cpp(84): ServiceSrcGenerator::clientSrcGen||start client src gen script||cmd=/home/Shit/thrift-test/src/clientSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 1234
+2019-05-05 10:43:02.613 INFO ./main/ServiceSrcGenerator.cpp(91): ServiceSrcGenerator::clientSrcGen||client src gen script exe succ||result=/home/Shit/thrift-test/src/clientSrcGen.sh: 第 30 行:[: 缺少 `]'
+&Calculate
+
+2019-05-05 10:43:02.613 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 10:43:50.765 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 10:43:50.765 INFO ./main/main.cpp(79): sub_pthread 139804698666752 created
+2019-05-05 10:43:50.774 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 10:43:50.780 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 6ms
+2019-05-05 10:44:03.518 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 10:44:03.518 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 10:44:03.526 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-05 10:44:03.526 INFO ./main/ServiceSrcGenerator.cpp(84): ServiceSrcGenerator::clientSrcGen||start client src gen script||cmd=/home/Shit/thrift-test/src/clientSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 1234
+2019-05-05 10:44:03.556 INFO ./main/ServiceSrcGenerator.cpp(91): ServiceSrcGenerator::clientSrcGen||client src gen script exe succ||result=&Calculate
+
+2019-05-05 10:44:03.556 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 10:44:59.550 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 10:44:59.550 INFO ./main/main.cpp(79): sub_pthread 140382750910208 created
+2019-05-05 10:44:59.558 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 10:44:59.564 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 6ms
+2019-05-05 10:45:09.074 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 10:45:09.074 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 10:45:09.083 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-05 10:45:09.083 INFO ./main/ServiceSrcGenerator.cpp(84): ServiceSrcGenerator::clientSrcGen||start client src gen script||cmd=/home/Shit/thrift-test/src/clientSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 1234
+2019-05-05 10:45:09.113 INFO ./main/ServiceSrcGenerator.cpp(91): ServiceSrcGenerator::clientSrcGen||client src gen script exe succ||result=Calculate
+
+2019-05-05 10:45:09.113 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 14:54:55.848 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 14:54:55.848 INFO ./main/ServiceManager.cpp(55): ServiceManager::addService||origin src exists||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol
+2019-05-05 14:54:55.848 INFO ./main/ServiceSrcGenerator.cpp(102): ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=/home/Shit/thrift-test/src/serverSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 14:54:55.851 INFO ./main/ServiceSrcGenerator.cpp(110): ServiceSrcGenerator::serverSrcGen||server src gen script exe succ||result=sh: /home/Shit/thrift-test/src/serverSrcGen.sh: 没有那个文件或目录
+
+2019-05-05 14:54:55.851 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 14:55:51.145 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 14:55:51.145 INFO ./main/main.cpp(79): sub_pthread 140192845768448 created
+2019-05-05 14:55:51.153 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 14:55:51.158 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 5ms
+2019-05-05 14:56:00.030 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 14:56:00.031 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 14:56:00.034 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=sh: /home/Shit/thrift-test/src/originalSrcGen.sh: 没有那个文件或目录
+
+2019-05-05 14:56:00.034 INFO ./main/ServiceSrcGenerator.cpp(102): ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=/home/Shit/thrift-test/src/serverSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 14:56:00.036 INFO ./main/ServiceSrcGenerator.cpp(110): ServiceSrcGenerator::serverSrcGen||server src gen script exe succ||result=sh: /home/Shit/thrift-test/src/serverSrcGen.sh: 没有那个文件或目录
+
+2019-05-05 14:56:00.036 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 14:57:35.997 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 14:57:35.997 INFO ./main/main.cpp(79): sub_pthread 139639913940736 created
+2019-05-05 14:57:36.006 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 14:57:36.012 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 6ms
+2019-05-05 14:57:45.551 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 14:57:45.551 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 14:57:45.554 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=sh: /home/Shit/thrift-test/src/originalSrcGen.sh: 没有那个文件或目录
+
+2019-05-05 14:57:45.554 INFO ./main/ServiceSrcGenerator.cpp(102): ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=/home/Shit/thrift-test/src/serverSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 14:57:45.580 INFO ./main/ServiceSrcGenerator.cpp(110): ServiceSrcGenerator::serverSrcGen||server src gen script exe succ||result=CalculatorServiceProcessor
+
+2019-05-05 14:57:45.580 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 15:29:19.725 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 15:29:19.726 INFO ./main/ServiceManager.cpp(55): ServiceManager::addService||origin src exists||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol
+2019-05-05 15:29:19.726 INFO ./main/ServiceManager.cpp(91): ServiceManager::addService||server src exists||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol
+2019-05-05 15:29:19.726 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 15:30:15.608 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 15:30:15.608 INFO ./main/main.cpp(79): sub_pthread 140585170913024 created
+2019-05-05 15:30:15.616 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 15:30:15.625 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 9ms
+2019-05-05 15:30:34.103 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 15:30:34.103 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 15:30:34.106 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=sh: /home/Shit/thrift-test/src/originalSrcGen.sh: 没有那个文件或目录
+
+2019-05-05 15:30:34.106 INFO ./main/ServiceSrcGenerator.cpp(102): ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=/home/Shit/thrift-test/src/serverSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 15:30:34.136 INFO ./main/ServiceSrcGenerator.cpp(110): ServiceSrcGenerator::serverSrcGen||server src gen script exe succ||result=CalculatorServiceProcessor
+
+2019-05-05 15:30:34.136 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 15:32:17.497 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 15:32:17.497 INFO ./main/main.cpp(79): sub_pthread 140179883259648 created
+2019-05-05 15:32:17.502 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 15:32:17.507 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 5ms
+2019-05-05 15:32:24.105 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 15:32:24.105 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 15:32:24.108 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=sh: /home/Shit/thrift-test/src/originalSrcGen.sh: 没有那个文件或目录
+
+2019-05-05 15:32:24.108 INFO ./main/ServiceSrcGenerator.cpp(102): ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=/home/Shit/thrift-test/src/serverSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 15:32:24.134 INFO ./main/ServiceSrcGenerator.cpp(110): ServiceSrcGenerator::serverSrcGen||server src gen script exe succ||result=CalculatorServiceProcessor
+
+2019-05-05 15:32:24.134 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 15:50:37.318 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 15:50:37.318 INFO ./main/main.cpp(79): sub_pthread 139794455521024 created
+2019-05-05 15:50:37.326 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 15:50:37.332 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 6ms
+2019-05-05 15:50:43.271 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 15:50:43.271 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 15:50:43.280 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-05 15:50:43.280 INFO ./main/ServiceSrcGenerator.cpp(102): ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=/home/Shit/thrift-test/src/serverSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 15:50:43.327 INFO ./main/ServiceSrcGenerator.cpp(110): ServiceSrcGenerator::serverSrcGen||server src gen script exe succ||result=CalculatorServiceProcessor
+
+2019-05-05 15:50:43.327 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 15:50:55.352 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 15:50:55.352 INFO ./main/ServiceManager.cpp(55): ServiceManager::addService||origin src exists||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol
+2019-05-05 15:50:55.352 INFO ./main/ServiceSrcGenerator.cpp(84): ServiceSrcGenerator::clientSrcGen||start client src gen script||cmd=/home/Shit/thrift-test/src/clientSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 1234
+2019-05-05 15:50:55.355 INFO ./main/ServiceSrcGenerator.cpp(91): ServiceSrcGenerator::clientSrcGen||client src gen script exe succ||result=sh: /home/Shit/thrift-test/src/clientSrcGen.sh: 没有那个文件或目录
+
+2019-05-05 15:50:55.355 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 15:51:54.316 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 15:51:54.316 INFO ./main/main.cpp(79): sub_pthread 139867124045568 created
+2019-05-05 15:51:54.324 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 15:51:54.330 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 6ms
+2019-05-05 15:51:58.857 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 15:51:58.857 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 15:51:58.866 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-05 15:51:58.866 INFO ./main/ServiceSrcGenerator.cpp(84): ServiceSrcGenerator::clientSrcGen||start client src gen script||cmd=/home/Shit/thrift-test/src/clientSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 1234
+2019-05-05 15:51:58.900 INFO ./main/ServiceSrcGenerator.cpp(91): ServiceSrcGenerator::clientSrcGen||client src gen script exe succ||result=Calculate
+
+2019-05-05 15:51:58.900 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 15:52:24.026 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 15:52:24.026 INFO ./main/ServiceManager.cpp(55): ServiceManager::addService||origin src exists||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol
+2019-05-05 15:52:24.026 INFO ./main/ServiceSrcGenerator.cpp(102): ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=/home/Shit/thrift-test/src/serverSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 15:52:24.053 INFO ./main/ServiceSrcGenerator.cpp(110): ServiceSrcGenerator::serverSrcGen||server src gen script exe succ||result=CalculatorServiceProcessor
+
+2019-05-05 15:52:24.053 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 15:56:35.217 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 15:56:35.218 INFO ./main/main.cpp(79): sub_pthread 139827156354816 created
+2019-05-05 15:56:35.223 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 15:56:35.229 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 6ms
+2019-05-05 15:56:48.907 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 15:56:48.907 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 15:56:48.916 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-05 15:56:48.916 INFO ./main/ServiceSrcGenerator.cpp(84): ServiceSrcGenerator::clientSrcGen||start client src gen script||cmd=/home/Shit/thrift-test/src/clientSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 1234
+2019-05-05 15:56:48.946 INFO ./main/ServiceSrcGenerator.cpp(91): ServiceSrcGenerator::clientSrcGen||client src gen script exe succ||result=Calculate
+
+2019-05-05 15:56:48.947 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 16:01:53.137 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 16:01:53.137 INFO ./main/main.cpp(79): sub_pthread 140313987811072 created
+2019-05-05 16:01:53.146 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 16:01:53.152 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 6ms
+2019-05-05 16:01:56.862 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 16:01:56.862 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 16:01:56.871 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-05 16:01:56.871 INFO ./main/ServiceSrcGenerator.cpp(84): ServiceSrcGenerator::clientSrcGen||start client src gen script||cmd=/home/Shit/thrift-test/src/clientSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 1234
+2019-05-05 16:01:56.901 INFO ./main/ServiceSrcGenerator.cpp(91): ServiceSrcGenerator::clientSrcGen||client src gen script exe succ||result=Calculate
+
+2019-05-05 16:01:56.901 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 16:20:10.067 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 16:20:10.067 INFO ./main/ServiceManager.cpp(55): ServiceManager::addService||origin src exists||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol
+2019-05-05 16:20:10.067 INFO ./main/ServiceSrcGenerator.cpp(102): ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=/home/Shit/thrift-test/src/serverSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 16:20:10.096 INFO ./main/ServiceSrcGenerator.cpp(110): ServiceSrcGenerator::serverSrcGen||server src gen script exe succ||result=CalculatorServiceProcessor
+
+2019-05-05 16:20:10.096 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 17:16:58.282 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 17:16:58.282 INFO ./main/main.cpp(79): sub_pthread 140102955439872 created
+2019-05-05 17:16:58.287 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 17:16:58.291 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 4ms
+2019-05-05 17:17:12.992 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 17:17:12.993 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/script/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 17:17:13.002 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-05 17:17:13.002 INFO ./main/ServiceSrcGenerator.cpp(102): ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=/home/Shit/thrift-test/src/script/serverSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 17:17:13.029 INFO ./main/ServiceSrcGenerator.cpp(110): ServiceSrcGenerator::serverSrcGen||server src gen script exe succ||result=CalculatorServiceProcessor
+
+2019-05-05 17:17:13.029 INFO ./main/ServiceLoader.cpp(43): ServiceLoader::compile||cmd=/home/Shit/thrift-test/src/script/compile.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 0
+2019-05-05 17:17:13.037 INFO ./main/ServiceLoader.cpp(51): ServiceLoader::compile||compile script exe succ||result=make: makefile: 没有那个文件或目录
+make: *** 没有规则可以创建目标“makefile”。 停止。
+
+2019-05-05 17:17:13.037 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 17:19:20.992 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 17:19:20.993 INFO ./main/main.cpp(79): sub_pthread 140589893359360 created
+2019-05-05 17:19:21.001 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 17:19:21.006 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 5ms
+2019-05-05 17:19:28.618 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 17:19:28.618 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/script/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 17:19:28.627 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-05 17:19:28.627 INFO ./main/ServiceSrcGenerator.cpp(102): ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=/home/Shit/thrift-test/src/script/serverSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 17:19:28.655 INFO ./main/ServiceSrcGenerator.cpp(110): ServiceSrcGenerator::serverSrcGen||server src gen script exe succ||result=CalculatorServiceProcessor
+
+2019-05-05 17:19:28.655 INFO ./main/ServiceLoader.cpp(43): ServiceLoader::compile||cmd=/home/Shit/thrift-test/src/script/compile.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 0
+2019-05-05 17:19:28.665 INFO ./main/ServiceLoader.cpp(51): ServiceLoader::compile||compile script exe succ||result=make: *** 没有规则可以创建“Server”需要的目标“calculate_constants.o”。 停止。
+
+2019-05-05 17:19:28.665 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 17:22:02.040 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 17:22:02.040 INFO ./main/main.cpp(79): sub_pthread 140276050679552 created
+2019-05-05 17:22:02.045 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 17:22:02.051 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 6ms
+2019-05-05 17:22:06.315 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 17:22:06.315 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/script/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 17:22:06.324 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-05 17:22:06.324 INFO ./main/ServiceSrcGenerator.cpp(102): ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=/home/Shit/thrift-test/src/script/serverSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 17:22:06.350 INFO ./main/ServiceSrcGenerator.cpp(110): ServiceSrcGenerator::serverSrcGen||server src gen script exe succ||result=CalculatorServiceProcessor
+
+2019-05-05 17:22:06.350 INFO ./main/ServiceLoader.cpp(43): ServiceLoader::compile||cmd=/home/Shit/thrift-test/src/script/compile.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 0
+2019-05-05 17:22:10.692 INFO ./main/ServiceLoader.cpp(51): ServiceLoader::compile||compile script exe succ||result=Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_constants.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_types.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorServiceServer.cpp ...
+g++ -std=c++0x -g -fPIC -shared -Wno-deprecated calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceServer.o -o /home/Shit/thrift-test/src/service_lib//libcalculateserver.so
+rm calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceServer.o
+
+2019-05-05 17:22:10.692 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 17:23:01.000 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 17:23:01.000 INFO ./main/ServiceManager.cpp(59): ServiceManager::addService||origin src exists||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol
+2019-05-05 17:23:01.000 INFO ./main/ServiceManager.cpp(98): ServiceManager::addService||server src exists||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol
+2019-05-05 17:23:01.000 INFO ./main/ServiceLoader.cpp(43): ServiceLoader::compile||cmd=/home/Shit/thrift-test/src/script/compile.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 2
+2019-05-05 17:23:02.807 INFO ./main/ServiceLoader.cpp(51): ServiceLoader::compile||compile script exe succ||result=Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorServiceServer.cpp ...
+g++ -std=c++0x -g -fPIC -shared -Wno-deprecated CalculatorServiceServer.o -o /home/Shit/thrift-test/src/service_lib//libcalculateserver.so
+rm CalculatorServiceServer.o
+
+2019-05-05 17:23:02.807 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 17:40:29.048 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 17:40:29.048 INFO ./main/main.cpp(79): sub_pthread 139981220124416 created
+2019-05-05 17:40:29.056 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 17:40:29.061 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 5ms
+2019-05-05 17:40:40.015 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 17:40:40.015 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/script/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 17:40:40.024 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-05 17:40:40.024 INFO ./main/ServiceSrcGenerator.cpp(102): ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=/home/Shit/thrift-test/src/script/serverSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 17:40:40.050 INFO ./main/ServiceSrcGenerator.cpp(110): ServiceSrcGenerator::serverSrcGen||server src gen script exe succ||result=CalculatorServiceProcessor
+
+2019-05-05 17:40:40.050 INFO ./main/ServiceLoader.cpp(58): ServiceLoader::compile||cmd=/home/Shit/thrift-test/src/script/compile.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 0
+2019-05-05 17:40:44.697 INFO ./main/ServiceLoader.cpp(66): ServiceLoader::compile||compile script exe succ||result=Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_constants.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_types.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorServiceServer.cpp ...
+g++ -std=c++0x -g -fPIC -shared -Wno-deprecated calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceServer.o -o /home/Shit/thrift-test/src/service_lib//libcalculateserver.so
+rm calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceServer.o
+
+2019-05-05 17:40:44.697 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 17:41:22.586 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 17:41:22.586 INFO ./main/main.cpp(79): sub_pthread 140447264716544 created
+2019-05-05 17:41:22.595 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 17:41:22.601 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 6ms
+2019-05-05 17:41:31.116 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 17:41:31.116 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/script/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 17:41:31.124 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-05 17:41:31.124 INFO ./main/ServiceSrcGenerator.cpp(102): ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=/home/Shit/thrift-test/src/script/serverSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 17:41:31.150 INFO ./main/ServiceSrcGenerator.cpp(110): ServiceSrcGenerator::serverSrcGen||server src gen script exe succ||result=CalculatorServiceProcessor
+
+2019-05-05 17:41:31.150 INFO ./main/ServiceLoader.cpp(58): ServiceLoader::compile||cmd=/home/Shit/thrift-test/src/script/compile.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 0
+2019-05-05 17:41:35.396 INFO ./main/ServiceLoader.cpp(66): ServiceLoader::compile||compile script exe succ||result=Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_constants.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_types.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorServiceServer.cpp ...
+g++ -std=c++0x -g -fPIC -shared -Wno-deprecated calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceServer.o -o /home/Shit/thrift-test/src/service_lib//libcalculateserver.so
+rm calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceServer.o
+
+2019-05-05 17:41:35.396 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 17:43:50.960 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 17:43:50.960 INFO ./main/ServiceManager.cpp(59): ServiceManager::addService||origin src exists||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol
+2019-05-05 17:43:50.960 INFO ./main/ServiceManager.cpp(98): ServiceManager::addService||server src exists||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol
+2019-05-05 17:43:50.960 INFO ./main/ServiceLoader.cpp(43): ServiceLoader::compile||server has been compiled||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol
+2019-05-05 17:43:50.960 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 17:45:22.945 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 17:45:22.945 INFO ./main/main.cpp(79): sub_pthread 140691347363584 created
+2019-05-05 17:45:22.954 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 17:45:22.960 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 6ms
+2019-05-05 17:45:27.588 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 17:45:27.588 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/script/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 17:45:27.597 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-05 17:45:27.597 INFO ./main/ServiceSrcGenerator.cpp(102): ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=/home/Shit/thrift-test/src/script/serverSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 17:45:27.623 INFO ./main/ServiceSrcGenerator.cpp(110): ServiceSrcGenerator::serverSrcGen||server src gen script exe succ||result=CalculatorServiceProcessor
+
+2019-05-05 17:45:27.623 INFO ./main/ServiceLoader.cpp(60): ServiceLoader::compile||cmd=/home/Shit/thrift-test/src/script/compile.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 0
+2019-05-05 17:45:31.924 INFO ./main/ServiceLoader.cpp(68): ServiceLoader::compile||compile script exe succ||result=Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_constants.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_types.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorServiceServer.cpp ...
+g++ -std=c++0x -g -fPIC -shared -Wno-deprecated calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceServer.o -o /home/Shit/thrift-test/src/service_lib//libcalculateserver.so
+rm calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceServer.o
+
+2019-05-05 17:45:31.924 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 17:45:43.153 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 17:45:43.153 INFO ./main/ServiceManager.cpp(59): ServiceManager::addService||origin src exists||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol
+2019-05-05 17:45:43.153 INFO ./main/ServiceManager.cpp(98): ServiceManager::addService||server src exists||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol
+2019-05-05 17:45:43.153 INFO ./main/ServiceLoader.cpp(44): ServiceLoader::compile||server has been compiled||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol
+2019-05-05 17:45:43.153 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 17:46:00.229 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 17:46:00.229 INFO ./main/ServiceManager.cpp(59): ServiceManager::addService||origin src exists||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol
+2019-05-05 17:46:00.229 INFO ./main/ServiceSrcGenerator.cpp(84): ServiceSrcGenerator::clientSrcGen||start client src gen script||cmd=/home/Shit/thrift-test/src/script/clientSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 1234
+2019-05-05 17:46:00.260 INFO ./main/ServiceSrcGenerator.cpp(91): ServiceSrcGenerator::clientSrcGen||client src gen script exe succ||result=Calculate
+
+2019-05-05 17:46:00.260 INFO ./main/ServiceLoader.cpp(36): ServiceLoader::compile||server has been compiled||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol
+2019-05-05 17:46:00.260 INFO ./main/ServiceLoader.cpp(60): ServiceLoader::compile||cmd=/home/Shit/thrift-test/src/script/compile.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 3
+2019-05-05 17:46:01.933 INFO ./main/ServiceLoader.cpp(68): ServiceLoader::compile||compile script exe succ||result=Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorServiceClient.cpp ...
+g++ -std=c++0x -g -fPIC -shared -Wno-deprecated CalculatorServiceClient.o -o /home/Shit/thrift-test/src/service_lib//libcalculateclient.so
+rm CalculatorServiceClient.o
+
+2019-05-05 17:46:01.933 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 17:47:25.490 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 17:47:25.491 INFO ./main/main.cpp(79): sub_pthread 140697345595136 created
+2019-05-05 17:47:25.499 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 17:47:25.504 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 5ms
+2019-05-05 17:47:32.099 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 17:47:32.099 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/script/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 17:47:32.108 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-05 17:47:32.108 INFO ./main/ServiceSrcGenerator.cpp(84): ServiceSrcGenerator::clientSrcGen||start client src gen script||cmd=/home/Shit/thrift-test/src/script/clientSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 1234
+2019-05-05 17:47:32.138 INFO ./main/ServiceSrcGenerator.cpp(91): ServiceSrcGenerator::clientSrcGen||client src gen script exe succ||result=Calculate
+
+2019-05-05 17:47:32.138 INFO ./main/ServiceLoader.cpp(60): ServiceLoader::compile||cmd=/home/Shit/thrift-test/src/script/compile.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 1
+2019-05-05 17:47:36.246 INFO ./main/ServiceLoader.cpp(68): ServiceLoader::compile||compile script exe succ||result=Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_constants.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_types.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorServiceClient.cpp ...
+g++ -std=c++0x -g -fPIC -shared -Wno-deprecated calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceClient.o -o /home/Shit/thrift-test/src/service_lib//libcalculateclient.so
+rm calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceClient.o
+
+2019-05-05 17:47:36.246 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 17:49:37.413 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 17:49:37.413 INFO ./main/ServiceManager.cpp(59): ServiceManager::addService||origin src exists||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol
+2019-05-05 17:49:37.413 INFO ./main/ServiceSrcGenerator.cpp(102): ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=/home/Shit/thrift-test/src/script/serverSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 17:49:37.441 INFO ./main/ServiceSrcGenerator.cpp(110): ServiceSrcGenerator::serverSrcGen||server src gen script exe succ||result=CalculatorServiceProcessor
+
+2019-05-05 17:49:37.441 INFO ./main/ServiceLoader.cpp(52): ServiceLoader::compile||client has been compiled||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol
+2019-05-05 17:49:37.441 INFO ./main/ServiceLoader.cpp(60): ServiceLoader::compile||cmd=/home/Shit/thrift-test/src/script/compile.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 2
+2019-05-05 17:49:39.238 INFO ./main/ServiceLoader.cpp(68): ServiceLoader::compile||compile script exe succ||result=Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorServiceServer.cpp ...
+g++ -std=c++0x -g -fPIC -shared -Wno-deprecated CalculatorServiceServer.o -o /home/Shit/thrift-test/src/service_lib//libcalculateserver.so
+rm CalculatorServiceServer.o
+
+2019-05-05 17:49:39.238 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 20:13:12.835 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 20:13:12.835 INFO ./main/main.cpp(79): sub_pthread 140267025520384 created
+2019-05-05 20:13:12.840 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 20:13:12.846 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 6ms
+2019-05-05 20:13:35.511 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 20:13:35.511 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/script/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 20:13:35.520 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-05 20:13:35.520 INFO ./main/ServiceSrcGenerator.cpp(102): ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=/home/Shit/thrift-test/src/script/serverSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 20:13:35.546 INFO ./main/ServiceSrcGenerator.cpp(110): ServiceSrcGenerator::serverSrcGen||server src gen script exe succ||result=CalculatorServiceProcessor
+
+2019-05-05 20:13:35.546 INFO ./main/ServiceLoader.cpp(63): ServiceLoader::compile||cmd=/home/Shit/thrift-test/src/script/compile.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 0
+2019-05-05 20:13:39.900 INFO ./main/ServiceLoader.cpp(71): ServiceLoader::compile||compile script exe succ||result=Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_constants.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_types.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorServiceServer.cpp ...
+g++ -std=c++0x -g -fPIC -shared -Wno-deprecated calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceServer.o -o /home/Shit/thrift-test/src/service_lib//libcalculateserver.so
+rm calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceServer.o
+
+2019-05-05 20:13:39.900 ERROR ./main/ServiceLoader.cpp(102): ServiceLoader::link||fail to link service lib||lib=/home/Shit/thrift-test/src/service_lib/libcalculateserver.so||err=/home/Shit/thrift-test/src/service_lib/libcalculateserver.so: undefined symbol: _ZTVN6apache6thrift9transport19TTransportExceptionE
+2019-05-05 20:13:39.900 ERROR ./main/ServiceManager.cpp(120): ServiceManager::addService||ServiceLoader link error||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol||type=1||ret=1
+2019-05-05 20:13:39.900 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=1)
+2019-05-05 20:35:11.078 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 20:35:11.078 INFO ./main/main.cpp(79): sub_pthread 140065601537792 created
+2019-05-05 20:35:11.083 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 20:35:11.089 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 6ms
+2019-05-05 20:35:19.515 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 20:35:19.515 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/script/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 20:35:19.524 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-05 20:35:19.524 INFO ./main/ServiceSrcGenerator.cpp(102): ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=/home/Shit/thrift-test/src/script/serverSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 20:35:19.552 INFO ./main/ServiceSrcGenerator.cpp(110): ServiceSrcGenerator::serverSrcGen||server src gen script exe succ||result=CalculatorServiceProcessor
+
+2019-05-05 20:35:19.552 INFO ./main/ServiceLoader.cpp(63): ServiceLoader::compile||cmd=/home/Shit/thrift-test/src/script/compile.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 0
+2019-05-05 20:35:23.824 INFO ./main/ServiceLoader.cpp(71): ServiceLoader::compile||compile script exe succ||result=Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_constants.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_types.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorServiceServer.cpp ...
+g++ -std=c++0x -g -fPIC -shared -Wno-deprecated calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceServer.o -o /home/Shit/thrift-test/src/service_lib//libcalculateserver.so -L/home/Shit/thrift-test/src/thirdparty/thrift/lib
+rm calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceServer.o
+
+2019-05-05 20:35:23.824 ERROR ./main/ServiceLoader.cpp(102): ServiceLoader::link||fail to link service lib||lib=/home/Shit/thrift-test/src/service_lib/libcalculateserver.so||err=/home/Shit/thrift-test/src/service_lib/libcalculateserver.so: undefined symbol: _ZTVN6apache6thrift9transport19TTransportExceptionE
+2019-05-05 20:35:23.824 ERROR ./main/ServiceManager.cpp(120): ServiceManager::addService||ServiceLoader link error||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol||type=1||ret=1
+2019-05-05 20:35:23.825 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=1)
+2019-05-05 20:36:40.587 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 20:36:40.587 INFO ./main/main.cpp(79): sub_pthread 140069163673344 created
+2019-05-05 20:36:40.594 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 20:36:40.600 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 6ms
+2019-05-05 20:36:45.359 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 20:36:45.359 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/script/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 20:36:45.368 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-05 20:36:45.368 INFO ./main/ServiceSrcGenerator.cpp(102): ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=/home/Shit/thrift-test/src/script/serverSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 20:36:45.396 INFO ./main/ServiceSrcGenerator.cpp(110): ServiceSrcGenerator::serverSrcGen||server src gen script exe succ||result=CalculatorServiceProcessor
+
+2019-05-05 20:36:45.396 INFO ./main/ServiceLoader.cpp(63): ServiceLoader::compile||cmd=/home/Shit/thrift-test/src/script/compile.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 0
+2019-05-05 20:36:49.867 INFO ./main/ServiceLoader.cpp(71): ServiceLoader::compile||compile script exe succ||result=Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_constants.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_types.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorServiceServer.cpp ...
+g++ -std=c++0x -g -fPIC -shared -Wno-deprecated calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceServer.o -o /home/Shit/thrift-test/src/service_lib//libcalculateserver.so -L./thirdparty/thrift/lib -lthriftnb -lthrift
+/usr/bin/ld: ./thirdparty/thrift/lib/libthrift.a(Thrift.o): relocation R_X86_64_32S against `_ZN6apache6thrift7TOutput16errorTimeWrapperEPKc' can not be used when making a shared object; recompile with -fPIC
+./thirdparty/thrift/lib/libthrift.a: error adding symbols: 错误的值
+collect2: 错误：ld 返回 1
+make: *** [Server] 错误 1
+
+2019-05-05 20:36:49.867 ERROR ./main/ServiceLoader.cpp(102): ServiceLoader::link||fail to link service lib||lib=/home/Shit/thrift-test/src/service_lib/libcalculateserver.so||err=/home/Shit/thrift-test/src/service_lib/libcalculateserver.so: cannot open shared object file: No such file or directory
+2019-05-05 20:36:49.867 ERROR ./main/ServiceManager.cpp(120): ServiceManager::addService||ServiceLoader link error||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol||type=1||ret=1
+2019-05-05 20:36:49.867 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=1)
+2019-05-05 20:41:08.439 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 20:41:08.439 INFO ./main/main.cpp(79): sub_pthread 140569348777728 created
+2019-05-05 20:41:08.448 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 20:41:08.453 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 5ms
+2019-05-05 20:41:21.223 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 20:41:21.223 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/script/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 20:41:21.232 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-05 20:41:21.232 INFO ./main/ServiceSrcGenerator.cpp(102): ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=/home/Shit/thrift-test/src/script/serverSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 20:41:21.259 INFO ./main/ServiceSrcGenerator.cpp(110): ServiceSrcGenerator::serverSrcGen||server src gen script exe succ||result=CalculatorServiceProcessor
+
+2019-05-05 20:41:21.259 INFO ./main/ServiceLoader.cpp(63): ServiceLoader::compile||cmd=/home/Shit/thrift-test/src/script/compile.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 0
+2019-05-05 20:41:25.452 INFO ./main/ServiceLoader.cpp(71): ServiceLoader::compile||compile script exe succ||result=Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_constants.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_types.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorServiceServer.cpp ...
+g++ -std=c++0x -g -fPIC -shared -Wno-deprecated calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceServer.o -o /home/Shit/thrift-test/src/service_lib//libcalculateserver.so -L./thirdparty/thrift/lib -lthriftnb -lthrift
+/usr/bin/ld: ./thirdparty/thrift/lib/libthrift.a(Thrift.o): relocation R_X86_64_32S against `_ZN6apache6thrift7TOutput16errorTimeWrapperEPKc' can not be used when making a shared object; recompile with -fPIC
+./thirdparty/thrift/lib/libthrift.a: error adding symbols: 错误的值
+collect2: 错误：ld 返回 1
+make: *** [Server] 错误 1
+
+2019-05-05 20:41:25.452 ERROR ./main/ServiceLoader.cpp(102): ServiceLoader::link||fail to link service lib||lib=/home/Shit/thrift-test/src/service_lib/libcalculateserver.so||err=/home/Shit/thrift-test/src/service_lib/libcalculateserver.so: cannot open shared object file: No such file or directory
+2019-05-05 20:41:25.452 ERROR ./main/ServiceManager.cpp(120): ServiceManager::addService||ServiceLoader link error||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol||type=1||ret=1
+2019-05-05 20:41:25.452 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=1)
+2019-05-05 20:42:56.820 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 20:42:56.820 INFO ./main/main.cpp(79): sub_pthread 140593565144832 created
+2019-05-05 20:42:56.821 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 20:42:56.822 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 1ms
+2019-05-05 20:43:00.916 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 20:43:00.916 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/script/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 20:43:00.925 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-05 20:43:00.925 INFO ./main/ServiceSrcGenerator.cpp(102): ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=/home/Shit/thrift-test/src/script/serverSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 20:43:00.951 INFO ./main/ServiceSrcGenerator.cpp(110): ServiceSrcGenerator::serverSrcGen||server src gen script exe succ||result=CalculatorServiceProcessor
+
+2019-05-05 20:43:00.951 INFO ./main/ServiceLoader.cpp(63): ServiceLoader::compile||cmd=/home/Shit/thrift-test/src/script/compile.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 0
+2019-05-05 20:43:05.216 INFO ./main/ServiceLoader.cpp(71): ServiceLoader::compile||compile script exe succ||result=Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_constants.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_types.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorServiceServer.cpp ...
+g++ -std=c++0x -g -fPIC -shared -Wno-deprecated calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceServer.o -o /home/Shit/thrift-test/src/service_lib//libcalculateserver.so -L./thirdparty/thrift/lib 
+rm calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceServer.o
+
+2019-05-05 20:43:05.216 ERROR ./main/ServiceLoader.cpp(102): ServiceLoader::link||fail to link service lib||lib=/home/Shit/thrift-test/src/service_lib/libcalculateserver.so||err=/home/Shit/thrift-test/src/service_lib/libcalculateserver.so: undefined symbol: _ZTVN6apache6thrift9transport19TTransportExceptionE
+2019-05-05 20:43:05.216 ERROR ./main/ServiceManager.cpp(120): ServiceManager::addService||ServiceLoader link error||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol||type=1||ret=1
+2019-05-05 20:43:05.216 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=1)
+2019-05-05 20:46:58.599 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 20:46:58.599 INFO ./main/main.cpp(79): sub_pthread 139770730071808 created
+2019-05-05 20:46:58.604 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 20:46:58.610 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 6ms
+2019-05-05 20:47:06.058 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 20:47:06.058 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/script/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 20:47:06.066 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-05 20:47:06.066 INFO ./main/ServiceSrcGenerator.cpp(102): ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=/home/Shit/thrift-test/src/script/serverSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 20:47:06.093 INFO ./main/ServiceSrcGenerator.cpp(110): ServiceSrcGenerator::serverSrcGen||server src gen script exe succ||result=CalculatorServiceProcessor
+
+2019-05-05 20:47:06.093 INFO ./main/ServiceLoader.cpp(63): ServiceLoader::compile||cmd=/home/Shit/thrift-test/src/script/compile.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 0
+2019-05-05 20:47:10.396 INFO ./main/ServiceLoader.cpp(71): ServiceLoader::compile||compile script exe succ||result=Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_constants.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_types.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorServiceServer.cpp ...
+g++ -std=c++0x -g -fPIC -shared -Wno-deprecated calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceServer.o -o /home/Shit/thrift-test/src/service_lib//libcalculateserver.so -L./thirdparty/thrift/lib -lthriftnb -lthrift
+/usr/bin/ld: ./thirdparty/thrift/lib/libthrift.a(Thrift.o): relocation R_X86_64_32S against `_ZN6apache6thrift7TOutput16errorTimeWrapperEPKc' can not be used when making a shared object; recompile with -fPIC
+./thirdparty/thrift/lib/libthrift.a: error adding symbols: 错误的值
+collect2: 错误：ld 返回 1
+make: *** [Server] 错误 1
+
+2019-05-05 20:47:10.396 ERROR ./main/ServiceLoader.cpp(102): ServiceLoader::link||fail to link service lib||lib=/home/Shit/thrift-test/src/service_lib/libcalculateserver.so||err=/home/Shit/thrift-test/src/service_lib/libcalculateserver.so: cannot open shared object file: No such file or directory
+2019-05-05 20:47:10.396 ERROR ./main/ServiceManager.cpp(120): ServiceManager::addService||ServiceLoader link error||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol||type=1||ret=1
+2019-05-05 20:47:10.396 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=1)
+2019-05-05 20:50:27.389 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 20:50:27.389 INFO ./main/main.cpp(79): sub_pthread 140023698913024 created
+2019-05-05 20:50:27.398 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 20:50:27.406 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 8ms
+2019-05-05 20:50:31.246 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 20:50:31.246 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/script/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 20:50:31.255 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-05 20:50:31.255 INFO ./main/ServiceSrcGenerator.cpp(102): ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=/home/Shit/thrift-test/src/script/serverSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 20:50:31.282 INFO ./main/ServiceSrcGenerator.cpp(110): ServiceSrcGenerator::serverSrcGen||server src gen script exe succ||result=CalculatorServiceProcessor
+
+2019-05-05 20:50:31.282 INFO ./main/ServiceLoader.cpp(63): ServiceLoader::compile||cmd=/home/Shit/thrift-test/src/script/compile.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 0
+2019-05-05 20:50:35.588 INFO ./main/ServiceLoader.cpp(71): ServiceLoader::compile||compile script exe succ||result=Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_constants.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_types.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorServiceServer.cpp ...
+g++ -std=c++0x -g -fPIC -shared -Wno-deprecated calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceServer.o -o /home/Shit/thrift-test/src/service_lib//libcalculateserver.so -L./thirdparty/thrift/lib/so -lthriftnb -lthrift
+rm calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceServer.o
+
+2019-05-05 20:50:35.588 ERROR ./main/ServiceLoader.cpp(102): ServiceLoader::link||fail to link service lib||lib=/home/Shit/thrift-test/src/service_lib/libcalculateserver.so||err=libthriftnb-0.9.2.so: cannot open shared object file: No such file or directory
+2019-05-05 20:50:35.588 ERROR ./main/ServiceManager.cpp(120): ServiceManager::addService||ServiceLoader link error||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol||type=1||ret=1
+2019-05-05 20:50:35.588 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=1)
+2019-05-05 20:52:15.492 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 20:52:15.492 INFO ./main/main.cpp(79): sub_pthread 140277220603648 created
+2019-05-05 20:52:15.500 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 20:52:15.506 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 6ms
+2019-05-05 20:52:19.890 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 20:52:19.890 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/script/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 20:52:19.899 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-05 20:52:19.899 INFO ./main/ServiceSrcGenerator.cpp(102): ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=/home/Shit/thrift-test/src/script/serverSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 20:52:19.925 INFO ./main/ServiceSrcGenerator.cpp(110): ServiceSrcGenerator::serverSrcGen||server src gen script exe succ||result=CalculatorServiceProcessor
+
+2019-05-05 20:52:19.926 INFO ./main/ServiceLoader.cpp(63): ServiceLoader::compile||cmd=/home/Shit/thrift-test/src/script/compile.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 0
+2019-05-05 20:52:24.237 INFO ./main/ServiceLoader.cpp(71): ServiceLoader::compile||compile script exe succ||result=Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_constants.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_types.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorServiceServer.cpp ...
+g++ -std=c++0x -g -fPIC -shared -Wno-deprecated calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceServer.o -o /home/Shit/thrift-test/src/service_lib//libcalculateserver.so -L./thirdparty/thrift/lib/so -lthriftnb -lthrift
+rm calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceServer.o
+
+2019-05-05 20:52:24.237 ERROR ./main/ServiceLoader.cpp(102): ServiceLoader::link||fail to link service lib||lib=/home/Shit/thrift-test/src/service_lib/libcalculateserver.so||err=libthriftnb-0.9.2.so: cannot open shared object file: No such file or directory
+2019-05-05 20:52:24.237 ERROR ./main/ServiceManager.cpp(120): ServiceManager::addService||ServiceLoader link error||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol||type=1||ret=1
+2019-05-05 20:52:24.237 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=1)
+2019-05-05 20:58:02.066 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 20:58:02.066 INFO ./main/main.cpp(79): sub_pthread 140476010940160 created
+2019-05-05 20:58:02.070 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 20:58:02.074 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 4ms
+2019-05-05 20:58:07.527 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 20:58:07.527 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/script/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 20:58:07.537 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-05 20:58:07.537 INFO ./main/ServiceSrcGenerator.cpp(102): ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=/home/Shit/thrift-test/src/script/serverSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 20:58:07.565 INFO ./main/ServiceSrcGenerator.cpp(110): ServiceSrcGenerator::serverSrcGen||server src gen script exe succ||result=CalculatorServiceProcessor
+
+2019-05-05 20:58:07.565 INFO ./main/ServiceLoader.cpp(63): ServiceLoader::compile||cmd=/home/Shit/thrift-test/src/script/compile.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 0
+2019-05-05 20:58:12.172 INFO ./main/ServiceLoader.cpp(71): ServiceLoader::compile||compile script exe succ||result=Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_constants.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_types.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorServiceServer.cpp ...
+g++ -std=c++0x -g -fPIC -shared -Wno-deprecated calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceServer.o -o /home/Shit/thrift-test/src/service_lib//libcalculateserver.so -L./thirdparty/thrift/lib/so -lthriftnb -lthrift
+rm calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceServer.o
+
+2019-05-05 20:58:12.173 ERROR ./main/ServiceLoader.cpp(102): ServiceLoader::link||fail to link service lib||lib=/home/Shit/thrift-test/src/service_lib/libcalculateserver.so||err=/home/Shit/thrift-test/src/service_lib/libcalculateserver.so: undefined symbol: log_level
+2019-05-05 20:58:12.173 ERROR ./main/ServiceManager.cpp(120): ServiceManager::addService||ServiceLoader link error||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol||type=1||ret=1
+2019-05-05 20:58:12.173 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=1)
+2019-05-05 21:04:34.715 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 21:04:34.715 INFO ./main/main.cpp(79): sub_pthread 139644039493376 created
+2019-05-05 21:04:34.726 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 21:04:34.739 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 13ms
+2019-05-05 21:04:42.114 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 21:04:42.114 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/script/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 21:04:42.122 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-05 21:04:42.122 INFO ./main/ServiceSrcGenerator.cpp(102): ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=/home/Shit/thrift-test/src/script/serverSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 21:04:42.150 INFO ./main/ServiceSrcGenerator.cpp(110): ServiceSrcGenerator::serverSrcGen||server src gen script exe succ||result=CalculatorServiceProcessor
+
+2019-05-05 21:04:42.150 INFO ./main/ServiceLoader.cpp(63): ServiceLoader::compile||cmd=/home/Shit/thrift-test/src/script/compile.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 0
+2019-05-05 21:04:46.586 INFO ./main/ServiceLoader.cpp(71): ServiceLoader::compile||compile script exe succ||result=Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_constants.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_types.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorServiceServer.cpp ...
+g++ -std=c++0x -g -fPIC -shared -Wno-deprecated calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceServer.o -o /home/Shit/thrift-test/src/service_lib//libcalculateserver.so -L./thirdparty/thrift/lib/so -lthriftnb -lthrift
+rm calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceServer.o
+
+2019-05-05 21:04:46.586 INFO ./main/ServiceLoader.cpp(116): ServiceLoader::link||link service lib succ||lib=/home/Shit/thrift-test/src/service_lib/libcalculateserver.so
+2019-05-05 21:04:46.586 ERROR ./main/ServiceManager.cpp(120): ServiceManager::addService||ServiceLoader link error||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol||type=1||ret=1
+2019-05-05 21:04:46.586 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=1)
+2019-05-05 21:11:11.039 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 21:11:11.039 INFO ./main/main.cpp(79): sub_pthread 140553391175424 created
+2019-05-05 21:11:11.039 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 21:11:11.048 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 9ms
+2019-05-05 21:11:18.000 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 21:11:18.000 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/script/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 21:11:18.010 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-05 21:11:18.010 INFO ./main/ServiceSrcGenerator.cpp(102): ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=/home/Shit/thrift-test/src/script/serverSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 21:11:18.038 INFO ./main/ServiceSrcGenerator.cpp(110): ServiceSrcGenerator::serverSrcGen||server src gen script exe succ||result=CalculatorServiceProcessor
+
+2019-05-05 21:11:18.038 INFO ./main/ServiceLoader.cpp(63): ServiceLoader::compile||cmd=/home/Shit/thrift-test/src/script/compile.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 0
+2019-05-05 21:11:22.511 INFO ./main/ServiceLoader.cpp(71): ServiceLoader::compile||compile script exe succ||result=Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_constants.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_types.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorServiceServer.cpp ...
+g++ -std=c++0x -g -fPIC -shared -Wno-deprecated calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceServer.o -o /home/Shit/thrift-test/src/service_lib//libcalculateserver.so -L./thirdparty/thrift/lib/so -lthriftnb -lthrift
+rm calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceServer.o
+
+2019-05-05 21:11:22.512 INFO ./main/ServiceLoader.cpp(116): ServiceLoader::link||link service lib succ||lib=/home/Shit/thrift-test/src/service_lib/libcalculateserver.so
+2019-05-05 21:11:22.512 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 21:11:22.517 INFO ./main/ServiceManager.cpp(17): calculate_v1.1.1_1234_TFileTransport_TJSONProtocol server start! :)
+2019-05-05 21:34:22.055 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 21:34:22.055 INFO ./main/main.cpp(79): sub_pthread 140378470602496 created
+2019-05-05 21:34:22.063 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 21:34:22.071 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 8ms
+2019-05-05 21:34:52.330 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 21:34:52.330 INFO ./main/main.cpp(79): sub_pthread 140220298839808 created
+2019-05-05 21:34:52.339 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 21:34:52.352 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 13ms
+2019-05-05 21:34:58.555 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 21:34:58.555 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/script/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 21:34:58.564 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-05 21:34:58.565 ERROR ./main/main.cpp(26): DumpTraceBack||line=0||trace_back=./thrift-test(_Z13DumpTracebacki+0x18) [0x423608]
+2019-05-05 21:34:58.565 ERROR ./main/main.cpp(26): DumpTraceBack||line=1||trace_back=/lib64/libc.so.6(+0x35250) [0x7f8796ee8250]
+2019-05-05 21:34:58.565 ERROR ./main/main.cpp(26): DumpTraceBack||line=2||trace_back=./thrift-test(_ZSt6__findIN9__gnu_cxx17__normal_iteratorIPSsSt6vectorISsSaISsEEEESsET_S7_S7_RKT0_St26random_access_iterator_tag+0x78) [0x425c38]
+2019-05-05 21:34:58.565 ERROR ./main/main.cpp(26): DumpTraceBack||line=3||trace_back=./thrift-test(_ZN14ServiceManager10addServiceERKN18thrift_test_kernel17AddServiceRequestE+0x61b) [0x42491b]
+2019-05-05 21:34:58.565 ERROR ./main/main.cpp(26): DumpTraceBack||line=4||trace_back=./thrift-test(_ZN30ThriftTestKernelServiceHandler10AddServiceERN18thrift_test_kernel18AddServiceResponseERKNS0_17AddServiceRequestE+0x7d) [0x43ec3d]
+2019-05-05 21:34:58.565 ERROR ./main/main.cpp(26): DumpTraceBack||line=5||trace_back=./thrift-test(_ZN18thrift_test_kernel32ThriftTestKernelServiceProcessor18process_AddServiceEiPN6apache6thrift8protocol9TProtocolES5_Pv+0x18f) [0x42deff]
+2019-05-05 21:34:58.565 ERROR ./main/main.cpp(26): DumpTraceBack||line=6||trace_back=./thrift-test(_ZN18thrift_test_kernel32ThriftTestKernelServiceProcessor12dispatchCallEPN6apache6thrift8protocol9TProtocolES5_RKSsiPv+0x10b) [0x42c9fb]
+2019-05-05 21:34:58.565 ERROR ./main/main.cpp(26): DumpTraceBack||line=7||trace_back=./thrift-test(_ZN6apache6thrift18TDispatchProcessor7processEN5boost10shared_ptrINS0_8protocol9TProtocolEEES6_Pv+0xa6) [0x432ab6]
+2019-05-05 21:34:58.565 ERROR ./main/main.cpp(26): DumpTraceBack||line=8||trace_back=/home/Shit/thrift-test/src/thirdparty/thrift/lib/so/libthriftnb-0.9.2.so(_ZN6apache6thrift6server18TNonblockingServer11TConnection4Task3runEv+0x134) [0x7f879816ed34]
+2019-05-05 21:34:58.565 ERROR ./main/main.cpp(26): DumpTraceBack||line=9||trace_back=/home/Shit/thrift-test/src/thirdparty/thrift/lib/so/libthrift-0.9.2.so(_ZN6apache6thrift11concurrency13ThreadManager4Task3runEv+0x1f) [0x7f8797ef7b6f]
+2019-05-05 21:34:58.565 ERROR ./main/main.cpp(26): DumpTraceBack||line=10||trace_back=/home/Shit/thrift-test/src/thirdparty/thrift/lib/so/libthrift-0.9.2.so(_ZN6apache6thrift11concurrency13ThreadManager6Worker3runEv+0x29e) [0x7f8797efa17e]
+2019-05-05 21:34:58.565 ERROR ./main/main.cpp(26): DumpTraceBack||line=11||trace_back=/home/Shit/thrift-test/src/thirdparty/thrift/lib/so/libthrift-0.9.2.so(_ZN6apache6thrift11concurrency13PthreadThread10threadMainEPv+0x96) [0x7f8797f35206]
+2019-05-05 21:34:58.565 ERROR ./main/main.cpp(26): DumpTraceBack||line=12||trace_back=/lib64/libpthread.so.0(+0x7dc5) [0x7f8797c9edc5]
+2019-05-05 21:34:58.565 ERROR ./main/main.cpp(26): DumpTraceBack||line=13||trace_back=/lib64/libc.so.6(clone+0x6d) [0x7f8796faa76d]
+2019-05-05 21:36:47.931 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 21:36:47.931 INFO ./main/main.cpp(79): sub_pthread 139834209744640 created
+2019-05-05 21:36:47.939 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 21:36:47.944 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 5ms
+2019-05-05 21:36:54.012 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 21:36:54.012 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/script/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 21:36:54.021 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-05 21:36:54.021 INFO ./main/ServiceSrcGenerator.cpp(102): ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=/home/Shit/thrift-test/src/script/serverSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 21:36:54.049 INFO ./main/ServiceSrcGenerator.cpp(110): ServiceSrcGenerator::serverSrcGen||server src gen script exe succ||result=CalculatorServiceProcessor
+
+2019-05-05 21:36:54.049 INFO ./main/ServiceLoader.cpp(63): ServiceLoader::compile||cmd=/home/Shit/thrift-test/src/script/compile.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 0
+2019-05-05 21:36:58.556 INFO ./main/ServiceLoader.cpp(71): ServiceLoader::compile||compile script exe succ||result=Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_constants.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_types.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorServiceServer.cpp ...
+g++ -std=c++0x -g -fPIC -shared -Wno-deprecated calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceServer.o -o /home/Shit/thrift-test/src/service_lib//libcalculateserver.so -L./thirdparty/thrift/lib
+rm calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceServer.o
+
+2019-05-05 21:36:58.556 ERROR ./main/ServiceLoader.cpp(102): ServiceLoader::link||fail to link service lib||lib=/home/Shit/thrift-test/src/service_lib/libcalculateserver.so||err=/home/Shit/thrift-test/src/service_lib/libcalculateserver.so: undefined symbol: _ZTVN6apache6thrift6server13TSimpleServerE
+2019-05-05 21:36:58.556 ERROR ./main/ServiceManager.cpp(120): ServiceManager::addService||ServiceLoader link error||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol||type=1||ret=1
+2019-05-05 21:36:58.556 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=1)
+2019-05-05 21:37:52.674 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 21:37:52.674 INFO ./main/main.cpp(79): sub_pthread 140688165422848 created
+2019-05-05 21:37:52.682 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 21:37:52.688 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 6ms
+2019-05-05 21:37:56.569 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 21:37:56.569 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/script/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 21:37:56.578 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-05 21:37:56.578 INFO ./main/ServiceSrcGenerator.cpp(102): ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=/home/Shit/thrift-test/src/script/serverSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 21:37:56.605 INFO ./main/ServiceSrcGenerator.cpp(110): ServiceSrcGenerator::serverSrcGen||server src gen script exe succ||result=CalculatorServiceProcessor
+
+2019-05-05 21:37:56.605 INFO ./main/ServiceLoader.cpp(63): ServiceLoader::compile||cmd=/home/Shit/thrift-test/src/script/compile.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 0
+2019-05-05 21:38:00.858 INFO ./main/ServiceLoader.cpp(71): ServiceLoader::compile||compile script exe succ||result=Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_constants.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_types.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorServiceServer.cpp ...
+g++ -std=c++0x -g -fPIC -shared -Wno-deprecated calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceServer.o -o /home/Shit/thrift-test/src/service_lib//libcalculateserver.so -L./thirdparty/thrift/lib -lthriftnb -lthrift
+/usr/bin/ld: ./thirdparty/thrift/lib/libthrift.a(Thrift.o): relocation R_X86_64_32S against `_ZN6apache6thrift7TOutput16errorTimeWrapperEPKc' can not be used when making a shared object; recompile with -fPIC
+./thirdparty/thrift/lib/libthrift.a: error adding symbols: 错误的值
+collect2: 错误：ld 返回 1
+make: *** [Server] 错误 1
+
+2019-05-05 21:38:00.858 ERROR ./main/ServiceLoader.cpp(102): ServiceLoader::link||fail to link service lib||lib=/home/Shit/thrift-test/src/service_lib/libcalculateserver.so||err=/home/Shit/thrift-test/src/service_lib/libcalculateserver.so: cannot open shared object file: No such file or directory
+2019-05-05 21:38:00.858 ERROR ./main/ServiceManager.cpp(120): ServiceManager::addService||ServiceLoader link error||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol||type=1||ret=1
+2019-05-05 21:38:00.858 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=1)
+2019-05-05 21:39:45.335 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 21:39:45.335 INFO ./main/main.cpp(79): sub_pthread 139729524053760 created
+2019-05-05 21:39:45.345 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 21:39:45.354 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 9ms
+2019-05-05 21:39:47.745 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=1, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 21:39:47.745 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/script/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 21:39:47.754 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-05 21:39:47.754 INFO ./main/ServiceSrcGenerator.cpp(102): ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=/home/Shit/thrift-test/src/script/serverSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 21:39:47.781 INFO ./main/ServiceSrcGenerator.cpp(110): ServiceSrcGenerator::serverSrcGen||server src gen script exe succ||result=CalculatorServiceProcessor
+
+2019-05-05 21:39:47.782 INFO ./main/ServiceLoader.cpp(63): ServiceLoader::compile||cmd=/home/Shit/thrift-test/src/script/compile.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 0
+2019-05-05 21:39:52.106 INFO ./main/ServiceLoader.cpp(71): ServiceLoader::compile||compile script exe succ||result=Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_constants.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_types.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorServiceServer.cpp ...
+g++ -std=c++0x -g -fPIC -shared -Wno-deprecated calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceServer.o -o /home/Shit/thrift-test/src/service_lib//libcalculateserver.so -L./thirdparty/thrift/lib 
+rm calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceServer.o
+
+2019-05-05 21:39:52.106 INFO ./main/ServiceLoader.cpp(116): ServiceLoader::link||link service lib succ||lib=/home/Shit/thrift-test/src/service_lib/libcalculateserver.so
+2019-05-05 21:39:52.107 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 21:39:52.108 INFO ./main/ServiceManager.cpp(17): calculate_v1.1.1_1234_TFileTransport_TJSONProtocol server start! :)
+2019-05-05 21:41:23.835 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 21:41:23.835 INFO ./main/ServiceManager.cpp(66): ServiceManager::addService||origin src exists||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol
+2019-05-05 21:41:23.835 INFO ./main/ServiceSrcGenerator.cpp(84): ServiceSrcGenerator::clientSrcGen||start client src gen script||cmd=/home/Shit/thrift-test/src/script/clientSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 1234
+2019-05-05 21:41:23.867 INFO ./main/ServiceSrcGenerator.cpp(91): ServiceSrcGenerator::clientSrcGen||client src gen script exe succ||result=Calculate
+
+2019-05-05 21:41:23.867 INFO ./main/ServiceLoader.cpp(39): ServiceLoader::compile||server has been compiled||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol
+2019-05-05 21:41:23.867 INFO ./main/ServiceLoader.cpp(63): ServiceLoader::compile||cmd=/home/Shit/thrift-test/src/script/compile.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 3
+2019-05-05 21:41:25.528 INFO ./main/ServiceLoader.cpp(71): ServiceLoader::compile||compile script exe succ||result=Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorServiceClient.cpp ...
+g++ -std=c++0x -g -fPIC -shared -Wno-deprecated CalculatorServiceClient.o -o /home/Shit/thrift-test/src/service_lib//libcalculateclient.so -L./thirdparty/thrift/lib 
+rm CalculatorServiceClient.o
+
+2019-05-05 21:41:25.528 ERROR ./main/ServiceLoader.cpp(102): ServiceLoader::link||fail to link service lib||lib=/home/Shit/thrift-test/src/service_lib/libcalculateclient.so||err=/home/Shit/thrift-test/src/service_lib/libcalculateclient.so: undefined symbol: _ZTVN10calculator16CalcilateRequestE
+2019-05-05 21:41:25.528 ERROR ./main/ServiceManager.cpp(120): ServiceManager::addService||ServiceLoader link error||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol||type=0||ret=1
+2019-05-05 21:41:25.528 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=1)
+2019-05-05 23:29:26.676 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 23:29:26.676 INFO ./main/main.cpp(79): sub_pthread 139897671612160 created
+2019-05-05 23:29:26.685 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 23:29:26.691 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 6ms
+2019-05-05 23:29:34.905 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 23:29:34.905 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/script/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 23:29:34.914 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-05 23:29:34.914 INFO ./main/ServiceSrcGenerator.cpp(84): ServiceSrcGenerator::clientSrcGen||start client src gen script||cmd=/home/Shit/thrift-test/src/script/clientSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 1234
+2019-05-05 23:29:34.945 INFO ./main/ServiceSrcGenerator.cpp(91): ServiceSrcGenerator::clientSrcGen||client src gen script exe succ||result=Calculate
+CalcilateRequest
+
+2019-05-05 23:29:34.945 INFO ./main/ServiceLoader.cpp(63): ServiceLoader::compile||cmd=/home/Shit/thrift-test/src/script/compile.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 1
+2019-05-05 23:29:39.096 INFO ./main/ServiceLoader.cpp(71): ServiceLoader::compile||compile script exe succ||result=Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_constants.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_types.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorServiceClient.cpp ...
+g++ -std=c++0x -g -fPIC -shared -Wno-deprecated calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceClient.o -o /home/Shit/thrift-test/src/service_lib//libcalculateclient.so -L./thirdparty/thrift/lib 
+rm calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceClient.o
+
+2019-05-05 23:29:39.097 INFO ./main/ServiceLoader.cpp(116): ServiceLoader::link||link service lib succ||lib=/home/Shit/thrift-test/src/service_lib/libcalculateclient.so
+2019-05-05 23:29:39.097 ERROR ./main/ServiceLoader.cpp(173): ServiceLoader::getServer||fail to find synbol calculate_Calculate
+CalcilateRequest
+_1234||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol||err=/home/Shit/thrift-test/src/service_lib/libcalculateclient.so: undefined symbol: calculate_Calculate
+CalcilateRequest
+_1234
+2019-05-05 23:29:39.097 ERROR ./main/ServiceManager.cpp(148): ServiceManager::addService||ServiceLoader get method error||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol||method=Calculate
+CalcilateRequest
+
+2019-05-05 23:29:39.097 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=1)
+2019-05-05 23:34:54.310 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 23:34:54.310 INFO ./main/main.cpp(79): sub_pthread 140177222334208 created
+2019-05-05 23:34:54.318 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 23:34:54.327 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 9ms
+2019-05-05 23:35:01.754 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 23:35:01.754 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/script/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 23:35:01.763 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-05 23:35:01.763 INFO ./main/ServiceSrcGenerator.cpp(84): ServiceSrcGenerator::clientSrcGen||start client src gen script||cmd=/home/Shit/thrift-test/src/script/clientSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 1234
+2019-05-05 23:35:01.794 INFO ./main/ServiceSrcGenerator.cpp(91): ServiceSrcGenerator::clientSrcGen||client src gen script exe succ||result=Calculate
+CalculateRequest
+
+2019-05-05 23:35:01.794 INFO ./main/ServiceLoader.cpp(63): ServiceLoader::compile||cmd=/home/Shit/thrift-test/src/script/compile.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 1
+2019-05-05 23:35:05.932 INFO ./main/ServiceLoader.cpp(71): ServiceLoader::compile||compile script exe succ||result=Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_constants.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_types.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorServiceClient.cpp ...
+g++ -std=c++0x -g -fPIC -shared -Wno-deprecated calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceClient.o -o /home/Shit/thrift-test/src/service_lib//libcalculateclient.so -L./thirdparty/thrift/lib 
+rm calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceClient.o
+
+2019-05-05 23:35:05.933 INFO ./main/ServiceLoader.cpp(116): ServiceLoader::link||link service lib succ||lib=/home/Shit/thrift-test/src/service_lib/libcalculateclient.so
+2019-05-05 23:35:05.933 ERROR ./main/ServiceLoader.cpp(173): ServiceLoader::getServer||fail to find synbol calculate_Calculate
+CalculateRequest
+_1234||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol||err=/home/Shit/thrift-test/src/service_lib/libcalculateclient.so: undefined symbol: calculate_Calculate
+CalculateRequest
+_1234
+2019-05-05 23:35:05.933 ERROR ./main/ServiceManager.cpp(148): ServiceManager::addService||ServiceLoader get method error||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol||method=Calculate
+CalculateRequest
+
+2019-05-05 23:35:05.933 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=1)
+2019-05-05 23:39:20.866 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 23:39:20.866 INFO ./main/ServiceManager.cpp(66): ServiceManager::addService||origin src exists||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol
+2019-05-05 23:39:20.866 INFO ./main/ServiceManager.cpp(88): ServiceManager::addService||client src exists||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol
+2019-05-05 23:39:20.866 INFO ./main/ServiceLoader.cpp(31): ServiceLoader::compile||client has been compiled||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol
+2019-05-05 23:39:20.866 INFO ./main/ServiceLoader.cpp(116): ServiceLoader::link||link service lib succ||lib=/home/Shit/thrift-test/src/service_lib/libcalculateclient.so
+2019-05-05 23:39:20.866 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)
+2019-05-05 23:39:37.252 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 23:39:37.252 INFO ./main/main.cpp(79): sub_pthread 139716321662720 created
+2019-05-05 23:39:37.252 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 23:39:37.261 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 9ms
+2019-05-05 23:39:47.019 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 23:39:47.019 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/script/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 23:39:47.028 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-05 23:39:47.028 INFO ./main/ServiceSrcGenerator.cpp(84): ServiceSrcGenerator::clientSrcGen||start client src gen script||cmd=/home/Shit/thrift-test/src/script/clientSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 1234
+2019-05-05 23:39:47.058 INFO ./main/ServiceSrcGenerator.cpp(91): ServiceSrcGenerator::clientSrcGen||client src gen script exe succ||result=Calculate
+CalculateRequest
+
+2019-05-05 23:39:47.059 INFO ./main/ServiceLoader.cpp(63): ServiceLoader::compile||cmd=/home/Shit/thrift-test/src/script/compile.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 1
+2019-05-05 23:39:51.180 INFO ./main/ServiceLoader.cpp(71): ServiceLoader::compile||compile script exe succ||result=Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_constants.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_types.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorServiceClient.cpp ...
+g++ -std=c++0x -g -fPIC -shared -Wno-deprecated calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceClient.o -o /home/Shit/thrift-test/src/service_lib//libcalculateclient.so -L./thirdparty/thrift/lib 
+rm calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceClient.o
+
+2019-05-05 23:39:51.181 INFO ./main/ServiceLoader.cpp(116): ServiceLoader::link||link service lib succ||lib=/home/Shit/thrift-test/src/service_lib/libcalculateclient.so
+2019-05-05 23:39:51.181 ERROR ./main/ServiceLoader.cpp(173): ServiceLoader::getServer||fail to find synbol calculate_Calculate
+CalculateRequest
+_1234||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol||err=/home/Shit/thrift-test/src/service_lib/libcalculateclient.so: undefined symbol: calculate_Calculate
+CalculateRequest
+_1234
+2019-05-05 23:39:51.181 ERROR ./main/ServiceManager.cpp(148): ServiceManager::addService||ServiceLoader get method error||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol||method=Calculate
+CalculateRequest
+
+2019-05-05 23:39:51.181 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=1)
+2019-05-05 23:45:47.563 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 23:45:47.563 INFO ./main/main.cpp(79): sub_pthread 139715559315200 created
+2019-05-05 23:45:47.571 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 23:45:47.577 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 6ms
+2019-05-05 23:45:52.641 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 23:45:52.641 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/script/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 23:45:52.650 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-05 23:45:52.651 INFO ./main/ServiceSrcGenerator.cpp(84): ServiceSrcGenerator::clientSrcGen||start client src gen script||cmd=/home/Shit/thrift-test/src/script/clientSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 1234
+2019-05-05 23:45:52.681 INFO ./main/ServiceSrcGenerator.cpp(91): ServiceSrcGenerator::clientSrcGen||client src gen script exe succ||result=Calculate
+
+2019-05-05 23:45:52.681 INFO ./main/ServiceLoader.cpp(63): ServiceLoader::compile||cmd=/home/Shit/thrift-test/src/script/compile.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 1
+2019-05-05 23:45:56.788 INFO ./main/ServiceLoader.cpp(71): ServiceLoader::compile||compile script exe succ||result=Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_constants.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_types.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorServiceClient.cpp ...
+g++ -std=c++0x -g -fPIC -shared -Wno-deprecated calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceClient.o -o /home/Shit/thrift-test/src/service_lib//libcalculateclient.so -L./thirdparty/thrift/lib 
+rm calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceClient.o
+
+2019-05-05 23:45:56.789 INFO ./main/ServiceLoader.cpp(116): ServiceLoader::link||link service lib succ||lib=/home/Shit/thrift-test/src/service_lib/libcalculateclient.so
+2019-05-05 23:45:56.789 ERROR ./main/ServiceLoader.cpp(173): ServiceLoader::getServer||fail to find synbol calculate_Calculate
+_1234||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol||err=/home/Shit/thrift-test/src/service_lib/libcalculateclient.so: undefined symbol: calculate_Calculate
+_1234
+2019-05-05 23:45:56.789 ERROR ./main/ServiceManager.cpp(148): ServiceManager::addService||ServiceLoader get method error||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol||method=Calculate
+
+2019-05-05 23:45:56.789 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=1)
+2019-05-05 23:50:40.242 INFO ./main/main.cpp(66): welcome to thrift-test! :) 
+2019-05-05 23:50:40.242 INFO ./main/main.cpp(79): sub_pthread 140620493793024 created
+2019-05-05 23:50:40.252 DEBUG ./main/main.cpp(59): thrift server start
+2019-05-05 23:50:40.267 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceServer.cpp(53): star server t_cost: 14ms
+2019-05-05 23:50:51.712 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(55): ThriftTestKernelServiceHandler::AddService||entry||req=AddServiceRequest(type=0, serviceName=calculate, version=v1.1.1, port=1234, transport=TFileTransport, protocol=TJSONProtocol, idlAbsFileName=/home/Shit/thrift-test/src/idl/calculate.thrift, ip=127.0.0.1)
+2019-05-05 23:50:51.712 INFO ./main/ServiceSrcGenerator.cpp(64): ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=/home/Shit/thrift-test/src/script/originalSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate
+2019-05-05 23:50:51.722 INFO ./main/ServiceSrcGenerator.cpp(72): ServiceSrcGenerator::originalSrcGen||orginal src gen script exe succ||result=
+2019-05-05 23:50:51.722 INFO ./main/ServiceSrcGenerator.cpp(84): ServiceSrcGenerator::clientSrcGen||start client src gen script||cmd=/home/Shit/thrift-test/src/script/clientSrcGen.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 1234
+2019-05-05 23:50:51.753 INFO ./main/ServiceSrcGenerator.cpp(91): ServiceSrcGenerator::clientSrcGen||client src gen script exe succ||result=Calculate
+
+2019-05-05 23:50:51.753 INFO ./main/ServiceLoader.cpp(63): ServiceLoader::compile||cmd=/home/Shit/thrift-test/src/script/compile.sh /home/Shit/thrift-test/src/idl/calculate.thrift calculate 1
+2019-05-05 23:50:55.914 INFO ./main/ServiceLoader.cpp(71): ServiceLoader::compile||compile script exe succ||result=Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_constants.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/calculate_types.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorService.cpp ...
+Compiling /home/Shit/thrift-test/src/thrift_gen/calculate/CalculatorServiceClient.cpp ...
+g++ -std=c++0x -g -fPIC -shared -Wno-deprecated calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceClient.o -o /home/Shit/thrift-test/src/service_lib//libcalculateclient.so -L./thirdparty/thrift/lib 
+rm calculate_constants.o calculate_types.o CalculatorService.o CalculatorServiceClient.o
+
+2019-05-05 23:50:55.915 INFO ./main/ServiceLoader.cpp(116): ServiceLoader::link||link service lib succ||lib=/home/Shit/thrift-test/src/service_lib/libcalculateclient.so
+2019-05-05 23:50:55.915 INFO ./main/ServiceManager.cpp(153): ServiceManager::addService||add method succ||serviceId=calculate_v1.1.1_1234_TFileTransport_TJSONProtocol||method=Calculate
+2019-05-05 23:50:55.915 INFO ./thrift_server/thrift_test_kernel/ThriftTestKernelServiceHandler.cpp(63): ThriftTestKernelServiceHandler::AddService||exit||rsp=AddServiceResponse(errorCode=0)

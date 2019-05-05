@@ -33,7 +33,7 @@ ThriftTestClient::ThriftTestClient(int port, string ip)
 	boost::shared_ptr<TProtocol> protocol(new TBinaryProtocol(ts));
 
 	socket->setConnTimeout(500);
-	socket->setRecvTimeout(300);
+	socket->setRecvTimeout(10000);
 	socket->setSendTimeout(300);
 
 	clientPtr = boost::make_shared<ThriftTestKernelServiceClient>(protocol);

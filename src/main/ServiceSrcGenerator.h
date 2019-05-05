@@ -5,9 +5,13 @@
 
 using namespace std;
 
+/*
+ * serviceId = serviceNmae_version_port_transport_protocol
+ */
+
 class ServiceSrcGenerator {
-private:
-	int executeShell(string cmd, string& result);
+public:
+	static int executeShell(string cmd, string& result);
 public:
 	ServiceSrcGenerator();
 
@@ -17,8 +21,9 @@ public:
 	 * 1: compile error
 	 * 2: internal error
 	 */
-	int serviceSrcGen(string serviceId, string idlPath, string srcDir);
-
+	int originalSrcGen(string serviceId, string idlPath);
+	int clientSrcGen(string serviceId, string idlPath, string& methodStr);
+	int serverSrcGen(string serviceId, string idlPath);
 };
 
 #endif

@@ -53,6 +53,11 @@ void ThriftTestKernelServiceHandler::AddService(AddServiceResponse& _return, con
 	// Your implementation goes here
 	using apache::thrift::to_string;
 	log_info("ThriftTestKernelServiceHandler::AddService||entry||req=%s", to_string(request).c_str());
+	if (request.type == ServiceType::Client && request.__isset.ip == false) {
+		log_error("ThriftTestKernelServiceHandler::AddService||req.type=Client||req.__isset.ip == false");
+		_return.__set_errorCode(2);
+		return;
+	}
 	int ret = serviceMgr->addService(request);
 	_return.__set_errorCode(ret);
 	log_info("ThriftTestKernelServiceHandler::AddService||exit||rsp=%s", to_string(_return).c_str());

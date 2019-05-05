@@ -281,8 +281,13 @@ void AddServiceRequest::__set_idlAbsFileName(const std::string& val) {
   this->idlAbsFileName = val;
 }
 
-const char* AddServiceRequest::ascii_fingerprint = "C7B19B4887A1DA53530BDA51A92751BF";
-const uint8_t AddServiceRequest::binary_fingerprint[16] = {0xC7,0xB1,0x9B,0x48,0x87,0xA1,0xDA,0x53,0x53,0x0B,0xDA,0x51,0xA9,0x27,0x51,0xBF};
+void AddServiceRequest::__set_ip(const std::string& val) {
+  this->ip = val;
+__isset.ip = true;
+}
+
+const char* AddServiceRequest::ascii_fingerprint = "08F0BE4E3409411EB14347962054F871";
+const uint8_t AddServiceRequest::binary_fingerprint[16] = {0x08,0xF0,0xBE,0x4E,0x34,0x09,0x41,0x1E,0xB1,0x43,0x47,0x96,0x20,0x54,0xF8,0x71};
 
 uint32_t AddServiceRequest::read(::apache::thrift::protocol::TProtocol* iprot) {
 
@@ -369,6 +374,14 @@ uint32_t AddServiceRequest::read(::apache::thrift::protocol::TProtocol* iprot) {
           xfer += iprot->skip(ftype);
         }
         break;
+      case 8:
+        if (ftype == ::apache::thrift::protocol::T_STRING) {
+          xfer += iprot->readString(this->ip);
+          this->__isset.ip = true;
+        } else {
+          xfer += iprot->skip(ftype);
+        }
+        break;
       default:
         xfer += iprot->skip(ftype);
         break;
@@ -428,6 +441,11 @@ uint32_t AddServiceRequest::write(::apache::thrift::protocol::TProtocol* oprot) 
   xfer += oprot->writeString(this->idlAbsFileName);
   xfer += oprot->writeFieldEnd();
 
+  if (this->__isset.ip) {
+    xfer += oprot->writeFieldBegin("ip", ::apache::thrift::protocol::T_STRING, 8);
+    xfer += oprot->writeString(this->ip);
+    xfer += oprot->writeFieldEnd();
+  }
   xfer += oprot->writeFieldStop();
   xfer += oprot->writeStructEnd();
   oprot->decrementRecursionDepth();
@@ -443,6 +461,8 @@ void swap(AddServiceRequest &a, AddServiceRequest &b) {
   swap(a.transport, b.transport);
   swap(a.protocol, b.protocol);
   swap(a.idlAbsFileName, b.idlAbsFileName);
+  swap(a.ip, b.ip);
+  swap(a.__isset, b.__isset);
 }
 
 AddServiceRequest::AddServiceRequest(const AddServiceRequest& other12) {
@@ -453,6 +473,8 @@ AddServiceRequest::AddServiceRequest(const AddServiceRequest& other12) {
   transport = other12.transport;
   protocol = other12.protocol;
   idlAbsFileName = other12.idlAbsFileName;
+  ip = other12.ip;
+  __isset = other12.__isset;
 }
 AddServiceRequest& AddServiceRequest::operator=(const AddServiceRequest& other13) {
   type = other13.type;
@@ -462,6 +484,8 @@ AddServiceRequest& AddServiceRequest::operator=(const AddServiceRequest& other13
   transport = other13.transport;
   protocol = other13.protocol;
   idlAbsFileName = other13.idlAbsFileName;
+  ip = other13.ip;
+  __isset = other13.__isset;
   return *this;
 }
 std::ostream& operator<<(std::ostream& out, const AddServiceRequest& obj) {
@@ -474,6 +498,7 @@ std::ostream& operator<<(std::ostream& out, const AddServiceRequest& obj) {
   out << ", " << "transport=" << to_string(obj.transport);
   out << ", " << "protocol=" << to_string(obj.protocol);
   out << ", " << "idlAbsFileName=" << to_string(obj.idlAbsFileName);
+  out << ", " << "ip="; (obj.__isset.ip ? (out << to_string(obj.ip)) : (out << "<null>"));
   out << ")";
   return out;
 }
