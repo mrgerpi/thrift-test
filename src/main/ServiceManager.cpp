@@ -2,6 +2,7 @@
 #include "ThriftTestKernelService.h"
 #include "simple_log.h"
 #include "didiutils.h"
+#include "typedef.h"
 
 #include <pthread.h>
 #include <string>
@@ -38,8 +39,8 @@ ServiceManager::~ServiceManager()
 
 string ServiceManager::serviceIdGen(const AddServiceRequest& req) 
 {
-	return req.serviceName + "_" + req.version + "_" + DidiUtils::print(req.port) + "_"
-		+ req.transport + "_" + req.protocol;
+	return req.serviceName + "&" + req.version + "&" + DidiUtils::print(req.port) + "&"
+		+ req.transport + "&" + req.protocol;
 }
 
 int ServiceManager::addService(const AddServiceRequest& req) 
@@ -160,5 +161,71 @@ int ServiceManager::addService(const AddServiceRequest& req)
 
 	return 0;
 }
+
+int ServiceManager::getServiceList(ServiceType::type type, vector<string>& list) 
+{
+	if (type == ServiceType::Client) {
+		vector<string>::iterator vit = clientSrcServiceId.begin();
+		for (;vit != clientSrcServiceId.end();vit++) {
+			if (methodMap.find(*vit) != methodMap.end()) {
+				list.push_back(*vit);
+			} else {
+				log_warn("ServiceManager::getServiceList||service gen src but no client||serviceId=%s", (*vit).c_str());
+			}
+		}
+	} else if (type == ServiceType::Server) {
+		vector<string>::iterator vit = serverSrcServiceId.begin();
+		for (;vit != serverSrcServiceId.end();vit++) {
+			if (serverThreadMap.find(*vit) != serverThreadMap.end()) {
+				list.push_back(*vit);
+			} else {
+				log_warn("ServiceManager::getServiceList||service gen src but no server||serviceId=%s", (*vit).c_str());
+			}
+		}
+	}
+
+	return 0;
+}
+
+
+int ServiceManager::requestTrigger(string serviceId, string methodName, string& rsp)
+{
+	map<string, map<string, Client_Entry>>::iterator mmit = methodMap.find(serviceId);
+	if (mmit == methodMap.end()) {
+		log_error("SM||RequestTrigger||client not been loaded||serviceId=%s", serviceId.c_str());
+		return 1;
+	}
+	map<string, Client_Entry>::iterator mit = (mmit->second).find(methodName);
+	if (mit == (mmit->second).end()) {
+		log_error("SM||RequestTrigger||client has no method||serviceId=%s||method=%s", 
+				serviceId.c_str(), methodName.c_str());
+		return 1;
+	}
+
+	Client_Entry entry = ((mmit->second).find(methodName))->second;
+	
+	vector<string> tokens;
+	DidiUtils::split_str(serviceId, tokens, "&");
+	int port = atoi(tokens[2].c_str());
+	string ip = "127.0.0.1";
+
+	log_info("SM||RequestTrigger||client entry found||serviceId=%s||methodName=%s||entry=%p",
+			serviceId.c_str(), methodName.c_str(), entry);
+	int ret = entry(ip, port);
+	if (ret != 0) {
+		log_error("SM||RequestTrigger||client method call failed||serviceId=%s||method=%s", 
+				serviceId.c_str(), methodName.c_str());
+		return 1;
+	}
+
+	string rspPath = DidiUtils::pwd() + "/../data/" + tokens[0] + "/" + methodName + "/rsp.json";
+	ret = DidiUtils::readFile(rspPath, rsp);
+	if (ret != 0) {
+		log_error("SM||RequestTrigger||read rsp.json failed||path=%s", rspPath.c_str());
+		return 1;
+	}
+	return 0;
+}
+
 
 

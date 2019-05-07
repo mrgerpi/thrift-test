@@ -22,7 +22,7 @@ public:
 	ThriftTestClient(int port, string ip = "127.0.0.1");
 	~ThriftTestClient(){};
 public:
-	int GetServiceList(const string& reqJson, string& rspJson);
+	int GetServiceList(const string& reqJson, string& rspJson, char* type);
 	int AddService(const string& reqJson, string& rspJson);
 	int FillData(const string& reqJson, string& rspJson);
 	int RequestTrigger(const string& reqJson, string& rspJson);

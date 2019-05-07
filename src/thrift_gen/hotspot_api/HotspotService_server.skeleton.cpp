@@ -22,7 +22,7 @@ class HotspotServiceHandler : virtual public HotspotServiceIf {
     // Your initialization goes here
   }
 
-  void GetRecommendStationList(HotspotResponse& _return, const HotspotRequest& request) {
+  void GetRecommendStationList(HotspotResponse& _return, const HotspotRequest& request, const Trace& trace) {
     // Your implementation goes here
     printf("GetRecommendStationList\n");
   }

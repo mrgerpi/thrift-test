@@ -12,8 +12,10 @@ struct GetServiceListRequest {
 
 struct GetServiceListResponse {
 	1: required i32 errorCode;					//0: succ, 1: kernel internal error
-	2: required list<string> instanceList;
+	2: required list<string> instanceList;		//serviceId list
 }
+
+//serviceId: serviceName_version_port_transport_protocol
 
 struct AddServiceRequest {
 	1: required ServiceType type;
@@ -33,7 +35,7 @@ struct AddServiceResponse  {
 struct FillDataRequest {
 	1: required ServiceType type;
 	2: required string serviceName;
-	3: required string methodName;
+	3: required string methodName;		//1#methodName
 	4: required string data;
 }
 
@@ -42,13 +44,13 @@ struct FillDataResponse {
 }
 
 struct RequestTriggerRequest {
-	1: required string serviceName;
+	1: required string serviceName;			//serviceId 
 	2: required string methodName;
 }
 
 struct RequestTriggerResponse {
 	1: required i32 errorCode;					//0: succ, 1: kernel internal error
-	2: required string reqponseJson;
+	2: required string responseJson;
 }
 
 service ThriftTestKernelService {

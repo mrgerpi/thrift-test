@@ -31,9 +31,9 @@ extern const std::map<int, const char*> _TextType_VALUES_TO_NAMES;
 
 class Trace;
 
-class HotspotRequest;
-
 class StationInfo;
+
+class HotspotRequest;
 
 class CarpoolEtdInfo;
 
@@ -73,68 +73,26 @@ class CarpoolEtdRequest;
 
 class CarpoolEtdResponse;
 
-typedef struct _Trace__isset {
-  _Trace__isset() : spanId(false), srcMethod(false), hintCode(false), hintContent(false) {}
-  bool spanId :1;
-  bool srcMethod :1;
-  bool hintCode :1;
-  bool hintContent :1;
-} _Trace__isset;
 
 class Trace {
  public:
 
-  static const char* ascii_fingerprint; // = "8D476629BDA99AC6FA462DCC7E29B166";
-  static const uint8_t binary_fingerprint[16]; // = {0x8D,0x47,0x66,0x29,0xBD,0xA9,0x9A,0xC6,0xFA,0x46,0x2D,0xCC,0x7E,0x29,0xB1,0x66};
+  static const char* ascii_fingerprint; // = "EFB929595D312AC8F305D5A794CFEDA1";
+  static const uint8_t binary_fingerprint[16]; // = {0xEF,0xB9,0x29,0x59,0x5D,0x31,0x2A,0xC8,0xF3,0x05,0xD5,0xA7,0x94,0xCF,0xED,0xA1};
 
   Trace(const Trace&);
   Trace& operator=(const Trace&);
-  Trace() : logId(), caller(), spanId(), srcMethod(), hintCode(0), hintContent() {
+  Trace() : logId() {
   }
 
   virtual ~Trace() throw();
   std::string logId;
-  std::string caller;
-  std::string spanId;
-  std::string srcMethod;
-  int64_t hintCode;
-  std::string hintContent;
-
-  _Trace__isset __isset;
 
   void __set_logId(const std::string& val);
-
-  void __set_caller(const std::string& val);
-
-  void __set_spanId(const std::string& val);
-
-  void __set_srcMethod(const std::string& val);
-
-  void __set_hintCode(const int64_t val);
-
-  void __set_hintContent(const std::string& val);
 
   bool operator == (const Trace & rhs) const
   {
     if (!(logId == rhs.logId))
-      return false;
-    if (!(caller == rhs.caller))
-      return false;
-    if (__isset.spanId != rhs.__isset.spanId)
-      return false;
-    else if (__isset.spanId && !(spanId == rhs.spanId))
-      return false;
-    if (__isset.srcMethod != rhs.__isset.srcMethod)
-      return false;
-    else if (__isset.srcMethod && !(srcMethod == rhs.srcMethod))
-      return false;
-    if (__isset.hintCode != rhs.__isset.hintCode)
-      return false;
-    else if (__isset.hintCode && !(hintCode == rhs.hintCode))
-      return false;
-    if (__isset.hintContent != rhs.__isset.hintContent)
-      return false;
-    else if (__isset.hintContent && !(hintContent == rhs.hintContent))
       return false;
     return true;
   }
@@ -152,378 +110,41 @@ class Trace {
 
 void swap(Trace &a, Trace &b);
 
-typedef struct _HotspotRequest__isset {
-  _HotspotRequest__isset() : start_uid(false), dest_uid(false), dest_type(false), traceid(false), spanid(false), extends_info(false), city_id(false), lang(false), seat_num_needed(false), extMap(false), bubble_pid(false), station_id(false), start_broadcast_time(false), start_broadcast_time_type(false), trace_info(false) {}
-  bool start_uid :1;
-  bool dest_uid :1;
-  bool dest_type :1;
-  bool traceid :1;
-  bool spanid :1;
-  bool extends_info :1;
-  bool city_id :1;
-  bool lang :1;
-  bool seat_num_needed :1;
-  bool extMap :1;
-  bool bubble_pid :1;
-  bool station_id :1;
-  bool start_broadcast_time :1;
-  bool start_broadcast_time_type :1;
-  bool trace_info :1;
-} _HotspotRequest__isset;
-
-class HotspotRequest {
- public:
-
-  static const char* ascii_fingerprint; // = "E08F305EADD2B4C64030803283777B86";
-  static const uint8_t binary_fingerprint[16]; // = {0xE0,0x8F,0x30,0x5E,0xAD,0xD2,0xB4,0xC6,0x40,0x30,0x80,0x32,0x83,0x77,0x7B,0x86};
-
-  HotspotRequest(const HotspotRequest&);
-  HotspotRequest& operator=(const HotspotRequest&);
-  HotspotRequest() : product_id(), acc_key(), app_version(), sdk_type(), client_type(), phone(), pid(), cur_lng(0), cur_lat(0), start_uid(), start_lng(0), start_lat(0), start_type(), start_name(), start_address(), dest_uid(), dest_lng(0), dest_lat(0), dest_type(), dest_name(), dest_address(), cur_step(0), traceid(), spanid(), extends_info(), city_id(0), lang(), seat_num_needed(0), bubble_pid(), station_id(), start_broadcast_time(0), start_broadcast_time_type(0) {
-  }
-
-  virtual ~HotspotRequest() throw();
-  std::string product_id;
-  std::string acc_key;
-  std::string app_version;
-  std::string sdk_type;
-  std::string client_type;
-  std::string phone;
-  std::string pid;
-  double cur_lng;
-  double cur_lat;
-  std::string start_uid;
-  double start_lng;
-  double start_lat;
-  std::string start_type;
-  std::string start_name;
-  std::string start_address;
-  std::string dest_uid;
-  double dest_lng;
-  double dest_lat;
-  std::string dest_type;
-  std::string dest_name;
-  std::string dest_address;
-  int32_t cur_step;
-  std::string traceid;
-  std::string spanid;
-  std::string extends_info;
-  int32_t city_id;
-  std::string lang;
-  int32_t seat_num_needed;
-  std::map<std::string, std::string>  extMap;
-  std::string bubble_pid;
-  std::string station_id;
-  int32_t start_broadcast_time;
-  int32_t start_broadcast_time_type;
-  Trace trace_info;
-
-  _HotspotRequest__isset __isset;
-
-  void __set_product_id(const std::string& val);
-
-  void __set_acc_key(const std::string& val);
-
-  void __set_app_version(const std::string& val);
-
-  void __set_sdk_type(const std::string& val);
-
-  void __set_client_type(const std::string& val);
-
-  void __set_phone(const std::string& val);
-
-  void __set_pid(const std::string& val);
-
-  void __set_cur_lng(const double val);
-
-  void __set_cur_lat(const double val);
-
-  void __set_start_uid(const std::string& val);
-
-  void __set_start_lng(const double val);
-
-  void __set_start_lat(const double val);
-
-  void __set_start_type(const std::string& val);
-
-  void __set_start_name(const std::string& val);
-
-  void __set_start_address(const std::string& val);
-
-  void __set_dest_uid(const std::string& val);
-
-  void __set_dest_lng(const double val);
-
-  void __set_dest_lat(const double val);
-
-  void __set_dest_type(const std::string& val);
-
-  void __set_dest_name(const std::string& val);
-
-  void __set_dest_address(const std::string& val);
-
-  void __set_cur_step(const int32_t val);
-
-  void __set_traceid(const std::string& val);
-
-  void __set_spanid(const std::string& val);
-
-  void __set_extends_info(const std::string& val);
-
-  void __set_city_id(const int32_t val);
-
-  void __set_lang(const std::string& val);
-
-  void __set_seat_num_needed(const int32_t val);
-
-  void __set_extMap(const std::map<std::string, std::string> & val);
-
-  void __set_bubble_pid(const std::string& val);
-
-  void __set_station_id(const std::string& val);
-
-  void __set_start_broadcast_time(const int32_t val);
-
-  void __set_start_broadcast_time_type(const int32_t val);
-
-  void __set_trace_info(const Trace& val);
-
-  bool operator == (const HotspotRequest & rhs) const
-  {
-    if (!(product_id == rhs.product_id))
-      return false;
-    if (!(acc_key == rhs.acc_key))
-      return false;
-    if (!(app_version == rhs.app_version))
-      return false;
-    if (!(sdk_type == rhs.sdk_type))
-      return false;
-    if (!(client_type == rhs.client_type))
-      return false;
-    if (!(phone == rhs.phone))
-      return false;
-    if (!(pid == rhs.pid))
-      return false;
-    if (!(cur_lng == rhs.cur_lng))
-      return false;
-    if (!(cur_lat == rhs.cur_lat))
-      return false;
-    if (__isset.start_uid != rhs.__isset.start_uid)
-      return false;
-    else if (__isset.start_uid && !(start_uid == rhs.start_uid))
-      return false;
-    if (!(start_lng == rhs.start_lng))
-      return false;
-    if (!(start_lat == rhs.start_lat))
-      return false;
-    if (!(start_type == rhs.start_type))
-      return false;
-    if (!(start_name == rhs.start_name))
-      return false;
-    if (!(start_address == rhs.start_address))
-      return false;
-    if (__isset.dest_uid != rhs.__isset.dest_uid)
-      return false;
-    else if (__isset.dest_uid && !(dest_uid == rhs.dest_uid))
-      return false;
-    if (!(dest_lng == rhs.dest_lng))
-      return false;
-    if (!(dest_lat == rhs.dest_lat))
-      return false;
-    if (__isset.dest_type != rhs.__isset.dest_type)
-      return false;
-    else if (__isset.dest_type && !(dest_type == rhs.dest_type))
-      return false;
-    if (!(dest_name == rhs.dest_name))
-      return false;
-    if (!(dest_address == rhs.dest_address))
-      return false;
-    if (!(cur_step == rhs.cur_step))
-      return false;
-    if (__isset.traceid != rhs.__isset.traceid)
-      return false;
-    else if (__isset.traceid && !(traceid == rhs.traceid))
-      return false;
-    if (__isset.spanid != rhs.__isset.spanid)
-      return false;
-    else if (__isset.spanid && !(spanid == rhs.spanid))
-      return false;
-    if (__isset.extends_info != rhs.__isset.extends_info)
-      return false;
-    else if (__isset.extends_info && !(extends_info == rhs.extends_info))
-      return false;
-    if (__isset.city_id != rhs.__isset.city_id)
-      return false;
-    else if (__isset.city_id && !(city_id == rhs.city_id))
-      return false;
-    if (__isset.lang != rhs.__isset.lang)
-      return false;
-    else if (__isset.lang && !(lang == rhs.lang))
-      return false;
-    if (__isset.seat_num_needed != rhs.__isset.seat_num_needed)
-      return false;
-    else if (__isset.seat_num_needed && !(seat_num_needed == rhs.seat_num_needed))
-      return false;
-    if (__isset.extMap != rhs.__isset.extMap)
-      return false;
-    else if (__isset.extMap && !(extMap == rhs.extMap))
-      return false;
-    if (__isset.bubble_pid != rhs.__isset.bubble_pid)
-      return false;
-    else if (__isset.bubble_pid && !(bubble_pid == rhs.bubble_pid))
-      return false;
-    if (__isset.station_id != rhs.__isset.station_id)
-      return false;
-    else if (__isset.station_id && !(station_id == rhs.station_id))
-      return false;
-    if (__isset.start_broadcast_time != rhs.__isset.start_broadcast_time)
-      return false;
-    else if (__isset.start_broadcast_time && !(start_broadcast_time == rhs.start_broadcast_time))
-      return false;
-    if (__isset.start_broadcast_time_type != rhs.__isset.start_broadcast_time_type)
-      return false;
-    else if (__isset.start_broadcast_time_type && !(start_broadcast_time_type == rhs.start_broadcast_time_type))
-      return false;
-    if (__isset.trace_info != rhs.__isset.trace_info)
-      return false;
-    else if (__isset.trace_info && !(trace_info == rhs.trace_info))
-      return false;
-    return true;
-  }
-  bool operator != (const HotspotRequest &rhs) const {
-    return !(*this == rhs);
-  }
-
-  bool operator < (const HotspotRequest & ) const;
-
-  uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
-  uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
-
-  friend std::ostream& operator<<(std::ostream& out, const HotspotRequest& obj);
-};
-
-void swap(HotspotRequest &a, HotspotRequest &b);
-
-typedef struct _StationInfo__isset {
-  _StationInfo__isset() : extends_info(false), rec_reason(false), text_type(false), city_id(false), city_name(false) {}
-  bool extends_info :1;
-  bool rec_reason :1;
-  bool text_type :1;
-  bool city_id :1;
-  bool city_name :1;
-} _StationInfo__isset;
 
 class StationInfo {
  public:
 
-  static const char* ascii_fingerprint; // = "8C5E20C7CE5627F1745BC9679FA3AE2A";
-  static const uint8_t binary_fingerprint[16]; // = {0x8C,0x5E,0x20,0xC7,0xCE,0x56,0x27,0xF1,0x74,0x5B,0xC9,0x67,0x9F,0xA3,0xAE,0x2A};
+  static const char* ascii_fingerprint; // = "D8824F455AAD39A35933B60845B3BC95";
+  static const uint8_t binary_fingerprint[16]; // = {0xD8,0x82,0x4F,0x45,0x5A,0xAD,0x39,0xA3,0x59,0x33,0xB6,0x08,0x45,0xB3,0xBC,0x95};
 
   StationInfo(const StationInfo&);
   StationInfo& operator=(const StationInfo&);
-  StationInfo() : uid(), lng(0), lat(0), name(), address(), count_down_time(0), walk_distance(0), walk_time(0), is_default(0), extends_info(), rec_reason(), do_pop(0), pop_reason(), text_type((TextType::type)0), city_id(0), city_name() {
+  StationInfo() : lng(0) {
   }
 
   virtual ~StationInfo() throw();
-  std::string uid;
   double lng;
-  double lat;
-  std::string name;
-  std::string address;
-  std::vector<std::string>  mis_id_list;
-  int32_t count_down_time;
-  int32_t walk_distance;
-  int32_t walk_time;
-  bool is_default;
-  std::string extends_info;
-  std::string rec_reason;
-  int32_t do_pop;
-  std::string pop_reason;
-  TextType::type text_type;
-  int32_t city_id;
-  std::string city_name;
-
-  _StationInfo__isset __isset;
-
-  void __set_uid(const std::string& val);
+  std::vector<int32_t>  nlist;
+  std::set<int32_t>  nset;
+  std::map<int32_t, std::string>  nmap;
 
   void __set_lng(const double val);
 
-  void __set_lat(const double val);
+  void __set_nlist(const std::vector<int32_t> & val);
 
-  void __set_name(const std::string& val);
+  void __set_nset(const std::set<int32_t> & val);
 
-  void __set_address(const std::string& val);
-
-  void __set_mis_id_list(const std::vector<std::string> & val);
-
-  void __set_count_down_time(const int32_t val);
-
-  void __set_walk_distance(const int32_t val);
-
-  void __set_walk_time(const int32_t val);
-
-  void __set_is_default(const bool val);
-
-  void __set_extends_info(const std::string& val);
-
-  void __set_rec_reason(const std::string& val);
-
-  void __set_do_pop(const int32_t val);
-
-  void __set_pop_reason(const std::string& val);
-
-  void __set_text_type(const TextType::type val);
-
-  void __set_city_id(const int32_t val);
-
-  void __set_city_name(const std::string& val);
+  void __set_nmap(const std::map<int32_t, std::string> & val);
 
   bool operator == (const StationInfo & rhs) const
   {
-    if (!(uid == rhs.uid))
-      return false;
     if (!(lng == rhs.lng))
       return false;
-    if (!(lat == rhs.lat))
+    if (!(nlist == rhs.nlist))
       return false;
-    if (!(name == rhs.name))
+    if (!(nset == rhs.nset))
       return false;
-    if (!(address == rhs.address))
-      return false;
-    if (!(mis_id_list == rhs.mis_id_list))
-      return false;
-    if (!(count_down_time == rhs.count_down_time))
-      return false;
-    if (!(walk_distance == rhs.walk_distance))
-      return false;
-    if (!(walk_time == rhs.walk_time))
-      return false;
-    if (!(is_default == rhs.is_default))
-      return false;
-    if (__isset.extends_info != rhs.__isset.extends_info)
-      return false;
-    else if (__isset.extends_info && !(extends_info == rhs.extends_info))
-      return false;
-    if (__isset.rec_reason != rhs.__isset.rec_reason)
-      return false;
-    else if (__isset.rec_reason && !(rec_reason == rhs.rec_reason))
-      return false;
-    if (!(do_pop == rhs.do_pop))
-      return false;
-    if (!(pop_reason == rhs.pop_reason))
-      return false;
-    if (__isset.text_type != rhs.__isset.text_type)
-      return false;
-    else if (__isset.text_type && !(text_type == rhs.text_type))
-      return false;
-    if (__isset.city_id != rhs.__isset.city_id)
-      return false;
-    else if (__isset.city_id && !(city_id == rhs.city_id))
-      return false;
-    if (__isset.city_name != rhs.__isset.city_name)
-      return false;
-    else if (__isset.city_name && !(city_name == rhs.city_name))
+    if (!(nmap == rhs.nmap))
       return false;
     return true;
   }
@@ -540,6 +161,58 @@ class StationInfo {
 };
 
 void swap(StationInfo &a, StationInfo &b);
+
+
+class HotspotRequest {
+ public:
+
+  static const char* ascii_fingerprint; // = "B14C578B6908BF84AAD1E2255E52C720";
+  static const uint8_t binary_fingerprint[16]; // = {0xB1,0x4C,0x57,0x8B,0x69,0x08,0xBF,0x84,0xAA,0xD1,0xE2,0x25,0x5E,0x52,0xC7,0x20};
+
+  HotspotRequest(const HotspotRequest&);
+  HotspotRequest& operator=(const HotspotRequest&);
+  HotspotRequest() : id(0), isTrue(0), product_id() {
+  }
+
+  virtual ~HotspotRequest() throw();
+  int64_t id;
+  bool isTrue;
+  std::string product_id;
+  StationInfo sinfo;
+
+  void __set_id(const int64_t val);
+
+  void __set_isTrue(const bool val);
+
+  void __set_product_id(const std::string& val);
+
+  void __set_sinfo(const StationInfo& val);
+
+  bool operator == (const HotspotRequest & rhs) const
+  {
+    if (!(id == rhs.id))
+      return false;
+    if (!(isTrue == rhs.isTrue))
+      return false;
+    if (!(product_id == rhs.product_id))
+      return false;
+    if (!(sinfo == rhs.sinfo))
+      return false;
+    return true;
+  }
+  bool operator != (const HotspotRequest &rhs) const {
+    return !(*this == rhs);
+  }
+
+  bool operator < (const HotspotRequest & ) const;
+
+  uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+  uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+
+  friend std::ostream& operator<<(std::ostream& out, const HotspotRequest& obj);
+};
+
+void swap(HotspotRequest &a, HotspotRequest &b);
 
 
 class CarpoolEtdInfo {
@@ -591,8 +264,8 @@ typedef struct _HotspotResponse__isset {
 class HotspotResponse {
  public:
 
-  static const char* ascii_fingerprint; // = "4F97F64A1BFAC1E867C68EE96164AB14";
-  static const uint8_t binary_fingerprint[16]; // = {0x4F,0x97,0xF6,0x4A,0x1B,0xFA,0xC1,0xE8,0x67,0xC6,0x8E,0xE9,0x61,0x64,0xAB,0x14};
+  static const char* ascii_fingerprint; // = "5531C8D7ED2A5FC0358A03FFBCC21464";
+  static const uint8_t binary_fingerprint[16]; // = {0x55,0x31,0xC8,0xD7,0xED,0x2A,0x5F,0xC0,0x35,0x8A,0x03,0xFF,0xBC,0xC2,0x14,0x64};
 
   HotspotResponse(const HotspotResponse&);
   HotspotResponse& operator=(const HotspotResponse&);
@@ -602,7 +275,6 @@ class HotspotResponse {
   virtual ~HotspotResponse() throw();
   int32_t error_code;
   std::string error_msg;
-  std::vector<StationInfo>  station_list;
   std::string extends_info;
 
   _HotspotResponse__isset __isset;
@@ -611,8 +283,6 @@ class HotspotResponse {
 
   void __set_error_msg(const std::string& val);
 
-  void __set_station_list(const std::vector<StationInfo> & val);
-
   void __set_extends_info(const std::string& val);
 
   bool operator == (const HotspotResponse & rhs) const
@@ -620,8 +290,6 @@ class HotspotResponse {
     if (!(error_code == rhs.error_code))
       return false;
     if (!(error_msg == rhs.error_msg))
-      return false;
-    if (!(station_list == rhs.station_list))
       return false;
     if (__isset.extends_info != rhs.__isset.extends_info)
       return false;
@@ -660,8 +328,8 @@ typedef struct _ForecastDepartureTimeRequest__isset {
 class ForecastDepartureTimeRequest {
  public:
 
-  static const char* ascii_fingerprint; // = "0A21427BD81FC65AA27CE2A7168F9724";
-  static const uint8_t binary_fingerprint[16]; // = {0x0A,0x21,0x42,0x7B,0xD8,0x1F,0xC6,0x5A,0xA2,0x7C,0xE2,0xA7,0x16,0x8F,0x97,0x24};
+  static const char* ascii_fingerprint; // = "42C9AD9C724AC502EE4B8EF5B4153673";
+  static const uint8_t binary_fingerprint[16]; // = {0x42,0xC9,0xAD,0x9C,0x72,0x4A,0xC5,0x02,0xEE,0x4B,0x8E,0xF5,0xB4,0x15,0x36,0x73};
 
   ForecastDepartureTimeRequest(const ForecastDepartureTimeRequest&);
   ForecastDepartureTimeRequest& operator=(const ForecastDepartureTimeRequest&);
@@ -908,8 +576,8 @@ typedef struct _MatchDetailRequest__isset {
 class MatchDetailRequest {
  public:
 
-  static const char* ascii_fingerprint; // = "409417E6119667E559C50F4D18840BC3";
-  static const uint8_t binary_fingerprint[16]; // = {0x40,0x94,0x17,0xE6,0x11,0x96,0x67,0xE5,0x59,0xC5,0x0F,0x4D,0x18,0x84,0x0B,0xC3};
+  static const char* ascii_fingerprint; // = "0A2EF6DA4787B4E52D25AD175457F49C";
+  static const uint8_t binary_fingerprint[16]; // = {0x0A,0x2E,0xF6,0xDA,0x47,0x87,0xB4,0xE5,0x2D,0x25,0xAD,0x17,0x54,0x57,0xF4,0x9C};
 
   MatchDetailRequest(const MatchDetailRequest&);
   MatchDetailRequest& operator=(const MatchDetailRequest&);
@@ -1128,8 +796,8 @@ typedef struct _GetForecastFeatureRequest__isset {
 class GetForecastFeatureRequest {
  public:
 
-  static const char* ascii_fingerprint; // = "81820A61B4B26B13A1B0AC8320716BB3";
-  static const uint8_t binary_fingerprint[16]; // = {0x81,0x82,0x0A,0x61,0xB4,0xB2,0x6B,0x13,0xA1,0xB0,0xAC,0x83,0x20,0x71,0x6B,0xB3};
+  static const char* ascii_fingerprint; // = "81BDF964530F39EA5DCFC9FA57876887";
+  static const uint8_t binary_fingerprint[16]; // = {0x81,0xBD,0xF9,0x64,0x53,0x0F,0x39,0xEA,0x5D,0xCF,0xC9,0xFA,0x57,0x87,0x68,0x87};
 
   GetForecastFeatureRequest(const GetForecastFeatureRequest&);
   GetForecastFeatureRequest& operator=(const GetForecastFeatureRequest&);
@@ -1330,8 +998,8 @@ typedef struct _PrematchhHoldInfoRequest__isset {
 class PrematchhHoldInfoRequest {
  public:
 
-  static const char* ascii_fingerprint; // = "2AB0262763726E78564DFF21A1867B3E";
-  static const uint8_t binary_fingerprint[16]; // = {0x2A,0xB0,0x26,0x27,0x63,0x72,0x6E,0x78,0x56,0x4D,0xFF,0x21,0xA1,0x86,0x7B,0x3E};
+  static const char* ascii_fingerprint; // = "3861F858192D6B6A45683E26B12CC16C";
+  static const uint8_t binary_fingerprint[16]; // = {0x38,0x61,0xF8,0x58,0x19,0x2D,0x6B,0x6A,0x45,0x68,0x3E,0x26,0xB1,0x2C,0xC1,0x6C};
 
   PrematchhHoldInfoRequest(const PrematchhHoldInfoRequest&);
   PrematchhHoldInfoRequest& operator=(const PrematchhHoldInfoRequest&);
@@ -1615,8 +1283,8 @@ typedef struct _PrematchStationRes__isset {
 class PrematchStationRes {
  public:
 
-  static const char* ascii_fingerprint; // = "C8940ABA1BA90F63E2081F6155F3561F";
-  static const uint8_t binary_fingerprint[16]; // = {0xC8,0x94,0x0A,0xBA,0x1B,0xA9,0x0F,0x63,0xE2,0x08,0x1F,0x61,0x55,0xF3,0x56,0x1F};
+  static const char* ascii_fingerprint; // = "6CCB2F9AE479B85CF77CF44D9A7252ED";
+  static const uint8_t binary_fingerprint[16]; // = {0x6C,0xCB,0x2F,0x9A,0xE4,0x79,0xB8,0x5C,0xF7,0x7C,0xF4,0x4D,0x9A,0x72,0x52,0xED};
 
   PrematchStationRes(const PrematchStationRes&);
   PrematchStationRes& operator=(const PrematchStationRes&);
@@ -1747,8 +1415,8 @@ typedef struct _PrematchRecommendRequest__isset {
 class PrematchRecommendRequest {
  public:
 
-  static const char* ascii_fingerprint; // = "2AB0262763726E78564DFF21A1867B3E";
-  static const uint8_t binary_fingerprint[16]; // = {0x2A,0xB0,0x26,0x27,0x63,0x72,0x6E,0x78,0x56,0x4D,0xFF,0x21,0xA1,0x86,0x7B,0x3E};
+  static const char* ascii_fingerprint; // = "3861F858192D6B6A45683E26B12CC16C";
+  static const uint8_t binary_fingerprint[16]; // = {0x38,0x61,0xF8,0x58,0x19,0x2D,0x6B,0x6A,0x45,0x68,0x3E,0x26,0xB1,0x2C,0xC1,0x6C};
 
   PrematchRecommendRequest(const PrematchRecommendRequest&);
   PrematchRecommendRequest& operator=(const PrematchRecommendRequest&);
@@ -1869,8 +1537,8 @@ typedef struct _PrematchRecommendResponse__isset {
 class PrematchRecommendResponse {
  public:
 
-  static const char* ascii_fingerprint; // = "D6B8A30B56E8AE1F327543EE52DE027A";
-  static const uint8_t binary_fingerprint[16]; // = {0xD6,0xB8,0xA3,0x0B,0x56,0xE8,0xAE,0x1F,0x32,0x75,0x43,0xEE,0x52,0xDE,0x02,0x7A};
+  static const char* ascii_fingerprint; // = "4BD7067BDAE2114B8F05A72993EC3963";
+  static const uint8_t binary_fingerprint[16]; // = {0x4B,0xD7,0x06,0x7B,0xDA,0xE2,0x11,0x4B,0x8F,0x05,0xA7,0x29,0x93,0xEC,0x39,0x63};
 
   PrematchRecommendResponse(const PrematchRecommendResponse&);
   PrematchRecommendResponse& operator=(const PrematchRecommendResponse&);
@@ -1945,8 +1613,8 @@ typedef struct _CarpoolEtdRequest__isset {
 class CarpoolEtdRequest {
  public:
 
-  static const char* ascii_fingerprint; // = "9A3A2EB7C3426EC5BD0FC4177912541D";
-  static const uint8_t binary_fingerprint[16]; // = {0x9A,0x3A,0x2E,0xB7,0xC3,0x42,0x6E,0xC5,0xBD,0x0F,0xC4,0x17,0x79,0x12,0x54,0x1D};
+  static const char* ascii_fingerprint; // = "E67DD0853DD071156D9CB39CCCC5830A";
+  static const uint8_t binary_fingerprint[16]; // = {0xE6,0x7D,0xD0,0x85,0x3D,0xD0,0x71,0x15,0x6D,0x9C,0xB3,0x9C,0xCC,0xC5,0x83,0x0A};
 
   CarpoolEtdRequest(const CarpoolEtdRequest&);
   CarpoolEtdRequest& operator=(const CarpoolEtdRequest&);

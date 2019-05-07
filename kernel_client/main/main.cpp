@@ -59,33 +59,35 @@ int sig_actions()
 
 void showHelp() 
 {
-	cout << "1-GetServiceList: \t\tclient 1" << endl;
-	cout << "2-AddService: \t\t\tclient 2" << endl;
-	cout << "3-FillData: \t\t\tclient 3" << endl;
-	cout << "4-RequestTrigger:\t\tclient 4" << endl;
+	cout << "1-GetServiceList: \t\tclient 1 0|1" << endl;
+	cout << "2-AddService: \t\t\tclient 2 path/to/json" << endl;
+	cout << "3-FillData: \t\t\tclient 3 path/to/json" << endl;
+	cout << "4-RequestTrigger:\t\tclient 4 path/to/json" << endl;
 }
 
-string GetServiceList(CmdParser& parser)
+string GetServiceList(char** argv)
 {
 	string reqJson; 
 	string rspJson; 
+	/*
 	int ret = ThriftTestClient::readAllFile("./input/GetServiceList.json", reqJson);
 	if (ret == -1) {
 		return "";
 	}
+	*/
 	ThriftTestClient client(9537);	
-	ret = client.GetServiceList(reqJson, rspJson);
+	int ret = client.GetServiceList(reqJson, rspJson, argv[2]);
 	if (ret == -1) {
 		return "";
 	}
 	return rspJson;
 }
 
-string AddService(CmdParser& parser)
+string AddService(char* cpath)
 {
 	string reqJson; 
 	string rspJson; 
-	int ret = ThriftTestClient::readAllFile("./input/AddService.json", reqJson);
+	int ret = ThriftTestClient::readAllFile(cpath, reqJson);
 	if (ret == -1) {
 		return "";
 	}
@@ -97,11 +99,11 @@ string AddService(CmdParser& parser)
 	return rspJson;
 }
 
-string FillData(CmdParser& parser)
+string FillData(char* path)
 {
 	string reqJson; 
 	string rspJson; 
-	int ret = ThriftTestClient::readAllFile("./input/FillData.json", reqJson);
+	int ret = ThriftTestClient::readAllFile(path, reqJson);
 	if (ret == -1) {
 		return "";
 	}
@@ -113,11 +115,11 @@ string FillData(CmdParser& parser)
 	return rspJson;
 }
 
-string RequestTrigger(CmdParser& parser)
+string RequestTrigger(char* path)
 {
 	string reqJson; 
 	string rspJson; 
-	int ret = ThriftTestClient::readAllFile("./input/RequestTrigger.json", reqJson);
+	int ret = ThriftTestClient::readAllFile(path, reqJson);
 	if (ret == -1) {
 		return "";
 	}
@@ -156,7 +158,7 @@ int main(int argc, char* argv[])
 	if (argc == 1) {
 		showHelp();
 		return 0;
-	} else if (argc == 2) {
+	} else if (argc == 3) {
 		p = argv[1];
 	} else {
 		log_error("argv invalid!");
@@ -165,18 +167,35 @@ int main(int argc, char* argv[])
 	
 	int cmd = atoi(p);
 	string res;
+	log_info("argc=%d", argc);
 	switch(cmd) {
 		case 1:
-			res = GetServiceList(parser);
+			if (argc != 3) {
+				log_error("neet more para");
+				break;
+			}
+			res = GetServiceList(argv);
 			break;
 		case 2:
-			res = AddService(parser);
+			if (argc != 3) {
+				log_error("neet more para");
+				break;
+			}
+			res = AddService(argv[2]);
 			break;
 		case 3:
-			res = FillData(parser);
+			if (argc != 3) {
+				log_error("neet more para");
+				break;
+			}
+			res = FillData(argv[2]);
 			break;
 		case 4:
-			res = RequestTrigger(parser);
+			if (argc != 3) {
+				log_error("neet more para");
+				break;
+			}
+			res = RequestTrigger(argv[2]);
 			break;
 		default:
 			showHelp();

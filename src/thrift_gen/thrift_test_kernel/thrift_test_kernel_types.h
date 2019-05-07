@@ -380,22 +380,22 @@ class RequestTriggerResponse {
 
   RequestTriggerResponse(const RequestTriggerResponse&);
   RequestTriggerResponse& operator=(const RequestTriggerResponse&);
-  RequestTriggerResponse() : errorCode(0), reqponseJson() {
+  RequestTriggerResponse() : errorCode(0), responseJson() {
   }
 
   virtual ~RequestTriggerResponse() throw();
   int32_t errorCode;
-  std::string reqponseJson;
+  std::string responseJson;
 
   void __set_errorCode(const int32_t val);
 
-  void __set_reqponseJson(const std::string& val);
+  void __set_responseJson(const std::string& val);
 
   bool operator == (const RequestTriggerResponse & rhs) const
   {
     if (!(errorCode == rhs.errorCode))
       return false;
-    if (!(reqponseJson == rhs.reqponseJson))
+    if (!(responseJson == rhs.responseJson))
       return false;
     return true;
   }

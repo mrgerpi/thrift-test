@@ -50,6 +50,10 @@ public:
 
 	static int readFile(const string& path, string& content);
 
+
+	static int mkdirs(const string& path);
+	static int writeFile(const string& path, const string& content);
+
 	static std::string pwd();
 
 private:

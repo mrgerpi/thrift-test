@@ -33,8 +33,8 @@ ThriftTestClient::ThriftTestClient(int port, string ip)
 	boost::shared_ptr<TProtocol> protocol(new TBinaryProtocol(ts));
 
 	socket->setConnTimeout(500);
-	socket->setRecvTimeout(10000);
-	socket->setSendTimeout(300);
+//	socket->setRecvTimeout(1000 * 60);
+//	socket->setSendTimeout(300);
 
 	clientPtr = boost::make_shared<ThriftTestKernelServiceClient>(protocol);
 	transport = clientPtr->getInputProtocol()->getTransport();
@@ -131,7 +131,7 @@ string getDataPath(const string& methond, int type)
 	return res;
 }
 
-int ThriftTestClient::GetServiceList(const string& reqJson, string& rspJson)
+int ThriftTestClient::GetServiceList(const string& reqJson, string& rspJson, char* type)
 {
 	log_info("GetServiceList||entry||reqJson=%s", reqJson.c_str());
 	using apache::thrift::to_string;
@@ -139,6 +139,7 @@ int ThriftTestClient::GetServiceList(const string& reqJson, string& rspJson)
 	GetServiceListRequest req;
 	GetServiceListResponse rsp; 
 
+	/*
 	//reqJson to jsonFile	./data/GetServiceList/req.json
 	string reqPath = getDataPath("GetServiceList", REQ);
 	if (writeAllFile(reqPath, reqJson) == -1) {
@@ -150,9 +151,13 @@ int ThriftTestClient::GetServiceList(const string& reqJson, string& rspJson)
 	boost::shared_ptr<TJSONProtocol> iprot(new TJSONProtocol(inputFileTrans)); 
 	TProtocol* in = (TProtocol*)iprot.get();
 	req.read(in);
-	log_info("GetServiceList||get req||reqPath=%s||req=%s",  reqPath.c_str(), to_string(req).c_str());
+	*/
+
+	req.__set_type((const ServiceType::type)atoi(type));
+	log_info("GetServiceList||get req||req=%s", to_string(req).c_str());
 
 	//client call
+	
 	transport->open();
 	try {
 		clientPtr->GetServiceList(rsp, req);

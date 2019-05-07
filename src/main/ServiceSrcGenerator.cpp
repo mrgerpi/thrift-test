@@ -58,7 +58,7 @@ int ServiceSrcGenerator::executeShell(string cmd, string& result)
 int ServiceSrcGenerator::originalSrcGen(string serviceId, string idlPath) 
 {
 	vector<string> paras;
-	DidiUtils::split_str(serviceId, paras, "_");	
+	DidiUtils::split_str(serviceId, paras, "&");	
 	string cmd = DidiUtils::pwd() + "/script/originalSrcGen.sh " + idlPath + " " + paras[0];	
 	log_info("ServiceSrcGenerator::originalSrcGen||start original gen script||cmd=%s",
 			cmd.c_str());
@@ -77,7 +77,7 @@ int ServiceSrcGenerator::originalSrcGen(string serviceId, string idlPath)
 int ServiceSrcGenerator::clientSrcGen(string serviceId, string idlPath, string& method)
 {
 	vector<string> paras;
-	DidiUtils::split_str(serviceId, paras, "_");	
+	DidiUtils::split_str(serviceId, paras, "&");	
 	string cmd = DidiUtils::pwd() + "/script/clientSrcGen.sh " + idlPath 
 		+ " " + paras[0] + " " + paras[2];
 	log_info("ServiceSrcGenerator::clientSrcGen||start client src gen script||cmd=%s",
@@ -96,7 +96,7 @@ int ServiceSrcGenerator::clientSrcGen(string serviceId, string idlPath, string& 
 int ServiceSrcGenerator::serverSrcGen(string serviceId, string idlPath) 
 {
 	vector<string> paras;
-	DidiUtils::split_str(serviceId, paras, "_");	
+	DidiUtils::split_str(serviceId, paras, "&");	
 	string cmd = DidiUtils::pwd() + "/script/serverSrcGen.sh " + idlPath + " " + paras[0];
 	log_info("ServiceSrcGenerator::serverSrcGen||start server src gen script||cmd=%s",
 			cmd.c_str());

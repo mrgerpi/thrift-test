@@ -14,7 +14,7 @@ LIB = ./thirdparty/simple-log/lib/libsimplelog.a	\
 	  -L./thirdparty/libevent/lib -levent		\
 	  -lpthread -ldl -rdynamic
 
-FLAGS = -O2  -g -lrt -std=c++11
+FLAGS = -O0  -g -lrt -std=c++11
 
 OBJ_DIR = ./obj_dir
 

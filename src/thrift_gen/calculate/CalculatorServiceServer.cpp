@@ -3,10 +3,12 @@
 
 #include <thrift/TToString.h>
 #include <thrift/transport/TTransport.h>
+#include <thrift/transport/TBufferTransports.h>
 #include <thrift/transport/TSimpleFileTransport.h>
 #include <thrift/protocol/TProtocol.h>
 #include <thrift/protocol/TJSONProtocol.h>
 #include "simple_log.h"
+#include <string.h>
 #include "CalculatorService.h"
 #include <thrift/protocol/TBinaryProtocol.h>
 #include <thrift/server/TSimpleServer.h>
@@ -28,11 +30,12 @@ class CalculatorServiceHandler : virtual public CalculatorServiceIf {
     // Your initialization goes here
   }
 
-  void Calculate(CalculateResponse& _return, const CalcilateRequest& req) {
+  void Calculate(CalculateResponse& _return, const CalculateRequest& req) {
 	using apache::thrift::to_string;
+	using namespace std;
 	log_info("CalculatorServiceHandler::Calculate||req=%s", to_string(req).c_str());
 
-	string path = "/home/Shit/thrift-test/data/calculate/Calculate/rsp.json";
+	string path = "/home/Shit/thrift-test/src/../data/calculate/Calculate/rsp.json";
 	boost::shared_ptr<TTransport> transport(new TSimpleFileTransport(path, true, true));
 	boost::shared_ptr<TProtocol> protocol(new TJSONProtocol(transport));
 	_return.read(protocol.get());
@@ -45,17 +48,15 @@ class CalculatorServiceHandler : virtual public CalculatorServiceIf {
 };
 
 
-extern "C" TSimpleServer* calculate_start_server(int port)
+extern "C" TSimpleServer* get_calculate_server(int port)
 {
 	shared_ptr<CalculatorServiceHandler> handler(new CalculatorServiceHandler());
 	shared_ptr<TProcessor> processor(new CalculatorServiceProcessor(handler));
 	shared_ptr<TServerTransport> serverTransport(new TServerSocket(port));
-	shared_ptr<TTransportFactory> transportFactory(new TBufferedTransportFactory());
+	shared_ptr<TTransportFactory> transportFactory(new (TFramedTransportFactory));
 	shared_ptr<TProtocolFactory> protocolFactory(new TBinaryProtocolFactory());
 
-	TSimpleServer server(processor, serverTransport, transportFactory, protocolFactory);
-	log_info("calculate server start||port=%d", port);
-	server.serve();
-	return 0;
+	TSimpleServer* server = new TSimpleServer(processor, serverTransport, transportFactory, protocolFactory);
+	return server;
 }
 

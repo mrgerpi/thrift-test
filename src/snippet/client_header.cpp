@@ -2,6 +2,7 @@
 
 #include "simple_log.h"
 #include <boost/shared_ptr.hpp>
+#include <stdio.h>
 
 #include <thrift/transport/TSocket.h>
 #include <thrift/transport/TSimpleFileTransport.h>

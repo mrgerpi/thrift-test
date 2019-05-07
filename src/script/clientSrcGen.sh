@@ -1,10 +1,16 @@
 #!/bin/sh
 # $1: idl file path, $2: serviceName, $3: port
 
-interServiceName=`cat $1 | grep service | awk -F " " '{print $2}' | tr -d '{'`
-namespace=`cat $1 | grep namespace | awk -F " " '{print $3}'`
+interServiceName=`cat $1 | grep -w '^service' | awk -F " " '{print $2}' | tr -d '{'`
 serviceName=$2
 port=$3
+idlNamespace=`cat $1 | grep namespace | grep cpp | awk -F " " '{print $3}'`
+nsArrStr=`echo ${idlNamespace}|awk -F "." '{for(i=1;i<=NF;i++) print $i}'`
+nsArray=(${nsArrStr})
+for ((i=0;i<${#nsArray[@]};i++))
+do
+	namespace=${namespace}"::"${nsArray[i]}
+done
 
 client_file=`pwd`"/thrift_gen/"${serviceName}"/"${interServiceName}"Client.cpp"
 rm -f ${client_file}
@@ -44,7 +50,7 @@ do
 
 	#for every req args
 	all_req=""
-	dataPrefix=`pwd`"/data/"
+	dataPrefix=`pwd`"/../data/"
 	for ((j=0;j<${#req_type_array[@]};j++))
 	do
 		req_type=${req_type_array[j]}

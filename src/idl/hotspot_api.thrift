@@ -5,48 +5,20 @@ namespace go hotspot.serviece
 
 struct Trace {
   1: required string logId;  //  128bit 16进制打印 协议中是32长度string  0ade0f25579eaafe561903a2252f1102
-  2: required string caller;   //  api-web.gs.didi
-  3: optional string spanId;  // 64bit 16进制打印 协议中是16长度string 6a3ebbc2708d64c0
-  4: optional string srcMethod; //调用方方法
-  5: optional i64 hintCode;   // 64bit 0为无hint流量（缺省默认为0）。非0为hint流量，其中hintCode & 0x01 != 0的时候为压测流量。
-  6: optional string hintContent;   // 序列化结构体（json）
+}
+
+struct StationInfo {
+    1:required double lng;
+	2:required list<i32> nlist;
+	3:required set<i32> nset;
+	4:required map<i32, string> nmap;
 }
 
 struct HotspotRequest {
-    1:required string product_id;
-    2:required string acc_key;
-    3:required string app_version;
-    4:required string sdk_type;
-    5:required string client_type;
-    6:required string phone;
-    7:required string pid;
-    8:required double cur_lng;
-    9:required double cur_lat;
-    10:optional string start_uid;
-    11:required double start_lng;
-    12:required double start_lat;
-    13:required string start_type; 
-    14:required string start_name;
-    15:required string start_address;
-    16:optional string dest_uid;
-    17:required double dest_lng;
-    18:required double dest_lat;
-    19:optional string dest_type;
-    20:required string dest_name;
-    21:required string dest_address;
-    22:required i32 cur_step;
-    23:optional string traceid;
-    24:optional string spanid;
-    25:optional string extends_info; //地图定义的请求扩展信息(duse透传地图)
-    26:optional i32 city_id; //城市id
-    27:optional string lang; //语言环境
-    28:optional i32 seat_num_needed; //所需座位数，默认是1 
-    29:optional map<string,string> extMap; //其它信息都放在extMap中(二鹏也可以将其他信息都通过这个map传下来)
-    30:optional string bubble_pid; //冒泡阶段用户唯一标识id(api生成，预匹配阶段也会是传这个唯一id);
-    31:optional string station_id; //首次预估为空，切换站点传站点id;
-    32:optional i32 start_broadcast_time; //DUSE找车时间，整点拼使用
-    33:optional i32 start_broadcast_time_type; //是否整点拼，字段为空或非1都是非整点拼订单
-    50:optional Trace trace_info;
+    1: required i64 id;
+    2: required bool isTrue;
+    3: required string product_id;
+	4: required StationInfo sinfo; 
 }
 
 // 去尾文案类型
@@ -54,26 +26,6 @@ enum TextType {
   EMPTY = 0; // 默认不出文案
   COMMON = 1; // 普通站点拼车文案
   SPACIAL = 2; // 特惠拼车文案
-}
-
-struct StationInfo {
-    1:required string uid;
-    2:required double lng;
-    3:required double lat;
-    4:required string name;
-    5:required string address;
-    6:required list<string> mis_id_list;
-    7:required i32 count_down_time;
-    8:required i32 walk_distance;
-    9:required i32 walk_time;
-    10:required bool is_default;
-    11:optional string extends_info; //地图定义的站点扩展信息(duse透传前段)
-    12:optional string rec_reason; //推荐理由
-    13:required i32 do_pop; // 是否弹出提示窗：0 不弹出, 1 弹出
-    14:required string pop_reason; // 弹出文案内容
-    15:optional TextType text_type; //去尾站点的文案类型
-    16:optional i32 city_id; // 站点所属城市id
-    17:optional string city_name; // 站点所属城市名称
 }
 
 struct CarpoolEtdInfo{
@@ -84,8 +36,7 @@ struct CarpoolEtdInfo{
 struct HotspotResponse {
     1:required i32 error_code;
     2:required string error_msg;
-    3:required list<StationInfo> station_list;
-    4:optional string extends_info; //地图定义的相应扩展信息(duse透传前段)
+    3:optional string extends_info; //地图定义的相应扩展信息(duse透传前段)
 }
 
 struct ForecastDepartureTimeRequest {
@@ -271,7 +222,7 @@ struct CarpoolEtdResponse {
 }
 
 service HotspotService {
-    HotspotResponse GetRecommendStationList(1:HotspotRequest request);
+    HotspotResponse GetRecommendStationList(1:HotspotRequest request, 2:Trace trace);
     ForecastDepartureTimeResponse ForecastDepartureTime(1:ForecastDepartureTimeRequest request);
     MatchDetailResponse getMatchDetail(1:MatchDetailRequest request);
     GetForecastFeatureResponse GetForecastFeature(1:GetForecastFeatureRequest request);

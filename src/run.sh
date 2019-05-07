@@ -1,5 +1,5 @@
 dir_name=`pwd`
-LIB_PATH=${dir_name}/thirdparty/simple-log/lib:${dir_name}/thirdparty/config/lib:${dir_name}/thirdparty/libevent/lib:${dir_name}/thirdparty/thrift/lib/so
+LIB_PATH=${dir_name}/thirdparty/simple-log/lib:${dir_name}/thirdparty/config/lib:${dir_name}/thirdparty/libevent/lib:${dir_name}/thirdparty/thrift/lib/so:${dir_name}/service_lib
 
 #set LD_LIBARAY_PATH
 if [ -z "${LD_LIBRARY_PATH}" ]; then

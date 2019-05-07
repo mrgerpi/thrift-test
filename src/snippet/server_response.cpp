@@ -1,6 +1,6 @@
 	using apache::thrift::to_string;
 	using namespace std;
-	log_info("CLASS::METHOD||req=%s", to_string(req).c_str());
+	log_info("CLASS::METHODREQ_LOG"LOG_PARA);
 
 	string path = "RESPONSE_PATH";
 	boost::shared_ptr<TTransport> transport(new TSimpleFileTransport(path, true, true));

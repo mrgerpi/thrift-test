@@ -2,7 +2,7 @@
 # $1: idl file path, $2: serviceName 
 # $3: type; 0: server, 1: client, 2: server that client has been compiled, 3: client that server has been compiled
 
-interServiceName=`cat $1 | grep service | awk -F " " '{print $2}' | tr -d '{'`
+interServiceName=`cat $1 | grep -w ^service | awk -F " " '{print $2}' | tr -d '{'`
 serviceName=$2
 file=`pwd`"/script/makefile"
 

@@ -41,6 +41,14 @@ uint32_t HotspotService_GetRecommendStationList_args::read(::apache::thrift::pro
           xfer += iprot->skip(ftype);
         }
         break;
+      case 2:
+        if (ftype == ::apache::thrift::protocol::T_STRUCT) {
+          xfer += this->trace.read(iprot);
+          this->__isset.trace = true;
+        } else {
+          xfer += iprot->skip(ftype);
+        }
+        break;
       default:
         xfer += iprot->skip(ftype);
         break;
@@ -62,6 +70,10 @@ uint32_t HotspotService_GetRecommendStationList_args::write(::apache::thrift::pr
   xfer += this->request.write(oprot);
   xfer += oprot->writeFieldEnd();
 
+  xfer += oprot->writeFieldBegin("trace", ::apache::thrift::protocol::T_STRUCT, 2);
+  xfer += this->trace.write(oprot);
+  xfer += oprot->writeFieldEnd();
+
   xfer += oprot->writeFieldStop();
   xfer += oprot->writeStructEnd();
   oprot->decrementRecursionDepth();
@@ -80,6 +92,10 @@ uint32_t HotspotService_GetRecommendStationList_pargs::write(::apache::thrift::p
 
   xfer += oprot->writeFieldBegin("request", ::apache::thrift::protocol::T_STRUCT, 1);
   xfer += (*(this->request)).write(oprot);
+  xfer += oprot->writeFieldEnd();
+
+  xfer += oprot->writeFieldBegin("trace", ::apache::thrift::protocol::T_STRUCT, 2);
+  xfer += (*(this->trace)).write(oprot);
   xfer += oprot->writeFieldEnd();
 
   xfer += oprot->writeFieldStop();
@@ -1310,19 +1326,20 @@ uint32_t HotspotService_GetEtdInfo_presult::read(::apache::thrift::protocol::TPr
   return xfer;
 }
 
-void HotspotServiceClient::GetRecommendStationList(HotspotResponse& _return, const HotspotRequest& request)
+void HotspotServiceClient::GetRecommendStationList(HotspotResponse& _return, const HotspotRequest& request, const Trace& trace)
 {
-  send_GetRecommendStationList(request);
+  send_GetRecommendStationList(request, trace);
   recv_GetRecommendStationList(_return);
 }
 
-void HotspotServiceClient::send_GetRecommendStationList(const HotspotRequest& request)
+void HotspotServiceClient::send_GetRecommendStationList(const HotspotRequest& request, const Trace& trace)
 {
   int32_t cseqid = 0;
   oprot_->writeMessageBegin("GetRecommendStationList", ::apache::thrift::protocol::T_CALL, cseqid);
 
   HotspotService_GetRecommendStationList_pargs args;
   args.request = &request;
+  args.trace = &trace;
   args.write(oprot_);
 
   oprot_->writeMessageEnd();
@@ -1758,7 +1775,7 @@ void HotspotServiceProcessor::process_GetRecommendStationList(int32_t seqid, ::a
 
   HotspotService_GetRecommendStationList_result result;
   try {
-    iface_->GetRecommendStationList(result.success, args.request);
+    iface_->GetRecommendStationList(result.success, args.request, args.trace);
     result.__isset.success = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {

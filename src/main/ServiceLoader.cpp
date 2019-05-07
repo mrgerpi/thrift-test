@@ -22,7 +22,7 @@ ServiceLoader::ServiceLoader()
 int ServiceLoader::compile(string serviceId, string idlPath, ServiceType::type type)
 {
 	vector<string> paras;
-	DidiUtils::split_str(serviceId, paras, "_");
+	DidiUtils::split_str(serviceId, paras, "&");
 	string typeStr;
 	if (type == ServiceType::Client) {
 		vector<string>::iterator it = find(compiledClientServiceId.begin(), 
@@ -87,7 +87,7 @@ int ServiceLoader::compile(string serviceId, string idlPath, ServiceType::type t
 int ServiceLoader::link(string serviceId, ServiceType::type type)
 {
 	vector<string> paras;
-	DidiUtils::split_str(serviceId, paras, "_");
+	DidiUtils::split_str(serviceId, paras, "&");
 	string libPath = DidiUtils::pwd() + "/service_lib/";
 	if (type == ServiceType::Client) {
 		libPath = libPath + "lib" + paras[0] + "client.so";
@@ -120,7 +120,7 @@ int ServiceLoader::link(string serviceId, ServiceType::type type)
 TSimpleServer* ServiceLoader::getServer(string serviceId)
 {
 	vector<string> paras;
-	DidiUtils::split_str(serviceId, paras, "_");
+	DidiUtils::split_str(serviceId, paras, "&");
 	string serviceName = paras[0];
 	int port = atoi(paras[2].c_str());
 	string serverEntryStr = "get_" + paras[0] + "_server";
@@ -150,7 +150,7 @@ TSimpleServer* ServiceLoader::getServer(string serviceId)
 Client_Entry ServiceLoader::getMethod(string serviceId, string method) 
 {
 	vector<string> paras;
-	DidiUtils::split_str(serviceId, paras, "_");
+	DidiUtils::split_str(serviceId, paras, "&");
 	string serviceName = paras[0];
 	string port = paras[2];
 	string entryStr = serviceName + "_"  + method + "_" + port;

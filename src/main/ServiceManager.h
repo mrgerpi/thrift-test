@@ -57,9 +57,9 @@ public:
 	 */
 	int addService(const AddServiceRequest& req);
 
-	int getServiceList(ServiceType type, vector<string>& list);
+	int getServiceList(ServiceType::type type, vector<string>& list);
 
-	int requestTrigger(string serviceName, string methodName);
+	int requestTrigger(string serviceName, string methodName, string& rsp);
 };
 
 #endif

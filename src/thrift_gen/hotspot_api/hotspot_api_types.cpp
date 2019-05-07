@@ -34,32 +34,8 @@ void Trace::__set_logId(const std::string& val) {
   this->logId = val;
 }
 
-void Trace::__set_caller(const std::string& val) {
-  this->caller = val;
-}
-
-void Trace::__set_spanId(const std::string& val) {
-  this->spanId = val;
-__isset.spanId = true;
-}
-
-void Trace::__set_srcMethod(const std::string& val) {
-  this->srcMethod = val;
-__isset.srcMethod = true;
-}
-
-void Trace::__set_hintCode(const int64_t val) {
-  this->hintCode = val;
-__isset.hintCode = true;
-}
-
-void Trace::__set_hintContent(const std::string& val) {
-  this->hintContent = val;
-__isset.hintContent = true;
-}
-
-const char* Trace::ascii_fingerprint = "8D476629BDA99AC6FA462DCC7E29B166";
-const uint8_t Trace::binary_fingerprint[16] = {0x8D,0x47,0x66,0x29,0xBD,0xA9,0x9A,0xC6,0xFA,0x46,0x2D,0xCC,0x7E,0x29,0xB1,0x66};
+const char* Trace::ascii_fingerprint = "EFB929595D312AC8F305D5A794CFEDA1";
+const uint8_t Trace::binary_fingerprint[16] = {0xEF,0xB9,0x29,0x59,0x5D,0x31,0x2A,0xC8,0xF3,0x05,0xD5,0xA7,0x94,0xCF,0xED,0xA1};
 
 uint32_t Trace::read(::apache::thrift::protocol::TProtocol* iprot) {
 
@@ -73,7 +49,6 @@ uint32_t Trace::read(::apache::thrift::protocol::TProtocol* iprot) {
   using ::apache::thrift::protocol::TProtocolException;
 
   bool isset_logId = false;
-  bool isset_caller = false;
 
   while (true)
   {
@@ -91,46 +66,6 @@ uint32_t Trace::read(::apache::thrift::protocol::TProtocol* iprot) {
           xfer += iprot->skip(ftype);
         }
         break;
-      case 2:
-        if (ftype == ::apache::thrift::protocol::T_STRING) {
-          xfer += iprot->readString(this->caller);
-          isset_caller = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 3:
-        if (ftype == ::apache::thrift::protocol::T_STRING) {
-          xfer += iprot->readString(this->spanId);
-          this->__isset.spanId = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 4:
-        if (ftype == ::apache::thrift::protocol::T_STRING) {
-          xfer += iprot->readString(this->srcMethod);
-          this->__isset.srcMethod = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 5:
-        if (ftype == ::apache::thrift::protocol::T_I64) {
-          xfer += iprot->readI64(this->hintCode);
-          this->__isset.hintCode = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 6:
-        if (ftype == ::apache::thrift::protocol::T_STRING) {
-          xfer += iprot->readString(this->hintContent);
-          this->__isset.hintContent = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
       default:
         xfer += iprot->skip(ftype);
         break;
@@ -141,8 +76,6 @@ uint32_t Trace::read(::apache::thrift::protocol::TProtocol* iprot) {
   xfer += iprot->readStructEnd();
 
   if (!isset_logId)
-    throw TProtocolException(TProtocolException::INVALID_DATA);
-  if (!isset_caller)
     throw TProtocolException(TProtocolException::INVALID_DATA);
   return xfer;
 }
@@ -156,30 +89,6 @@ uint32_t Trace::write(::apache::thrift::protocol::TProtocol* oprot) const {
   xfer += oprot->writeString(this->logId);
   xfer += oprot->writeFieldEnd();
 
-  xfer += oprot->writeFieldBegin("caller", ::apache::thrift::protocol::T_STRING, 2);
-  xfer += oprot->writeString(this->caller);
-  xfer += oprot->writeFieldEnd();
-
-  if (this->__isset.spanId) {
-    xfer += oprot->writeFieldBegin("spanId", ::apache::thrift::protocol::T_STRING, 3);
-    xfer += oprot->writeString(this->spanId);
-    xfer += oprot->writeFieldEnd();
-  }
-  if (this->__isset.srcMethod) {
-    xfer += oprot->writeFieldBegin("srcMethod", ::apache::thrift::protocol::T_STRING, 4);
-    xfer += oprot->writeString(this->srcMethod);
-    xfer += oprot->writeFieldEnd();
-  }
-  if (this->__isset.hintCode) {
-    xfer += oprot->writeFieldBegin("hintCode", ::apache::thrift::protocol::T_I64, 5);
-    xfer += oprot->writeI64(this->hintCode);
-    xfer += oprot->writeFieldEnd();
-  }
-  if (this->__isset.hintContent) {
-    xfer += oprot->writeFieldBegin("hintContent", ::apache::thrift::protocol::T_STRING, 6);
-    xfer += oprot->writeString(this->hintContent);
-    xfer += oprot->writeFieldEnd();
-  }
   xfer += oprot->writeFieldStop();
   xfer += oprot->writeStructEnd();
   oprot->decrementRecursionDepth();
@@ -189,903 +98,19 @@ uint32_t Trace::write(::apache::thrift::protocol::TProtocol* oprot) const {
 void swap(Trace &a, Trace &b) {
   using ::std::swap;
   swap(a.logId, b.logId);
-  swap(a.caller, b.caller);
-  swap(a.spanId, b.spanId);
-  swap(a.srcMethod, b.srcMethod);
-  swap(a.hintCode, b.hintCode);
-  swap(a.hintContent, b.hintContent);
-  swap(a.__isset, b.__isset);
 }
 
 Trace::Trace(const Trace& other0) {
   logId = other0.logId;
-  caller = other0.caller;
-  spanId = other0.spanId;
-  srcMethod = other0.srcMethod;
-  hintCode = other0.hintCode;
-  hintContent = other0.hintContent;
-  __isset = other0.__isset;
 }
 Trace& Trace::operator=(const Trace& other1) {
   logId = other1.logId;
-  caller = other1.caller;
-  spanId = other1.spanId;
-  srcMethod = other1.srcMethod;
-  hintCode = other1.hintCode;
-  hintContent = other1.hintContent;
-  __isset = other1.__isset;
   return *this;
 }
 std::ostream& operator<<(std::ostream& out, const Trace& obj) {
   using apache::thrift::to_string;
   out << "Trace(";
   out << "logId=" << to_string(obj.logId);
-  out << ", " << "caller=" << to_string(obj.caller);
-  out << ", " << "spanId="; (obj.__isset.spanId ? (out << to_string(obj.spanId)) : (out << "<null>"));
-  out << ", " << "srcMethod="; (obj.__isset.srcMethod ? (out << to_string(obj.srcMethod)) : (out << "<null>"));
-  out << ", " << "hintCode="; (obj.__isset.hintCode ? (out << to_string(obj.hintCode)) : (out << "<null>"));
-  out << ", " << "hintContent="; (obj.__isset.hintContent ? (out << to_string(obj.hintContent)) : (out << "<null>"));
-  out << ")";
-  return out;
-}
-
-
-HotspotRequest::~HotspotRequest() throw() {
-}
-
-
-void HotspotRequest::__set_product_id(const std::string& val) {
-  this->product_id = val;
-}
-
-void HotspotRequest::__set_acc_key(const std::string& val) {
-  this->acc_key = val;
-}
-
-void HotspotRequest::__set_app_version(const std::string& val) {
-  this->app_version = val;
-}
-
-void HotspotRequest::__set_sdk_type(const std::string& val) {
-  this->sdk_type = val;
-}
-
-void HotspotRequest::__set_client_type(const std::string& val) {
-  this->client_type = val;
-}
-
-void HotspotRequest::__set_phone(const std::string& val) {
-  this->phone = val;
-}
-
-void HotspotRequest::__set_pid(const std::string& val) {
-  this->pid = val;
-}
-
-void HotspotRequest::__set_cur_lng(const double val) {
-  this->cur_lng = val;
-}
-
-void HotspotRequest::__set_cur_lat(const double val) {
-  this->cur_lat = val;
-}
-
-void HotspotRequest::__set_start_uid(const std::string& val) {
-  this->start_uid = val;
-__isset.start_uid = true;
-}
-
-void HotspotRequest::__set_start_lng(const double val) {
-  this->start_lng = val;
-}
-
-void HotspotRequest::__set_start_lat(const double val) {
-  this->start_lat = val;
-}
-
-void HotspotRequest::__set_start_type(const std::string& val) {
-  this->start_type = val;
-}
-
-void HotspotRequest::__set_start_name(const std::string& val) {
-  this->start_name = val;
-}
-
-void HotspotRequest::__set_start_address(const std::string& val) {
-  this->start_address = val;
-}
-
-void HotspotRequest::__set_dest_uid(const std::string& val) {
-  this->dest_uid = val;
-__isset.dest_uid = true;
-}
-
-void HotspotRequest::__set_dest_lng(const double val) {
-  this->dest_lng = val;
-}
-
-void HotspotRequest::__set_dest_lat(const double val) {
-  this->dest_lat = val;
-}
-
-void HotspotRequest::__set_dest_type(const std::string& val) {
-  this->dest_type = val;
-__isset.dest_type = true;
-}
-
-void HotspotRequest::__set_dest_name(const std::string& val) {
-  this->dest_name = val;
-}
-
-void HotspotRequest::__set_dest_address(const std::string& val) {
-  this->dest_address = val;
-}
-
-void HotspotRequest::__set_cur_step(const int32_t val) {
-  this->cur_step = val;
-}
-
-void HotspotRequest::__set_traceid(const std::string& val) {
-  this->traceid = val;
-__isset.traceid = true;
-}
-
-void HotspotRequest::__set_spanid(const std::string& val) {
-  this->spanid = val;
-__isset.spanid = true;
-}
-
-void HotspotRequest::__set_extends_info(const std::string& val) {
-  this->extends_info = val;
-__isset.extends_info = true;
-}
-
-void HotspotRequest::__set_city_id(const int32_t val) {
-  this->city_id = val;
-__isset.city_id = true;
-}
-
-void HotspotRequest::__set_lang(const std::string& val) {
-  this->lang = val;
-__isset.lang = true;
-}
-
-void HotspotRequest::__set_seat_num_needed(const int32_t val) {
-  this->seat_num_needed = val;
-__isset.seat_num_needed = true;
-}
-
-void HotspotRequest::__set_extMap(const std::map<std::string, std::string> & val) {
-  this->extMap = val;
-__isset.extMap = true;
-}
-
-void HotspotRequest::__set_bubble_pid(const std::string& val) {
-  this->bubble_pid = val;
-__isset.bubble_pid = true;
-}
-
-void HotspotRequest::__set_station_id(const std::string& val) {
-  this->station_id = val;
-__isset.station_id = true;
-}
-
-void HotspotRequest::__set_start_broadcast_time(const int32_t val) {
-  this->start_broadcast_time = val;
-__isset.start_broadcast_time = true;
-}
-
-void HotspotRequest::__set_start_broadcast_time_type(const int32_t val) {
-  this->start_broadcast_time_type = val;
-__isset.start_broadcast_time_type = true;
-}
-
-void HotspotRequest::__set_trace_info(const Trace& val) {
-  this->trace_info = val;
-__isset.trace_info = true;
-}
-
-const char* HotspotRequest::ascii_fingerprint = "E08F305EADD2B4C64030803283777B86";
-const uint8_t HotspotRequest::binary_fingerprint[16] = {0xE0,0x8F,0x30,0x5E,0xAD,0xD2,0xB4,0xC6,0x40,0x30,0x80,0x32,0x83,0x77,0x7B,0x86};
-
-uint32_t HotspotRequest::read(::apache::thrift::protocol::TProtocol* iprot) {
-
-  uint32_t xfer = 0;
-  std::string fname;
-  ::apache::thrift::protocol::TType ftype;
-  int16_t fid;
-
-  xfer += iprot->readStructBegin(fname);
-
-  using ::apache::thrift::protocol::TProtocolException;
-
-  bool isset_product_id = false;
-  bool isset_acc_key = false;
-  bool isset_app_version = false;
-  bool isset_sdk_type = false;
-  bool isset_client_type = false;
-  bool isset_phone = false;
-  bool isset_pid = false;
-  bool isset_cur_lng = false;
-  bool isset_cur_lat = false;
-  bool isset_start_lng = false;
-  bool isset_start_lat = false;
-  bool isset_start_type = false;
-  bool isset_start_name = false;
-  bool isset_start_address = false;
-  bool isset_dest_lng = false;
-  bool isset_dest_lat = false;
-  bool isset_dest_name = false;
-  bool isset_dest_address = false;
-  bool isset_cur_step = false;
-
-  while (true)
-  {
-    xfer += iprot->readFieldBegin(fname, ftype, fid);
-    if (ftype == ::apache::thrift::protocol::T_STOP) {
-      break;
-    }
-    switch (fid)
-    {
-      case 1:
-        if (ftype == ::apache::thrift::protocol::T_STRING) {
-          xfer += iprot->readString(this->product_id);
-          isset_product_id = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 2:
-        if (ftype == ::apache::thrift::protocol::T_STRING) {
-          xfer += iprot->readString(this->acc_key);
-          isset_acc_key = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 3:
-        if (ftype == ::apache::thrift::protocol::T_STRING) {
-          xfer += iprot->readString(this->app_version);
-          isset_app_version = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 4:
-        if (ftype == ::apache::thrift::protocol::T_STRING) {
-          xfer += iprot->readString(this->sdk_type);
-          isset_sdk_type = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 5:
-        if (ftype == ::apache::thrift::protocol::T_STRING) {
-          xfer += iprot->readString(this->client_type);
-          isset_client_type = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 6:
-        if (ftype == ::apache::thrift::protocol::T_STRING) {
-          xfer += iprot->readString(this->phone);
-          isset_phone = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 7:
-        if (ftype == ::apache::thrift::protocol::T_STRING) {
-          xfer += iprot->readString(this->pid);
-          isset_pid = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 8:
-        if (ftype == ::apache::thrift::protocol::T_DOUBLE) {
-          xfer += iprot->readDouble(this->cur_lng);
-          isset_cur_lng = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 9:
-        if (ftype == ::apache::thrift::protocol::T_DOUBLE) {
-          xfer += iprot->readDouble(this->cur_lat);
-          isset_cur_lat = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 10:
-        if (ftype == ::apache::thrift::protocol::T_STRING) {
-          xfer += iprot->readString(this->start_uid);
-          this->__isset.start_uid = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 11:
-        if (ftype == ::apache::thrift::protocol::T_DOUBLE) {
-          xfer += iprot->readDouble(this->start_lng);
-          isset_start_lng = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 12:
-        if (ftype == ::apache::thrift::protocol::T_DOUBLE) {
-          xfer += iprot->readDouble(this->start_lat);
-          isset_start_lat = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 13:
-        if (ftype == ::apache::thrift::protocol::T_STRING) {
-          xfer += iprot->readString(this->start_type);
-          isset_start_type = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 14:
-        if (ftype == ::apache::thrift::protocol::T_STRING) {
-          xfer += iprot->readString(this->start_name);
-          isset_start_name = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 15:
-        if (ftype == ::apache::thrift::protocol::T_STRING) {
-          xfer += iprot->readString(this->start_address);
-          isset_start_address = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 16:
-        if (ftype == ::apache::thrift::protocol::T_STRING) {
-          xfer += iprot->readString(this->dest_uid);
-          this->__isset.dest_uid = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 17:
-        if (ftype == ::apache::thrift::protocol::T_DOUBLE) {
-          xfer += iprot->readDouble(this->dest_lng);
-          isset_dest_lng = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 18:
-        if (ftype == ::apache::thrift::protocol::T_DOUBLE) {
-          xfer += iprot->readDouble(this->dest_lat);
-          isset_dest_lat = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 19:
-        if (ftype == ::apache::thrift::protocol::T_STRING) {
-          xfer += iprot->readString(this->dest_type);
-          this->__isset.dest_type = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 20:
-        if (ftype == ::apache::thrift::protocol::T_STRING) {
-          xfer += iprot->readString(this->dest_name);
-          isset_dest_name = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 21:
-        if (ftype == ::apache::thrift::protocol::T_STRING) {
-          xfer += iprot->readString(this->dest_address);
-          isset_dest_address = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 22:
-        if (ftype == ::apache::thrift::protocol::T_I32) {
-          xfer += iprot->readI32(this->cur_step);
-          isset_cur_step = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 23:
-        if (ftype == ::apache::thrift::protocol::T_STRING) {
-          xfer += iprot->readString(this->traceid);
-          this->__isset.traceid = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 24:
-        if (ftype == ::apache::thrift::protocol::T_STRING) {
-          xfer += iprot->readString(this->spanid);
-          this->__isset.spanid = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 25:
-        if (ftype == ::apache::thrift::protocol::T_STRING) {
-          xfer += iprot->readString(this->extends_info);
-          this->__isset.extends_info = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 26:
-        if (ftype == ::apache::thrift::protocol::T_I32) {
-          xfer += iprot->readI32(this->city_id);
-          this->__isset.city_id = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 27:
-        if (ftype == ::apache::thrift::protocol::T_STRING) {
-          xfer += iprot->readString(this->lang);
-          this->__isset.lang = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 28:
-        if (ftype == ::apache::thrift::protocol::T_I32) {
-          xfer += iprot->readI32(this->seat_num_needed);
-          this->__isset.seat_num_needed = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 29:
-        if (ftype == ::apache::thrift::protocol::T_MAP) {
-          {
-            this->extMap.clear();
-            uint32_t _size2;
-            ::apache::thrift::protocol::TType _ktype3;
-            ::apache::thrift::protocol::TType _vtype4;
-            xfer += iprot->readMapBegin(_ktype3, _vtype4, _size2);
-            uint32_t _i6;
-            for (_i6 = 0; _i6 < _size2; ++_i6)
-            {
-              std::string _key7;
-              xfer += iprot->readString(_key7);
-              std::string& _val8 = this->extMap[_key7];
-              xfer += iprot->readString(_val8);
-            }
-            xfer += iprot->readMapEnd();
-          }
-          this->__isset.extMap = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 30:
-        if (ftype == ::apache::thrift::protocol::T_STRING) {
-          xfer += iprot->readString(this->bubble_pid);
-          this->__isset.bubble_pid = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 31:
-        if (ftype == ::apache::thrift::protocol::T_STRING) {
-          xfer += iprot->readString(this->station_id);
-          this->__isset.station_id = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 32:
-        if (ftype == ::apache::thrift::protocol::T_I32) {
-          xfer += iprot->readI32(this->start_broadcast_time);
-          this->__isset.start_broadcast_time = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 33:
-        if (ftype == ::apache::thrift::protocol::T_I32) {
-          xfer += iprot->readI32(this->start_broadcast_time_type);
-          this->__isset.start_broadcast_time_type = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 50:
-        if (ftype == ::apache::thrift::protocol::T_STRUCT) {
-          xfer += this->trace_info.read(iprot);
-          this->__isset.trace_info = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      default:
-        xfer += iprot->skip(ftype);
-        break;
-    }
-    xfer += iprot->readFieldEnd();
-  }
-
-  xfer += iprot->readStructEnd();
-
-  if (!isset_product_id)
-    throw TProtocolException(TProtocolException::INVALID_DATA);
-  if (!isset_acc_key)
-    throw TProtocolException(TProtocolException::INVALID_DATA);
-  if (!isset_app_version)
-    throw TProtocolException(TProtocolException::INVALID_DATA);
-  if (!isset_sdk_type)
-    throw TProtocolException(TProtocolException::INVALID_DATA);
-  if (!isset_client_type)
-    throw TProtocolException(TProtocolException::INVALID_DATA);
-  if (!isset_phone)
-    throw TProtocolException(TProtocolException::INVALID_DATA);
-  if (!isset_pid)
-    throw TProtocolException(TProtocolException::INVALID_DATA);
-  if (!isset_cur_lng)
-    throw TProtocolException(TProtocolException::INVALID_DATA);
-  if (!isset_cur_lat)
-    throw TProtocolException(TProtocolException::INVALID_DATA);
-  if (!isset_start_lng)
-    throw TProtocolException(TProtocolException::INVALID_DATA);
-  if (!isset_start_lat)
-    throw TProtocolException(TProtocolException::INVALID_DATA);
-  if (!isset_start_type)
-    throw TProtocolException(TProtocolException::INVALID_DATA);
-  if (!isset_start_name)
-    throw TProtocolException(TProtocolException::INVALID_DATA);
-  if (!isset_start_address)
-    throw TProtocolException(TProtocolException::INVALID_DATA);
-  if (!isset_dest_lng)
-    throw TProtocolException(TProtocolException::INVALID_DATA);
-  if (!isset_dest_lat)
-    throw TProtocolException(TProtocolException::INVALID_DATA);
-  if (!isset_dest_name)
-    throw TProtocolException(TProtocolException::INVALID_DATA);
-  if (!isset_dest_address)
-    throw TProtocolException(TProtocolException::INVALID_DATA);
-  if (!isset_cur_step)
-    throw TProtocolException(TProtocolException::INVALID_DATA);
-  return xfer;
-}
-
-uint32_t HotspotRequest::write(::apache::thrift::protocol::TProtocol* oprot) const {
-  uint32_t xfer = 0;
-  oprot->incrementRecursionDepth();
-  xfer += oprot->writeStructBegin("HotspotRequest");
-
-  xfer += oprot->writeFieldBegin("product_id", ::apache::thrift::protocol::T_STRING, 1);
-  xfer += oprot->writeString(this->product_id);
-  xfer += oprot->writeFieldEnd();
-
-  xfer += oprot->writeFieldBegin("acc_key", ::apache::thrift::protocol::T_STRING, 2);
-  xfer += oprot->writeString(this->acc_key);
-  xfer += oprot->writeFieldEnd();
-
-  xfer += oprot->writeFieldBegin("app_version", ::apache::thrift::protocol::T_STRING, 3);
-  xfer += oprot->writeString(this->app_version);
-  xfer += oprot->writeFieldEnd();
-
-  xfer += oprot->writeFieldBegin("sdk_type", ::apache::thrift::protocol::T_STRING, 4);
-  xfer += oprot->writeString(this->sdk_type);
-  xfer += oprot->writeFieldEnd();
-
-  xfer += oprot->writeFieldBegin("client_type", ::apache::thrift::protocol::T_STRING, 5);
-  xfer += oprot->writeString(this->client_type);
-  xfer += oprot->writeFieldEnd();
-
-  xfer += oprot->writeFieldBegin("phone", ::apache::thrift::protocol::T_STRING, 6);
-  xfer += oprot->writeString(this->phone);
-  xfer += oprot->writeFieldEnd();
-
-  xfer += oprot->writeFieldBegin("pid", ::apache::thrift::protocol::T_STRING, 7);
-  xfer += oprot->writeString(this->pid);
-  xfer += oprot->writeFieldEnd();
-
-  xfer += oprot->writeFieldBegin("cur_lng", ::apache::thrift::protocol::T_DOUBLE, 8);
-  xfer += oprot->writeDouble(this->cur_lng);
-  xfer += oprot->writeFieldEnd();
-
-  xfer += oprot->writeFieldBegin("cur_lat", ::apache::thrift::protocol::T_DOUBLE, 9);
-  xfer += oprot->writeDouble(this->cur_lat);
-  xfer += oprot->writeFieldEnd();
-
-  if (this->__isset.start_uid) {
-    xfer += oprot->writeFieldBegin("start_uid", ::apache::thrift::protocol::T_STRING, 10);
-    xfer += oprot->writeString(this->start_uid);
-    xfer += oprot->writeFieldEnd();
-  }
-  xfer += oprot->writeFieldBegin("start_lng", ::apache::thrift::protocol::T_DOUBLE, 11);
-  xfer += oprot->writeDouble(this->start_lng);
-  xfer += oprot->writeFieldEnd();
-
-  xfer += oprot->writeFieldBegin("start_lat", ::apache::thrift::protocol::T_DOUBLE, 12);
-  xfer += oprot->writeDouble(this->start_lat);
-  xfer += oprot->writeFieldEnd();
-
-  xfer += oprot->writeFieldBegin("start_type", ::apache::thrift::protocol::T_STRING, 13);
-  xfer += oprot->writeString(this->start_type);
-  xfer += oprot->writeFieldEnd();
-
-  xfer += oprot->writeFieldBegin("start_name", ::apache::thrift::protocol::T_STRING, 14);
-  xfer += oprot->writeString(this->start_name);
-  xfer += oprot->writeFieldEnd();
-
-  xfer += oprot->writeFieldBegin("start_address", ::apache::thrift::protocol::T_STRING, 15);
-  xfer += oprot->writeString(this->start_address);
-  xfer += oprot->writeFieldEnd();
-
-  if (this->__isset.dest_uid) {
-    xfer += oprot->writeFieldBegin("dest_uid", ::apache::thrift::protocol::T_STRING, 16);
-    xfer += oprot->writeString(this->dest_uid);
-    xfer += oprot->writeFieldEnd();
-  }
-  xfer += oprot->writeFieldBegin("dest_lng", ::apache::thrift::protocol::T_DOUBLE, 17);
-  xfer += oprot->writeDouble(this->dest_lng);
-  xfer += oprot->writeFieldEnd();
-
-  xfer += oprot->writeFieldBegin("dest_lat", ::apache::thrift::protocol::T_DOUBLE, 18);
-  xfer += oprot->writeDouble(this->dest_lat);
-  xfer += oprot->writeFieldEnd();
-
-  if (this->__isset.dest_type) {
-    xfer += oprot->writeFieldBegin("dest_type", ::apache::thrift::protocol::T_STRING, 19);
-    xfer += oprot->writeString(this->dest_type);
-    xfer += oprot->writeFieldEnd();
-  }
-  xfer += oprot->writeFieldBegin("dest_name", ::apache::thrift::protocol::T_STRING, 20);
-  xfer += oprot->writeString(this->dest_name);
-  xfer += oprot->writeFieldEnd();
-
-  xfer += oprot->writeFieldBegin("dest_address", ::apache::thrift::protocol::T_STRING, 21);
-  xfer += oprot->writeString(this->dest_address);
-  xfer += oprot->writeFieldEnd();
-
-  xfer += oprot->writeFieldBegin("cur_step", ::apache::thrift::protocol::T_I32, 22);
-  xfer += oprot->writeI32(this->cur_step);
-  xfer += oprot->writeFieldEnd();
-
-  if (this->__isset.traceid) {
-    xfer += oprot->writeFieldBegin("traceid", ::apache::thrift::protocol::T_STRING, 23);
-    xfer += oprot->writeString(this->traceid);
-    xfer += oprot->writeFieldEnd();
-  }
-  if (this->__isset.spanid) {
-    xfer += oprot->writeFieldBegin("spanid", ::apache::thrift::protocol::T_STRING, 24);
-    xfer += oprot->writeString(this->spanid);
-    xfer += oprot->writeFieldEnd();
-  }
-  if (this->__isset.extends_info) {
-    xfer += oprot->writeFieldBegin("extends_info", ::apache::thrift::protocol::T_STRING, 25);
-    xfer += oprot->writeString(this->extends_info);
-    xfer += oprot->writeFieldEnd();
-  }
-  if (this->__isset.city_id) {
-    xfer += oprot->writeFieldBegin("city_id", ::apache::thrift::protocol::T_I32, 26);
-    xfer += oprot->writeI32(this->city_id);
-    xfer += oprot->writeFieldEnd();
-  }
-  if (this->__isset.lang) {
-    xfer += oprot->writeFieldBegin("lang", ::apache::thrift::protocol::T_STRING, 27);
-    xfer += oprot->writeString(this->lang);
-    xfer += oprot->writeFieldEnd();
-  }
-  if (this->__isset.seat_num_needed) {
-    xfer += oprot->writeFieldBegin("seat_num_needed", ::apache::thrift::protocol::T_I32, 28);
-    xfer += oprot->writeI32(this->seat_num_needed);
-    xfer += oprot->writeFieldEnd();
-  }
-  if (this->__isset.extMap) {
-    xfer += oprot->writeFieldBegin("extMap", ::apache::thrift::protocol::T_MAP, 29);
-    {
-      xfer += oprot->writeMapBegin(::apache::thrift::protocol::T_STRING, ::apache::thrift::protocol::T_STRING, static_cast<uint32_t>(this->extMap.size()));
-      std::map<std::string, std::string> ::const_iterator _iter9;
-      for (_iter9 = this->extMap.begin(); _iter9 != this->extMap.end(); ++_iter9)
-      {
-        xfer += oprot->writeString(_iter9->first);
-        xfer += oprot->writeString(_iter9->second);
-      }
-      xfer += oprot->writeMapEnd();
-    }
-    xfer += oprot->writeFieldEnd();
-  }
-  if (this->__isset.bubble_pid) {
-    xfer += oprot->writeFieldBegin("bubble_pid", ::apache::thrift::protocol::T_STRING, 30);
-    xfer += oprot->writeString(this->bubble_pid);
-    xfer += oprot->writeFieldEnd();
-  }
-  if (this->__isset.station_id) {
-    xfer += oprot->writeFieldBegin("station_id", ::apache::thrift::protocol::T_STRING, 31);
-    xfer += oprot->writeString(this->station_id);
-    xfer += oprot->writeFieldEnd();
-  }
-  if (this->__isset.start_broadcast_time) {
-    xfer += oprot->writeFieldBegin("start_broadcast_time", ::apache::thrift::protocol::T_I32, 32);
-    xfer += oprot->writeI32(this->start_broadcast_time);
-    xfer += oprot->writeFieldEnd();
-  }
-  if (this->__isset.start_broadcast_time_type) {
-    xfer += oprot->writeFieldBegin("start_broadcast_time_type", ::apache::thrift::protocol::T_I32, 33);
-    xfer += oprot->writeI32(this->start_broadcast_time_type);
-    xfer += oprot->writeFieldEnd();
-  }
-  if (this->__isset.trace_info) {
-    xfer += oprot->writeFieldBegin("trace_info", ::apache::thrift::protocol::T_STRUCT, 50);
-    xfer += this->trace_info.write(oprot);
-    xfer += oprot->writeFieldEnd();
-  }
-  xfer += oprot->writeFieldStop();
-  xfer += oprot->writeStructEnd();
-  oprot->decrementRecursionDepth();
-  return xfer;
-}
-
-void swap(HotspotRequest &a, HotspotRequest &b) {
-  using ::std::swap;
-  swap(a.product_id, b.product_id);
-  swap(a.acc_key, b.acc_key);
-  swap(a.app_version, b.app_version);
-  swap(a.sdk_type, b.sdk_type);
-  swap(a.client_type, b.client_type);
-  swap(a.phone, b.phone);
-  swap(a.pid, b.pid);
-  swap(a.cur_lng, b.cur_lng);
-  swap(a.cur_lat, b.cur_lat);
-  swap(a.start_uid, b.start_uid);
-  swap(a.start_lng, b.start_lng);
-  swap(a.start_lat, b.start_lat);
-  swap(a.start_type, b.start_type);
-  swap(a.start_name, b.start_name);
-  swap(a.start_address, b.start_address);
-  swap(a.dest_uid, b.dest_uid);
-  swap(a.dest_lng, b.dest_lng);
-  swap(a.dest_lat, b.dest_lat);
-  swap(a.dest_type, b.dest_type);
-  swap(a.dest_name, b.dest_name);
-  swap(a.dest_address, b.dest_address);
-  swap(a.cur_step, b.cur_step);
-  swap(a.traceid, b.traceid);
-  swap(a.spanid, b.spanid);
-  swap(a.extends_info, b.extends_info);
-  swap(a.city_id, b.city_id);
-  swap(a.lang, b.lang);
-  swap(a.seat_num_needed, b.seat_num_needed);
-  swap(a.extMap, b.extMap);
-  swap(a.bubble_pid, b.bubble_pid);
-  swap(a.station_id, b.station_id);
-  swap(a.start_broadcast_time, b.start_broadcast_time);
-  swap(a.start_broadcast_time_type, b.start_broadcast_time_type);
-  swap(a.trace_info, b.trace_info);
-  swap(a.__isset, b.__isset);
-}
-
-HotspotRequest::HotspotRequest(const HotspotRequest& other10) {
-  product_id = other10.product_id;
-  acc_key = other10.acc_key;
-  app_version = other10.app_version;
-  sdk_type = other10.sdk_type;
-  client_type = other10.client_type;
-  phone = other10.phone;
-  pid = other10.pid;
-  cur_lng = other10.cur_lng;
-  cur_lat = other10.cur_lat;
-  start_uid = other10.start_uid;
-  start_lng = other10.start_lng;
-  start_lat = other10.start_lat;
-  start_type = other10.start_type;
-  start_name = other10.start_name;
-  start_address = other10.start_address;
-  dest_uid = other10.dest_uid;
-  dest_lng = other10.dest_lng;
-  dest_lat = other10.dest_lat;
-  dest_type = other10.dest_type;
-  dest_name = other10.dest_name;
-  dest_address = other10.dest_address;
-  cur_step = other10.cur_step;
-  traceid = other10.traceid;
-  spanid = other10.spanid;
-  extends_info = other10.extends_info;
-  city_id = other10.city_id;
-  lang = other10.lang;
-  seat_num_needed = other10.seat_num_needed;
-  extMap = other10.extMap;
-  bubble_pid = other10.bubble_pid;
-  station_id = other10.station_id;
-  start_broadcast_time = other10.start_broadcast_time;
-  start_broadcast_time_type = other10.start_broadcast_time_type;
-  trace_info = other10.trace_info;
-  __isset = other10.__isset;
-}
-HotspotRequest& HotspotRequest::operator=(const HotspotRequest& other11) {
-  product_id = other11.product_id;
-  acc_key = other11.acc_key;
-  app_version = other11.app_version;
-  sdk_type = other11.sdk_type;
-  client_type = other11.client_type;
-  phone = other11.phone;
-  pid = other11.pid;
-  cur_lng = other11.cur_lng;
-  cur_lat = other11.cur_lat;
-  start_uid = other11.start_uid;
-  start_lng = other11.start_lng;
-  start_lat = other11.start_lat;
-  start_type = other11.start_type;
-  start_name = other11.start_name;
-  start_address = other11.start_address;
-  dest_uid = other11.dest_uid;
-  dest_lng = other11.dest_lng;
-  dest_lat = other11.dest_lat;
-  dest_type = other11.dest_type;
-  dest_name = other11.dest_name;
-  dest_address = other11.dest_address;
-  cur_step = other11.cur_step;
-  traceid = other11.traceid;
-  spanid = other11.spanid;
-  extends_info = other11.extends_info;
-  city_id = other11.city_id;
-  lang = other11.lang;
-  seat_num_needed = other11.seat_num_needed;
-  extMap = other11.extMap;
-  bubble_pid = other11.bubble_pid;
-  station_id = other11.station_id;
-  start_broadcast_time = other11.start_broadcast_time;
-  start_broadcast_time_type = other11.start_broadcast_time_type;
-  trace_info = other11.trace_info;
-  __isset = other11.__isset;
-  return *this;
-}
-std::ostream& operator<<(std::ostream& out, const HotspotRequest& obj) {
-  using apache::thrift::to_string;
-  out << "HotspotRequest(";
-  out << "product_id=" << to_string(obj.product_id);
-  out << ", " << "acc_key=" << to_string(obj.acc_key);
-  out << ", " << "app_version=" << to_string(obj.app_version);
-  out << ", " << "sdk_type=" << to_string(obj.sdk_type);
-  out << ", " << "client_type=" << to_string(obj.client_type);
-  out << ", " << "phone=" << to_string(obj.phone);
-  out << ", " << "pid=" << to_string(obj.pid);
-  out << ", " << "cur_lng=" << to_string(obj.cur_lng);
-  out << ", " << "cur_lat=" << to_string(obj.cur_lat);
-  out << ", " << "start_uid="; (obj.__isset.start_uid ? (out << to_string(obj.start_uid)) : (out << "<null>"));
-  out << ", " << "start_lng=" << to_string(obj.start_lng);
-  out << ", " << "start_lat=" << to_string(obj.start_lat);
-  out << ", " << "start_type=" << to_string(obj.start_type);
-  out << ", " << "start_name=" << to_string(obj.start_name);
-  out << ", " << "start_address=" << to_string(obj.start_address);
-  out << ", " << "dest_uid="; (obj.__isset.dest_uid ? (out << to_string(obj.dest_uid)) : (out << "<null>"));
-  out << ", " << "dest_lng=" << to_string(obj.dest_lng);
-  out << ", " << "dest_lat=" << to_string(obj.dest_lat);
-  out << ", " << "dest_type="; (obj.__isset.dest_type ? (out << to_string(obj.dest_type)) : (out << "<null>"));
-  out << ", " << "dest_name=" << to_string(obj.dest_name);
-  out << ", " << "dest_address=" << to_string(obj.dest_address);
-  out << ", " << "cur_step=" << to_string(obj.cur_step);
-  out << ", " << "traceid="; (obj.__isset.traceid ? (out << to_string(obj.traceid)) : (out << "<null>"));
-  out << ", " << "spanid="; (obj.__isset.spanid ? (out << to_string(obj.spanid)) : (out << "<null>"));
-  out << ", " << "extends_info="; (obj.__isset.extends_info ? (out << to_string(obj.extends_info)) : (out << "<null>"));
-  out << ", " << "city_id="; (obj.__isset.city_id ? (out << to_string(obj.city_id)) : (out << "<null>"));
-  out << ", " << "lang="; (obj.__isset.lang ? (out << to_string(obj.lang)) : (out << "<null>"));
-  out << ", " << "seat_num_needed="; (obj.__isset.seat_num_needed ? (out << to_string(obj.seat_num_needed)) : (out << "<null>"));
-  out << ", " << "extMap="; (obj.__isset.extMap ? (out << to_string(obj.extMap)) : (out << "<null>"));
-  out << ", " << "bubble_pid="; (obj.__isset.bubble_pid ? (out << to_string(obj.bubble_pid)) : (out << "<null>"));
-  out << ", " << "station_id="; (obj.__isset.station_id ? (out << to_string(obj.station_id)) : (out << "<null>"));
-  out << ", " << "start_broadcast_time="; (obj.__isset.start_broadcast_time ? (out << to_string(obj.start_broadcast_time)) : (out << "<null>"));
-  out << ", " << "start_broadcast_time_type="; (obj.__isset.start_broadcast_time_type ? (out << to_string(obj.start_broadcast_time_type)) : (out << "<null>"));
-  out << ", " << "trace_info="; (obj.__isset.trace_info ? (out << to_string(obj.trace_info)) : (out << "<null>"));
   out << ")";
   return out;
 }
@@ -1095,81 +120,24 @@ StationInfo::~StationInfo() throw() {
 }
 
 
-void StationInfo::__set_uid(const std::string& val) {
-  this->uid = val;
-}
-
 void StationInfo::__set_lng(const double val) {
   this->lng = val;
 }
 
-void StationInfo::__set_lat(const double val) {
-  this->lat = val;
+void StationInfo::__set_nlist(const std::vector<int32_t> & val) {
+  this->nlist = val;
 }
 
-void StationInfo::__set_name(const std::string& val) {
-  this->name = val;
+void StationInfo::__set_nset(const std::set<int32_t> & val) {
+  this->nset = val;
 }
 
-void StationInfo::__set_address(const std::string& val) {
-  this->address = val;
+void StationInfo::__set_nmap(const std::map<int32_t, std::string> & val) {
+  this->nmap = val;
 }
 
-void StationInfo::__set_mis_id_list(const std::vector<std::string> & val) {
-  this->mis_id_list = val;
-}
-
-void StationInfo::__set_count_down_time(const int32_t val) {
-  this->count_down_time = val;
-}
-
-void StationInfo::__set_walk_distance(const int32_t val) {
-  this->walk_distance = val;
-}
-
-void StationInfo::__set_walk_time(const int32_t val) {
-  this->walk_time = val;
-}
-
-void StationInfo::__set_is_default(const bool val) {
-  this->is_default = val;
-}
-
-void StationInfo::__set_extends_info(const std::string& val) {
-  this->extends_info = val;
-__isset.extends_info = true;
-}
-
-void StationInfo::__set_rec_reason(const std::string& val) {
-  this->rec_reason = val;
-__isset.rec_reason = true;
-}
-
-void StationInfo::__set_do_pop(const int32_t val) {
-  this->do_pop = val;
-}
-
-void StationInfo::__set_pop_reason(const std::string& val) {
-  this->pop_reason = val;
-}
-
-void StationInfo::__set_text_type(const TextType::type val) {
-  this->text_type = val;
-__isset.text_type = true;
-}
-
-void StationInfo::__set_city_id(const int32_t val) {
-  this->city_id = val;
-__isset.city_id = true;
-}
-
-void StationInfo::__set_city_name(const std::string& val) {
-  this->city_name = val;
-__isset.city_name = true;
-}
-
-const char* StationInfo::ascii_fingerprint = "8C5E20C7CE5627F1745BC9679FA3AE2A";
-const uint8_t StationInfo::binary_fingerprint[16] = {0x8C,0x5E,0x20,0xC7,0xCE,0x56,0x27,0xF1,0x74,0x5B,0xC9,0x67,0x9F,0xA3,0xAE,0x2A};
+const char* StationInfo::ascii_fingerprint = "D8824F455AAD39A35933B60845B3BC95";
+const uint8_t StationInfo::binary_fingerprint[16] = {0xD8,0x82,0x4F,0x45,0x5A,0xAD,0x39,0xA3,0x59,0x33,0xB6,0x08,0x45,0xB3,0xBC,0x95};
 
 uint32_t StationInfo::read(::apache::thrift::protocol::TProtocol* iprot) {
 
@@ -1182,18 +150,10 @@ uint32_t StationInfo::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   using ::apache::thrift::protocol::TProtocolException;
 
-  bool isset_uid = false;
   bool isset_lng = false;
-  bool isset_lat = false;
-  bool isset_name = false;
-  bool isset_address = false;
-  bool isset_mis_id_list = false;
-  bool isset_count_down_time = false;
-  bool isset_walk_distance = false;
-  bool isset_walk_time = false;
-  bool isset_is_default = false;
-  bool isset_do_pop = false;
-  bool isset_pop_reason = false;
+  bool isset_nlist = false;
+  bool isset_nset = false;
+  bool isset_nmap = false;
 
   while (true)
   {
@@ -1204,14 +164,6 @@ uint32_t StationInfo::read(::apache::thrift::protocol::TProtocol* iprot) {
     switch (fid)
     {
       case 1:
-        if (ftype == ::apache::thrift::protocol::T_STRING) {
-          xfer += iprot->readString(this->uid);
-          isset_uid = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 2:
         if (ftype == ::apache::thrift::protocol::T_DOUBLE) {
           xfer += iprot->readDouble(this->lng);
           isset_lng = true;
@@ -1219,136 +171,66 @@ uint32_t StationInfo::read(::apache::thrift::protocol::TProtocol* iprot) {
           xfer += iprot->skip(ftype);
         }
         break;
+      case 2:
+        if (ftype == ::apache::thrift::protocol::T_LIST) {
+          {
+            this->nlist.clear();
+            uint32_t _size2;
+            ::apache::thrift::protocol::TType _etype5;
+            xfer += iprot->readListBegin(_etype5, _size2);
+            this->nlist.resize(_size2);
+            uint32_t _i6;
+            for (_i6 = 0; _i6 < _size2; ++_i6)
+            {
+              xfer += iprot->readI32(this->nlist[_i6]);
+            }
+            xfer += iprot->readListEnd();
+          }
+          isset_nlist = true;
+        } else {
+          xfer += iprot->skip(ftype);
+        }
+        break;
       case 3:
-        if (ftype == ::apache::thrift::protocol::T_DOUBLE) {
-          xfer += iprot->readDouble(this->lat);
-          isset_lat = true;
+        if (ftype == ::apache::thrift::protocol::T_SET) {
+          {
+            this->nset.clear();
+            uint32_t _size7;
+            ::apache::thrift::protocol::TType _etype10;
+            xfer += iprot->readSetBegin(_etype10, _size7);
+            uint32_t _i11;
+            for (_i11 = 0; _i11 < _size7; ++_i11)
+            {
+              int32_t _elem12;
+              xfer += iprot->readI32(_elem12);
+              this->nset.insert(_elem12);
+            }
+            xfer += iprot->readSetEnd();
+          }
+          isset_nset = true;
         } else {
           xfer += iprot->skip(ftype);
         }
         break;
       case 4:
-        if (ftype == ::apache::thrift::protocol::T_STRING) {
-          xfer += iprot->readString(this->name);
-          isset_name = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 5:
-        if (ftype == ::apache::thrift::protocol::T_STRING) {
-          xfer += iprot->readString(this->address);
-          isset_address = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 6:
-        if (ftype == ::apache::thrift::protocol::T_LIST) {
+        if (ftype == ::apache::thrift::protocol::T_MAP) {
           {
-            this->mis_id_list.clear();
-            uint32_t _size12;
-            ::apache::thrift::protocol::TType _etype15;
-            xfer += iprot->readListBegin(_etype15, _size12);
-            this->mis_id_list.resize(_size12);
-            uint32_t _i16;
-            for (_i16 = 0; _i16 < _size12; ++_i16)
+            this->nmap.clear();
+            uint32_t _size13;
+            ::apache::thrift::protocol::TType _ktype14;
+            ::apache::thrift::protocol::TType _vtype15;
+            xfer += iprot->readMapBegin(_ktype14, _vtype15, _size13);
+            uint32_t _i17;
+            for (_i17 = 0; _i17 < _size13; ++_i17)
             {
-              xfer += iprot->readString(this->mis_id_list[_i16]);
+              int32_t _key18;
+              xfer += iprot->readI32(_key18);
+              std::string& _val19 = this->nmap[_key18];
+              xfer += iprot->readString(_val19);
             }
-            xfer += iprot->readListEnd();
+            xfer += iprot->readMapEnd();
           }
-          isset_mis_id_list = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 7:
-        if (ftype == ::apache::thrift::protocol::T_I32) {
-          xfer += iprot->readI32(this->count_down_time);
-          isset_count_down_time = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 8:
-        if (ftype == ::apache::thrift::protocol::T_I32) {
-          xfer += iprot->readI32(this->walk_distance);
-          isset_walk_distance = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 9:
-        if (ftype == ::apache::thrift::protocol::T_I32) {
-          xfer += iprot->readI32(this->walk_time);
-          isset_walk_time = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 10:
-        if (ftype == ::apache::thrift::protocol::T_BOOL) {
-          xfer += iprot->readBool(this->is_default);
-          isset_is_default = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 11:
-        if (ftype == ::apache::thrift::protocol::T_STRING) {
-          xfer += iprot->readString(this->extends_info);
-          this->__isset.extends_info = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 12:
-        if (ftype == ::apache::thrift::protocol::T_STRING) {
-          xfer += iprot->readString(this->rec_reason);
-          this->__isset.rec_reason = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 13:
-        if (ftype == ::apache::thrift::protocol::T_I32) {
-          xfer += iprot->readI32(this->do_pop);
-          isset_do_pop = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 14:
-        if (ftype == ::apache::thrift::protocol::T_STRING) {
-          xfer += iprot->readString(this->pop_reason);
-          isset_pop_reason = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 15:
-        if (ftype == ::apache::thrift::protocol::T_I32) {
-          int32_t ecast17;
-          xfer += iprot->readI32(ecast17);
-          this->text_type = (TextType::type)ecast17;
-          this->__isset.text_type = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 16:
-        if (ftype == ::apache::thrift::protocol::T_I32) {
-          xfer += iprot->readI32(this->city_id);
-          this->__isset.city_id = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 17:
-        if (ftype == ::apache::thrift::protocol::T_STRING) {
-          xfer += iprot->readString(this->city_name);
-          this->__isset.city_name = true;
+          isset_nmap = true;
         } else {
           xfer += iprot->skip(ftype);
         }
@@ -1362,29 +244,13 @@ uint32_t StationInfo::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   xfer += iprot->readStructEnd();
 
-  if (!isset_uid)
-    throw TProtocolException(TProtocolException::INVALID_DATA);
   if (!isset_lng)
     throw TProtocolException(TProtocolException::INVALID_DATA);
-  if (!isset_lat)
+  if (!isset_nlist)
     throw TProtocolException(TProtocolException::INVALID_DATA);
-  if (!isset_name)
+  if (!isset_nset)
     throw TProtocolException(TProtocolException::INVALID_DATA);
-  if (!isset_address)
-    throw TProtocolException(TProtocolException::INVALID_DATA);
-  if (!isset_mis_id_list)
-    throw TProtocolException(TProtocolException::INVALID_DATA);
-  if (!isset_count_down_time)
-    throw TProtocolException(TProtocolException::INVALID_DATA);
-  if (!isset_walk_distance)
-    throw TProtocolException(TProtocolException::INVALID_DATA);
-  if (!isset_walk_time)
-    throw TProtocolException(TProtocolException::INVALID_DATA);
-  if (!isset_is_default)
-    throw TProtocolException(TProtocolException::INVALID_DATA);
-  if (!isset_do_pop)
-    throw TProtocolException(TProtocolException::INVALID_DATA);
-  if (!isset_pop_reason)
+  if (!isset_nmap)
     throw TProtocolException(TProtocolException::INVALID_DATA);
   return xfer;
 }
@@ -1394,87 +260,47 @@ uint32_t StationInfo::write(::apache::thrift::protocol::TProtocol* oprot) const 
   oprot->incrementRecursionDepth();
   xfer += oprot->writeStructBegin("StationInfo");
 
-  xfer += oprot->writeFieldBegin("uid", ::apache::thrift::protocol::T_STRING, 1);
-  xfer += oprot->writeString(this->uid);
-  xfer += oprot->writeFieldEnd();
-
-  xfer += oprot->writeFieldBegin("lng", ::apache::thrift::protocol::T_DOUBLE, 2);
+  xfer += oprot->writeFieldBegin("lng", ::apache::thrift::protocol::T_DOUBLE, 1);
   xfer += oprot->writeDouble(this->lng);
   xfer += oprot->writeFieldEnd();
 
-  xfer += oprot->writeFieldBegin("lat", ::apache::thrift::protocol::T_DOUBLE, 3);
-  xfer += oprot->writeDouble(this->lat);
-  xfer += oprot->writeFieldEnd();
-
-  xfer += oprot->writeFieldBegin("name", ::apache::thrift::protocol::T_STRING, 4);
-  xfer += oprot->writeString(this->name);
-  xfer += oprot->writeFieldEnd();
-
-  xfer += oprot->writeFieldBegin("address", ::apache::thrift::protocol::T_STRING, 5);
-  xfer += oprot->writeString(this->address);
-  xfer += oprot->writeFieldEnd();
-
-  xfer += oprot->writeFieldBegin("mis_id_list", ::apache::thrift::protocol::T_LIST, 6);
+  xfer += oprot->writeFieldBegin("nlist", ::apache::thrift::protocol::T_LIST, 2);
   {
-    xfer += oprot->writeListBegin(::apache::thrift::protocol::T_STRING, static_cast<uint32_t>(this->mis_id_list.size()));
-    std::vector<std::string> ::const_iterator _iter18;
-    for (_iter18 = this->mis_id_list.begin(); _iter18 != this->mis_id_list.end(); ++_iter18)
+    xfer += oprot->writeListBegin(::apache::thrift::protocol::T_I32, static_cast<uint32_t>(this->nlist.size()));
+    std::vector<int32_t> ::const_iterator _iter20;
+    for (_iter20 = this->nlist.begin(); _iter20 != this->nlist.end(); ++_iter20)
     {
-      xfer += oprot->writeString((*_iter18));
+      xfer += oprot->writeI32((*_iter20));
     }
     xfer += oprot->writeListEnd();
   }
   xfer += oprot->writeFieldEnd();
 
-  xfer += oprot->writeFieldBegin("count_down_time", ::apache::thrift::protocol::T_I32, 7);
-  xfer += oprot->writeI32(this->count_down_time);
-  xfer += oprot->writeFieldEnd();
-
-  xfer += oprot->writeFieldBegin("walk_distance", ::apache::thrift::protocol::T_I32, 8);
-  xfer += oprot->writeI32(this->walk_distance);
-  xfer += oprot->writeFieldEnd();
-
-  xfer += oprot->writeFieldBegin("walk_time", ::apache::thrift::protocol::T_I32, 9);
-  xfer += oprot->writeI32(this->walk_time);
-  xfer += oprot->writeFieldEnd();
-
-  xfer += oprot->writeFieldBegin("is_default", ::apache::thrift::protocol::T_BOOL, 10);
-  xfer += oprot->writeBool(this->is_default);
-  xfer += oprot->writeFieldEnd();
-
-  if (this->__isset.extends_info) {
-    xfer += oprot->writeFieldBegin("extends_info", ::apache::thrift::protocol::T_STRING, 11);
-    xfer += oprot->writeString(this->extends_info);
-    xfer += oprot->writeFieldEnd();
+  xfer += oprot->writeFieldBegin("nset", ::apache::thrift::protocol::T_SET, 3);
+  {
+    xfer += oprot->writeSetBegin(::apache::thrift::protocol::T_I32, static_cast<uint32_t>(this->nset.size()));
+    std::set<int32_t> ::const_iterator _iter21;
+    for (_iter21 = this->nset.begin(); _iter21 != this->nset.end(); ++_iter21)
+    {
+      xfer += oprot->writeI32((*_iter21));
+    }
+    xfer += oprot->writeSetEnd();
   }
-  if (this->__isset.rec_reason) {
-    xfer += oprot->writeFieldBegin("rec_reason", ::apache::thrift::protocol::T_STRING, 12);
-    xfer += oprot->writeString(this->rec_reason);
-    xfer += oprot->writeFieldEnd();
-  }
-  xfer += oprot->writeFieldBegin("do_pop", ::apache::thrift::protocol::T_I32, 13);
-  xfer += oprot->writeI32(this->do_pop);
   xfer += oprot->writeFieldEnd();
 
-  xfer += oprot->writeFieldBegin("pop_reason", ::apache::thrift::protocol::T_STRING, 14);
-  xfer += oprot->writeString(this->pop_reason);
+  xfer += oprot->writeFieldBegin("nmap", ::apache::thrift::protocol::T_MAP, 4);
+  {
+    xfer += oprot->writeMapBegin(::apache::thrift::protocol::T_I32, ::apache::thrift::protocol::T_STRING, static_cast<uint32_t>(this->nmap.size()));
+    std::map<int32_t, std::string> ::const_iterator _iter22;
+    for (_iter22 = this->nmap.begin(); _iter22 != this->nmap.end(); ++_iter22)
+    {
+      xfer += oprot->writeI32(_iter22->first);
+      xfer += oprot->writeString(_iter22->second);
+    }
+    xfer += oprot->writeMapEnd();
+  }
   xfer += oprot->writeFieldEnd();
 
-  if (this->__isset.text_type) {
-    xfer += oprot->writeFieldBegin("text_type", ::apache::thrift::protocol::T_I32, 15);
-    xfer += oprot->writeI32((int32_t)this->text_type);
-    xfer += oprot->writeFieldEnd();
-  }
-  if (this->__isset.city_id) {
-    xfer += oprot->writeFieldBegin("city_id", ::apache::thrift::protocol::T_I32, 16);
-    xfer += oprot->writeI32(this->city_id);
-    xfer += oprot->writeFieldEnd();
-  }
-  if (this->__isset.city_name) {
-    xfer += oprot->writeFieldBegin("city_name", ::apache::thrift::protocol::T_STRING, 17);
-    xfer += oprot->writeString(this->city_name);
-    xfer += oprot->writeFieldEnd();
-  }
   xfer += oprot->writeFieldStop();
   xfer += oprot->writeStructEnd();
   oprot->decrementRecursionDepth();
@@ -1483,87 +309,191 @@ uint32_t StationInfo::write(::apache::thrift::protocol::TProtocol* oprot) const 
 
 void swap(StationInfo &a, StationInfo &b) {
   using ::std::swap;
-  swap(a.uid, b.uid);
   swap(a.lng, b.lng);
-  swap(a.lat, b.lat);
-  swap(a.name, b.name);
-  swap(a.address, b.address);
-  swap(a.mis_id_list, b.mis_id_list);
-  swap(a.count_down_time, b.count_down_time);
-  swap(a.walk_distance, b.walk_distance);
-  swap(a.walk_time, b.walk_time);
-  swap(a.is_default, b.is_default);
-  swap(a.extends_info, b.extends_info);
-  swap(a.rec_reason, b.rec_reason);
-  swap(a.do_pop, b.do_pop);
-  swap(a.pop_reason, b.pop_reason);
-  swap(a.text_type, b.text_type);
-  swap(a.city_id, b.city_id);
-  swap(a.city_name, b.city_name);
-  swap(a.__isset, b.__isset);
+  swap(a.nlist, b.nlist);
+  swap(a.nset, b.nset);
+  swap(a.nmap, b.nmap);
 }
 
-StationInfo::StationInfo(const StationInfo& other19) {
-  uid = other19.uid;
-  lng = other19.lng;
-  lat = other19.lat;
-  name = other19.name;
-  address = other19.address;
-  mis_id_list = other19.mis_id_list;
-  count_down_time = other19.count_down_time;
-  walk_distance = other19.walk_distance;
-  walk_time = other19.walk_time;
-  is_default = other19.is_default;
-  extends_info = other19.extends_info;
-  rec_reason = other19.rec_reason;
-  do_pop = other19.do_pop;
-  pop_reason = other19.pop_reason;
-  text_type = other19.text_type;
-  city_id = other19.city_id;
-  city_name = other19.city_name;
-  __isset = other19.__isset;
+StationInfo::StationInfo(const StationInfo& other23) {
+  lng = other23.lng;
+  nlist = other23.nlist;
+  nset = other23.nset;
+  nmap = other23.nmap;
 }
-StationInfo& StationInfo::operator=(const StationInfo& other20) {
-  uid = other20.uid;
-  lng = other20.lng;
-  lat = other20.lat;
-  name = other20.name;
-  address = other20.address;
-  mis_id_list = other20.mis_id_list;
-  count_down_time = other20.count_down_time;
-  walk_distance = other20.walk_distance;
-  walk_time = other20.walk_time;
-  is_default = other20.is_default;
-  extends_info = other20.extends_info;
-  rec_reason = other20.rec_reason;
-  do_pop = other20.do_pop;
-  pop_reason = other20.pop_reason;
-  text_type = other20.text_type;
-  city_id = other20.city_id;
-  city_name = other20.city_name;
-  __isset = other20.__isset;
+StationInfo& StationInfo::operator=(const StationInfo& other24) {
+  lng = other24.lng;
+  nlist = other24.nlist;
+  nset = other24.nset;
+  nmap = other24.nmap;
   return *this;
 }
 std::ostream& operator<<(std::ostream& out, const StationInfo& obj) {
   using apache::thrift::to_string;
   out << "StationInfo(";
-  out << "uid=" << to_string(obj.uid);
-  out << ", " << "lng=" << to_string(obj.lng);
-  out << ", " << "lat=" << to_string(obj.lat);
-  out << ", " << "name=" << to_string(obj.name);
-  out << ", " << "address=" << to_string(obj.address);
-  out << ", " << "mis_id_list=" << to_string(obj.mis_id_list);
-  out << ", " << "count_down_time=" << to_string(obj.count_down_time);
-  out << ", " << "walk_distance=" << to_string(obj.walk_distance);
-  out << ", " << "walk_time=" << to_string(obj.walk_time);
-  out << ", " << "is_default=" << to_string(obj.is_default);
-  out << ", " << "extends_info="; (obj.__isset.extends_info ? (out << to_string(obj.extends_info)) : (out << "<null>"));
-  out << ", " << "rec_reason="; (obj.__isset.rec_reason ? (out << to_string(obj.rec_reason)) : (out << "<null>"));
-  out << ", " << "do_pop=" << to_string(obj.do_pop);
-  out << ", " << "pop_reason=" << to_string(obj.pop_reason);
-  out << ", " << "text_type="; (obj.__isset.text_type ? (out << to_string(obj.text_type)) : (out << "<null>"));
-  out << ", " << "city_id="; (obj.__isset.city_id ? (out << to_string(obj.city_id)) : (out << "<null>"));
-  out << ", " << "city_name="; (obj.__isset.city_name ? (out << to_string(obj.city_name)) : (out << "<null>"));
+  out << "lng=" << to_string(obj.lng);
+  out << ", " << "nlist=" << to_string(obj.nlist);
+  out << ", " << "nset=" << to_string(obj.nset);
+  out << ", " << "nmap=" << to_string(obj.nmap);
+  out << ")";
+  return out;
+}
+
+
+HotspotRequest::~HotspotRequest() throw() {
+}
+
+
+void HotspotRequest::__set_id(const int64_t val) {
+  this->id = val;
+}
+
+void HotspotRequest::__set_isTrue(const bool val) {
+  this->isTrue = val;
+}
+
+void HotspotRequest::__set_product_id(const std::string& val) {
+  this->product_id = val;
+}
+
+void HotspotRequest::__set_sinfo(const StationInfo& val) {
+  this->sinfo = val;
+}
+
+const char* HotspotRequest::ascii_fingerprint = "B14C578B6908BF84AAD1E2255E52C720";
+const uint8_t HotspotRequest::binary_fingerprint[16] = {0xB1,0x4C,0x57,0x8B,0x69,0x08,0xBF,0x84,0xAA,0xD1,0xE2,0x25,0x5E,0x52,0xC7,0x20};
+
+uint32_t HotspotRequest::read(::apache::thrift::protocol::TProtocol* iprot) {
+
+  uint32_t xfer = 0;
+  std::string fname;
+  ::apache::thrift::protocol::TType ftype;
+  int16_t fid;
+
+  xfer += iprot->readStructBegin(fname);
+
+  using ::apache::thrift::protocol::TProtocolException;
+
+  bool isset_id = false;
+  bool isset_isTrue = false;
+  bool isset_product_id = false;
+  bool isset_sinfo = false;
+
+  while (true)
+  {
+    xfer += iprot->readFieldBegin(fname, ftype, fid);
+    if (ftype == ::apache::thrift::protocol::T_STOP) {
+      break;
+    }
+    switch (fid)
+    {
+      case 1:
+        if (ftype == ::apache::thrift::protocol::T_I64) {
+          xfer += iprot->readI64(this->id);
+          isset_id = true;
+        } else {
+          xfer += iprot->skip(ftype);
+        }
+        break;
+      case 2:
+        if (ftype == ::apache::thrift::protocol::T_BOOL) {
+          xfer += iprot->readBool(this->isTrue);
+          isset_isTrue = true;
+        } else {
+          xfer += iprot->skip(ftype);
+        }
+        break;
+      case 3:
+        if (ftype == ::apache::thrift::protocol::T_STRING) {
+          xfer += iprot->readString(this->product_id);
+          isset_product_id = true;
+        } else {
+          xfer += iprot->skip(ftype);
+        }
+        break;
+      case 4:
+        if (ftype == ::apache::thrift::protocol::T_STRUCT) {
+          xfer += this->sinfo.read(iprot);
+          isset_sinfo = true;
+        } else {
+          xfer += iprot->skip(ftype);
+        }
+        break;
+      default:
+        xfer += iprot->skip(ftype);
+        break;
+    }
+    xfer += iprot->readFieldEnd();
+  }
+
+  xfer += iprot->readStructEnd();
+
+  if (!isset_id)
+    throw TProtocolException(TProtocolException::INVALID_DATA);
+  if (!isset_isTrue)
+    throw TProtocolException(TProtocolException::INVALID_DATA);
+  if (!isset_product_id)
+    throw TProtocolException(TProtocolException::INVALID_DATA);
+  if (!isset_sinfo)
+    throw TProtocolException(TProtocolException::INVALID_DATA);
+  return xfer;
+}
+
+uint32_t HotspotRequest::write(::apache::thrift::protocol::TProtocol* oprot) const {
+  uint32_t xfer = 0;
+  oprot->incrementRecursionDepth();
+  xfer += oprot->writeStructBegin("HotspotRequest");
+
+  xfer += oprot->writeFieldBegin("id", ::apache::thrift::protocol::T_I64, 1);
+  xfer += oprot->writeI64(this->id);
+  xfer += oprot->writeFieldEnd();
+
+  xfer += oprot->writeFieldBegin("isTrue", ::apache::thrift::protocol::T_BOOL, 2);
+  xfer += oprot->writeBool(this->isTrue);
+  xfer += oprot->writeFieldEnd();
+
+  xfer += oprot->writeFieldBegin("product_id", ::apache::thrift::protocol::T_STRING, 3);
+  xfer += oprot->writeString(this->product_id);
+  xfer += oprot->writeFieldEnd();
+
+  xfer += oprot->writeFieldBegin("sinfo", ::apache::thrift::protocol::T_STRUCT, 4);
+  xfer += this->sinfo.write(oprot);
+  xfer += oprot->writeFieldEnd();
+
+  xfer += oprot->writeFieldStop();
+  xfer += oprot->writeStructEnd();
+  oprot->decrementRecursionDepth();
+  return xfer;
+}
+
+void swap(HotspotRequest &a, HotspotRequest &b) {
+  using ::std::swap;
+  swap(a.id, b.id);
+  swap(a.isTrue, b.isTrue);
+  swap(a.product_id, b.product_id);
+  swap(a.sinfo, b.sinfo);
+}
+
+HotspotRequest::HotspotRequest(const HotspotRequest& other25) {
+  id = other25.id;
+  isTrue = other25.isTrue;
+  product_id = other25.product_id;
+  sinfo = other25.sinfo;
+}
+HotspotRequest& HotspotRequest::operator=(const HotspotRequest& other26) {
+  id = other26.id;
+  isTrue = other26.isTrue;
+  product_id = other26.product_id;
+  sinfo = other26.sinfo;
+  return *this;
+}
+std::ostream& operator<<(std::ostream& out, const HotspotRequest& obj) {
+  using apache::thrift::to_string;
+  out << "HotspotRequest(";
+  out << "id=" << to_string(obj.id);
+  out << ", " << "isTrue=" << to_string(obj.isTrue);
+  out << ", " << "product_id=" << to_string(obj.product_id);
+  out << ", " << "sinfo=" << to_string(obj.sinfo);
   out << ")";
   return out;
 }
@@ -1663,13 +593,13 @@ void swap(CarpoolEtdInfo &a, CarpoolEtdInfo &b) {
   swap(a.etdRightMargin, b.etdRightMargin);
 }
 
-CarpoolEtdInfo::CarpoolEtdInfo(const CarpoolEtdInfo& other21) {
-  etdLeftMargin = other21.etdLeftMargin;
-  etdRightMargin = other21.etdRightMargin;
+CarpoolEtdInfo::CarpoolEtdInfo(const CarpoolEtdInfo& other27) {
+  etdLeftMargin = other27.etdLeftMargin;
+  etdRightMargin = other27.etdRightMargin;
 }
-CarpoolEtdInfo& CarpoolEtdInfo::operator=(const CarpoolEtdInfo& other22) {
-  etdLeftMargin = other22.etdLeftMargin;
-  etdRightMargin = other22.etdRightMargin;
+CarpoolEtdInfo& CarpoolEtdInfo::operator=(const CarpoolEtdInfo& other28) {
+  etdLeftMargin = other28.etdLeftMargin;
+  etdRightMargin = other28.etdRightMargin;
   return *this;
 }
 std::ostream& operator<<(std::ostream& out, const CarpoolEtdInfo& obj) {
@@ -1694,17 +624,13 @@ void HotspotResponse::__set_error_msg(const std::string& val) {
   this->error_msg = val;
 }
 
-void HotspotResponse::__set_station_list(const std::vector<StationInfo> & val) {
-  this->station_list = val;
-}
-
 void HotspotResponse::__set_extends_info(const std::string& val) {
   this->extends_info = val;
 __isset.extends_info = true;
 }
 
-const char* HotspotResponse::ascii_fingerprint = "4F97F64A1BFAC1E867C68EE96164AB14";
-const uint8_t HotspotResponse::binary_fingerprint[16] = {0x4F,0x97,0xF6,0x4A,0x1B,0xFA,0xC1,0xE8,0x67,0xC6,0x8E,0xE9,0x61,0x64,0xAB,0x14};
+const char* HotspotResponse::ascii_fingerprint = "5531C8D7ED2A5FC0358A03FFBCC21464";
+const uint8_t HotspotResponse::binary_fingerprint[16] = {0x55,0x31,0xC8,0xD7,0xED,0x2A,0x5F,0xC0,0x35,0x8A,0x03,0xFF,0xBC,0xC2,0x14,0x64};
 
 uint32_t HotspotResponse::read(::apache::thrift::protocol::TProtocol* iprot) {
 
@@ -1719,7 +645,6 @@ uint32_t HotspotResponse::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   bool isset_error_code = false;
   bool isset_error_msg = false;
-  bool isset_station_list = false;
 
   while (true)
   {
@@ -1746,26 +671,6 @@ uint32_t HotspotResponse::read(::apache::thrift::protocol::TProtocol* iprot) {
         }
         break;
       case 3:
-        if (ftype == ::apache::thrift::protocol::T_LIST) {
-          {
-            this->station_list.clear();
-            uint32_t _size23;
-            ::apache::thrift::protocol::TType _etype26;
-            xfer += iprot->readListBegin(_etype26, _size23);
-            this->station_list.resize(_size23);
-            uint32_t _i27;
-            for (_i27 = 0; _i27 < _size23; ++_i27)
-            {
-              xfer += this->station_list[_i27].read(iprot);
-            }
-            xfer += iprot->readListEnd();
-          }
-          isset_station_list = true;
-        } else {
-          xfer += iprot->skip(ftype);
-        }
-        break;
-      case 4:
         if (ftype == ::apache::thrift::protocol::T_STRING) {
           xfer += iprot->readString(this->extends_info);
           this->__isset.extends_info = true;
@@ -1786,8 +691,6 @@ uint32_t HotspotResponse::read(::apache::thrift::protocol::TProtocol* iprot) {
     throw TProtocolException(TProtocolException::INVALID_DATA);
   if (!isset_error_msg)
     throw TProtocolException(TProtocolException::INVALID_DATA);
-  if (!isset_station_list)
-    throw TProtocolException(TProtocolException::INVALID_DATA);
   return xfer;
 }
 
@@ -1804,20 +707,8 @@ uint32_t HotspotResponse::write(::apache::thrift::protocol::TProtocol* oprot) co
   xfer += oprot->writeString(this->error_msg);
   xfer += oprot->writeFieldEnd();
 
-  xfer += oprot->writeFieldBegin("station_list", ::apache::thrift::protocol::T_LIST, 3);
-  {
-    xfer += oprot->writeListBegin(::apache::thrift::protocol::T_STRUCT, static_cast<uint32_t>(this->station_list.size()));
-    std::vector<StationInfo> ::const_iterator _iter28;
-    for (_iter28 = this->station_list.begin(); _iter28 != this->station_list.end(); ++_iter28)
-    {
-      xfer += (*_iter28).write(oprot);
-    }
-    xfer += oprot->writeListEnd();
-  }
-  xfer += oprot->writeFieldEnd();
-
   if (this->__isset.extends_info) {
-    xfer += oprot->writeFieldBegin("extends_info", ::apache::thrift::protocol::T_STRING, 4);
+    xfer += oprot->writeFieldBegin("extends_info", ::apache::thrift::protocol::T_STRING, 3);
     xfer += oprot->writeString(this->extends_info);
     xfer += oprot->writeFieldEnd();
   }
@@ -1831,7 +722,6 @@ void swap(HotspotResponse &a, HotspotResponse &b) {
   using ::std::swap;
   swap(a.error_code, b.error_code);
   swap(a.error_msg, b.error_msg);
-  swap(a.station_list, b.station_list);
   swap(a.extends_info, b.extends_info);
   swap(a.__isset, b.__isset);
 }
@@ -1839,14 +729,12 @@ void swap(HotspotResponse &a, HotspotResponse &b) {
 HotspotResponse::HotspotResponse(const HotspotResponse& other29) {
   error_code = other29.error_code;
   error_msg = other29.error_msg;
-  station_list = other29.station_list;
   extends_info = other29.extends_info;
   __isset = other29.__isset;
 }
 HotspotResponse& HotspotResponse::operator=(const HotspotResponse& other30) {
   error_code = other30.error_code;
   error_msg = other30.error_msg;
-  station_list = other30.station_list;
   extends_info = other30.extends_info;
   __isset = other30.__isset;
   return *this;
@@ -1856,7 +744,6 @@ std::ostream& operator<<(std::ostream& out, const HotspotResponse& obj) {
   out << "HotspotResponse(";
   out << "error_code=" << to_string(obj.error_code);
   out << ", " << "error_msg=" << to_string(obj.error_msg);
-  out << ", " << "station_list=" << to_string(obj.station_list);
   out << ", " << "extends_info="; (obj.__isset.extends_info ? (out << to_string(obj.extends_info)) : (out << "<null>"));
   out << ")";
   return out;
@@ -1937,8 +824,8 @@ void ForecastDepartureTimeRequest::__set_trace_info(const Trace& val) {
 __isset.trace_info = true;
 }
 
-const char* ForecastDepartureTimeRequest::ascii_fingerprint = "0A21427BD81FC65AA27CE2A7168F9724";
-const uint8_t ForecastDepartureTimeRequest::binary_fingerprint[16] = {0x0A,0x21,0x42,0x7B,0xD8,0x1F,0xC6,0x5A,0xA2,0x7C,0xE2,0xA7,0x16,0x8F,0x97,0x24};
+const char* ForecastDepartureTimeRequest::ascii_fingerprint = "42C9AD9C724AC502EE4B8EF5B4153673";
+const uint8_t ForecastDepartureTimeRequest::binary_fingerprint[16] = {0x42,0xC9,0xAD,0x9C,0x72,0x4A,0xC5,0x02,0xEE,0x4B,0x8E,0xF5,0xB4,0x15,0x36,0x73};
 
 uint32_t ForecastDepartureTimeRequest::read(::apache::thrift::protocol::TProtocol* iprot) {
 
@@ -2629,8 +1516,8 @@ void MatchDetailRequest::__set_trace_info(const Trace& val) {
 __isset.trace_info = true;
 }
 
-const char* MatchDetailRequest::ascii_fingerprint = "409417E6119667E559C50F4D18840BC3";
-const uint8_t MatchDetailRequest::binary_fingerprint[16] = {0x40,0x94,0x17,0xE6,0x11,0x96,0x67,0xE5,0x59,0xC5,0x0F,0x4D,0x18,0x84,0x0B,0xC3};
+const char* MatchDetailRequest::ascii_fingerprint = "0A2EF6DA4787B4E52D25AD175457F49C";
+const uint8_t MatchDetailRequest::binary_fingerprint[16] = {0x0A,0x2E,0xF6,0xDA,0x47,0x87,0xB4,0xE5,0x2D,0x25,0xAD,0x17,0x54,0x57,0xF4,0x9C};
 
 uint32_t MatchDetailRequest::read(::apache::thrift::protocol::TProtocol* iprot) {
 
@@ -3260,8 +2147,8 @@ void GetForecastFeatureRequest::__set_trace_info(const Trace& val) {
 __isset.trace_info = true;
 }
 
-const char* GetForecastFeatureRequest::ascii_fingerprint = "81820A61B4B26B13A1B0AC8320716BB3";
-const uint8_t GetForecastFeatureRequest::binary_fingerprint[16] = {0x81,0x82,0x0A,0x61,0xB4,0xB2,0x6B,0x13,0xA1,0xB0,0xAC,0x83,0x20,0x71,0x6B,0xB3};
+const char* GetForecastFeatureRequest::ascii_fingerprint = "81BDF964530F39EA5DCFC9FA57876887";
+const uint8_t GetForecastFeatureRequest::binary_fingerprint[16] = {0x81,0xBD,0xF9,0x64,0x53,0x0F,0x39,0xEA,0x5D,0xCF,0xC9,0xFA,0x57,0x87,0x68,0x87};
 
 uint32_t GetForecastFeatureRequest::read(::apache::thrift::protocol::TProtocol* iprot) {
 
@@ -3851,8 +2738,8 @@ void PrematchhHoldInfoRequest::__set_trace_info(const Trace& val) {
 __isset.trace_info = true;
 }
 
-const char* PrematchhHoldInfoRequest::ascii_fingerprint = "2AB0262763726E78564DFF21A1867B3E";
-const uint8_t PrematchhHoldInfoRequest::binary_fingerprint[16] = {0x2A,0xB0,0x26,0x27,0x63,0x72,0x6E,0x78,0x56,0x4D,0xFF,0x21,0xA1,0x86,0x7B,0x3E};
+const char* PrematchhHoldInfoRequest::ascii_fingerprint = "3861F858192D6B6A45683E26B12CC16C";
+const uint8_t PrematchhHoldInfoRequest::binary_fingerprint[16] = {0x38,0x61,0xF8,0x58,0x19,0x2D,0x6B,0x6A,0x45,0x68,0x3E,0x26,0xB1,0x2C,0xC1,0x6C};
 
 uint32_t PrematchhHoldInfoRequest::read(::apache::thrift::protocol::TProtocol* iprot) {
 
@@ -4715,8 +3602,8 @@ void PrematchStationRes::__set_extMap(const std::map<std::string, std::string> &
 __isset.extMap = true;
 }
 
-const char* PrematchStationRes::ascii_fingerprint = "C8940ABA1BA90F63E2081F6155F3561F";
-const uint8_t PrematchStationRes::binary_fingerprint[16] = {0xC8,0x94,0x0A,0xBA,0x1B,0xA9,0x0F,0x63,0xE2,0x08,0x1F,0x61,0x55,0xF3,0x56,0x1F};
+const char* PrematchStationRes::ascii_fingerprint = "6CCB2F9AE479B85CF77CF44D9A7252ED";
+const uint8_t PrematchStationRes::binary_fingerprint[16] = {0x6C,0xCB,0x2F,0x9A,0xE4,0x79,0xB8,0x5C,0xF7,0x7C,0xF4,0x4D,0x9A,0x72,0x52,0xED};
 
 uint32_t PrematchStationRes::read(::apache::thrift::protocol::TProtocol* iprot) {
 
@@ -5193,8 +4080,8 @@ void PrematchRecommendRequest::__set_trace_info(const Trace& val) {
 __isset.trace_info = true;
 }
 
-const char* PrematchRecommendRequest::ascii_fingerprint = "2AB0262763726E78564DFF21A1867B3E";
-const uint8_t PrematchRecommendRequest::binary_fingerprint[16] = {0x2A,0xB0,0x26,0x27,0x63,0x72,0x6E,0x78,0x56,0x4D,0xFF,0x21,0xA1,0x86,0x7B,0x3E};
+const char* PrematchRecommendRequest::ascii_fingerprint = "3861F858192D6B6A45683E26B12CC16C";
+const uint8_t PrematchRecommendRequest::binary_fingerprint[16] = {0x38,0x61,0xF8,0x58,0x19,0x2D,0x6B,0x6A,0x45,0x68,0x3E,0x26,0xB1,0x2C,0xC1,0x6C};
 
 uint32_t PrematchRecommendRequest::read(::apache::thrift::protocol::TProtocol* iprot) {
 
@@ -5614,8 +4501,8 @@ void PrematchRecommendResponse::__set_extMap(const std::map<std::string, std::st
 __isset.extMap = true;
 }
 
-const char* PrematchRecommendResponse::ascii_fingerprint = "D6B8A30B56E8AE1F327543EE52DE027A";
-const uint8_t PrematchRecommendResponse::binary_fingerprint[16] = {0xD6,0xB8,0xA3,0x0B,0x56,0xE8,0xAE,0x1F,0x32,0x75,0x43,0xEE,0x52,0xDE,0x02,0x7A};
+const char* PrematchRecommendResponse::ascii_fingerprint = "4BD7067BDAE2114B8F05A72993EC3963";
+const uint8_t PrematchRecommendResponse::binary_fingerprint[16] = {0x4B,0xD7,0x06,0x7B,0xDA,0xE2,0x11,0x4B,0x8F,0x05,0xA7,0x29,0x93,0xEC,0x39,0x63};
 
 uint32_t PrematchRecommendResponse::read(::apache::thrift::protocol::TProtocol* iprot) {
 
@@ -5903,8 +4790,8 @@ void CarpoolEtdRequest::__set_ext_info(const std::map<std::string, std::string> 
 __isset.ext_info = true;
 }
 
-const char* CarpoolEtdRequest::ascii_fingerprint = "9A3A2EB7C3426EC5BD0FC4177912541D";
-const uint8_t CarpoolEtdRequest::binary_fingerprint[16] = {0x9A,0x3A,0x2E,0xB7,0xC3,0x42,0x6E,0xC5,0xBD,0x0F,0xC4,0x17,0x79,0x12,0x54,0x1D};
+const char* CarpoolEtdRequest::ascii_fingerprint = "E67DD0853DD071156D9CB39CCCC5830A";
+const uint8_t CarpoolEtdRequest::binary_fingerprint[16] = {0xE6,0x7D,0xD0,0x85,0x3D,0xD0,0x71,0x15,0x6D,0x9C,0xB3,0x9C,0xCC,0xC5,0x83,0x0A};
 
 uint32_t CarpoolEtdRequest::read(::apache::thrift::protocol::TProtocol* iprot) {
 

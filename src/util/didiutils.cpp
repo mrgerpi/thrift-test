@@ -11,6 +11,7 @@
 #include<stdio.h>
 #include <sys/ioctl.h>
 #include <unistd.h>
+#include <errno.h>
 #include "didiutils.h"
 #include "simple_log.h"
 
@@ -304,6 +305,57 @@ int DidiUtils::readFile(const string& path, string& content)
 	}
 
 	return 0;
+}
+
+int DidiUtils::mkdirs(const string& path)
+{
+	string cur = DidiUtils::pwd();
+	string::size_type pos = path.find_first_not_of(cur, 0);
+	string rePath = path.substr(pos, string::npos);
+	vector<string> tokens;
+	DidiUtils::split_str(rePath, tokens, "/");
+	for (vector<string>::iterator it = tokens.begin();it != tokens.end();it++) {
+		cur = cur + "/" + *it;
+		if (access(cur.c_str(), F_OK) != 0) {
+			int ret = mkdir(cur.c_str(), 0755);
+			if (ret == 0) {
+				log_info("mkdir succ||path=%s", cur.c_str());					
+			} else {
+				log_error("mkdir failed||path=%s||err=%s", cur.c_str(), strerror(errno));
+				return 1;
+			}
+		}
+	}
+	return 0;
+}
+
+int DidiUtils::writeFile(const string& path, const string& content)
+{
+	string::size_type pos = path.find_last_of("/");
+	string dir = path.substr(0, pos);
+	int ret = mkdirs(dir);
+	if (ret != 0) {
+		log_error("DidiUtils::writeFile||mkdir failed||path=%s||err=%s", path.c_str(), strerror(errno));
+		return ret;
+	}
+
+	FILE* fp = fopen(path.c_str(), "w");
+	if (fp == NULL) {
+		log_error("DidiUtils::writeFile||fopen failed||path=%s||err=%s", path.c_str(), strerror(errno));
+		return 1;
+	}
+
+	ret = fputs(content.c_str(), fp);
+	if (ret == EOF) {
+		log_error("DidiUtils::writeFile||fputs failed||path=%s||err=%s", path.c_str(), strerror(errno));
+		return 1;
+	}
+
+	ret = fclose(fp);
+	if (ret != 0) {
+		log_error("DidiUtils::writeFile||fclose failed||path=%s||err=%s", path.c_str(), strerror(errno));
+		return 1;
+	}
 }
 
 std::string DidiUtils::pwd() 

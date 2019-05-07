@@ -15,7 +15,7 @@ namespace hotspot { namespace service {
 class HotspotServiceIf {
  public:
   virtual ~HotspotServiceIf() {}
-  virtual void GetRecommendStationList(HotspotResponse& _return, const HotspotRequest& request) = 0;
+  virtual void GetRecommendStationList(HotspotResponse& _return, const HotspotRequest& request, const Trace& trace) = 0;
   virtual void ForecastDepartureTime(ForecastDepartureTimeResponse& _return, const ForecastDepartureTimeRequest& request) = 0;
   virtual void getMatchDetail(MatchDetailResponse& _return, const MatchDetailRequest& request) = 0;
   virtual void GetForecastFeature(GetForecastFeatureResponse& _return, const GetForecastFeatureRequest& request) = 0;
@@ -51,7 +51,7 @@ class HotspotServiceIfSingletonFactory : virtual public HotspotServiceIfFactory 
 class HotspotServiceNull : virtual public HotspotServiceIf {
  public:
   virtual ~HotspotServiceNull() {}
-  void GetRecommendStationList(HotspotResponse& /* _return */, const HotspotRequest& /* request */) {
+  void GetRecommendStationList(HotspotResponse& /* _return */, const HotspotRequest& /* request */, const Trace& /* trace */) {
     return;
   }
   void ForecastDepartureTime(ForecastDepartureTimeResponse& /* _return */, const ForecastDepartureTimeRequest& /* request */) {
@@ -75,15 +75,16 @@ class HotspotServiceNull : virtual public HotspotServiceIf {
 };
 
 typedef struct _HotspotService_GetRecommendStationList_args__isset {
-  _HotspotService_GetRecommendStationList_args__isset() : request(false) {}
+  _HotspotService_GetRecommendStationList_args__isset() : request(false), trace(false) {}
   bool request :1;
+  bool trace :1;
 } _HotspotService_GetRecommendStationList_args__isset;
 
 class HotspotService_GetRecommendStationList_args {
  public:
 
-  static const char* ascii_fingerprint; // = "51EE272590B89A9A7A61D573E14D74C2";
-  static const uint8_t binary_fingerprint[16]; // = {0x51,0xEE,0x27,0x25,0x90,0xB8,0x9A,0x9A,0x7A,0x61,0xD5,0x73,0xE1,0x4D,0x74,0xC2};
+  static const char* ascii_fingerprint; // = "A318895DDD29D3B95D9643B5AB69D8E3";
+  static const uint8_t binary_fingerprint[16]; // = {0xA3,0x18,0x89,0x5D,0xDD,0x29,0xD3,0xB9,0x5D,0x96,0x43,0xB5,0xAB,0x69,0xD8,0xE3};
 
   HotspotService_GetRecommendStationList_args(const HotspotService_GetRecommendStationList_args&);
   HotspotService_GetRecommendStationList_args& operator=(const HotspotService_GetRecommendStationList_args&);
@@ -92,14 +93,19 @@ class HotspotService_GetRecommendStationList_args {
 
   virtual ~HotspotService_GetRecommendStationList_args() throw();
   HotspotRequest request;
+  Trace trace;
 
   _HotspotService_GetRecommendStationList_args__isset __isset;
 
   void __set_request(const HotspotRequest& val);
 
+  void __set_trace(const Trace& val);
+
   bool operator == (const HotspotService_GetRecommendStationList_args & rhs) const
   {
     if (!(request == rhs.request))
+      return false;
+    if (!(trace == rhs.trace))
       return false;
     return true;
   }
@@ -119,12 +125,13 @@ class HotspotService_GetRecommendStationList_args {
 class HotspotService_GetRecommendStationList_pargs {
  public:
 
-  static const char* ascii_fingerprint; // = "51EE272590B89A9A7A61D573E14D74C2";
-  static const uint8_t binary_fingerprint[16]; // = {0x51,0xEE,0x27,0x25,0x90,0xB8,0x9A,0x9A,0x7A,0x61,0xD5,0x73,0xE1,0x4D,0x74,0xC2};
+  static const char* ascii_fingerprint; // = "A318895DDD29D3B95D9643B5AB69D8E3";
+  static const uint8_t binary_fingerprint[16]; // = {0xA3,0x18,0x89,0x5D,0xDD,0x29,0xD3,0xB9,0x5D,0x96,0x43,0xB5,0xAB,0x69,0xD8,0xE3};
 
 
   virtual ~HotspotService_GetRecommendStationList_pargs() throw();
   const HotspotRequest* request;
+  const Trace* trace;
 
   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
 
@@ -139,8 +146,8 @@ typedef struct _HotspotService_GetRecommendStationList_result__isset {
 class HotspotService_GetRecommendStationList_result {
  public:
 
-  static const char* ascii_fingerprint; // = "2379F1EFA731F24ED8A647753A095F3E";
-  static const uint8_t binary_fingerprint[16]; // = {0x23,0x79,0xF1,0xEF,0xA7,0x31,0xF2,0x4E,0xD8,0xA6,0x47,0x75,0x3A,0x09,0x5F,0x3E};
+  static const char* ascii_fingerprint; // = "7F71052749608759EEA52069A731855F";
+  static const uint8_t binary_fingerprint[16]; // = {0x7F,0x71,0x05,0x27,0x49,0x60,0x87,0x59,0xEE,0xA5,0x20,0x69,0xA7,0x31,0x85,0x5F};
 
   HotspotService_GetRecommendStationList_result(const HotspotService_GetRecommendStationList_result&);
   HotspotService_GetRecommendStationList_result& operator=(const HotspotService_GetRecommendStationList_result&);
@@ -180,8 +187,8 @@ typedef struct _HotspotService_GetRecommendStationList_presult__isset {
 class HotspotService_GetRecommendStationList_presult {
  public:
 
-  static const char* ascii_fingerprint; // = "2379F1EFA731F24ED8A647753A095F3E";
-  static const uint8_t binary_fingerprint[16]; // = {0x23,0x79,0xF1,0xEF,0xA7,0x31,0xF2,0x4E,0xD8,0xA6,0x47,0x75,0x3A,0x09,0x5F,0x3E};
+  static const char* ascii_fingerprint; // = "7F71052749608759EEA52069A731855F";
+  static const uint8_t binary_fingerprint[16]; // = {0x7F,0x71,0x05,0x27,0x49,0x60,0x87,0x59,0xEE,0xA5,0x20,0x69,0xA7,0x31,0x85,0x5F};
 
 
   virtual ~HotspotService_GetRecommendStationList_presult() throw();
@@ -202,8 +209,8 @@ typedef struct _HotspotService_ForecastDepartureTime_args__isset {
 class HotspotService_ForecastDepartureTime_args {
  public:
 
-  static const char* ascii_fingerprint; // = "18847CBC4A0F060C4ACD38C9E0722AE3";
-  static const uint8_t binary_fingerprint[16]; // = {0x18,0x84,0x7C,0xBC,0x4A,0x0F,0x06,0x0C,0x4A,0xCD,0x38,0xC9,0xE0,0x72,0x2A,0xE3};
+  static const char* ascii_fingerprint; // = "37539065596F2795585D6C63FE2B349B";
+  static const uint8_t binary_fingerprint[16]; // = {0x37,0x53,0x90,0x65,0x59,0x6F,0x27,0x95,0x58,0x5D,0x6C,0x63,0xFE,0x2B,0x34,0x9B};
 
   HotspotService_ForecastDepartureTime_args(const HotspotService_ForecastDepartureTime_args&);
   HotspotService_ForecastDepartureTime_args& operator=(const HotspotService_ForecastDepartureTime_args&);
@@ -239,8 +246,8 @@ class HotspotService_ForecastDepartureTime_args {
 class HotspotService_ForecastDepartureTime_pargs {
  public:
 
-  static const char* ascii_fingerprint; // = "18847CBC4A0F060C4ACD38C9E0722AE3";
-  static const uint8_t binary_fingerprint[16]; // = {0x18,0x84,0x7C,0xBC,0x4A,0x0F,0x06,0x0C,0x4A,0xCD,0x38,0xC9,0xE0,0x72,0x2A,0xE3};
+  static const char* ascii_fingerprint; // = "37539065596F2795585D6C63FE2B349B";
+  static const uint8_t binary_fingerprint[16]; // = {0x37,0x53,0x90,0x65,0x59,0x6F,0x27,0x95,0x58,0x5D,0x6C,0x63,0xFE,0x2B,0x34,0x9B};
 
 
   virtual ~HotspotService_ForecastDepartureTime_pargs() throw();
@@ -322,8 +329,8 @@ typedef struct _HotspotService_getMatchDetail_args__isset {
 class HotspotService_getMatchDetail_args {
  public:
 
-  static const char* ascii_fingerprint; // = "C14346450181C8F342B197CB69530A2C";
-  static const uint8_t binary_fingerprint[16]; // = {0xC1,0x43,0x46,0x45,0x01,0x81,0xC8,0xF3,0x42,0xB1,0x97,0xCB,0x69,0x53,0x0A,0x2C};
+  static const char* ascii_fingerprint; // = "D957AD1975F071C4127FFFF4D2A9E67E";
+  static const uint8_t binary_fingerprint[16]; // = {0xD9,0x57,0xAD,0x19,0x75,0xF0,0x71,0xC4,0x12,0x7F,0xFF,0xF4,0xD2,0xA9,0xE6,0x7E};
 
   HotspotService_getMatchDetail_args(const HotspotService_getMatchDetail_args&);
   HotspotService_getMatchDetail_args& operator=(const HotspotService_getMatchDetail_args&);
@@ -359,8 +366,8 @@ class HotspotService_getMatchDetail_args {
 class HotspotService_getMatchDetail_pargs {
  public:
 
-  static const char* ascii_fingerprint; // = "C14346450181C8F342B197CB69530A2C";
-  static const uint8_t binary_fingerprint[16]; // = {0xC1,0x43,0x46,0x45,0x01,0x81,0xC8,0xF3,0x42,0xB1,0x97,0xCB,0x69,0x53,0x0A,0x2C};
+  static const char* ascii_fingerprint; // = "D957AD1975F071C4127FFFF4D2A9E67E";
+  static const uint8_t binary_fingerprint[16]; // = {0xD9,0x57,0xAD,0x19,0x75,0xF0,0x71,0xC4,0x12,0x7F,0xFF,0xF4,0xD2,0xA9,0xE6,0x7E};
 
 
   virtual ~HotspotService_getMatchDetail_pargs() throw();
@@ -442,8 +449,8 @@ typedef struct _HotspotService_GetForecastFeature_args__isset {
 class HotspotService_GetForecastFeature_args {
  public:
 
-  static const char* ascii_fingerprint; // = "9A8D79678A457ABA25B356089618CB17";
-  static const uint8_t binary_fingerprint[16]; // = {0x9A,0x8D,0x79,0x67,0x8A,0x45,0x7A,0xBA,0x25,0xB3,0x56,0x08,0x96,0x18,0xCB,0x17};
+  static const char* ascii_fingerprint; // = "DC25D2D646ABB6C81F51BB8DDA5ADB32";
+  static const uint8_t binary_fingerprint[16]; // = {0xDC,0x25,0xD2,0xD6,0x46,0xAB,0xB6,0xC8,0x1F,0x51,0xBB,0x8D,0xDA,0x5A,0xDB,0x32};
 
   HotspotService_GetForecastFeature_args(const HotspotService_GetForecastFeature_args&);
   HotspotService_GetForecastFeature_args& operator=(const HotspotService_GetForecastFeature_args&);
@@ -479,8 +486,8 @@ class HotspotService_GetForecastFeature_args {
 class HotspotService_GetForecastFeature_pargs {
  public:
 
-  static const char* ascii_fingerprint; // = "9A8D79678A457ABA25B356089618CB17";
-  static const uint8_t binary_fingerprint[16]; // = {0x9A,0x8D,0x79,0x67,0x8A,0x45,0x7A,0xBA,0x25,0xB3,0x56,0x08,0x96,0x18,0xCB,0x17};
+  static const char* ascii_fingerprint; // = "DC25D2D646ABB6C81F51BB8DDA5ADB32";
+  static const uint8_t binary_fingerprint[16]; // = {0xDC,0x25,0xD2,0xD6,0x46,0xAB,0xB6,0xC8,0x1F,0x51,0xBB,0x8D,0xDA,0x5A,0xDB,0x32};
 
 
   virtual ~HotspotService_GetForecastFeature_pargs() throw();
@@ -562,8 +569,8 @@ typedef struct _HotspotService_getPrematchhHoldInfo_args__isset {
 class HotspotService_getPrematchhHoldInfo_args {
  public:
 
-  static const char* ascii_fingerprint; // = "7A9D928D9CC2BE1A72390CDC9B26864E";
-  static const uint8_t binary_fingerprint[16]; // = {0x7A,0x9D,0x92,0x8D,0x9C,0xC2,0xBE,0x1A,0x72,0x39,0x0C,0xDC,0x9B,0x26,0x86,0x4E};
+  static const char* ascii_fingerprint; // = "20B2B1300AF685A1564F4AFF3A223DA0";
+  static const uint8_t binary_fingerprint[16]; // = {0x20,0xB2,0xB1,0x30,0x0A,0xF6,0x85,0xA1,0x56,0x4F,0x4A,0xFF,0x3A,0x22,0x3D,0xA0};
 
   HotspotService_getPrematchhHoldInfo_args(const HotspotService_getPrematchhHoldInfo_args&);
   HotspotService_getPrematchhHoldInfo_args& operator=(const HotspotService_getPrematchhHoldInfo_args&);
@@ -599,8 +606,8 @@ class HotspotService_getPrematchhHoldInfo_args {
 class HotspotService_getPrematchhHoldInfo_pargs {
  public:
 
-  static const char* ascii_fingerprint; // = "7A9D928D9CC2BE1A72390CDC9B26864E";
-  static const uint8_t binary_fingerprint[16]; // = {0x7A,0x9D,0x92,0x8D,0x9C,0xC2,0xBE,0x1A,0x72,0x39,0x0C,0xDC,0x9B,0x26,0x86,0x4E};
+  static const char* ascii_fingerprint; // = "20B2B1300AF685A1564F4AFF3A223DA0";
+  static const uint8_t binary_fingerprint[16]; // = {0x20,0xB2,0xB1,0x30,0x0A,0xF6,0x85,0xA1,0x56,0x4F,0x4A,0xFF,0x3A,0x22,0x3D,0xA0};
 
 
   virtual ~HotspotService_getPrematchhHoldInfo_pargs() throw();
@@ -682,8 +689,8 @@ typedef struct _HotspotService_GetPrematchRecommendInfo_args__isset {
 class HotspotService_GetPrematchRecommendInfo_args {
  public:
 
-  static const char* ascii_fingerprint; // = "7A9D928D9CC2BE1A72390CDC9B26864E";
-  static const uint8_t binary_fingerprint[16]; // = {0x7A,0x9D,0x92,0x8D,0x9C,0xC2,0xBE,0x1A,0x72,0x39,0x0C,0xDC,0x9B,0x26,0x86,0x4E};
+  static const char* ascii_fingerprint; // = "20B2B1300AF685A1564F4AFF3A223DA0";
+  static const uint8_t binary_fingerprint[16]; // = {0x20,0xB2,0xB1,0x30,0x0A,0xF6,0x85,0xA1,0x56,0x4F,0x4A,0xFF,0x3A,0x22,0x3D,0xA0};
 
   HotspotService_GetPrematchRecommendInfo_args(const HotspotService_GetPrematchRecommendInfo_args&);
   HotspotService_GetPrematchRecommendInfo_args& operator=(const HotspotService_GetPrematchRecommendInfo_args&);
@@ -719,8 +726,8 @@ class HotspotService_GetPrematchRecommendInfo_args {
 class HotspotService_GetPrematchRecommendInfo_pargs {
  public:
 
-  static const char* ascii_fingerprint; // = "7A9D928D9CC2BE1A72390CDC9B26864E";
-  static const uint8_t binary_fingerprint[16]; // = {0x7A,0x9D,0x92,0x8D,0x9C,0xC2,0xBE,0x1A,0x72,0x39,0x0C,0xDC,0x9B,0x26,0x86,0x4E};
+  static const char* ascii_fingerprint; // = "20B2B1300AF685A1564F4AFF3A223DA0";
+  static const uint8_t binary_fingerprint[16]; // = {0x20,0xB2,0xB1,0x30,0x0A,0xF6,0x85,0xA1,0x56,0x4F,0x4A,0xFF,0x3A,0x22,0x3D,0xA0};
 
 
   virtual ~HotspotService_GetPrematchRecommendInfo_pargs() throw();
@@ -739,8 +746,8 @@ typedef struct _HotspotService_GetPrematchRecommendInfo_result__isset {
 class HotspotService_GetPrematchRecommendInfo_result {
  public:
 
-  static const char* ascii_fingerprint; // = "E91BE18E93F7C5B6C8F7528C223B1B51";
-  static const uint8_t binary_fingerprint[16]; // = {0xE9,0x1B,0xE1,0x8E,0x93,0xF7,0xC5,0xB6,0xC8,0xF7,0x52,0x8C,0x22,0x3B,0x1B,0x51};
+  static const char* ascii_fingerprint; // = "9313E9E65F097E3267FC1137B27D409A";
+  static const uint8_t binary_fingerprint[16]; // = {0x93,0x13,0xE9,0xE6,0x5F,0x09,0x7E,0x32,0x67,0xFC,0x11,0x37,0xB2,0x7D,0x40,0x9A};
 
   HotspotService_GetPrematchRecommendInfo_result(const HotspotService_GetPrematchRecommendInfo_result&);
   HotspotService_GetPrematchRecommendInfo_result& operator=(const HotspotService_GetPrematchRecommendInfo_result&);
@@ -780,8 +787,8 @@ typedef struct _HotspotService_GetPrematchRecommendInfo_presult__isset {
 class HotspotService_GetPrematchRecommendInfo_presult {
  public:
 
-  static const char* ascii_fingerprint; // = "E91BE18E93F7C5B6C8F7528C223B1B51";
-  static const uint8_t binary_fingerprint[16]; // = {0xE9,0x1B,0xE1,0x8E,0x93,0xF7,0xC5,0xB6,0xC8,0xF7,0x52,0x8C,0x22,0x3B,0x1B,0x51};
+  static const char* ascii_fingerprint; // = "9313E9E65F097E3267FC1137B27D409A";
+  static const uint8_t binary_fingerprint[16]; // = {0x93,0x13,0xE9,0xE6,0x5F,0x09,0x7E,0x32,0x67,0xFC,0x11,0x37,0xB2,0x7D,0x40,0x9A};
 
 
   virtual ~HotspotService_GetPrematchRecommendInfo_presult() throw();
@@ -802,8 +809,8 @@ typedef struct _HotspotService_GetEtdInfo_args__isset {
 class HotspotService_GetEtdInfo_args {
  public:
 
-  static const char* ascii_fingerprint; // = "960D39A2A6E378797DF477B8BA0D9597";
-  static const uint8_t binary_fingerprint[16]; // = {0x96,0x0D,0x39,0xA2,0xA6,0xE3,0x78,0x79,0x7D,0xF4,0x77,0xB8,0xBA,0x0D,0x95,0x97};
+  static const char* ascii_fingerprint; // = "1EB129DCC58E5AE5850EF59DE4FA16A5";
+  static const uint8_t binary_fingerprint[16]; // = {0x1E,0xB1,0x29,0xDC,0xC5,0x8E,0x5A,0xE5,0x85,0x0E,0xF5,0x9D,0xE4,0xFA,0x16,0xA5};
 
   HotspotService_GetEtdInfo_args(const HotspotService_GetEtdInfo_args&);
   HotspotService_GetEtdInfo_args& operator=(const HotspotService_GetEtdInfo_args&);
@@ -839,8 +846,8 @@ class HotspotService_GetEtdInfo_args {
 class HotspotService_GetEtdInfo_pargs {
  public:
 
-  static const char* ascii_fingerprint; // = "960D39A2A6E378797DF477B8BA0D9597";
-  static const uint8_t binary_fingerprint[16]; // = {0x96,0x0D,0x39,0xA2,0xA6,0xE3,0x78,0x79,0x7D,0xF4,0x77,0xB8,0xBA,0x0D,0x95,0x97};
+  static const char* ascii_fingerprint; // = "1EB129DCC58E5AE5850EF59DE4FA16A5";
+  static const uint8_t binary_fingerprint[16]; // = {0x1E,0xB1,0x29,0xDC,0xC5,0x8E,0x5A,0xE5,0x85,0x0E,0xF5,0x9D,0xE4,0xFA,0x16,0xA5};
 
 
   virtual ~HotspotService_GetEtdInfo_pargs() throw();
@@ -939,8 +946,8 @@ class HotspotServiceClient : virtual public HotspotServiceIf {
   boost::shared_ptr< ::apache::thrift::protocol::TProtocol> getOutputProtocol() {
     return poprot_;
   }
-  void GetRecommendStationList(HotspotResponse& _return, const HotspotRequest& request);
-  void send_GetRecommendStationList(const HotspotRequest& request);
+  void GetRecommendStationList(HotspotResponse& _return, const HotspotRequest& request, const Trace& trace);
+  void send_GetRecommendStationList(const HotspotRequest& request, const Trace& trace);
   void recv_GetRecommendStationList(HotspotResponse& _return);
   void ForecastDepartureTime(ForecastDepartureTimeResponse& _return, const ForecastDepartureTimeRequest& request);
   void send_ForecastDepartureTime(const ForecastDepartureTimeRequest& request);
@@ -1020,13 +1027,13 @@ class HotspotServiceMultiface : virtual public HotspotServiceIf {
     ifaces_.push_back(iface);
   }
  public:
-  void GetRecommendStationList(HotspotResponse& _return, const HotspotRequest& request) {
+  void GetRecommendStationList(HotspotResponse& _return, const HotspotRequest& request, const Trace& trace) {
     size_t sz = ifaces_.size();
     size_t i = 0;
     for (; i < (sz - 1); ++i) {
-      ifaces_[i]->GetRecommendStationList(_return, request);
+      ifaces_[i]->GetRecommendStationList(_return, request, trace);
     }
-    ifaces_[i]->GetRecommendStationList(_return, request);
+    ifaces_[i]->GetRecommendStationList(_return, request, trace);
     return;
   }
 

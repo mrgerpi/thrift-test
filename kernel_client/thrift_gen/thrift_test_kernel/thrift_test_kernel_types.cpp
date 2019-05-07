@@ -966,8 +966,8 @@ void RequestTriggerResponse::__set_errorCode(const int32_t val) {
   this->errorCode = val;
 }
 
-void RequestTriggerResponse::__set_reqponseJson(const std::string& val) {
-  this->reqponseJson = val;
+void RequestTriggerResponse::__set_responseJson(const std::string& val) {
+  this->responseJson = val;
 }
 
 const char* RequestTriggerResponse::ascii_fingerprint = "3F5FC93B338687BC7235B1AB103F47B3";
@@ -985,7 +985,7 @@ uint32_t RequestTriggerResponse::read(::apache::thrift::protocol::TProtocol* ipr
   using ::apache::thrift::protocol::TProtocolException;
 
   bool isset_errorCode = false;
-  bool isset_reqponseJson = false;
+  bool isset_responseJson = false;
 
   while (true)
   {
@@ -1005,8 +1005,8 @@ uint32_t RequestTriggerResponse::read(::apache::thrift::protocol::TProtocol* ipr
         break;
       case 2:
         if (ftype == ::apache::thrift::protocol::T_STRING) {
-          xfer += iprot->readString(this->reqponseJson);
-          isset_reqponseJson = true;
+          xfer += iprot->readString(this->responseJson);
+          isset_responseJson = true;
         } else {
           xfer += iprot->skip(ftype);
         }
@@ -1022,7 +1022,7 @@ uint32_t RequestTriggerResponse::read(::apache::thrift::protocol::TProtocol* ipr
 
   if (!isset_errorCode)
     throw TProtocolException(TProtocolException::INVALID_DATA);
-  if (!isset_reqponseJson)
+  if (!isset_responseJson)
     throw TProtocolException(TProtocolException::INVALID_DATA);
   return xfer;
 }
@@ -1036,8 +1036,8 @@ uint32_t RequestTriggerResponse::write(::apache::thrift::protocol::TProtocol* op
   xfer += oprot->writeI32(this->errorCode);
   xfer += oprot->writeFieldEnd();
 
-  xfer += oprot->writeFieldBegin("reqponseJson", ::apache::thrift::protocol::T_STRING, 2);
-  xfer += oprot->writeString(this->reqponseJson);
+  xfer += oprot->writeFieldBegin("responseJson", ::apache::thrift::protocol::T_STRING, 2);
+  xfer += oprot->writeString(this->responseJson);
   xfer += oprot->writeFieldEnd();
 
   xfer += oprot->writeFieldStop();
@@ -1049,23 +1049,23 @@ uint32_t RequestTriggerResponse::write(::apache::thrift::protocol::TProtocol* op
 void swap(RequestTriggerResponse &a, RequestTriggerResponse &b) {
   using ::std::swap;
   swap(a.errorCode, b.errorCode);
-  swap(a.reqponseJson, b.reqponseJson);
+  swap(a.responseJson, b.responseJson);
 }
 
 RequestTriggerResponse::RequestTriggerResponse(const RequestTriggerResponse& other23) {
   errorCode = other23.errorCode;
-  reqponseJson = other23.reqponseJson;
+  responseJson = other23.responseJson;
 }
 RequestTriggerResponse& RequestTriggerResponse::operator=(const RequestTriggerResponse& other24) {
   errorCode = other24.errorCode;
-  reqponseJson = other24.reqponseJson;
+  responseJson = other24.responseJson;
   return *this;
 }
 std::ostream& operator<<(std::ostream& out, const RequestTriggerResponse& obj) {
   using apache::thrift::to_string;
   out << "RequestTriggerResponse(";
   out << "errorCode=" << to_string(obj.errorCode);
-  out << ", " << "reqponseJson=" << to_string(obj.reqponseJson);
+  out << ", " << "responseJson=" << to_string(obj.responseJson);
   out << ")";
   return out;
 }
